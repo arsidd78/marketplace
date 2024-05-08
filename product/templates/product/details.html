@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{product.product_name}}</title>
+</head>
+<body>
+    <h1>{{product.product_name}}</h1>
+    <img src="{{product.product_images.url}}" width="500" class="image_1">
+    {% if product.product_images2 %}
+        <img src="{{product.product_images2.url}}" width="500" class="image_2">
+    {% endif %}
+    <h2 class="product_description">Description:</h2>
+    <label>{{product.product_description}}</label>
+    <h2 class="sellor_info">Seller:</h2>
+    <label>{{product.sellor_name}}</label>
+    <h2 class="product_category">Category:</h2>
+    <label>{{product.product_category}}</label>
+</body>
+</html>
