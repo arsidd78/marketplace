@@ -7,9 +7,18 @@
 </head>
 <body>
     <h1>{{product.product_name}}</h1>
-    <img src="{{product.product_images.url}}" width="500" class="image_1">
+    <img src="{{product.product_images.url}}" width="300" height="300" class="prouduct_image">
     {% if product.product_images2 %}
-        <img src="{{product.product_images2.url}}" width="500" class="image_2">
+        <img src="{{product.product_images2.url}}" width="300" height="300" class="prouduct_image">
+    {% endif %}
+    {% if product.product_images3 %}
+        <img src="{{product.product_images3.url}}" widht="300" height="300" class="prouduct_image">
+    {% endif %}
+    {% if product.product_images4 %}
+        <img src="{{product.product_images4.url}}" widht="300" height="300" class="prouduct_image">
+    {% endif %}
+    {% if product.product_images5 %}
+        <img src="{{product.product_images5.url}}" widht="300" height="300" class="prouduct_image">
     {% endif %}
     <h2 class="product_description">Description:</h2>
     <label>{{product.product_description}}</label>
@@ -17,5 +26,13 @@
     <label>{{product.sellor_name}}</label>
     <h2 class="product_category">Category:</h2>
     <label>{{product.product_category}}</label>
+    {% if product.company_name %}
+    <h2>Company:</h2>
+    <label>{{product.company_name}}</label>
+    {% endif %}
+    {% if product.product_website %}
+    <h2 class="website">Website:</h2>
+    <label>{{product.product_website}}</label>
+    {% endif %}
 </body>
 </html>

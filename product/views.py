@@ -10,5 +10,6 @@ def home(request):
 
 def product_details(request,pk):
     product = get_object_or_404(Products,id=pk)
+    social_handlers = SocialHandlers.objects.all()
     context = {'product':product}
     return render(request,'product/details.html',context)
