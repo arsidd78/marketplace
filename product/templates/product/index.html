@@ -6,6 +6,13 @@
     <title>Online Market Place</title>
 </head>
 <body>
+    <div>
+    {% for message in messages %}
+        {% if message.tag %}
+        <h3>{{message}}</h3>
+        {% endif %}
+    {% endfor %}    
+    </div>
     <div class="article_product_list">
         {% for product in products %}
         <a href="{% url 'product:details' product.id %}" class="product_detailslink">

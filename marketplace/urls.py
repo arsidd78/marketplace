@@ -9,4 +9,5 @@ urlpatterns = [
     path('registration/',include('registration.urls')),
     path('registration/',include('django.contrib.auth.urls')),
     path('',include('product.urls')),
+    path('',include('django.contrib.auth.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

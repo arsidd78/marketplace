@@ -22,6 +22,7 @@
     {% endif %}
     <h2 class="product_description">Description:</h2>
     <label>{{product.product_description}}</label>
+    <h3>{{product.product_quantity}} items in stock</h3>
     <h2 class="sellor_info">Seller:</h2>
     <label>{{product.sellor_name}}</label>
     <h2 class="product_category">Category:</h2>
@@ -34,5 +35,6 @@
     <h2 class="website">Website:</h2>
     <label>{{product.product_website}}</label>
     {% endif %}
+    <a href="{% url 'product:purchase_page' product.id %}"><button class="purchase_pd">Buy</button></a>
 </body>
 </html>

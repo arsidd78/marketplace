@@ -15,10 +15,11 @@
     {% endif %}
     <form action="{% url 'registration:authenticate' %}" method="post">
         {%csrf_token%}
+        <input type="hidden" name="next" value="{{ next }}">
         <label>Username:</label><br>
-        <input type="username" name="username"><br>
+        <input type="username" name="username" placeholder="Username" required><br>
         <label>Password:</label><br>
-        <input type="password" name="password"><br>
+        <input type="password" name="password" placeholder="password" required><br>
         <input type="submit" value="Login" ><br> 
     </form>
     <button><a href="{%url 'registration:signup_page' %}">Sign Up</a></button>

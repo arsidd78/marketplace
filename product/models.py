@@ -17,6 +17,7 @@ class Products(models.Model):
     product_images4 = models.ImageField(null=True,blank=True,upload_to='products/')
     product_images5 = models.ImageField(null=True,blank=True,upload_to='products/')
     product_category = models.CharField('category',max_length=100)
+    product_quantity = models.IntegerField()
     sellor_name = models.CharField(max_length=100)
     company_name = models.CharField(null= True, blank= True, max_length=200)
     product_website = models.URLField(null= True,blank=True)
