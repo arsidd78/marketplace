@@ -60,3 +60,583 @@ ValueError: The view registration.views.log_out didn't return an HttpResponse ob
 2024-05-09 22:36:18,828 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
 2024-05-09 22:48:39,130 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\settings.py changed, reloading.
 2024-05-09 23:19:06,592 Not Found: /purchase/2/registration/login/
+2024-05-10 10:37:04,248 Not Found: /favicon.ico
+2024-05-10 10:37:41,770 Not Found: /purchase/2/registration/login/
+2024-05-10 10:44:16,464 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\settings.py changed, reloading.
+2024-05-10 10:45:14,987 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\urls.py changed, reloading.
+2024-05-10 10:45:34,712 Not Found: /purchase/2/registration/login/
+2024-05-10 10:50:53,870 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\urls.py changed, reloading.
+2024-05-10 10:50:59,862 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 10:51:46,989 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\urls.py changed, reloading.
+2024-05-10 10:51:51,982 Not Found: /purchase/2/registration/login/
+2024-05-10 10:51:57,362 Not Found: /purchase/2/registration/login/
+2024-05-10 10:52:40,455 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 10:52:42,540 Not Found: /purchase/2/registration/login/
+2024-05-10 10:52:53,818 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 10:52:55,501 Not Found: /purchase/2/registration/login/
+2024-05-10 10:53:02,349 Not Found: /purchase/2/registration/registration/login/
+2024-05-10 10:53:11,215 Not Found: /purchase/2/registration/registration/login/
+2024-05-10 10:53:39,949 Not Found: /purchase/2/registration/registration/login/
+2024-05-10 10:57:05,084 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 10:58:33,137 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 10:59:29,775 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:01:30,932 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:02:17,514 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:05:05,991 Internal Server Error: /detail/2/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 19, in product_details
+    user = authentication.user
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'user'
+2024-05-10 11:05:49,797 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\views.py changed, reloading.
+2024-05-10 11:08:34,754 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\views.py changed, reloading.
+2024-05-10 11:08:42,118 Internal Server Error: /detail/2/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 19, in product_details
+    user = authentication.user
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'user'
+2024-05-10 11:08:56,182 Internal Server Error: /detail/2/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 19, in product_details
+    user = authentication.user
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'user'
+2024-05-10 11:09:12,714 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:09:17,144 Internal Server Error: /detail/2/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 19, in product_details
+    user = authentication.user
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'user'
+2024-05-10 11:09:30,416 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:09:44,335 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:09:50,169 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\views.py changed, reloading.
+2024-05-10 11:10:22,909 Internal Server Error: /detail/2/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 19, in product_details
+    user = authentication.user
+           ^^^^^^^^^^^^^^
+NameError: name 'authentication' is not defined. Did you mean: 'authenticate'?
+2024-05-10 11:10:52,252 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:26:23,774 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:26:44,371 Not Found: /purchase/3/registration/login
+2024-05-10 11:31:37,047 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:33:59,183 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:34:17,523 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:34:28,610 Internal Server Error: /purchase/3/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 23, in purchase_page
+    if request.is_authenticated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'is_authenticated'
+2024-05-10 11:35:38,460 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:46:00,432 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\views.py changed, reloading.
+2024-05-10 11:49:39,411 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\views.py changed, reloading.
+2024-05-10 11:54:53,182 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 11:59:38,931 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\views.py changed, reloading.
+2024-05-10 11:59:41,561 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 12:13:12,085 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 10, in home
+    return render(request,'product/index.html',context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2024-05-10 12:16:10,851 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 10, in home
+    return render(request,'product/index.html',context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2024-05-10 12:18:32,319 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: templates/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 10, in home
+    return render(request,'product/index.html',context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: templates/base.html
+2024-05-10 12:34:02,233 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 10, in home
+    return render(request,'product/index.html',context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2024-05-10 12:34:45,890 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 10, in home
+    return render(request,'product/index.html',context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2024-05-10 12:47:57,282 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 10, in home
+    return render(request,'product/index.html',context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2024-05-10 12:48:14,690 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 10, in home
+    return render(request,'product/index.html',context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2024-05-10 12:49:07,330 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 10, in home
+    return render(request,'product/index.html',context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2024-05-10 12:51:16,544 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 10, in home
+    return render(request,'product/index.html',context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+2024-05-10 12:55:06,339 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 12:57:02,007 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-10 13:05:31,239 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\urls.py changed, reloading.

@@ -2,11 +2,12 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.contrib import messages
-from django.http import HttpResponse
 import logging
+
 
 logging.basicConfig(filename='registration_logs.log',filemode='a',format='%(asctime)s %(message)s')
 # Views:
+
 def authentication(request):
     global user  # This view handles user login
     if request.method == 'POST':

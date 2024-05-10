@@ -13,9 +13,9 @@
         {% endfor %}
     </ul>
     {% endif %}
-    <form action="{% url 'registration:authenticate' %}" method="post">
+    <form action="{% url 'registration:authenticate' %}?next={{ request.GET.next }}" method="post">
         {%csrf_token%}
-        <input type="hidden" name="next" value="{{ next }}">
+        <!-- <input type="hidden" name="next" value="{{ next }}"> -->
         <label>Username:</label><br>
         <input type="username" name="username" placeholder="Username" required><br>
         <label>Password:</label><br>

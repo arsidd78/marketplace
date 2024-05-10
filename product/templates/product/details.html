@@ -33,7 +33,7 @@
     {% endif %}
     {% if product.product_website %}
     <h2 class="website">Website:</h2>
-    <label>{{product.product_website}}</label>
+    <label><a href="{{product.product_website}}">{{product.product_website}}</a></label>
     {% endif %}
     <a href="{% url 'product:purchase_page' product.id %}"><button class="purchase_pd">Buy</button></a>
 </body>
