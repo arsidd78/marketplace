@@ -640,3 +640,39 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is n
 2024-05-10 12:55:06,339 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
 2024-05-10 12:57:02,007 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
 2024-05-10 13:05:31,239 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\urls.py changed, reloading.
+2024-05-11 18:37:08,366 Not Found: /favicon.ico
+2024-05-11 18:59:00,602 Not Found: /favicon.ico
+2024-05-11 19:04:43,484 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\urls.py changed, reloading.
+2024-05-11 19:04:50,217 Not Found: /favicon.ico
+2024-05-11 19:17:10,032 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 19:18:38,242 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 19:32:16,988 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 19:35:06,227 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\urls.py changed, reloading.
+2024-05-11 19:35:12,992 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\urls.py changed, reloading.
+2024-05-11 19:35:32,487 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 19:36:47,634 Internal Server Error: /categories/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 26, in categories_page
+    products = get_object_or_404(Products)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+product.models.Products.MultipleObjectsReturned: get() returned more than one Products -- it returned 3!
+2024-05-11 19:37:38,868 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 19:41:03,979 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 19:42:04,543 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\models.py changed, reloading.
+2024-05-11 19:44:31,464 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 19:58:27,628 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 19:58:48,117 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 20:00:51,858 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 20:01:35,383 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-11 20:01:43,147 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.

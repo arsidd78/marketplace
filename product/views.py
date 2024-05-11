@@ -22,3 +22,10 @@ def purchase_page(request,pk):
         return render(request, 'product/purchase_page.html',context)
     else:
         return redirect('registration:login')
+def categories_page(request):
+    products = Products.objects.all()
+    categories = set()
+    for product in products:
+        categories.add(product.product_category)
+    context = {'categories':categories}
+    return render(request,'product/categories_page.html',context)
