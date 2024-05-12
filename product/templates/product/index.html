@@ -36,13 +36,13 @@
     </div>
     <div class="article_product_list">
         {% for product in products %}
-        <a href="{% url 'product:details' product.id %}" class="product_detailslink">
-        <article class="product_data">
-            <img src="{{product.product_images.url}}" width="150" > <br>
-            <label>{{product.product_name}}</label><br>
-            <label>${{product.product_price}}</label><br>
-        </article>
-        </a>
+            <a href="{% url 'product:details' product.id %}" class="product_detailslink">
+            <article class="product_data">
+                <img src="{{product.product_images.url}}" width="150" > <br>
+                <label>{{product.product_name}}</label><br>
+                <label>${{product.product_price}}</label><br>
+            </article>
+            </a>
         {% endfor %}
     </div>
 </body>

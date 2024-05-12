@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'product/categories_page_style.css' %}">
-    <title>Categories</title>
+    <link rel="stylesheet" href="{% static 'product/index_style.css' %}">
+    <title>Document</title>
 </head>
 <body>
     <nav>
@@ -20,10 +20,17 @@
         <a href="">Profile</a>
         {% endif %}
     </nav>
-    <div class="pd_cat">
-        {% for cat in categories %}
-            <a href="{% url 'product:prod_cat' cat %}">{{cat}}</a> 
-        {% endfor %}    
+    <div class="article_product_list">
+        {% for product in products %}
+            <a href="{% url 'product:details' product.id %}" class="product_detailslink">
+            <article class="product_data">
+                <img src="{{product.product_images.url}}" width="150" > <br>
+                <label>{{product.product_name}}</label><br>
+                <label>${{product.product_price}}</label><br>
+            </article>
+            </a>
+        {% endfor %}
     </div>
+    
 </body>
 </html>

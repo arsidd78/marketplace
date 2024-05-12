@@ -1,5 +1,6 @@
 from django.shortcuts import render,get_object_or_404,redirect
 from .models import Products,SocialHandlers
+import os
 
 
 # Create your views here.
@@ -29,3 +30,7 @@ def categories_page(request):
         categories.add(product.product_category)
     context = {'categories':categories}
     return render(request,'product/categories_page.html',context)
+def product_by_category(request,category):
+    products = Products.objects.filter(product_category=category)
+    context = {'products':products}
+    return render(request,'product/pbc.html',context)
