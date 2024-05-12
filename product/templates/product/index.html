@@ -39,8 +39,12 @@
             <a href="{% url 'product:details' product.id %}" class="product_detailslink">
             <article class="product_data">
                 <img src="{{product.product_images.url}}" width="150" > <br>
-                <label>{{product.product_name}}</label><br>
-                <label>${{product.product_price}}</label><br>
+                <label class="discounted_price">{{product.product_name}}</label><br>
+                {% if product.product_discounted_price %}
+                <label>${{product.product_price}}  ${{product.product_discounted_price}}</label><br>
+                {% else %}
+                <label class="price">${{product.product_price}}</label><br>
+                {% endif %}
             </article>
             </a>
         {% endfor %}

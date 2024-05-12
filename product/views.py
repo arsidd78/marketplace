@@ -6,7 +6,7 @@ import os
 # Create your views here.
 
 def home(request):
-    products = Products.objects.all()
+    products = Products.objects.order_by('-product_name')
     context = {'products':products,'request':request}
     return render(request,'product/index.html',context=context)
 

@@ -1,14 +1,11 @@
 from django.db import models
-from django.db.models.signals import post_save
-from django.dispatch import receiver
-from PIL import Image
-import os
 
 # Create your models here.
 class Products(models.Model):
     product_name = models.CharField(max_length=200)
     product_description = models.TextField(max_length=500)
     product_price = models.DecimalField('Price',max_digits=7,decimal_places=2)
+    product_discounted_price = models.DecimalField('Discounted Price',max_digits=7,decimal_places=2,null=True,blank=True)
     product_specification = models.TextField(null= True, blank= True)
     product_posted_date = models.DateField( auto_now_add=True)
     product_images = models.ImageField(upload_to='products/')
@@ -141,7 +138,7 @@ class Products(models.Model):
     product_website = models.URLField(null= True,blank=True)
     def __str__(self) -> str:
         return self.product_name
-    
+            
 class SocialHandlers(models.Model):
     product_name = models.ForeignKey(Products,on_delete=models.CASCADE)
     social_handler1 = models.URLField(null=True,blank=True,unique=True)

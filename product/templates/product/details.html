@@ -34,6 +34,12 @@
     {% if product.product_images5 %}
         <img src="{{product.product_images5.url}}" widht="300" height="300" class="prouduct_image">
     {% endif %}
+    <h2 class="product_price">Price:</h2>
+    {% if product.product_discounted_price %}
+    <label>${{product.product_price}}   ${{product.product_discounted_price}}</label>
+    {% else %}
+    <label>${{product.product_price}}</label>
+    {% endif %}
     <h2 class="product_description">Description:</h2>
     <label>{{product.product_description}}</label>
     <h3>{{product.product_quantity}} items in stock</h3>
@@ -49,6 +55,8 @@
     <h2 class="website">Website:</h2>
     <label><a href="{{product.product_website}}">{{product.product_website}}</a></label>
     {% endif %}
+    <br>
     <a href="{% url 'product:purchase_page' product.id %}"><button class="purchase_pd">Buy</button></a>
+    <button class="addto_cart"> Add to Cart<img src="\media\products\cartbtn_pic.ico" width="30"> </button>
 </body>
 </html>
