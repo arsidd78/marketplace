@@ -55,3 +55,12 @@ nav {
     font-weight: bold;
     color: #fff;
   }
+
+
+  .product_data{
+    padding-inline-start: 5%;
+    box-sizing: border-box;
+  }
+  aside{
+    margin-right: 100%;
+  }

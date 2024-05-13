@@ -1,12 +1,13 @@
 from django.shortcuts import render,get_object_or_404,redirect
 from .models import Products,SocialHandlers
 import os
+from collections import deque
 
 
 # Create your views here.
 
 def home(request):
-    products = Products.objects.order_by('-product_name')
+    products = Products.objects.order_by('-product_name')[:5]
     context = {'products':products,'request':request}
     return render(request,'product/index.html',context=context)
 
@@ -34,3 +35,8 @@ def product_by_category(request,category):
     products = Products.objects.filter(product_category=category)
     context = {'products':products}
     return render(request,'product/pbc.html',context)
+def recent_products(request):
+    arranged_products = Products.objects.order_by('product_posted_date')
+    products = deque(arranged_products)
+    context = {'products':products}
+    return render(request,'product/recent_prod.html',context)
