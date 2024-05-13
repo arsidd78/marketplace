@@ -36,7 +36,10 @@ def product_by_category(request,category):
     context = {'products':products}
     return render(request,'product/pbc.html',context)
 def recent_products(request):
-    arranged_products = Products.objects.order_by('product_posted_date')
-    products = deque(arranged_products)
+    products = Products.objects.order_by('-product_posted_date')
     context = {'products':products}
     return render(request,'product/recent_prod.html',context)
+def view_all(request):
+    products = Products.objects.all()
+    context = {'products':products}
+    return render(request,'product/view_all.html',context)
