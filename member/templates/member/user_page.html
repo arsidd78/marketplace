@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'product/index_style.css' %}">
-    <title>Document</title>
+    <title>{{request.user.username}}</title>
 </head>
 <body>
     <nav>
@@ -21,13 +21,22 @@
         {% endif %}
     </nav>
     <div class="profile_main">
-        <img src="{{member.user_profile_picture.url}}" alt="DP" width="200">
+        <img src="{{member.user_profile_picture.url}}" alt="DP" width="200">   
         <h4 >Username:{{request.user.username}}</h4>
         <h4>Phone No: {{member.user_phone_number}}</h4>
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
+        {% if member.user_about %}
+        <h4>About:</h4> <label>{{member.user_about}}</label>
+        {% endif %}
+        <h4>WishList Items:{{member.user_wishlist}} </h4>
+        <h4>Followers:{{member.user_follower_no}}</h4>
+        <h4>Following:{{member.user_following_no}}</h4>
+        <h4>Messages:{{member.user_search_history}}</h4>
+        <h4>Total Sales:${{member.user_sales}}</h4>
+        <h4>Selling History:{{member.user_recent_sales}}</h4>
+        <h4>Total Purchases:$ {{member.user_purhcases}}</h4>
+        <h4>Purchasing History:{{member.user_recent_purchases}} </h4>
+        <h4>Website:{{member.user_website}}</h4>
+        <h4>Email:{{member.user_email}}</h4>
     </div>
 </body>
 </html>

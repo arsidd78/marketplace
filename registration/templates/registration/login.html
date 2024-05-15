@@ -8,6 +8,18 @@
     <title>Login Page</title>
 </head>
 <body>
+    <nav>
+        <a href="{% url 'product:home' %}">Home Page</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'registration:signout' %}">LogOut</a>
+        {% else %}
+            <a href="{% url 'registration:login' %}">LogIn</a>
+        {% endif %}
+        <a href="/admin/">Admin</a>
+        {% if request.user.is_authenticated %}
+        <a href="{% url 'member:profile' request.user.username %}">Profile</a>
+        {% endif %}
+    </nav>
     {% if messages %}
     <ul class="messages">
         {% for message in messages %}
@@ -22,8 +34,12 @@
         <input type="username" name="username" placeholder="Username" required><br>
         <label>Password:</label><br>
         <input type="password" name="password" placeholder="password" required><br>
-        <input type="submit" value="Login" ><br> 
+        <input type="submit" value="Login" ><br> <br>
+        {% if request.user.is_authenticated %}
+        <a href="{%url 'registration:signup_page' %}"><input type="submit" class="signup-button" value="SignUp"></button>
+        {% endif %}
+        <a href="{%url 'registration:signup_page' %}"><input type="submit" class="signup-button" value="SignUp"></button></a><p>Donot have an account? Sign up now and become one of our member</p>
     </form>
-    <button><a href="{%url 'registration:signup_page' %}">Sign Up</a></button>
+    
 </body>
 </html>

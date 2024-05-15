@@ -18,7 +18,7 @@
         {% endif %}
         <a href="/admin/">Admin</a>
         {% if request.user.is_authenticated %}
-        <a href="{% url 'member:profile' request.user.id %}">Profile</a>
+        <a href="{% url 'member:profile' request.user.username %}">Profile</a>
         {% endif %}
     </nav>
     <div class="aside_links">
@@ -38,7 +38,7 @@
     <div class="article_product_list">
         {% for product in products %}
             <a href="{% url 'product:details' product.id %}" class="product_detailslink">
-            <article class="product_data">
+            <article class="product_data" >
                 <img src="{{product.product_images.url}}" width="80" > <br>
                 <label class="discounted_price">{{product.product_name}}</label><br>
                 {% if product.product_discounted_price %}

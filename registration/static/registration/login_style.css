@@ -55,3 +55,97 @@ nav {
     font-weight: bold;
     color: #fff;
   }
+
+  body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #5e50a1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #4a4089;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin-top: 50px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #5e50a1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #4a4089;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #5e50a1;
+  }
+  
+  button a {
+    color: #5e50a1;
+    text-decoration: none;
+  }
+  
+  button a:hover {
+    text-decoration: underline;
+  }
+  
+  .messages {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+  }
+  
+  .messages li {
+    font-size: 14px;
+    color: #a94442;
+  }
