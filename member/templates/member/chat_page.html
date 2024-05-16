@@ -6,9 +6,19 @@
     <title>Message Sellor</title>
 </head>
 <body>
+    <h1>This is chat page</h1>
+    {% for chat in all_chats %}
+    {% if chat.sender == request.user %}
+
+    <label>{{chat.message}} {{chat.conversation_time}}</label><br><hr>
+    {% endif %}
+    {% endfor %}
     <form action="{% url 'member:chat_system' %}" method="post">
         {% csrf_token %}
-        <input type="text" name="message" placeholder="Message">
+        <label>Type Your Message</label>
+        <input type="text" name="message" placeholder="Message" ><br>
         <input type="submit" value="Send">
         
     </form>
+</body>    
+    

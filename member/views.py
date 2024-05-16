@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Member
+from .models import Member,Messages
 from django.shortcuts import get_object_or_404,redirect,HttpResponse
 from django.contrib import messages
 # Create your views here.
@@ -21,5 +21,17 @@ def chat(request):
         return redirect('registration:login')
     
 def chat_system(request):
-    return HttpResponse('Hello World')     
-    
+    if request.method == 'POST':
+        user = request.user
+        body = request.POST.get('message')
+
+        if user.is_authenticated:
+            all_chats = Messages.objects.filter(sender = user,receiver=user)
+            message = Messages.objects.create(sender=user,receiver=user,message=body)
+            message.save()
+            context = {'message':message,'all_chats':all_chats}
+            return render(request,'member/chat_page.html',context)
+        else :
+            return redirect('member:login')    
+    else:
+        return HttpResponse('Error ocur while sending message reload and try again ')

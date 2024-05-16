@@ -41,3 +41,5 @@ class Messages(models.Model):
     message = models.TextField(max_length=500)
     conversation_time = models.DateField(auto_now_add= True)
     attachment = models.FileField(upload_to=f'users/chats/attachments', null=True,blank=True)
+    def __str__(self):
+        return self.message
