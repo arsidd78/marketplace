@@ -3937,3 +3937,5 @@ Traceback (most recent call last):
   File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 578, in unclosed_block_tag
     raise self.error(token, msg)
 django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 10: 'for'. Looking for one of: empty, endfor.
+2024-05-16 22:19:12,103 Not Found: /favicon.ico
+2024-05-16 22:19:38,910 Not Found: /favicon.ico

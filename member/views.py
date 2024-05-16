@@ -16,7 +16,12 @@ def profile(request,username):
         return redirect('login')
 def chat(request):
     if request.user.is_authenticated:
-        return render(request,'member/chat_page.html')
+        all_chats = Messages.objects.filter(sender = request.user,receiver = request.user)
+        context ={
+            'request':request,
+            'all_chats':all_chats
+        }
+        return render(request,'member/chat_page.html',context)
     else:
         return redirect('registration:login')
     
@@ -35,3 +40,14 @@ def chat_system(request):
             return redirect('member:login')    
     else:
         return HttpResponse('Error ocur while sending message reload and try again ')
+def del_chats(request):
+
+    user = request.user
+    if request.user.is_authenticated:
+        messages = Messages.objects.filter(sender = user,receiver=user)
+        for message in messages:
+            message.delete()
+            return redirect('member:chat')
+    else:
+        return redirect('registration:login')
+
