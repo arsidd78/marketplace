@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'member/chat_page_style.css' %}">
-    <title>Message Sellor</title>
+    <title>Message Seller</title>
 </head>
 <body>
     <nav>
@@ -22,22 +22,19 @@
     </nav>
     <div class="chats">
         {% for chat in all_chats %}
-        {% if chat.sender == request.user %}
-        {% if chat.message %}
-        {% if chat.sender == request.user %}
-        <label class="body">{{chat.message}} ~ me ~{{chat.conversation_time}}</label> <button class="delete_message" onclick=location.href='{% url "member:remove_message" %}' name="remove_btn">Remove</button><br><hr>
-        {% else %}
-        <label>{{chat.message}} ~{{chat.conversation_time}}</label> <button class="delete_message" onclick=location.href='{% url "member:remove_message" %}' name="remove_btn" >Remove</button><br><hr>
-        {% endif %}
-        {% endif %}
-        {% endif %}
+        <div class="chat-message {% if chat.sender == request.user %}me{% endif %}">
+            <label class="body">{{ chat.message }}</label>
+            <div class="info">
+                ~ {{ chat.sender.username }} ~ {{ chat.conversation_time }}
+                <button class="delete_message" onclick=location.href='{% url "member:remove_message" %}' name="remove_btn">Remove</button>
+            </div>
+        </div>
         {% endfor %}
     </div>
     <form action="{% url 'member:chat_system' %}" method="post">
         {% csrf_token %}
-        <label>Type Your Message</label>
-        <input type="text" name="message" placeholder="Message" ><br>
+        <input type="text" name="message" placeholder="Type your message" required>
         <input type="submit" value="Send">
-        
     </form>
-</body>    
+</body>
+</html>

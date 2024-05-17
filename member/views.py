@@ -51,3 +51,7 @@ def del_chats(request):
     else:
         return redirect('registration:login')
 
+def add_product(request):
+    if request.user.is_authenticated:
+        return render(request,'member/add_product.html')
+    return redirect('registration:login')

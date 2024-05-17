@@ -20,6 +20,7 @@
         {% if request.user.is_authenticated %}
         <a href="{% url 'member:profile' request.user.username %}">Profile</a>
         {% endif %}
+        <a href="{% url 'member:add_product_page' %}">Sell</a>
     </nav>
     <div class="aside_links">
         <aside>
