@@ -34,7 +34,7 @@
     {% if product.product_images5 %}
         <img src="{{product.product_images5.url}}" widht="300" height="300" class="prouduct_image">
     {% endif %}
-    <a href="{% url 'member:chat' %}"><button>Chat</button></a>
+    <a href="{% url 'member:chat'  %}"><button>Chat</button></a>
     <h2 class="product_price">Price:</h2>
     {% if product.product_discounted_price %}
     <label>${{product.product_price}}   ${{product.product_discounted_price}}</label>
