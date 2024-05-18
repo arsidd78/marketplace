@@ -59,7 +59,7 @@ def add_product(request):
         form = ProductsForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save(commit=False)  # Create but don't save the product yet
-            product.name = request.user  # Set the user as the product creator
+            product.name = request.user # Set the user as the product creator
             product.sellor_name = request.user.username  # Optionally set the seller's name
             product.save()  # Save the product to the database
             return redirect('product:home')  # Redirect to a success page
@@ -67,5 +67,4 @@ def add_product(request):
             print(form.errors)  # Print form errors to the console for debugging
     else:
         form = ProductsForm()
-
-    return render(request, 'member/add_product.html', {'form': form})
+        return render(request, 'member/add_product.html', {'form': form})

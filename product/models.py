@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 # Create your models here.
 User = get_user_model()
 class Products(models.Model):
-    name = models.OneToOneField(User,on_delete=models.CASCADE)
+    name = models.ForeignKey(User,on_delete=models.CASCADE)
     product_name = models.CharField(max_length=200)
     product_description = models.TextField(max_length=500)
     product_price = models.DecimalField('Price',max_digits=7,decimal_places=2)
