@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Member,Messages
 from django.shortcuts import get_object_or_404,redirect,HttpResponse
+from django.contrib.auth import get_user_model
 from django.contrib import messages
 from product.models import Products
 from .forms import ProductsForm
@@ -12,10 +13,11 @@ def profile(request,username):
             context = {'member': member,'request':request}
             return render(request,'member/user_page.html',context)
         else: 
-            messages.add_message(request,messages.ERROR,'Username Did not matched!')
+            messages.add_message(request,messages.ERROR,'Username did not matched!')
             return redirect('home')
     else:
         return redirect('login')
+    
 def chat(request):
     if request.user.is_authenticated:
         all_chats = Messages.objects.filter(sender = request.user,receiver = request.user)
@@ -42,6 +44,7 @@ def chat_system(request):
             return redirect('member:login')    
     else:
         return HttpResponse('Error ocur while sending message reload and try again ')
+    
 def del_chats(request):
 
     user = request.user
@@ -83,3 +86,9 @@ def update_product(request,pk):
         form = ProductsForm(instance=product)
         context = {'form':form}
         return render(request,'member/update_product.html',context)
+def user_products(request, username):
+    User = get_user_model()
+    user = get_object_or_404(User, username=username)
+    products = Products.objects.filter(name=user)
+    context = {'request': request, 'products': products}
+    return render(request, 'member/my_products.html', context)
