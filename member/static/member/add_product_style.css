@@ -1,0 +1,27 @@
+nav {
+    background-color: #9b5de5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  nav a:hover {
+    color: #cccccc;
+  }
+  
+  nav a.logo {
+    display: block;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  nav a.logo img {
+    height: 100%;
+  }
