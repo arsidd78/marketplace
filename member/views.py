@@ -54,6 +54,7 @@ def del_chats(request):
         return redirect('registration:login')
 
 # CRUD operations: 
+
 def add_product(request):
     if request.method == 'POST':
         form = ProductsForm(request.POST, request.FILES)
@@ -68,3 +69,17 @@ def add_product(request):
     else:
         form = ProductsForm()
         return render(request, 'member/add_product.html', {'form': form})
+
+def update_product(request,pk):
+    product = get_object_or_404(Products,id = pk)
+    if request.user == product.sellor_name:
+        return redirect('product:home')
+    if request.method == 'POST':
+        form = ProductsForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            return redirect('product:home')
+    else:
+        form = ProductsForm(instance=product)
+        context = {'form':form}
+        return render(request,'member/update_product.html',context)

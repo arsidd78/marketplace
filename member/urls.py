@@ -8,4 +8,5 @@ urlpatterns = [
     path('chat_system/',views.chat_system,name='chat_system'),
     path('chat_system/del_chat',views.del_chats,name='remove_message'),
     path('add_product/',views.add_product,name='add_product_page'),
+    path('update_product/<int:pk>/',views.update_product,name='update'),
 ]
