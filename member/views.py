@@ -2,6 +2,8 @@ from django.shortcuts import render
 from .models import Member,Messages
 from django.shortcuts import get_object_or_404,redirect,HttpResponse
 from django.contrib import messages
+from product.models import Products
+from .forms import ProductsForm
 # Create your views here.
 def profile(request,username):
     if request.user.is_authenticated:
@@ -51,7 +53,19 @@ def del_chats(request):
     else:
         return redirect('registration:login')
 
+# CRUD operations: 
 def add_product(request):
-    if request.user.is_authenticated:
-        return render(request,'member/add_product.html')
-    return redirect('registration:login')
+    if request.method == 'POST':
+        form = ProductsForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save(commit=False)  # Create but don't save the product yet
+            product.name = request.user  # Set the user as the product creator
+            product.sellor_name = request.user.username  # Optionally set the seller's name
+            product.save()  # Save the product to the database
+            return redirect('product:home')  # Redirect to a success page
+        else:
+            print(form.errors)  # Print form errors to the console for debugging
+    else:
+        form = ProductsForm()
+
+    return render(request, 'member/add_product.html', {'form': form})

@@ -141,8 +141,3 @@ class Products(models.Model):
     def __str__(self) -> str:
         return self.product_name
             
-class SocialHandlers(models.Model):
-    product_name = models.ForeignKey(Products,on_delete=models.CASCADE)
-    social_handler1 = models.URLField(null=True,blank=True,unique=True)
-    social_handler2 = models.URLField(null=True,blank=True,unique=True)
-    social_handler3 = models.URLField(null=True,blank=True,unique=True)
