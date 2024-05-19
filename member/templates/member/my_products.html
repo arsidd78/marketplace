@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,43 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <a href="{% url 'product:home' %}">Home Page</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'registration:signout' %}">LogOut</a>
+        {% else %}
+            <a href="{% url 'registration:login' %}">LogIn</a>
+        {% endif %}
+        <a href="/admin/">Admin</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'member:profile' request.user.username %}">Profile</a>
+        {% endif %}
+        <a href="{% url 'member:add_product_page' %}">Sell</a>
+    </nav>
+    <div class="main-content">
+        <aside class="aside_links">
+            <section>
+                <h3>Categories</h3>
+                <a href="{% url 'product:categories_page' %}">All Categories</a>
+            </section>
+            <section>
+                <h3>Products</h3>
+                <a href="{% url 'product:recent_products' %}">Recent Products</a>
+                <a href="{% url 'product:view_all' %}">View All Products</a>
+            </section>
+        </aside>
     {% for product in products %}
     <article>
-        <label>{{product.product_name}}</label>
+        <img src="{{product.product_images.url}}" width="100"><br>
+        <label>{{product.product_name}}</label><br>
+        <label>$ {{product.product_price}}</label><br>
+        {% if product.product_discounted_price %}
+        <label> $ {{product.product_discounted_price}}</label>
+        {% endif %}
+        <label> stock: {{product.product_quantity}}</label><br>
     </article>
+    <button class="edit_product" onclick=location.href="{% url  'member:update' product.id %}" name="update_prod">Edit</button>
+    <button class="del_prod" onclick=location.href="{% url 'member:delete_product' product.id %}" name="delete_product">Remove</button>
     {% endfor %}
 </body>
 </html>

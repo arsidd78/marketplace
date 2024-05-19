@@ -92,3 +92,7 @@ def user_products(request, username):
     products = Products.objects.filter(name=user)
     context = {'request': request, 'products': products}
     return render(request, 'member/my_products.html', context)
+def del_prod(request,pk):
+    product = get_object_or_404(Products,id = pk)
+    product.delete()
+    return redirect('member:user_products',username=request.user)
