@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Member,Messages
-from django.shortcuts import get_object_or_404,redirect,HttpResponse
+from django.shortcuts import get_object_or_404,redirect,HttpResponse,HttpResponseRedirect
 from django.contrib.auth import get_user_model
 from django.contrib import messages
 from product.models import Products
@@ -108,3 +108,13 @@ def del_prod(request,pk):
         return redirect('member:user_products',username=request.user)
     
     return redirect('registration:login')
+
+def wishlist(request,pk):
+    if request.user.is_authenticated:
+        product = get_object_or_404(Products,id = pk)
+        member = Member.objects.get(username = request.user.username)
+        member.user_wish_list.add(product)
+        member.save()
+        return redirect('product:home')
+    return redirect('registration:login')
+

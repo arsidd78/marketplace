@@ -9,14 +9,14 @@ email = User.get_email_field_name()
 class Member(models.Model):
     # User Personal Info:
     username = models.CharField(max_length=100,default=name)
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     user_email = models.CharField(max_length=320,default=email)
     user_website = models.URLField(null=True,blank=True)
     user_phone_number = models.CharField(max_length=13)
     user_about = models.TextField(max_length=500,null=True,blank=True)
     user_profile_picture = models.ImageField(upload_to='users/dp', null=True, blank=True , default='users/default/defaultdp.png')
     # User Activities:
-    user_wish_list = models.ManyToManyField(Products, blank=True, related_name='wishlisted_users')
+    user_wish_list = models.ManyToManyField(Products,null=True,blank=True, related_name='wishlisted_users')
     user_cart_list = models.ForeignKey(Products, on_delete=models.CASCADE, null=True, blank=True, related_name='user_cart_list')
     user_recent_purchase = models.ForeignKey(Products, on_delete=models.DO_NOTHING, null=True, blank=True, related_name='user_recent_purchase')
     user_purchases = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)

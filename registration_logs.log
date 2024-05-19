@@ -7290,3 +7290,806 @@ Traceback (most recent call last):
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'prod_cat' with arguments '('',)' not found. 1 pattern(s) tried: ['prod_by_cat/(?P<category>[^/]+)/\\Z']
 2024-05-19 22:03:45,699 Not Found: /favicon.ico
+2024-05-19 22:11:34,971 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:14:38,178 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py changed, reloading.
+2024-05-19 22:15:20,575 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py changed, reloading.
+2024-05-19 22:22:27,682 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:26:39,478 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:29:55,788 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:31:21,317 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\urls.py changed, reloading.
+2024-05-19 22:32:27,784 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\urls.py changed, reloading.
+2024-05-19 22:32:33,825 Internal Server Error: /member/adding_wishlist/2/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: member_member.user_wish_list_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 115, in wishlist
+    member = get_object_or_404(Member,user = request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: member_member.user_wish_list_id
+2024-05-19 22:33:29,631 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:33:31,344 Internal Server Error: /member/adding_wishlist/2/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: member_member.user_wish_list_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 115, in wishlist
+    member = Member.objects.get(user = request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: member_member.user_wish_list_id
+2024-05-19 22:33:45,854 Internal Server Error: /member/adding_wishlist/2/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: member_member.user_wish_list_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 115, in wishlist
+    member = Member.objects.get(user = request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: member_member.user_wish_list_id
+2024-05-19 22:34:47,932 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:35:00,269 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:36:19,462 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:36:27,650 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:36:31,782 Internal Server Error: /member/adding_wishlist/2/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: member_member.user_wish_list_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 115, in wishlist
+    member = Member.objects.get(username = request.user.username)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: member_member.user_wish_list_id
+2024-05-19 22:36:47,472 Internal Server Error: /admin/member/member/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: member_member.user_wish_list_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 2124, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: member_member.user_wish_list_id
+2024-05-19 22:37:00,637 Internal Server Error: /admin/member/member/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: member_member.user_wish_list_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 2124, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: member_member.user_wish_list_id
+2024-05-19 22:37:03,709 Internal Server Error: /admin/member/member/add/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1871, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\forms\models.py", line 363, in __init__
+    self.instance = opts.model()
+                    ^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 535, in __init__
+    val = field.get_default()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 1021, in get_default
+    return self._get_default()
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: AbstractBaseUser.get_username() missing 1 required positional argument: 'self'
+2024-05-19 22:37:44,390 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py changed, reloading.
+2024-05-19 22:37:48,816 Internal Server Error: /admin/member/member/add/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1871, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\forms\models.py", line 363, in __init__
+    self.instance = opts.model()
+                    ^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 535, in __init__
+    val = field.get_default()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 1021, in get_default
+    return self._get_default()
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: AbstractBaseUser.get_username() missing 1 required positional argument: 'self'
+2024-05-19 22:39:03,465 Internal Server Error: /admin/member/member/add/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1871, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\forms\models.py", line 363, in __init__
+    self.instance = opts.model()
+                    ^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 535, in __init__
+    val = field.get_default()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 1021, in get_default
+    return self._get_default()
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: AbstractBaseUser.get_username() missing 1 required positional argument: 'self'
+2024-05-19 22:39:04,400 Internal Server Error: /admin/member/member/add/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1871, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\forms\models.py", line 363, in __init__
+    self.instance = opts.model()
+                    ^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 535, in __init__
+    val = field.get_default()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 1021, in get_default
+    return self._get_default()
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: AbstractBaseUser.get_username() missing 1 required positional argument: 'self'
+2024-05-19 22:39:05,593 Internal Server Error: /admin/member/member/add/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\admin\options.py", line 1871, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\forms\models.py", line 363, in __init__
+    self.instance = opts.model()
+                    ^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 535, in __init__
+    val = field.get_default()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 1021, in get_default
+    return self._get_default()
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: AbstractBaseUser.get_username() missing 1 required positional argument: 'self'
+2024-05-19 22:41:50,487 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py changed, reloading.
+2024-05-19 22:43:51,675 Internal Server Error: /member/adding_wishlist/7/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 116, in wishlist
+    member.user_wish_list+=product
+TypeError: unsupported operand type(s) for +=: 'NoneType' and 'Products'
+2024-05-19 22:46:05,726 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:46:34,601 Internal Server Error: /member/adding_wishlist/7/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 116, in wishlist
+    member.user_wish_list.append(product)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'append'
+2024-05-19 22:46:54,493 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 22:46:57,810 Internal Server Error: /member/adding_wishlist/7/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 117, in wishlist
+    member.save()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 1036, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 1101, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1948, in as_sql
+    raise TypeError(
+TypeError: Tried to update field member.Member.user_wish_list with a model instance, <Products: Iphone X>. Use a value compatible with CharField.
+2024-05-19 22:49:40,171 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py changed, reloading.
+2024-05-19 22:50:25,220 Internal Server Error: /member/adding_wishlist/7/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 116, in wishlist
+    member.user_wish_list = product
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use user_wish_list.set() instead.
+2024-05-19 23:10:33,174 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:10:47,313 Internal Server Error: /member/adding_wishlist/2/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 118, in wishlist
+    return redirect('product:details',kwargs=pk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'details' with keyword arguments '{'kwargs': 2}' not found. 1 pattern(s) tried: ['detail/(?P<pk>[0-9]+)/\\Z']
+2024-05-19 23:14:03,465 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:14:22,310 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:16:23,118 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:16:52,045 Not Found: /member/adding_wishlist/6/product/details/6
+2024-05-19 23:18:03,203 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:26:51,650 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:35:38,162 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:35:59,405 Not Found: /member/adding_wishlist/8/product/details/8
+2024-05-19 23:39:05,318 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:40:23,292 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:40:25,474 Not Found: /member/adding_wishlist/8/product/details/8
+2024-05-19 23:40:30,667 Internal Server Error: /member/adding_wishlist/8/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 118, in wishlist
+    return HttpResponseRedirect(status=302,headers={'location':f'product/details/{pk}'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HttpResponseRedirectBase.__init__() missing 1 required positional argument: 'redirect_to'
+2024-05-19 23:42:22,580 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:42:39,071 Internal Server Error: /member/adding_wishlist/8/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 118, in wishlist
+    return HttpResponseRedirect(headers={'location':f'product/details/{pk}'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HttpResponseRedirectBase.__init__() missing 1 required positional argument: 'redirect_to'
+2024-05-19 23:42:41,934 Internal Server Error: /member/adding_wishlist/8/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 118, in wishlist
+    return HttpResponseRedirect(headers={'location':f'product/details/{pk}'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HttpResponseRedirectBase.__init__() missing 1 required positional argument: 'redirect_to'
+2024-05-19 23:43:08,747 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:43:12,383 Not Found: /member/adding_wishlist/8/product/details/8
+2024-05-19 23:43:46,032 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-19 23:43:48,696 Not Found: /member/adding_wishlist/8/product/details/8
