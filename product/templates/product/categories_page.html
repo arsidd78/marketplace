@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'product/categories_page_style.css' %}">
+    <link rel="stylesheet" href="{% static 'product/index_style.css' %}">
     <title>Categories</title>
 </head>
 <body>
@@ -21,8 +21,9 @@
         {% endif %}
     </nav>
     <div class="pd_cat">
-        {% for cat in categories %}
-            <a href="{% url 'product:prod_cat' cat %}">{{cat}}</a> 
+        {% for images,categories in data %}
+        <img src="{{images.url}}" alt="" width="100" height="100">
+        <a href="{% url 'product:prod_cat' categories %}">{{categories}}</a> 
         {% endfor %}    
     </div>
 </body>

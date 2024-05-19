@@ -59,40 +59,52 @@ def del_chats(request):
 # CRUD operations: 
 
 def add_product(request):
-    if request.method == 'POST':
-        form = ProductsForm(request.POST, request.FILES)
-        if form.is_valid():
-            product = form.save(commit=False)  # Create but don't save the product yet
-            product.name = request.user # Set the user as the product creator
-            product.sellor_name = request.user.username  # Optionally set the seller's name
-            product.save()  # Save the product to the database
-            return redirect('product:home')  # Redirect to a success page
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            form = ProductsForm(request.POST, request.FILES)
+            if form.is_valid():
+                product = form.save(commit=False)  # Create but don't save the product yet
+                product.name = request.user # Set the user as the product creator
+                product.sellor_name = request.user.username  # Optionally set the seller's name
+                product.save()  # Save the product to the database
+                return redirect('product:home')  # Redirect to a success page
+            else:
+                print(form.errors)  # Print form errors to the console for debugging
         else:
-            print(form.errors)  # Print form errors to the console for debugging
-    else:
-        form = ProductsForm()
-        return render(request, 'member/add_product.html', {'form': form})
+            form = ProductsForm()
+            return render(request, 'member/add_product.html', {'form': form})
+    return redirect('registration:login')    
 
 def update_product(request,pk):
-    product = get_object_or_404(Products,id = pk)
-    if request.user == product.sellor_name:
-        return redirect('product:home')
-    if request.method == 'POST':
-        form = ProductsForm(request.POST, request.FILES, instance=product)
-        if form.is_valid():
-            form.save()
+
+    if request.user.is_authenticated:
+        product = get_object_or_404(Products,id = pk)
+        if request.user == product.sellor_name:
             return redirect('product:home')
-    else:
-        form = ProductsForm(instance=product)
-        context = {'form':form}
-        return render(request,'member/update_product.html',context)
+        if request.method == 'POST':
+            form = ProductsForm(request.POST, request.FILES, instance=product)
+            if form.is_valid():
+                form.save()
+                return redirect('product:home')
+        else:
+            form = ProductsForm(instance=product)
+            context = {'form':form}
+            return render(request,'member/update_product.html',context)
+    return redirect('registration:login')
+    
 def user_products(request, username):
-    User = get_user_model()
-    user = get_object_or_404(User, username=username)
-    products = Products.objects.filter(name=user)
-    context = {'request': request, 'products': products}
-    return render(request, 'member/my_products.html', context)
+    if request.user.is_authenticated:
+        User = get_user_model()
+        user = get_object_or_404(User, username=username)
+        products = Products.objects.filter(name=user)
+        context = {'request': request, 'products': products}
+        return render(request, 'member/my_products.html', context)
+    return redirect('registration:login')
 def del_prod(request,pk):
-    product = get_object_or_404(Products,id = pk)
-    product.delete()
-    return redirect('member:user_products',username=request.user)
+    
+    if request.user.is_authenticated:
+        product = get_object_or_404(Products,id = pk)
+        product.delete()
+        return redirect('member:user_products',username=request.user)
+    
+    return redirect('registration:login')
