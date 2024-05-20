@@ -55,3 +55,5 @@ def view_all(request):
     products = Products.objects.all()
     context = {'products':products}
     return render(request,'product/view_all.html',context)
+
+# Invoice form login here: 

@@ -5,7 +5,7 @@ from django.contrib.auth import get_user_model
 from django.contrib import messages
 from product.models import Products
 from .forms import ProductsForm
-# Create your views here.
+
 def profile(request,username):
     if request.user.is_authenticated:
         if request.user.username == username:
@@ -16,7 +16,7 @@ def profile(request,username):
             messages.add_message(request,messages.ERROR,'Username did not matched!')
             return redirect('home')
     else:
-        return redirect('login')
+        return redirect('registration:login')
     
 def chat(request):
     if request.user.is_authenticated:
@@ -63,13 +63,13 @@ def add_product(request):
         if request.method == 'POST':
             form = ProductsForm(request.POST, request.FILES)
             if form.is_valid():
-                product = form.save(commit=False)  # Create but don't save the product yet
-                product.name = request.user # Set the user as the product creator
-                product.sellor_name = request.user.username  # Optionally set the seller's name
-                product.save()  # Save the product to the database
-                return redirect('product:home')  # Redirect to a success page
+                product = form.save(commit=False) 
+                product.name = request.user 
+                product.sellor_name = request.user.username  
+                product.save()  
+                return redirect('product:home') 
             else:
-                print(form.errors)  # Print form errors to the console for debugging
+                print(form.errors)  
         else:
             form = ProductsForm()
             return render(request, 'member/add_product.html', {'form': form})
@@ -124,7 +124,7 @@ def cart(request,pk):
         member = get_object_or_404(Member,username = request.user.username)
         member.user_cart_list.add(product)
         member.save()
-        return redirect('product:details')
+        return redirect('product:home')
     return redirect('registration:login')
 
 def view_wishlist(request):
@@ -139,10 +139,27 @@ def remove_wishlist_item(request,pk):
     if request.user.is_authenticated:
         member = get_object_or_404(Member, username = request.user.username)
         product = member.user_wish_list.get(id = pk)
-        member.delete()
+        product.user_wish_list.clear()
         member.save()
         return redirect('member:wishlist_page')
     return redirect('registration:login')
 
 def view_cart(request):
-    pass
+
+    if request.user.is_authenticated:
+
+        member = get_object_or_404(Member, username = request.user.username)
+        products = member.user_cart_list.all()
+        context = {'products':products}
+        return render(request,'member/cart.html',context)
+    return redirect('registration:login')
+
+def remove_cart_item(request,pk):
+    if request.user.is_authenticated:
+        member = get_object_or_404(Member, username = request.user.username)
+        product = member.user_cart_list.get(id = pk)
+        product.user_cart_list.clear()
+        member.save()
+        return redirect('member:cart_page')
+    return redirect('registration:login')
+

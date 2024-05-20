@@ -28,7 +28,8 @@
         <h4>About:</h4> <label>{{member.user_about}}</label>
         {% endif %}
         <h4><a href="{% url 'member:user_products' request.user %}">My Products</a></h4>
-        <h4>WishList Items:{{member.user_wishlist}} </h4>
+        <a href="{% url 'member:wishlist_page' %}" ><h4>My wishlist </h4></a>
+        <a href="{% url 'member:cart_page' %}" ><h4>My Cart</h4></a>
         <h4>Followers:{{member.user_follower_no}}</h4>
         <h4>Following:{{member.user_following_no}}</h4>
         <h4>Messages:{{member.user_search_history}}</h4>

@@ -16,7 +16,7 @@ class Member(models.Model):
     user_about = models.TextField(max_length=500,null=True,blank=True)
     user_profile_picture = models.ImageField(upload_to='users/dp', null=True, blank=True , default='users/default/defaultdp.png')
     # User Activities:
-    user_wish_list = models.ManyToManyField(Products,blank=True, related_name='wishlisted_users')
+    user_wish_list = models.ManyToManyField(Products,blank=True, related_name='user_wish_list')
     user_cart_list = models.ManyToManyField(Products, blank=True, related_name='user_cart_list')
     user_recent_purchase = models.ForeignKey(Products, on_delete=models.DO_NOTHING, null=True, blank=True, related_name='user_recent_purchase')
     user_purchases = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
@@ -43,3 +43,19 @@ class Messages(models.Model):
     attachment = models.FileField(upload_to=f'users/chats/attachments', null=True,blank=True)
     def __str__(self):
         return self.message
+
+class Invoice(models.Model):
+    user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
+    phone_number = models.CharField(max_length=13)
+    street_address = models.CharField(max_length=200)
+    city = models.CharField(max_length=50)
+    state = models.CharField(max_length=50)
+    zip_code = models.CharField(max_length=10,null= True, blank= True)
+    House_no = models.CharField(max_length=50)
+    quantity = models.PositiveIntegerField()
+    product = models.ForeignKey(Products, on_delete=models.DO_NOTHING)
+    price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    invoice_made_on = models.DateTimeField(auto_now_add=True,auto_created= True)
+
+
+
