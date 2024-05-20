@@ -58,7 +58,7 @@
     {% endif %}
     <br>
     <a href="{% url 'product:purchase_page' product.id %}"><button class="purchase_pd">Buy</button></a>
-    <button class="addto_cart"> Add to Cart<img src="\media\products\cartbtn_pic.ico" width="30"> </button>
+    <button class="addto_cart" onclick= location.href="{% url 'member:add_to_cart' product.id %}"> Add to Cart<img src="\media\products\cartbtn_pic.ico" width="30"> </button>
     <button class="wishlist" onclick=location.href="{% url 'member:add_to_wishlist' product.id %}">Add to wishlist</button>
 </body>
 </html>

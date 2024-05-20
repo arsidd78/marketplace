@@ -91,7 +91,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start; /* Align to the start */
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 /* Product card styling */
@@ -132,7 +132,6 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }

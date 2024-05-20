@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WishList</title>
+</head>
+<body>
+    {% for product in products %}
+    <a href="{% url 'product:details' product.id %}">
+    <article>
+        <img src="{{product.product_images.url}}" width="100" height="100"><br>
+        <label>{{product.product_name}}</label><br>
+        <label>$ {{product.product_price}}</label><br>
+        <label>Stock : {{product.product_quantity}}</label><br>
+    </article>
+    </a>
+    <button class="remove_wishlist_item" onclick=location.href="{% url 'member:remove_wish_item' product.id %}">Remove</button>
+    {% endfor %}
+</body>
+</html>

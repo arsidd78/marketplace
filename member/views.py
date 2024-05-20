@@ -116,5 +116,33 @@ def wishlist(request,pk):
         member.user_wish_list.add(product)
         member.save()
         return redirect('product:home')
+    return redirect('product:home')
+
+def cart(request,pk):
+    if request.user.is_authenticated:
+        product = get_object_or_404(Products,id=pk)
+        member = get_object_or_404(Member,username = request.user.username)
+        member.user_cart_list.add(product)
+        member.save()
+        return redirect('product:details')
     return redirect('registration:login')
 
+def view_wishlist(request):
+    if request.user.is_authenticated:
+        member = get_object_or_404(Member, username = request.user.username)
+        products = member.user_wish_list.all()
+        context = {'products':products}
+        return render(request,'member/wishlist.html',context)
+    return redirect('registration:login')
+
+def remove_wishlist_item(request,pk):
+    if request.user.is_authenticated:
+        member = get_object_or_404(Member, username = request.user.username)
+        product = member.user_wish_list.get(id = pk)
+        member.delete()
+        member.save()
+        return redirect('member:wishlist_page')
+    return redirect('registration:login')
+
+def view_cart(request):
+    pass
