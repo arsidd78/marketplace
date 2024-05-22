@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Member,Messages
+from .models import Member,Messages,Invoice
 from django.shortcuts import get_object_or_404,redirect,HttpResponse,HttpResponseRedirect
 from django.contrib.auth import get_user_model
 from django.contrib import messages
-from product.models import Products
+from product.models import Products,Purchase
 from .forms import ProductsForm
 
 def profile(request,username):
@@ -163,3 +163,29 @@ def remove_cart_item(request,pk):
         return redirect('member:cart_page')
     return redirect('registration:login')
 
+def confirmation_invoice(request,pk):
+    if request.user.is_authenticated:
+        product = get_object_or_404(Products,id=pk) # product object
+        buyer = request.user
+        sellor = product.name
+        purchase = get_object_or_404(Purchase,buyer=buyer) # purchase object
+        quantity = purchase.quantity
+        price = purchase.price * quantity
+        total_price = price + product.delivery_charge
+        invoice = Invoice.objects.create(
+            buyer = buyer,
+            sellor = sellor,
+            product = product,
+            quantity = quantity,
+            price = price,
+            total_price = total_price
+        )
+        invoice.save()
+        return redirect('member:checkout')
+    return redirect('registration:login')
+def checkout(request):
+    if request.user.is_authenticated:
+        invoice = get_object_or_404(Invoice, buyer = request.user)
+        context = {'invoice':invoice}
+        return render(request,'member/invoice.html',context)
+    return redirect('registration:login')

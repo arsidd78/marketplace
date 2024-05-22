@@ -61,7 +61,7 @@ def purchase_view(request,pk):
                 product.price = item.product_price
                 product.product = item
                 product.save()
-                return render(request,'product/confirmation.html')
+                return render(request,'member/invoice.html')
         else:
             item = get_object_or_404(Products,id=pk)
             form = PurchaseForm()

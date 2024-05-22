@@ -44,7 +44,16 @@ class Messages(models.Model):
     def __str__(self):
         return self.message
 
-
-
+class Invoice(models.Model):
+    sellor = models.ForeignKey(User,on_delete=models.DO_NOTHING,related_name='sellor')
+    buyer = models.ForeignKey(User,on_delete=models.DO_NOTHING ,related_name='buyer')
+    price = models.PositiveIntegerField()
+    quantity = models.PositiveIntegerField()
+    delivery_charges = models.IntegerField(default= 0)
+    tax = models.IntegerField(default= 0)
+    product = models.ForeignKey(Products,on_delete=models.DO_NOTHING)
+    total_price = models.PositiveIntegerField()
+    def __str__(self) -> str:
+        return self.buyer.username
 
 

@@ -9,6 +9,7 @@ class Products(models.Model):
     product_description = models.TextField(max_length=500)
     product_price = models.DecimalField('Price',max_digits=7,decimal_places=2)
     product_discounted_price = models.DecimalField('Discounted Price',max_digits=7,decimal_places=2,null=True,blank=True)
+    product_delivery_charge = models.IntegerField(default=0)
     product_specification = models.TextField(null= True, blank= True)
     product_posted_date = models.DateField( auto_now_add=True)
     product_images = models.ImageField(upload_to='products/')

@@ -9,7 +9,7 @@
     <form method="post" enctype="multipart/form-data" >
         {% csrf_token %}
         {{form.as_p}}
-        <button type="submit">Buy</button>
+        <button type="submit" onclick=location.href="{% url 'member:invoice' item.id %}">Buy</button>
     </form>
 </body>
 </html>

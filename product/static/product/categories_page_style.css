@@ -1,57 +1,105 @@
+/* General reset for margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #6a0dad; /* Purple color */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Navigation bar styling */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #8e44ad;
-    padding: 10px 20px;
-    position: relative;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  nav a:hover {
-    background-color: #7e3d9e;
-    border-radius: 5px;
-  }
-  
-  nav a.active {
-    background-color: #7e3d9e;
-    border-radius: 5px;
-  }
-  
-  nav a.admin {
-    background-color: #7e3d9e;
-    border-radius: 5px;
-  }
-  
-  nav a.admin:hover {
-    background-color: #8e44ad;
-  }
-  
-  nav a.profile {
-    background-color: #7e3d9e;
-    border-radius: 5px;
-  }
-  
-  nav a.profile:hover {
-    background-color: #8e44ad;
-  }
-  
-  nav a:not(:first-child) {
-    margin-left: 20px;
-  }
-  
-  nav .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-  }
+  background-color: #6a0dad; /* Purple color */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+
+/* Category container styling */
+.pd_cat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual category styling */
+.category {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.category a {
+  color: #6a0dad; /* Purple color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.category a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+  background-color: #6a0dad;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #1d0dad; /* Purple color */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
