@@ -1,5 +1,6 @@
 from django.shortcuts import render,get_object_or_404,redirect
 from .models import Products
+from .forms import PurchaseForm
 import os
 from collections import deque
 
@@ -16,13 +17,6 @@ def product_details(request,pk):
     context = {'product':product}
     return render(request,'product/details.html',context)
 
-def purchase_page(request,pk):
-    if request.user.is_authenticated:
-        product = get_object_or_404(Products,id=pk)
-        context = {'product':product}
-        return render(request, 'product/purchase_page.html',context)
-    else:
-        return redirect('registration:login')
     
 def categories_page(request):
     products = Products.objects.all()
@@ -56,4 +50,21 @@ def view_all(request):
     context = {'products':products}
     return render(request,'product/view_all.html',context)
 
-# Invoice form login here: 
+def purchase_view(request,pk):
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            item = get_object_or_404(Products,id=pk)
+            form = PurchaseForm(request.POST,request.FILES)
+            if form.is_valid():
+                product = form.save(commit=False)
+                product.buyer = request.user
+                product.price = item.product_price
+                product.product = item
+                product.save()
+                return render(request,'product/confirmation.html')
+        else:
+            item = get_object_or_404(Products,id=pk)
+            form = PurchaseForm()
+            return render(request,'product/purchase_page.html',{'form':form,'item':item})
+    else:
+        return redirect('registration:login')

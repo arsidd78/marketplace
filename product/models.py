@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth import get_user_model
 # Create your models here.
 User = get_user_model()
+
 class Products(models.Model):
     name = models.ForeignKey(User,on_delete=models.CASCADE)
     product_name = models.CharField(max_length=200)
@@ -141,3 +142,18 @@ class Products(models.Model):
     def __str__(self) -> str:
         return self.product_name
             
+class Purchase(models.Model):
+    product = models.ForeignKey(Products,on_delete=models.DO_NOTHING)
+    quantity = models.PositiveIntegerField()     
+    price = models.DecimalField(max_digits=7,decimal_places=2)
+    date = models.DateField(auto_now_add=True)
+    posted_time = models.DateField(auto_now=True)
+    buyer = models.ForeignKey(User,on_delete=models.DO_NOTHING)
+    buyer_phone = models.CharField(max_length=13)
+    buyer_address = models.CharField(max_length=200)
+    buyer_city = models.CharField(max_length=100)
+    buyer_state = models.CharField(max_length=100)
+    buyer_zip_code = models.CharField(max_length=10)
+    def __str__(self) -> str:
+        return self.product.product_name
+    
