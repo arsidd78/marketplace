@@ -10,6 +10,7 @@ class Products(models.Model):
     product_price = models.DecimalField('Price',max_digits=7,decimal_places=2)
     product_discounted_price = models.DecimalField('Discounted Price',max_digits=7,decimal_places=2,null=True,blank=True)
     product_delivery_charge = models.IntegerField(default=0)
+    product_tax_rate = models.DecimalField(decimal_places=3,max_digits=5, null= True, blank= True)
     product_specification = models.TextField(null= True, blank= True)
     product_posted_date = models.DateField( auto_now_add=True)
     product_images = models.ImageField(upload_to='products/')
@@ -145,6 +146,7 @@ class Products(models.Model):
             
 class Purchase(models.Model):
     product = models.ForeignKey(Products,on_delete=models.DO_NOTHING)
+    sellor = models.ForeignKey(User,on_delete=models.DO_NOTHING,related_name='sellor')
     quantity = models.PositiveIntegerField()     
     price = models.DecimalField(max_digits=7,decimal_places=2)
     date = models.DateField(auto_now_add=True)

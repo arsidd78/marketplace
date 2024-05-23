@@ -1,5 +1,6 @@
-from django.shortcuts import render,get_object_or_404,redirect
-from .models import Products
+from django.shortcuts import render,get_object_or_404,redirect,HttpResponse
+from .models import Products,Purchase
+from member.models import Member
 from .forms import PurchaseForm
 import os
 from collections import deque
@@ -53,18 +54,45 @@ def view_all(request):
 def purchase_view(request,pk):
     if request.user.is_authenticated:
         if request.method == 'POST':
+
             item = get_object_or_404(Products,id=pk)
             form = PurchaseForm(request.POST,request.FILES)
+            
             if form.is_valid():
                 product = form.save(commit=False)
+                product.sellor = item.name
                 product.buyer = request.user
                 product.price = item.product_price
                 product.product = item
                 product.save()
-                return render(request,'member/invoice.html')
-        else:
+                purchase = get_object_or_404(Purchase, id = product.id)
+                return render(request,'product/confirmation.html',{'item':item,'purchase':purchase})
+        else:    
             item = get_object_or_404(Products,id=pk)
             form = PurchaseForm()
             return render(request,'product/purchase_page.html',{'form':form,'item':item})
     else:
         return redirect('registration:login')
+
+def confirmation(request, pk):
+    if request.user.is_authenticated:
+        purchase = get_object_or_404(Purchase,id = pk)
+        product = purchase.product
+        member = get_object_or_404(Member, user=request.user)
+        selected_quantity = purchase.quantity
+        if product.product_quantity >= selected_quantity:
+            product.product_quantity -= selected_quantity
+        else:
+            return render(request, 'product/error.html', {'message': 'Not enough stock'})
+    
+        member.user_recent_purchase = product
+        total_price = purchase.quantity * purchase.price
+        product.save()
+        member.save()
+        context = {
+            'purchase': purchase,
+            'total_price': total_price,
+            'request':request
+            }
+        return render(request, 'product/invoice.html', context)
+    return redirect('registration:login')

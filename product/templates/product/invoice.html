@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="invoice">
+        <h3> Invoice # {{purchase.id}} </h3> <br>
+        <label for="">Price: {{purchase.price}}</label><br>
+        <label for="">Date: {{purchase.date}}</label><br>
+        <label for="">Quantity: {{purchase.quantity}}</label><br>
+        <label for="">Buyer: {{purchase.buyer.username}}</label><br>
+        <label for="">Address: {{purchase.buyer_address}}</label><br>
+        <label for="">City: {{purchase.buyer_city}}</label><br>
+        <label for="">State: {{purchase.buyer_state}}</label><br>
+        <label for="">Zip code: {{purchase.zip_code}}</label><br>
+        <label for="">Phone No: {{purchase.buyer_phone}}</label><br>
+        <label for="">Sellor: {{purchase.sellor.username}}</label><br>
+        <label for="">Product: {{purchase.product.product_name}}</label><br>
+        <label for="">Total Price: {{total_price}}</label><br>
+        <p>Payment method  Cash on Delivery </p><br>
+        <p> Your order is placed you will receive confirmtion email shortly thanks for ordering </p>
+    </div>
+    <button onclick=location.href="{% url 'member:profile' request.user %}">Ok</button>
+</body>
+</html>
