@@ -13,9 +13,12 @@
         <label>{{product.product_name}}</label><br>
         <label>$ {{product.product_price}}</label><br>
         <label>Stock : {{product.product_quantity}}</label><br>
+        
     </article>
     </a>
+    <input type="number" name="product_quantity" ><br>
     <button class="remove_wishlist_item" onclick=location.href="{% url 'member:remove_cart_item' product.id %}">Remove</button>
     {% endfor %}
+    <button onclick=location.href="{% url 'member:order_cart' %}">Order All</button>
 </body>
 </html>

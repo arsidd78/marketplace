@@ -163,3 +163,35 @@ def remove_cart_item(request,pk):
         return redirect('member:cart_page')
     return redirect('registration:login')
 
+def order_cart(request):
+    if request.user.is_authenticated:
+        if request.method == 'POST':    
+            member = get_object_or_404(Member,user = request.user)
+            cart_products = member.user_cart_list.all()
+            quantity = request.POST.get('product_quantity')
+            invoice_no = set()
+            for product in cart_products:
+                purchase_order = Purchase.objects.create(
+                    product = product,
+                    buyer = request.user,
+                    quantity = 1,
+                    sellor = product.name,
+                    price = product.product_price,
+                    buyer_phone = request.POST.get('phone'),
+                    buyer_address = request.POST.get('address'),
+                    buyer_city = request.POST.get('city'),
+                    buyer_state = request.POST.get('state'),
+                    buyer_zip_code = request.POST.get('zip_code'), # Get the data 
+                )
+                purchase_order.save()
+                invoice_no.add(purchase_order.id)
+                context = {
+                    'invoice_no':invoice_no,
+                    'request':request
+                }
+            return render(request,'member/confirmation.html',context)
+        else :
+            return render(request,'member/cart_order.html')    
+    return redirect('registration:login')    
+    
+        

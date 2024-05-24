@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase order_cart</title>
+</head>
+<body>
+    <form action="{% url 'member:order_cart' %}" method="post">
+        {% csrf_token %}
+        <label for="">Buyer Phone</label>
+        <input type="text" required  name="phone"><br>
+        <label for="">Buyer Address</label>
+        <input type="text" required name="address"><br>
+        <label for="">Buyer City</label>
+        <input type="text" required name="city"><br>
+        <label for="" >Buyer State</label>
+        <input type="text" required name="state"><br>
+        <label for="">Buyer Zip Code</label>
+        <input type="text"  required name="zip_code"><br>
+        <input type="submit"  value="Proceed"><br>
+    </form>
+</body>
+</html>
