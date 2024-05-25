@@ -85,8 +85,9 @@ def confirmation(request, pk):
         else:
             return render(request, 'product/error.html', {'message': 'Not enough stock'})
     
-        member.user_recent_purchase = product
+        member.user_recent_purchase.add(product)
         total_price = purchase.quantity * purchase.price
+        member.user_purchases += total_price
         product.save()
         member.save()
         context = {

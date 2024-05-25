@@ -6,6 +6,7 @@
     <title>Cart</title>
 </head>
 <body>
+    {% if products %}
     {% for product in products %}
     <a href="{% url 'product:details' product.id %}">
     <article>
@@ -16,12 +17,12 @@
         
     </article>
     </a>
-    <form action="{% url 'member:cart_page' %}" method="post">
-        <input type="number" name="product_quantity" value="1" ><br>
-    </form>
-    <button>Buy</button>
+    <button onclick=location.href="{% url 'product:purchase_page' product.id %}" >Buy</button>
     <button class="remove_wishlist_item" onclick=location.href="{% url 'member:remove_cart_item' product.id %}">Remove</button>
     {% endfor %}
     <button onclick=location.href="{% url 'member:order_cart' %}">Order All</button>
+    {% else %}
+    <h1>Cart is empty</h1>
+    {% endif %}
 </body>
 </html>

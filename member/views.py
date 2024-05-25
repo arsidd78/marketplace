@@ -85,7 +85,7 @@ def update_product(request,pk):
             form = ProductsForm(request.POST, request.FILES, instance=product)
             if form.is_valid():
                 form.save()
-                return redirect('product:home')
+                return redirect('member:user_products', username = request.user)
         else:
             form = ProductsForm(instance=product)
             context = {'form':form}
@@ -171,6 +171,7 @@ def order_cart(request):
             purchases = []
             
             for product in cart_products:
+                sellor = get_object_or_404(Member,user = product.name)
                 quantity = request.POST.get(f'product_quantity_{product.id}')
                 if quantity:
                     purchase_order = Purchase.objects.create(
@@ -187,11 +188,19 @@ def order_cart(request):
                     )
                     purchase_order.save()
                     product.product_quantity -= int(quantity)
+                    # Buyer Purchase history update:
+                    member.user_recent_purchase.add(product)
+                    member.user_purchases += product.product_price * int(quantity)
+                    # Sellor Sales history update:
+                    sellor.user_recent_sales.add(product)
+                    sellor.user_sales += product.product_price * int(quantity)
                     product.save()
                     purchase = get_object_or_404(Purchase, id=purchase_order.id)
                     purchases.append(purchase)
                     invoice_no.add(purchase_order.id)
-
+                    product.user_cart_list.clear()
+                    
+            
             context = {
                 'invoice_no': invoice_no,
                 'request': request,
