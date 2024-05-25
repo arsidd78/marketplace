@@ -9,16 +9,20 @@
     <form action="{% url 'member:order_cart' %}" method="post">
         {% csrf_token %}
         <label for="">Buyer Phone</label>
-        <input type="text" required  name="phone"><br>
+        <input type="text" required name="phone"><br>
         <label for="">Buyer Address</label>
         <input type="text" required name="address"><br>
         <label for="">Buyer City</label>
         <input type="text" required name="city"><br>
-        <label for="" >Buyer State</label>
+        <label for="">Buyer State</label>
         <input type="text" required name="state"><br>
         <label for="">Buyer Zip Code</label>
-        <input type="text"  required name="zip_code"><br>
-        <input type="submit"  value="Proceed"><br>
+        <input type="text" required name="zip_code"><br>
+        {% for product in cart_products %}
+        <label>Quantity of {{ product.product_name }}</label><br>
+        <input type="number" name="product_quantity_{{ product.id }}" value="1" min="1" max="{{ product.product_quantity }}"><br>
+        {% endfor %}
+        <input type="submit" value="Proceed"><br>
     </form>
 </body>
 </html>

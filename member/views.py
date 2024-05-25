@@ -147,7 +147,6 @@ def remove_wishlist_item(request,pk):
 def view_cart(request):
 
     if request.user.is_authenticated:
-
         member = get_object_or_404(Member, username = request.user.username)
         products = member.user_cart_list.all()
         context = {'products':products}
@@ -165,33 +164,50 @@ def remove_cart_item(request,pk):
 
 def order_cart(request):
     if request.user.is_authenticated:
-        if request.method == 'POST':    
-            member = get_object_or_404(Member,user = request.user)
+        if request.method == 'POST':
+            member = get_object_or_404(Member, user=request.user)
             cart_products = member.user_cart_list.all()
-            quantity = request.POST.get('product_quantity')
             invoice_no = set()
+            purchases = []
+            
             for product in cart_products:
-                purchase_order = Purchase.objects.create(
-                    product = product,
-                    buyer = request.user,
-                    quantity = 1,
-                    sellor = product.name,
-                    price = product.product_price,
-                    buyer_phone = request.POST.get('phone'),
-                    buyer_address = request.POST.get('address'),
-                    buyer_city = request.POST.get('city'),
-                    buyer_state = request.POST.get('state'),
-                    buyer_zip_code = request.POST.get('zip_code'), # Get the data 
-                )
-                purchase_order.save()
-                invoice_no.add(purchase_order.id)
-                context = {
-                    'invoice_no':invoice_no,
-                    'request':request
-                }
-            return render(request,'member/confirmation.html',context)
-        else :
-            return render(request,'member/cart_order.html')    
-    return redirect('registration:login')    
+                quantity = request.POST.get(f'product_quantity_{product.id}')
+                if quantity:
+                    purchase_order = Purchase.objects.create(
+                        product=product,
+                        buyer=request.user,
+                        quantity=int(quantity),
+                        sellor=product.name,
+                        price=product.product_price,
+                        buyer_phone=request.POST.get('phone'),
+                        buyer_address=request.POST.get('address'),
+                        buyer_city=request.POST.get('city'),
+                        buyer_state=request.POST.get('state'),
+                        buyer_zip_code=request.POST.get('zip_code')
+                    )
+                    purchase_order.save()
+                    product.product_quantity -= int(quantity)
+                    product.save()
+                    purchase = get_object_or_404(Purchase, id=purchase_order.id)
+                    purchases.append(purchase)
+                    invoice_no.add(purchase_order.id)
+
+            context = {
+                'invoice_no': invoice_no,
+                'request': request,
+                'cart_products': cart_products,
+                'purchases': purchases
+            }
+            return render(request, 'member/confirmation.html', context)
+        else:
+            member = get_object_or_404(Member, user=request.user)
+            cart_products = member.user_cart_list.all()
+            context = {
+                'request': request,
+                'cart_products': cart_products
+            }
+            return render(request, 'member/cart_order.html', context)
+    
+    return redirect('registration:login')
     
         
