@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for order in purchases %}
+    <article>
+        <h4>Buyer: {{order.buyer.username}}</h4>
+        <h4>Buyer Address: {{order.buyer_address}}</h4>
+        <h4>Buyer City: {{order.buyer_city}}</h4>
+        <h4>Buyer State: {{order.buyer_state}}</h4>
+        <h4>Buyer Phone No: {{order.buyer_phone}}</h4>
+        <h4>Product : {{order.product.product_name}}</h4>
+        <h4>Price: {{order.price}}</h4>
+        <h4>Quantity: {{order.quantity}}</h4>
+        <h4>Total: {{order.price}} X {{order.quantity}}</h4>
+        <h4>Date: {{order.date}}</h4>
+    </article> <hr>
+    {% endfor %}
+</body>
+</html>

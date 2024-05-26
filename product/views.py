@@ -1,8 +1,8 @@
 from django.shortcuts import render,get_object_or_404,redirect,HttpResponse
-from .models import Products,Purchase
+from django.core.mail import send_mail
+from .models import Products,Purchase,Reviews
 from member.models import Member
-from .forms import PurchaseForm
-import os
+from .forms import PurchaseForm,ReviewForm
 from collections import deque
 
 
@@ -15,7 +15,8 @@ def home(request):
 
 def product_details(request,pk):
     product = get_object_or_404(Products,id=pk)
-    context = {'product':product}
+    reviews = Reviews.objects.filter(product=product)
+    context = {'product':product,'reviews':reviews}
     return render(request,'product/details.html',context)
 
     
@@ -97,3 +98,20 @@ def confirmation(request, pk):
             }
         return render(request, 'product/invoice.html', context)
     return redirect('registration:login')
+
+# Review Create:
+def review_create(request, pk):
+    if request.user.is_authenticated:
+        product = get_object_or_404(Products, id=pk)
+        if request.method == 'POST':
+            form = ReviewForm(request.POST)
+            if form.is_valid():
+                review = form.save(commit=False)
+                review.product = product
+                review.reviewer = request.user
+                review.save()
+                return redirect('product:details', pk=pk)
+        else:
+            form = ReviewForm()
+            return render(request, 'product/review_form.html', {'form': form, 'product': product})
+    return redirect('registration:login')        

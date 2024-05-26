@@ -159,4 +159,15 @@ class Purchase(models.Model):
     buyer_zip_code = models.CharField(max_length=10)
     def __str__(self) -> str:
         return self.product.product_name
+
+class Reviews(models.Model):
+
+    product = models.ForeignKey(Products, on_delete= models.CASCADE)
+    reviewer = models.ForeignKey(User, on_delete= models.CASCADE)
+    rating = models.DecimalField(max_digits=2, decimal_places=1)
+    review = models.TextField()
+    posted_time = models.DateField(auto_now_add=True)
+
+    def __str__(self) -> str:
+        return self.review
     

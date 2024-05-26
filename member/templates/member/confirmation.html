@@ -1,1 +1,33 @@
-<h1>You are at confirmaitons</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+</head>
+<body>
+    <div class="show_invoice" >
+
+        <h1>Invoice</h1>
+        {% for invoice in purchases %}
+        {% if forloop.first %}
+            <label >{{invoice.buyer}}</label><br>
+            <label >{{invoice.buyer_phone}}</label><br>
+            <label >{{invoice.buyer_address}}</label><br>
+            <label >{{invoice.buyer_state}}</label><br>
+            <label >{{invoice.buyer_city}}</label><br>
+            <label >{{invoice.zip_code}}</label><br>
+        {% endif %}
+        {%  endfor %}
+        <!-- Above lines represent constant data from purchases  -->
+        {% for invoice in purchases %}<br>
+        <label >{{invoice.product.product_name}}</label><br>
+        <label >{{invoice.quantity}}</label><br>
+        <label >{{invoice.price}}</label><br>
+        {% endfor %}
+        <label for="">Total Price : {{total}} </label>
+
+    </div>
+    <button  onclick=location.href="{% url 'member:confirmation' %}" > Confirm Order</button>
+</body>
+</html>

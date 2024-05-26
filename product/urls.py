@@ -11,5 +11,5 @@ urlpatterns = [
     path('view_all/',views.view_all,name='view_all'),
     path('payment/<int:pk>/',views.purchase_view,name='purchase_page'),
     path('confirmation/invoice/<int:pk>/',views.confirmation,name='confirmation'),
-   
+    path('add_review/<int:pk>/',views.review_create,name='add_review'),
 ]

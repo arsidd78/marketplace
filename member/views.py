@@ -167,8 +167,8 @@ def order_cart(request):
         if request.method == 'POST':
             member = get_object_or_404(Member, user=request.user)
             cart_products = member.user_cart_list.all()
-            invoice_no = set()
             purchases = []
+            total = []
             
             for product in cart_products:
                 sellor = get_object_or_404(Member,user = product.name)
@@ -188,6 +188,9 @@ def order_cart(request):
                     )
                     purchase_order.save()
                     product.product_quantity -= int(quantity)
+                    # Total Price:
+                    total_price = int(quantity) * product.product_price
+                    total.append(total_price)
                     # Buyer Purchase history update:
                     member.user_recent_purchase.add(product)
                     member.user_purchases += product.product_price * int(quantity)
@@ -195,17 +198,15 @@ def order_cart(request):
                     sellor.user_recent_sales.add(product)
                     sellor.user_sales += product.product_price * int(quantity)
                     product.save()
+
                     purchase = get_object_or_404(Purchase, id=purchase_order.id)
                     purchases.append(purchase)
-                    invoice_no.add(purchase_order.id)
-                    product.user_cart_list.clear()
-                    
-            
+                
             context = {
-                'invoice_no': invoice_no,
                 'request': request,
                 'cart_products': cart_products,
-                'purchases': purchases
+                'purchases': purchases,
+                'total':sum(total)
             }
             return render(request, 'member/confirmation.html', context)
         else:
@@ -219,4 +220,16 @@ def order_cart(request):
     
     return redirect('registration:login')
     
-        
+def order_confirmation(request):
+    if request.user.is_authenticated:
+        return render(request,'member/order_confirmation.html')
+    return redirect('registration:login')
+
+def purchase_orders(request, user):
+    if request.user.is_authenticated:
+        purchases = Purchase.objects.filter(sellor = request.user)
+        context = {'purchases':purchases}
+        return render(request, 'member/purchase_orders.html', context)
+    return redirect('registration:login')
+
+    

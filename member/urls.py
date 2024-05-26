@@ -18,4 +18,6 @@ urlpatterns = [
     path('remove_item_wishlist/<int:pk>/',views.remove_wishlist_item,name='remove_wish_item'),
     path('remove_item_cart/<int:pk>/',views.remove_cart_item,name='remove_cart_item'),  
     path('order_cart/',views.order_cart,name='order_cart'),
+    path('order_confirmation/',views.order_confirmation,name='confirmation'),
+    path('purchase_orders/<user>/',views.purchase_orders,name='purchase_orders')
 ]
