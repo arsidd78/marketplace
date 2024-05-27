@@ -19,11 +19,14 @@
             <a href="{% url 'registration:login' %}">LogIn</a>
         {% endif %}
         <a href="/admin/">Admin</a>
-        {% if request.user.is_authenticated %}
-            <a href="{% url 'member:profile' request.user.username %}">Profile</a>
+        {% if member %}
+        <a href="{% url 'member:profile' request.user.username  %}">Profile</a>
+        {% else %}
+        <a href="{% url 'member:register' %}">Complete Profile</a>
         {% endif %}
         <a href="{% url 'member:add_product_page' %}">Sell</a>
     </nav>
+
     <div class="main-content">
         <aside class="aside_links">
             <section>
@@ -36,6 +39,17 @@
                 <a href="{% url 'product:view_all' %}">View All Products</a>
             </section>
         </aside>
+
+        <div class="userr_interested_items">
+            {% for item in items %}
+            <article>
+                <img src="{{item.product_images.url}}" alt="Image">
+                <label for="">{{item.product_name}}</label>
+                <label for="">${{item.product_price}}</label>
+                <label for=""> Stock :{{item.product_quantity}}</label>
+            </article>
+            {% endfor %}
+        </div>
         <div class="article_product_list">
             {% for product in products %}
                 <a href="{% url 'product:details' product.id %}" class="product_detailslink">

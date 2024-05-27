@@ -9,15 +9,46 @@ from collections import deque
 # Create your views here.
 
 def home(request):
-    products = Products.objects.order_by('-product_name')[:5]
-    context = {'products':products,'request':request}
-    return render(request,'product/index.html',context=context)
+    try: 
+        member = get_object_or_404(Member, user = request.user)
+        products = Products.objects.order_by('-product_name')[:5]
+        context = {
+            'products':products,
+            'request':request,
+            'member':member,
+            }
+        
+        return render(request,'product/index.html',context=context)
+    except :    
+        products = Products.objects.order_by('-product_name')[:5]
+        context = {'products':products,'request':request}
+        return render(request,'product/index.html',context=context)
+
+def user_interest(request): # This algorithm fetch and store user interest into a set
+    member = get_object_or_404(Member, user = request.user)
+    products = member.user_interest
+    interested_categories = set()
+    for product in products:
+        interested_categories.add(product.product_category)
+    return interested_categories    
+
+
+        
+    
 
 def product_details(request,pk):
-    product = get_object_or_404(Products,id=pk)
-    reviews = Reviews.objects.filter(product=product)
-    context = {'product':product,'reviews':reviews}
-    return render(request,'product/details.html',context)
+    try:
+        member = get_object_or_404(Member, user = request.user)
+        product = get_object_or_404(Products,id=pk)
+        reviews = Reviews.objects.filter(product=product)
+        member.user_interest.add(product)
+        context = {'product':product,'reviews':reviews,'member':member}
+        return render(request,'product/details.html',context)
+    except:
+        product = get_object_or_404(Products,id=pk)
+        reviews = Reviews.objects.filter(product=product)
+        context = {'product':product,'reviews':reviews}
+        return render(request,'product/details.html',context)
 
     
 def categories_page(request):

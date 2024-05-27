@@ -3,14 +3,13 @@ from django.contrib.auth import get_user_model
 from product.models import Products
 
 User = get_user_model()
-name = User.get_username
-email = User.get_email_field_name()
+
 
 class Member(models.Model):
     # User Personal Info:
-    username = models.CharField(max_length=100,default=name)
+    username = models.CharField(max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    user_email = models.CharField(max_length=320,default=email)
+    user_email = models.CharField(max_length=320)
     user_website = models.URLField(null=True,blank=True)
     user_phone_number = models.CharField(max_length=13)
     user_about = models.TextField(max_length=500,null=True,blank=True)
@@ -23,7 +22,7 @@ class Member(models.Model):
     user_recent_sales = models.ManyToManyField(Products, related_name='user_recent_sales',null= True)
     user_sales = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True,default= 0)
     user_search_history = models.ForeignKey(Products, on_delete=models.CASCADE, null=True, blank=True, related_name='user_search_history')
-    user_interest = models.ForeignKey(Products, on_delete=models.DO_NOTHING, null=True, blank=True, related_name='user_interest')
+    user_interest = models.ManyToManyField(Products)
     user_followers_no = models.IntegerField(default=0)
     user_following_no = models.IntegerField(default=0)
     user_followers = models.CharField(max_length=100, null=True, blank=True)

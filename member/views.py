@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404,redirect,HttpResponse,HttpRespons
 from django.contrib.auth import get_user_model
 from django.contrib import messages
 from product.models import Products,Purchase
-from .forms import ProductsForm
+from .forms import ProductsForm,MemberForm
 
 def profile(request,username):
     if request.user.is_authenticated:
@@ -13,7 +13,7 @@ def profile(request,username):
             context = {'member': member,'request':request}
             return render(request,'member/user_page.html',context)
         else: 
-            messages.add_message(request,messages.ERROR,'Username did not matched!')
+            messages.add_message(request,messages.ERROR,'Complete Your Profile First')
             return redirect('home')
     else:
         return redirect('registration:login')
@@ -233,3 +233,19 @@ def purchase_orders(request, user):
     return redirect('registration:login')
 
     
+def register(request):
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            form = MemberForm(request.POST,request.FILES)
+            if form.is_valid():
+                member = form.save(commit=False)
+                member.user = request.user
+                member.username = request.user.username
+                member.email = request.user.email
+                member.save()
+                return redirect('product:home')
+        else:
+            form = MemberForm()
+            context = {'form': form,'request':request}
+            return render(request,'member/register.html',context)    
+    return redirect('registration:login')        
