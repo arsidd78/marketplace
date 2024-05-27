@@ -12,6 +12,10 @@
         <h1>Online Market Place</h1>
     </header>
     <nav>
+        <div class="search-container">
+            <input type="search" name="search_bar" placeholder="Search products...">
+            <button type="submit">Search</button>
+        </div>
         <a href="{% url 'product:home' %}">Home Page</a>
         {% if request.user.is_authenticated %}
             <a href="{% url 'registration:signout' %}">LogOut</a>
@@ -20,13 +24,12 @@
         {% endif %}
         <a href="/admin/">Admin</a>
         {% if member %}
-        <a href="{% url 'member:profile' request.user.username  %}">Profile</a>
+        <a href="{% url 'member:profile' request.user.username %}">Profile</a>
         {% else %}
         <a href="{% url 'member:register' %}">Complete Profile</a>
         {% endif %}
         <a href="{% url 'member:add_product_page' %}">Sell</a>
     </nav>
-
     <div class="main-content">
         <aside class="aside_links">
             <section>
@@ -39,40 +42,47 @@
                 <a href="{% url 'product:view_all' %}">View All Products</a>
             </section>
         </aside>
-
-        <div class="userr_interested_items">
-            {% for item in items %}
-            <article>
-                <img src="{{item.product_images.url}}" alt="Image">
-                <label for="">{{item.product_name}}</label>
-                <label for="">${{item.product_price}}</label>
-                <label for=""> Stock :{{item.product_quantity}}</label>
-            </article>
-            {% endfor %}
-        </div>
-        <div class="article_product_list">
-            {% for product in products %}
-                <a href="{% url 'product:details' product.id %}" class="product_detailslink">
-                    <article class="product_data">
-                        <img src="{{ product.product_images.url }}" alt="{{ product.product_name }}" width="100" height="100" >
-                        <br>
-                        <label class="discounted_price">{{ product.product_name }}</label><br>
-                        {% if product.product_discounted_price %}
-                            <label>${{ product.product_price }} ${{ product.product_discounted_price }}</label><br>
-                        {% else %}
-                            <label class="price">${{ product.product_price }}</label><br>
-                        {% endif %}
-                    </article>
-                </a>
-            {% endfor %}
+        <div class="content">
+            {% if items %}
+                <h3>Recommended For You</h3>
+                <div class="user_interest">
+                    {% for item in items %}
+                        <article>
+                            <img src="{{ item.product_images.url }}" alt="Image" width="100" height="100">
+                            <label>{{ item.product_name }}</label>
+                            <label> $ {{ item.product_price }}</label>
+                            <label>Stock: {{ item.product_quantity }}</label>
+                        </article>
+                    {% endfor %}
+                </div>
+                <hr>
+            {% endif %}
+            <h3>Recent Posted Products:</h3>
+            <div class="article_product_list">
+                {% for product in products %}
+                    <a href="{% url 'product:details' product.id %}" class="product_detailslink">
+                        <article class="product_data">
+                            <img src="{{ product.product_images.url }}" alt="{{ product.product_name }}" width="100" height="100">
+                            <br>
+                            <label class="discounted_price">{{ product.product_name }}</label><br>
+                            {% if product.product_discounted_price %}
+                                <label>${{ product.product_price }} ${{ product.product_discounted_price }}</label><br>
+                            {% else %}
+                                <label class="price">${{ product.product_price }}</label><br>
+                            {% endif %}
+                        </article>
+                    </a>
+                {% endfor %}
+            </div>
+            <hr>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>arsidd78@gmail.com</p>
+        <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+    </footer>
 </body>
-<footer>
-    <p>&copy; 2024 Online Market Place. All rights reserved.</p>
-    <p>Creator: Muhammad Arham Siddiqui</p>
-    <p>arsidd78@gmail.com</p>
-    <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
-    <p>LinkedIn: <a href="www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a> </p>
-</footer>
 </html>

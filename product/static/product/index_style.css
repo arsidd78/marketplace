@@ -1,119 +1,144 @@
-/* Base styling for the entire page */
-body {
-  font-family: 'Arial', sans-serif;
-  background: #f8f8f8;
+/* General reset for margins and paddings */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
+/* Body styling */
+body {
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 /* Header styling */
 header {
-  background: #6a0dad;
+  background-color: #6a0dad; /* Purple color */
   color: white;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 24px;
 }
 
 /* Navigation bar styling */
 nav {
-  background: #6a0dad;
-  padding: 15px 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #6a0dad; /* Purple color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav .search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+nav input[type="search"] {
+  padding: 5px 10px;
+  border: 2px solid #ddd;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+nav button[type="submit"] {
+  padding: 5px 10px;
+  border: 2px solid #ddd;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #fff;
+  color: #6a0dad;
+  cursor: pointer;
+}
+
+nav button[type="submit"]:hover {
+  background-color: #6a0dad;
+  color: #fff;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 18px;
-  font-weight: bold;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #e0c3fc;
+  color: #ddd;
 }
 
-/* Main content area styling */
+/* Main content styling */
 .main-content {
   display: flex;
-  justify-content: flex-start; /* Align to the start */
-  padding: 20px;
 }
 
 /* Sidebar styling */
 .aside_links {
-  background: white;
+  background-color: white;
   padding: 20px;
-  margin-right: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
   width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .aside_links section {
   margin-bottom: 20px;
 }
 
-.aside_links section h3 {
-  font-size: 18px;
+.aside_links h3 {
+  color: #6a0dad;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .aside_links a {
-  display: block;
   color: #333;
   text-decoration: none;
-  margin: 5px 0;
-  font-size: 16px;
-  transition: box-shadow 0.3s, transform 0.3s;
-  padding: 8px;
-  border-radius: 4px;
+  display: block;
+  margin-bottom: 5px;
+  transition: color 0.3s;
 }
 
 .aside_links a:hover {
-  box-shadow: 0 4px 8px rgba(106, 13, 173, 0.3);
-  transform: translateY(-2px);
+  color: #6a0dad;
 }
 
-/* Product list styling */
-.article_product_list {
+/* Content area styling */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Recommended and recent products section styling */
+.user_interest, .article_product_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Align to the start */
-  max-width: 1200px;
+  justify-content: space-around;
 }
 
-/* Product card styling */
-.product_data {
-  background: white;
-  width: 150px; /* Adjust width to ensure consistent layout */
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
+.user_interest article, .article_product_list .product_data {
+  background-color: white;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
   text-align: center;
+  width: 150px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.product_data img {
-  max-width: 100%;
-  border-radius: 8px;
+.user_interest article:hover, .article_product_list .product_data:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.product_data:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
+.user_interest img, .article_product_list img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.user_interest label, .article_product_list label {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .discounted_price {
@@ -122,16 +147,28 @@ nav a:hover {
 }
 
 .price {
-  color: #0a010d;
-  
+  color: #333;
+  font-weight: bold;
 }
 
 /* Footer styling */
 footer {
-  background: #6a0dad;
+  background-color: #333;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 10px 0;
-  bottom: 0;
-  width: 100%;
 }
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #6a0dad;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+

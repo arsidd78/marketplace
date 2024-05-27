@@ -11,30 +11,28 @@ from collections import deque
 def home(request):
     try: 
         member = get_object_or_404(Member, user = request.user)
-        products = Products.objects.order_by('-product_name')[:5]
-        context = {
-            'products':products,
-            'request':request,
-            'member':member,
+        products = Products.objects.order_by('-product_posted_date')[:5]
+        try: 
+            items = member.user_interest.all()
+            context = {
+
+                'products':products,
+                'items':items.order_by('-product_name')[:5] ,
+                'member':member,
+                'request':request
             }
-        
+        except: # Incase there is no user_interest:
+            context = {
+                'products':products,
+                'request':request,
+                'member':member,
+                }
+            
         return render(request,'product/index.html',context=context)
     except :    
-        products = Products.objects.order_by('-product_name')[:5]
+        products = Products.objects.order_by('-product_posted_date')[:5]
         context = {'products':products,'request':request}
         return render(request,'product/index.html',context=context)
-
-def user_interest(request): # This algorithm fetch and store user interest into a set
-    member = get_object_or_404(Member, user = request.user)
-    products = member.user_interest
-    interested_categories = set()
-    for product in products:
-        interested_categories.add(product.product_category)
-    return interested_categories    
-
-
-        
-    
 
 def product_details(request,pk):
     try:
