@@ -20,6 +20,9 @@
         <a href="{% url 'member:profile' request.user %}">Profile</a>
         {% endif %}
     </nav>
+    <div>
+        <button onclick=location.href="{% url 'member:edit_profile' %}" >Edit</button>
+    </div>
     <div class="profile_main">
         <img src="{{member.user_profile_picture.url}}" alt="DP" width="200">   
         <h4 >Username:{{request.user.username}}</h4>

@@ -232,7 +232,7 @@ def purchase_orders(request, user):
         return render(request, 'member/purchase_orders.html', context)
     return redirect('registration:login')
 
-    
+# Member Create:    
 def register(request):
     if request.user.is_authenticated:
         if request.method == 'POST':
@@ -248,4 +248,21 @@ def register(request):
             form = MemberForm()
             context = {'form': form,'request':request}
             return render(request,'member/register.html',context)    
-    return redirect('registration:login')        
+    return redirect('registration:login')  
+
+# Member Update:      
+def edit_profile(request):
+    if request.user.is_authenticated:
+        member = get_object_or_404(Member, user = request.user)
+        if request.method == 'POST':
+            form = MemberForm(request.POST,request.FILES, instance=member)
+            if form.is_valid():
+                form.save()
+                return redirect('member:profile', username = request.user.username)
+            else:
+                return HttpResponse('Error in editing Profile')
+        else:
+            form = MemberForm(instance=member)
+            context = {'form':form,'request':request}
+            return render(request,'member/edit_profile.html',context)
+    return redirect('registration:login')    

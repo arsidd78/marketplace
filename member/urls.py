@@ -21,4 +21,5 @@ urlpatterns = [
     path('order_confirmation/',views.order_confirmation,name='confirmation'),
     path('purchase_orders/<user>/',views.purchase_orders,name='purchase_orders'),
     path('registration/',views.register,name='register'),
+    path('edit_profile/',views.edit_profile,name='edit_profile'),
 ]
