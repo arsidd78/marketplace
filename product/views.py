@@ -143,4 +143,13 @@ def review_create(request, pk):
         else:
             form = ReviewForm()
             return render(request, 'product/review_form.html', {'form': form, 'product': product})
-    return redirect('registration:login')        
+    return redirect('registration:login')
+
+def search(request):
+    
+    if request.method == 'POST':
+        search = request.POST.get('search_bar')
+        products = Products.objects.filter(product_name__contains = search)
+        return render(request, 'product/search_result.html', {'search':search,'products': products})
+    else:
+        return render(request,'product/search_result.html')
