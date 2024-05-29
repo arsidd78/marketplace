@@ -82,7 +82,7 @@ nav a:hover {
 
 /* Footer styling */
 footer {
-  background-color: #6a0dad;
+  background-color: #333;
   color: white;
   padding: 20px;
   text-align: center;
@@ -96,7 +96,7 @@ footer p {
 }
 
 footer a {
-  color: #1d0dad; /* Purple color */
+  color: #f3f3f4; /* Purple color */
   text-decoration: none;
 }
 

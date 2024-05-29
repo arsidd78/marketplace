@@ -84,6 +84,7 @@
             <div class="reviews">
                 <h1>Reviews:</h1>
                 {% for review in reviews %}
+                <hr>
                 <div>
                     <label> By:<strong> {{review.reviewer.username}}</strong></label><br>
                     <label>Rating: {{review.rating}}</label><br>

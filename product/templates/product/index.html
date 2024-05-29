@@ -43,6 +43,7 @@
                 <h3>Products</h3>
                 <a href="{% url 'product:recent_products' %}">Recent Products</a>
                 <a href="{% url 'product:view_all' %}">View All Products</a>
+                <a href="{% url 'product:recommended'  %}">Recommended Products</a>
             </section>
         </aside>
         {% if request.user.is_authenticated %}

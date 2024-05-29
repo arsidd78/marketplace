@@ -13,4 +13,5 @@ urlpatterns = [
     path('confirmation/invoice/<int:pk>/',views.confirmation,name='confirmation'),
     path('add_review/<int:pk>/',views.review_create,name='add_review'),
     path('search/',views.search,name='search'),
+    path('recommended_products/',views.recommended_products,name='recommended'),
 ]

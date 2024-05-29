@@ -161,3 +161,8 @@ def search(request):
         return render(request, 'product/search_result.html', {'search':search,'products': products})
     else:
         return render(request,'product/search_result.html')
+
+def recommended_products(request):
+    member = get_object_or_404(Member, user = request.user)
+    products = member.user_interest.all()
+    return render(request, 'product/recommended.html', {'products':products})
