@@ -1,85 +1,5 @@
-body {
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at center, #3b3b98, #c05edb);
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
 
-nav {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
 
-nav a {
-  color: white;
-  margin-right: 10px;
-  font-size: 1em;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-form {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  width: 320px;
-  text-align: center;
-  backdrop-filter: blur(10px);
-}
-
-form label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-form input[type="text"], form input[type="password"] {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-}
-
-form input[type="submit"] {
-  width: 100%;
-  padding: 10px 0;
-  border: none;
-  border-radius: 5px;
-  background: linear-gradient(to right, #ff6b81, #ff4757);
-  color: white;
-  font-size: 1em;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-form input[type="submit"]:hover {
-  background: linear-gradient(to right, #ff4757, #ff6b81);
-}
-
-.messages {
-  position: absolute;
-}
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #31064d, #c650e4);
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
 
 nav {
     position: absolute;
@@ -88,7 +8,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: rgb(144, 13, 176);
     text-decoration: none;
     margin-right: 10px;
     font-size: 1em;
@@ -97,11 +17,25 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+.messages {
+  position: absolute;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dcd8de, #9e48c9);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 
 form {
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, #9e6fb6, #9e48c9);
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 10px;
+    border-color: #09090a;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 350px;
     text-align: center;

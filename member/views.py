@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Member,Messages
+from .models import Member,Messages,SalesOrder
 from django.shortcuts import get_object_or_404,redirect,HttpResponse,HttpResponseRedirect
 from django.contrib.auth import get_user_model
 from django.contrib import messages
@@ -200,6 +200,10 @@ def order_cart(request):
                     product.save()
 
                     purchase = get_object_or_404(Purchase, id=purchase_order.id)
+                    sales = SalesOrder.objects.create(sellor = purchase.sellor)
+                    sales.save()
+                    sales.sale_order.add(purchase)
+                    
                     purchases.append(purchase)
                 
             context = {
@@ -219,9 +223,13 @@ def order_cart(request):
             return render(request, 'member/cart_order.html', context)
     
     return redirect('registration:login')
-    
+
 def order_confirmation(request):
     if request.user.is_authenticated:
+        member = get_object_or_404(Member, user = request.user)
+        products = member.user_cart_list.all()
+        for product in products:
+            product.user_cart_list.clear()
         return render(request,'member/order_confirmation.html')
     return redirect('registration:login')
 
@@ -266,3 +274,14 @@ def edit_profile(request):
             context = {'form':form,'request':request}
             return render(request,'member/edit_profile.html',context)
     return redirect('registration:login')    
+
+def sold_products(request):
+    if request.user.is_authenticated:
+        member = get_object_or_404(Member, user = request.user)
+        sales = get_object_or_404(SalesOrder, sellor = request.user)
+        quantity = sales.sale_order.product_quantity
+        print('*******************************{quantity}*************************************')
+        products = member.user_recent_sales.all()
+        context = {'products':products}
+        return render(request,'member/recent_sales.html',context)
+    return redirect('registration:login')

@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth import get_user_model
-from product.models import Products
+from product.models import Products,Purchase
 
 User = get_user_model()
 
@@ -15,14 +15,14 @@ class Member(models.Model):
     user_about = models.TextField(max_length=500,null=True,blank=True)
     user_profile_picture = models.ImageField(upload_to='users/dp', null=True, blank=True , default='users/default/defaultdp.png')
     # User Activities:
-    user_wish_list = models.ManyToManyField(Products,blank=True, related_name='user_wish_list', null= True)
-    user_cart_list = models.ManyToManyField(Products, blank=True, related_name='user_cart_list', null= True)
-    user_recent_purchase = models.ManyToManyField(Products,related_name='user_recent_purchase',null= True)
+    user_wish_list = models.ManyToManyField(Products,blank=True, related_name='user_wish_list')
+    user_cart_list = models.ManyToManyField(Products, blank=True, related_name='user_cart_list')
+    user_recent_purchase = models.ManyToManyField(Products,related_name='user_recent_purchase')
     user_purchases = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True, default=0)
-    user_recent_sales = models.ManyToManyField(Products, related_name='user_recent_sales',null= True)
+    user_recent_sales = models.ManyToManyField(Products, related_name='user_recent_sales')
     user_sales = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True,default= 0)
     user_search_history = models.ForeignKey(Products, on_delete=models.CASCADE, null=True, blank=True, related_name='user_search_history')
-    user_interest = models.ManyToManyField(Products)
+    user_interest = models.ManyToManyField(Products, auto_created=True)
     user_followers_no = models.IntegerField(default=0)
     user_following_no = models.IntegerField(default=0)
     user_followers = models.CharField(max_length=100, null=True, blank=True)
@@ -42,7 +42,10 @@ class Messages(models.Model):
     attachment = models.FileField(upload_to=f'users/chats/attachments', null=True,blank=True)
     def __str__(self):
         return self.message
-
-
+class SalesOrder(models.Model):
+    sellor = models.ForeignKey(User,on_delete=models.CASCADE)
+    sale_order = models.ManyToManyField(Purchase)
+    def __str__(self) -> str:
+        return self.sellor.username
 
 

@@ -8,6 +8,7 @@
 <body>
      {% if search %}
      <h1>Your Searched for {{search}}</h1>
+     {% if products %}
      {% for product in products %}
      <a href="{% url 'product:details' product.id  %}">
         <article>
@@ -18,7 +19,9 @@
         </article>
      </a>
      {% endfor %}
-
+     {% else %}
+     <h2>No search Results ... </h2>
+     {% endif %}
      {% else %}
      <h1>You forgot to search products...</h1>
      {% endif %}

@@ -9,6 +9,13 @@
 </head>
 <body>
     <nav>
+        <div class="search-container">
+            <form action="{% url 'product:search' %}" method="post">
+                {% csrf_token %}
+                <input type="search" name="search_bar" placeholder="Search products...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
         <a href="{% url 'product:home' %}">Home Page</a>
         {% if request.user.is_authenticated %}
             <a href="{% url 'registration:signout' %}">LogOut</a>
@@ -17,67 +24,85 @@
         {% endif %}
         <a href="/admin/">Admin</a>
         {% if member %}
-        <a href="{% url 'member:profile' request.user.username  %}">Profile</a>
+        <a href="{% url 'member:profile' request.user.username %}">Profile</a>
         {% else %}
-        <a href="{% url 'member:register' %}">Register</a>
+        <a href="{% url 'member:register' %}">Complete Profile</a>
         {% endif %}
-
+        <a href="{% url 'member:add_product_page' %}">Sell</a>
     </nav>
-    <div class="product_data" >
-        <h1>{{product.product_name}}</h1>
-        <img src="{{product.product_images.url}}" width="300" height="300" class="prouduct_image">
-        {% if product.product_images2 %}
-            <img src="{{product.product_images2.url}}" width="300" height="300" class="prouduct_image">
-        {% endif %}
-        {% if product.product_images3 %}
-            <img src="{{product.product_images3.url}}" widht="300" height="300" class="prouduct_image">
-        {% endif %}
-        {% if product.product_images4 %}
-            <img src="{{product.product_images4.url}}" widht="300" height="300" class="prouduct_image">
-        {% endif %}
-        {% if product.product_images5 %}
-            <img src="{{product.product_images5.url}}" widht="300" height="300" class="prouduct_image">
-        {% endif %}
-        <a href="{% url 'member:chat'  %}"><button>Chat</button></a>
-        <h2 class="product_price">Price:</h2>
-        {% if product.product_discounted_price %}
-        <label>${{product.product_price}}   ${{product.product_discounted_price}}</label>
-        {% else %}
-        <label>${{product.product_price}}</label>
-        {% endif %}
-        <h2 class="product_description">Description:</h2>
-        <label>{{product.product_description}}</label>
-        <h3>{{product.product_quantity}} items in stock</h3>
-        <h2 class="sellor_info">Seller:</h2>
-        <label>{{product.sellor_name}}</label>
-        <h2 class="product_category">Category:</h2>
-        <label>{{product.product_category}}</label>
-        {% if product.company_name %}
-        <h2>Company:</h2>
-        <label>{{product.company_name}}</label>
-        {% endif %}
-        {% if product.product_website %}
-        <h2 class="website">Website:</h2>
-        <label><a href="{{product.product_website}}">{{product.product_website}}</a></label>
-        {% endif %}
-    </div>
-    <hr>
-    <br>
-    <a href="{% url 'product:purchase_page' product.id %}"><button class="purchase_pd">Buy</button></a>
-    <button class="addto_cart" onclick= location.href="{% url 'member:add_to_cart' product.id %}"> Add to Cart<img src="\media\products\cartbtn_pic.ico" width="30"> </button>
-    <button class="wishlist" onclick=location.href="{% url 'member:add_to_wishlist' product.id %}">Add to wishlist</button>
-    <button class="add_review" onclick=location.href="{% url 'product:add_review' product.id %}"> Give Feedback </button>
-    <div class="reviews">
-        {%  for review in reviews %}
-        <div>
-            <label for="">{{review.reviewer.username}}</label><br>
-            <label for="">{{review.rating}}</label><br>
-            <label for="">{{review.review}}</label><br>
-            <label for="">{{review.posted_time}}</label><br>
+    <div class="main-content">
+        <aside class="aside_links">
+            <section>
+                <h3>Categories</h3>
+                <a href="{% url 'product:categories_page' %}">All Categories</a>
+            </section>
+            <section>
+                <h3>Products</h3>
+                <a href="{% url 'product:recent_products' %}">Recent Products</a>
+                <a href="{% url 'product:view_all' %}">View All Products</a>
+            </section>
+        </aside>
+        <div class="product_data">
+            <h1>{{product.product_name}}</h1>
+            <img src="{{product.product_images.url}}" class="prouduct_image">
+            {% if product.product_images2 %}
+                <img src="{{product.product_images2.url}}" class="prouduct_image">
+            {% endif %}
+            {% if product.product_images3 %}
+                <img src="{{product.product_images3.url}}" class="prouduct_image">
+            {% endif %}
+            {% if product.product_images4 %}
+                <img src="{{product.product_images4.url}}" class="prouduct_image">
+            {% endif %}
+            {% if product.product_images5 %}
+                <img src="{{product.product_images5.url}}" class="prouduct_image">
+            {% endif %}
+            <a href="{% url 'product:purchase_page' product.id %}"><button class="purchase_pd">Buy</button></a>
+            <button class="addto_cart" onclick=location.href="{% url 'member:add_to_cart' product.id %}">Add to Cart</button>
+            <button class="wishlist" onclick=location.href="{% url 'member:add_to_wishlist' product.id %}">Add to wishlist</button>
+            <h2 class="product_price">Price:</h2>
+            {% if product.product_discounted_price %}
+            <label>${{product.product_price}} ${{product.product_discounted_price}}</label>
+            {% else %}
+            <label>${{product.product_price}}</label>
+            {% endif %}
+            <h2 class="product_description">Description:</h2>
+            <label>{{product.product_description}}</label>
+            <h3>In Stock : <i>{{product.product_quantity}}</i> items </h3>
+            <h2 class="sellor_info">Seller:</h2>
+            <label>{{product.sellor_name}}</label>
+            <h2 class="product_category">Category:</h2>
+            <label>{{product.product_category}}</label>
+            {% if product.company_name %}
+            <h2>Company:</h2>
+            <label>{{product.company_name}}</label>
+            {% endif %}
+            {% if product.product_website %}
+            <h2 class="website">Website:</h2>
+            <label><a href="{{product.product_website}}">{{product.product_website}}</a></label>
+            {% endif %}
+            <div class="reviews">
+                <h1>Reviews:</h1>
+                {% for review in reviews %}
+                <div>
+                    <label> By:<strong> {{review.reviewer.username}}</strong></label><br>
+                    <label>Rating: {{review.rating}}</label><br>
+                    <label>Feedback:<p><strong><em> {{review.review}}</em></strong></p></label><br>
+                    <label>Posted on : <i>{{review.posted_time}}</i> </label><br>
+                </div>
+                <hr>
+                {% endfor %}
+            </div>
+            <a href="{% url 'member:chat'  %}"><button>Chat</button></a>
+            <button class="add_review" onclick=location.href="{% url 'product:add_review' product.id %}"> Give Feedback </button>
         </div>
-        <hr>
-        {% endfor %}
     </div>
-
+    <footer>
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>arsidd78@gmail.com</p>
+        <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+    </footer>
 </body>
 </html>

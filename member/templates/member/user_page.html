@@ -38,8 +38,8 @@
         <h4>Following:{{member.user_following_no}}</h4>
         <h4>Messages:{{member.user_search_history}}</h4>
         <h4>Total Sales:${{member.user_sales}}</h4>
-        <h4>Selling History:{{member.user_recent_sales}}</h4>
-        <h4>Total Purchases:$ {{member.user_purhcases}}</h4>
+        <h4><a href="{% url 'member:sold_products' %}">Recently Sold Products</a></h4>
+        <h4>Total Purchases:$ {{member.user_purchases}}</h4>
         <h4>Purchasing History:{{member.user_recent_purchases}} </h4>
         <h4>Website:{{member.user_website}}</h4>
         <h4>Email:{{member.user_email}}</h4>

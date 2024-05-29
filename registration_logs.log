@@ -12983,3 +12983,2085 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 63: 'e
 2024-05-28 11:59:18,650 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
 2024-05-28 12:01:40,921 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
 2024-05-28 12:02:06,718 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-29 11:47:40,672 Not Found: /favicon.ico
+2024-05-29 11:53:47,005 Not Found: /favicon.ico
+2024-05-29 12:00:02,807 Internal Server Error: /detail/17/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 44, in product_details
+    return render(request,'product/details.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static'. Did you forget to register or load this tag?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 49, in product_details
+    return render(request,'product/details.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static'. Did you forget to register or load this tag?
+2024-05-29 12:02:23,856 Not Found: /favicon.ico
+2024-05-29 12:11:50,044 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 12:11:59,558 Internal Server Error: /member/order_confirmation/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 226, in order_confirmation
+    member.user_cart_list.all().clear()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'clear'
+2024-05-29 12:12:44,200 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 12:12:46,083 Internal Server Error: /member/order_confirmation/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 228, in order_confirmation
+    product.clear()
+    ^^^^^^^^^^^^^
+AttributeError: 'Products' object has no attribute 'clear'. Did you mean: 'clean'?
+2024-05-29 12:13:18,256 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 12:22:34,390 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 12:31:42,403 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 12:33:14,583 Not Found: /favicon.ico
+2024-05-29 13:01:46,807 Not Found: /favicon.ico
+2024-05-29 13:03:23,962 Not Found: /favicon.ico
+2024-05-29 13:03:46,707 Not Found: /favicon.ico
+2024-05-29 13:19:30,315 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-29 13:19:37,927 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-29 13:24:04,575 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-29 13:27:04,249 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-29 13:31:17,522 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-05-29 13:38:28,030 Not Found: /favicon.ico
+2024-05-29 13:38:43,450 Not Found: /favicon.ico
+2024-05-29 13:38:44,254 Not Found: /favicon.ico
+2024-05-29 13:38:44,619 Not Found: /favicon.ico
+2024-05-29 13:38:44,800 Not Found: /favicon.ico
+2024-05-29 13:38:44,968 Not Found: /favicon.ico
+2024-05-29 13:39:37,536 Not Found: /favicon.ico
+2024-05-29 13:39:52,007 Not Found: /favicon.ico
+2024-05-29 13:40:23,610 Not Found: /favicon.ico
+2024-05-29 13:40:24,629 Not Found: /favicon.ico
+2024-05-29 13:40:24,852 Not Found: /favicon.ico
+2024-05-29 13:40:25,053 Not Found: /favicon.ico
+2024-05-29 13:41:09,168 Not Found: /favicon.ico
+2024-05-29 13:43:25,925 Not Found: /favicon.ico
+2024-05-29 13:43:26,660 Not Found: /favicon.ico
+2024-05-29 13:43:44,834 Not Found: /favicon.ico
+2024-05-29 13:44:07,474 Not Found: /favicon.ico
+2024-05-29 13:45:48,642 Not Found: /favicon.ico
+2024-05-29 13:46:54,307 Not Found: /favicon.ico
+2024-05-29 13:49:25,332 Not Found: /favicon.ico
+2024-05-29 13:49:57,060 Not Found: /favicon.ico
+2024-05-29 13:50:09,580 Not Found: /favicon.ico
+2024-05-29 13:55:44,297 Not Found: /favicon.ico
+2024-05-29 13:57:48,331 Not Found: /favicon.ico
+2024-05-29 14:08:41,037 Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 161, in search
+    return render(request, 'product/search_result.html', {'search':search,'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 975, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 25: 'else', expected 'endif'. Did you forget to register or load this tag?
+2024-05-29 14:11:46,501 Not Found: /favicon.ico
+2024-05-29 14:14:53,903 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\urls.py changed, reloading.
+2024-05-29 14:16:41,937 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 14:21:41,724 Internal Server Error: /member/recent_sales
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 279, in sold_products
+    return render(request,'member/recent_sales.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 19: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2024-05-29 14:23:54,903 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py changed, reloading.
+2024-05-29 14:25:56,968 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py changed, reloading.
+2024-05-29 14:49:10,056 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\admin.py changed, reloading.
+2024-05-29 14:50:56,094 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 14:52:36,487 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 14:53:33,311 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py changed, reloading.
+2024-05-29 14:54:22,831 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 14:54:31,761 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 14:55:04,466 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 14:56:26,948 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 14:57:48,016 Internal Server Error: /member/order_cart/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 203, in order_cart
+    sale_order = SalesOrder.objects.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use sale_order.set() instead.
+2024-05-29 14:59:49,467 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 14:59:55,554 Internal Server Error: /member/order_cart/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 204, in order_cart
+    sales.sale_order.add(Purchase)
+    ^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1072, in __init__
+    % (instance, self.pk_field_names[self.source_field_name])
+       ^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py", line 49, in __str__
+    return self.sale_order
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+2024-05-29 15:00:23,530 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py changed, reloading.
+2024-05-29 15:00:26,411 Internal Server Error: /member/order_cart/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 204, in order_cart
+    sales.sale_order.add(Purchase)
+    ^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1069, in __init__
+    raise ValueError(
+ValueError: "<SalesOrder: arsidd78>" needs to have a value for field "id" before this many-to-many relationship can be used.
+2024-05-29 15:01:32,829 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 15:01:37,443 Internal Server Error: /member/order_cart/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'ModelBase'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 204, in order_cart
+    sales.sale_order.add(Purchase)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1201, in add
+    self._add_items(
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1461, in _add_items
+    target_ids = self._get_target_ids(target_field_name, objs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1395, in _get_target_ids
+    target_ids.add(target_field.get_prep_value(obj))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <class 'product.models.Purchase'>.
+2024-05-29 15:02:32,022 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 15:02:36,824 Internal Server Error: /member/order_cart/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'ModelBase'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 205, in order_cart
+    sales.sale_order.add(Purchase)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1201, in add
+    self._add_items(
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1461, in _add_items
+    target_ids = self._get_target_ids(target_field_name, objs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1395, in _get_target_ids
+    target_ids.add(target_field.get_prep_value(obj))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <class 'product.models.Purchase'>.
+2024-05-29 15:03:11,180 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-05-29 15:03:17,684 Internal Server Error: /member/order_cart/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 215, in order_cart
+    return render(request, 'member/confirmation.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'delete_purchase_order' not found. 'delete_purchase_order' is not a valid view function or pattern name.
