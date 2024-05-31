@@ -59,6 +59,12 @@ nav a:hover {
   align-self: flex-end;
 }
 
+.chat-message.me label {
+  background: #5beb94;
+  color: #fff;
+  align-self: flex-end;
+}
+
 .chat-message .info {
   font-size: 0.8em;
   color: #888;

@@ -4,9 +4,9 @@ from . import views
 app_name = 'member'
 urlpatterns = [
     path('user_profile/<str:username>/', views.profile, name='profile'),
-    path('chat-with-sellor/',views.chat,name="chat"),
-    path('chat_system/',views.chat_system,name='chat_system'),
-    path('chat_system/del_chat',views.del_chats,name='remove_message'),
+    path('chat-with-sellor/<int:pk>/',views.chat,name="chat"),
+    path('chat_system/<int:pk>/',views.chat_system,name='chat_system'),
+    path('chat_system_del_chat/<int:pk>/<int:product_id>/',views.del_chats,name='remove_message'),
     path('add_product/',views.add_product,name='add_product_page'),
     path('update_product/<int:pk>/',views.update_product,name='update'),
     path('user_products/<username>/',views.user_products,name='user_products'),

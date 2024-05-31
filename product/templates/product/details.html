@@ -94,7 +94,7 @@
                 <hr>
                 {% endfor %}
             </div>
-            <a href="{% url 'member:chat'  %}"><button>Chat</button></a>
+            <a href="{% url 'member:chat' product.id  %}"><button>Chat</button></a>
             <button class="add_review" onclick=location.href="{% url 'product:add_review' product.id %}"> Give Feedback </button>
         </div>
     </div>

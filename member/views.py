@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Member,Messages,SalesOrder
-from django.shortcuts import get_object_or_404,redirect,HttpResponse,HttpResponseRedirect
+from django.shortcuts import get_object_or_404,redirect,HttpResponse
 from django.contrib.auth import get_user_model
 from django.contrib import messages
 from product.models import Products,Purchase
@@ -18,48 +18,54 @@ def profile(request,username):
     else:
         return redirect('registration:login')
     
-def chat(request):
+def chat(request,pk):
     if request.user.is_authenticated:
-        all_chats = Messages.objects.filter(sender = request.user,receiver = request.user)
+        product = get_object_or_404(Products, id = pk)
+        receiver = product.name
+        all_chats = Messages.objects.filter(sender = request.user,receiver = receiver)
         context ={
             'request':request,
-            'all_chats':all_chats
+            'all_chats':all_chats,
+            'product':product
         }
         return render(request,'member/chat_page.html',context)
     else:
         return redirect('registration:login')
     
-def chat_system(request):
+def chat_system(request,pk):
     if request.method == 'POST':
-        user = request.user
+        product = get_object_or_404(Products, id = pk)
+        receiver = product.name
+        sender = request.user
         body = request.POST.get('message')
 
-        if user.is_authenticated:
-            all_chats = Messages.objects.filter(sender = user,receiver=user)
-            message = Messages.objects.create(sender=user,receiver=user,message=body)
+        if sender.is_authenticated:
+            all_chats = Messages.objects.filter(sender = sender,receiver=receiver)
+            message = Messages.objects.create(sender=sender,receiver=receiver,message=body)
             message.save()
-            context = {'message':message,'all_chats':all_chats}
-            return render(request,'member/chat_page.html',context)
+            return redirect('member:chat', pk = pk)
         else :
-            return redirect('member:login')    
+            return redirect('registration:login')    
     else:
         return HttpResponse('Error ocur while sending message reload and try again ')
     
-def del_chats(request):
-
-    user = request.user
+def del_chats(request,pk,product_id):
+    
     if request.user.is_authenticated:
-        messages = Messages.objects.filter(sender = user,receiver=user)
-        for message in messages:
-            message.delete()
-            return redirect('member:chat')
+        message = get_object_or_404(Messages, id = pk)
+        receiver = message.receiver
+        
+        message.delete()
+        return redirect('member:chat',pk = product_id) # Redirecting to chat page with the reference of product.
+    
     else:
         return redirect('registration:login')
 
-# CRUD operations: 
+# CRUD operations: s
 
 def add_product(request):
     if request.user.is_authenticated:
+        member = get_object_or_404(Member, user = request.user)
         if request.method == 'POST':
             form = ProductsForm(request.POST, request.FILES)
             if form.is_valid():
@@ -72,7 +78,7 @@ def add_product(request):
                 print(form.errors)  
         else:
             form = ProductsForm()
-            return render(request, 'member/add_product.html', {'form': form})
+            return render(request, 'member/add_product.html', {'form': form,'member':member})
     return redirect('registration:login')    
 
 def update_product(request,pk):

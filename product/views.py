@@ -10,6 +10,7 @@ from collections import deque
 
 def home(request):
     try: 
+        
         member = get_object_or_404(Member, user = request.user)
         products = Products.objects.order_by('-product_posted_date')[:5]
 
@@ -21,7 +22,7 @@ def home(request):
                 'products':products,
                 'items':items.order_by('-product_posted_date')[:5] ,
                 'member':member,
-                'request':request
+                'request':request,
             }
         except: # Incase there is no user_interest:
             context = {
@@ -112,6 +113,13 @@ def confirmation(request, pk):
         product = purchase.product
         member = get_object_or_404(Member, user=request.user)
         selected_quantity = purchase.quantity
+        # Recording Purchases:
+        member.user_recent_purchase.add(product)
+        member.user_purchases += product.product_price
+        # Recording sales:
+        sellor = get_object_or_404(Member, user = purchase.sellor) # getting sellor profile based on product sellor
+        sellor.user_recent_sales.add(product)
+        sellor.user_sales += product.product_price
         if product.product_quantity >= selected_quantity:
             product.product_quantity -= selected_quantity
         else:

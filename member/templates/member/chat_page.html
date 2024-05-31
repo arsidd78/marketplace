@@ -22,16 +22,16 @@
     </nav>
     <div class="chats">
         {% for chat in all_chats %}
-        <div class="chat-message {% if chat.sender == request.user %}me{% endif %}">
+        <div class="chat-message {% if chat.sender == request.user %} me {% else %} sellor {% endif %}">
             <label class="body">{{ chat.message }}</label>
             <div class="info">
                 ~ {{ chat.sender.username }} ~ {{ chat.conversation_time }}
-                <button class="delete_message" onclick=location.href='{% url "member:remove_message" %}' name="remove_btn">Remove</button>
+                <button class="delete_message" onclick=location.href='{% url "member:remove_message" chat.id product.id %}' name="remove_btn">Remove</button>
             </div>
         </div>
         {% endfor %}
     </div>
-    <form action="{% url 'member:chat_system' %}" method="post">
+    <form action="{% url 'member:chat_system'  product.id %}" method="post">
         {% csrf_token %}
         <input type="text" name="message" placeholder="Type your message" required>
         <input type="submit" value="Send">

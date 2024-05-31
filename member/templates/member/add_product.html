@@ -3,12 +3,37 @@
 <html>
 <head>
     <title>Add Product</title>
+    <link rel="stylesheet" href="{% static 'member/add_product_style.css' %}">
 </head>
 <body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="{% url 'product:home' %}">Home Page</a>
+                {% if request.user.is_authenticated %}
+                    <a href="{% url 'registration:signout' %}">LogOut</a>
+                {% else %}
+                    <a href="{% url 'registration:login' %}">LogIn</a>
+                {% endif %}
+                <a href="/admin/">Admin</a>
+                {% if member %}
+                    <a href="{% url 'member:profile' request.user.username %}">Profile</a>
+                {% else %}
+                    <a href="{% url 'member:register' %}">Complete Profile</a>
+                {% endif %}
+                <a href="{% url 'member:add_product_page' %}">Sell</a>
+            </div>
+        </div>
+    </nav>
     <h1>Add a Product</h1>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
+        <div class="image-upload-container">
+            <label for="imageUpload">Upload up to 5 photos</label>
+            <input type="file" id="imageUpload" name="product_images" accept="image/*" multiple onchange="previewImages(event)">
+            <div id="imagePreview"></div>
+        </div>
         <button type="submit">Save</button>
     </form>
     {% if form.errors %}
@@ -25,6 +50,6 @@
             </ul>
         </div>
     {% endif %}
-    
+    <script src="{% static 'member/script.js' %}"></script>
 </body>
 </html>
