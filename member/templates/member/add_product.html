@@ -8,6 +8,11 @@
 <body>
     <nav>
         <div class="nav-container">
+            <form action="{% url 'product:search' %}" method="post" class="search-form">
+                {% csrf_token %}
+                <input type="search" name="search_bar" placeholder="Search products...">
+                <input type="submit" value="Search">
+            </form>
             <div class="nav-links">
                 <a href="{% url 'product:home' %}">Home Page</a>
                 {% if request.user.is_authenticated %}
@@ -28,28 +33,51 @@
     <h1>Add a Product</h1>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        {{ form.as_p }}
-        <div class="image-upload-container">
-            <label for="imageUpload">Upload up to 5 photos</label>
-            <input type="file" id="imageUpload" name="product_images" accept="image/*" multiple onchange="previewImages(event)">
-            <div id="imagePreview"></div>
+        {{ form.non_field_errors }}
+        <div class="field">
+            {{ form.product_name.label_tag }} {{ form.product_name }}
+        </div>
+        <div class="field">
+            {{ form.product_price.label_tag }} {{ form.product_price }}
+        <div class="field">
+            {{ form.product_description.label_tag }} {{ form.product_description }}
+        </div>
+        <div class="field">
+            {{ form.product_images.label_tag }} {{ form.product_images }}
+            <div id="product_images_preview"></div>
+        </div>
+        <div class="field">
+            {{ form.product_images2.label_tag }} {{ form.product_images2 }}
+            <div id="product_images2_preview"></div>
+        </div>
+        <div class="field">
+            {{ form.product_images3.label_tag }} {{ form.product_images3 }}
+            <div id="product_images3_preview"></div>
+        </div>
+        <div class="field">
+            {{ form.product_images4.label_tag }} {{ form.product_images4 }}
+            <div id="product_images4_preview"></div>
+        </div>
+        <div class="field">
+            {{ form.product_images5.label_tag }} {{ form.product_images5 }}
+            <div id="product_images5_preview"></div>
+        </div>
+        <div class="field">
+            {{ form.product_specification.label_tag }} {{ form.product_specification }}
+        <div class="field">
+            {{ form.product_category.label_tag }} {{ form.product_category }}
+        </div>
+        <div class="field">
+            {{ form.product_quantity.label_tag }} {{ form.product_quantity }}
+        </div>
+        <div class="field">
+            {{ form.company_name.label_tag }} {{ form.company_name }}
+        </div>
+        <div class="field">
+            {{ form.product_website.label_tag }} {{ form.product_website }}
         </div>
         <button type="submit">Save</button>
     </form>
-    {% if form.errors %}
-        <div style="color: red;">
-            <ul>
-                {% for field in form %}
-                    {% for error in field.errors %}
-                        <li>{{ field.label }}: {{ error }}</li>
-                    {% endfor %}
-                {% endfor %}
-                {% for error in form.non_field_errors %}
-                    <li>{{ error }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endif %}
     <script src="{% static 'member/script.js' %}"></script>
 </body>
 </html>

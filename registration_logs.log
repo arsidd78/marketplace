@@ -16791,3 +16791,277 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 33: 'e
 2024-05-31 14:47:55,863 Not Found: /favicon.ico
 2024-05-31 14:49:17,287 Not Found: /favicon.ico
 2024-05-31 14:50:18,080 Not Found: /favicon.ico
+2024-05-31 19:59:36,096 Not Found: /favicon.ico
+2024-05-31 20:41:22,259 Not Found: /favicon.ico
+2024-05-31 20:42:02,116 Not Found: /favicon.ico
+2024-05-31 20:42:03,435 Not Found: /favicon.ico
+2024-05-31 20:42:03,909 Not Found: /favicon.ico
+2024-05-31 20:42:04,159 Not Found: /favicon.ico
+2024-05-31 20:42:04,392 Not Found: /favicon.ico
+2024-05-31 23:05:44,163 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\forms.py changed, reloading.
+2024-05-31 23:06:17,011 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\settings.py changed, reloading.
+2024-05-31 23:07:32,700 [mHTTP GET / 200 [0.42, 127.0.0.1:58620][0m
+2024-05-31 23:07:32,793 [36mHTTP GET /static/product/index_style.css 304 [0.05, 127.0.0.1:58620][0m
+2024-05-31 23:07:32,803 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.01, 127.0.0.1:58621][0m
+2024-05-31 23:07:36,694 [mHTTP GET /detail/19/ 200 [0.33, 127.0.0.1:58621][0m
+2024-05-31 23:07:37,004 [mHTTP GET /static/product/details_style.css 200 [0.24, 127.0.0.1:58621][0m
+2024-05-31 23:07:37,109 [mHTTP GET /media/products/Sofa2.jpg 200 [0.16, 127.0.0.1:58620][0m
+2024-05-31 23:07:40,014 [mHTTP GET /member/add_product/ 200 [0.08, 127.0.0.1:58620][0m
+2024-05-31 23:07:40,116 [mHTTP GET /static/member/add_product_style.css 200 [0.05, 127.0.0.1:58620][0m
+2024-05-31 23:07:40,430 [mHTTP GET /static/member/script.js 200 [0.36, 127.0.0.1:58621][0m
+2024-05-31 23:09:36,582 [mHTTP GET /member/add_product/ 200 [0.04, 127.0.0.1:59266][0m
+2024-05-31 23:09:36,654 [36mHTTP GET /static/member/script.js 304 [0.01, 127.0.0.1:59267][0m
+2024-05-31 23:09:36,660 [mHTTP GET /static/member/add_product_style.css 200 [0.03, 127.0.0.1:59266][0m
+2024-05-31 23:10:21,057 [mHTTP GET /member/add_product/ 200 [0.04, 127.0.0.1:59289][0m
+2024-05-31 23:10:21,123 [mHTTP GET /static/member/add_product_style.css 200 [0.02, 127.0.0.1:59289][0m
+2024-05-31 23:11:38,505 [mHTTP GET /member/add_product/ 200 [0.03, 127.0.0.1:59315][0m
+2024-05-31 23:11:38,580 [36mHTTP GET /static/member/script.js 304 [0.00, 127.0.0.1:59316][0m
+2024-05-31 23:11:38,585 [mHTTP GET /static/member/add_product_style.css 200 [0.03, 127.0.0.1:59315][0m
+2024-05-31 23:11:55,349 [mHTTP GET /member/add_product/ 200 [0.02, 127.0.0.1:59331][0m
+2024-05-31 23:11:55,422 [mHTTP GET /static/member/add_product_style.css 200 [0.03, 127.0.0.1:59331][0m
+2024-05-31 23:12:21,231 [mHTTP GET /member/add_product/ 200 [0.02, 127.0.0.1:59342][0m
+2024-05-31 23:12:21,321 [mHTTP GET /static/member/add_product_style.css 200 [0.04, 127.0.0.1:59342][0m
+2024-05-31 23:12:53,380 [mHTTP GET /member/add_product/ 200 [0.03, 127.0.0.1:59363][0m
+2024-05-31 23:12:53,450 [mHTTP GET /static/member/add_product_style.css 200 [0.03, 127.0.0.1:59363][0m
+2024-05-31 23:13:01,973 [mHTTP GET /member/add_product/ 200 [0.02, 127.0.0.1:59373][0m
+2024-05-31 23:13:02,028 [36mHTTP GET /static/member/add_product_style.css 304 [0.01, 127.0.0.1:59373][0m
+2024-05-31 23:20:23,778 [mHTTP GET /member/add_product/ 200 [0.02, 127.0.0.1:59697][0m
+2024-05-31 23:20:23,848 [36mHTTP GET /static/member/script.js 304 [0.01, 127.0.0.1:59698][0m
+2024-05-31 23:20:23,860 [mHTTP GET /static/member/add_product_style.css 200 [0.02, 127.0.0.1:59697][0m
+2024-05-31 23:20:25,710 [mHTTP GET /member/add_product/ 200 [0.02, 127.0.0.1:59697][0m
+2024-05-31 23:20:25,760 [mHTTP GET /static/member/add_product_style.css 200 [0.01, 127.0.0.1:59697][0m
+2024-05-31 23:20:25,797 [mHTTP GET /static/member/script.js 200 [0.04, 127.0.0.1:59698][0m
+2024-05-31 23:20:27,464 Not Found: /favicon.ico
+2024-05-31 23:20:27,475 [33mHTTP GET /favicon.ico 404 [1.62, 127.0.0.1:59698][0m
+2024-05-31 23:24:08,933 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\settings.py changed, reloading.
+2024-05-31 23:28:12,235 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\urls.py changed, reloading.
+2024-05-31 23:33:45,568 [mHTTP GET /member/add_product/ 200 [7.03, 127.0.0.1:60160][0m
+2024-05-31 23:33:46,355 [mHTTP GET /static/member/add_product_style.css 200 [0.28, 127.0.0.1:60160][0m
+2024-05-31 23:34:02,160 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\settings.py changed, reloading.
+2024-05-31 23:35:21,459 [32mHTTP POST /member/add_product/ 302 [18.67, 127.0.0.1:60359][0m
+2024-05-31 23:35:22,236 [mHTTP GET /registration/login/ 200 [0.60, 127.0.0.1:60359][0m
+2024-05-31 23:35:22,702 [mHTTP GET /static/registration/login_style.css 200 [0.34, 127.0.0.1:60359][0m
+2024-05-31 23:35:23,905 Not Found: /favicon.ico
+2024-05-31 23:35:23,907 [33mHTTP GET /favicon.ico 404 [0.49, 127.0.0.1:60359][0m
+2024-05-31 23:35:31,167 [32mHTTP POST /registration/authentication/?next= 302 [1.57, 127.0.0.1:59382][0m
+2024-05-31 23:35:31,400 [mHTTP GET / 200 [0.19, 127.0.0.1:59382][0m
+2024-05-31 23:35:31,559 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:59383][0m
+2024-05-31 23:35:31,566 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.02, 127.0.0.1:59382][0m
+2024-05-31 23:35:39,381 [mHTTP GET /member/add_product/ 200 [0.04, 127.0.0.1:59387][0m
+2024-05-31 23:35:39,488 [36mHTTP GET /static/member/add_product_style.css 304 [0.00, 127.0.0.1:59388][0m
+2024-05-31 23:35:39,511 [mHTTP GET /static/member/script.js 200 [0.03, 127.0.0.1:59387][0m
+2024-05-31 23:35:56,296 [32mHTTP POST /member/add_product/ 302 [0.02, 127.0.0.1:59395][0m
+2024-05-31 23:35:56,373 [mHTTP GET /registration/login/ 200 [0.06, 127.0.0.1:59395][0m
+2024-05-31 23:36:07,827 [mHTTP GET / 200 [0.04, 127.0.0.1:59398][0m
+2024-05-31 23:36:07,920 [36mHTTP GET /static/product/index_style.css 304 [0.02, 127.0.0.1:59398][0m
+2024-05-31 23:36:07,928 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.03, 127.0.0.1:59399][0m
+2024-05-31 23:36:32,337 [mHTTP GET /member/add_product/ 200 [0.04, 127.0.0.1:59407][0m
+2024-05-31 23:36:32,420 [36mHTTP GET /static/member/add_product_style.css 304 [0.01, 127.0.0.1:59407][0m
+2024-05-31 23:36:32,437 [mHTTP GET /static/member/script.js 200 [0.02, 127.0.0.1:59408][0m
+2024-05-31 23:38:11,584 [mHTTP GET /member/add_product/ 200 [0.03, 127.0.0.1:59490][0m
+2024-05-31 23:38:11,654 [36mHTTP GET /static/member/script.js 304 [0.01, 127.0.0.1:59491][0m
+2024-05-31 23:38:11,918 [mHTTP GET /static/member/add_product_style.css 200 [0.27, 127.0.0.1:59490][0m
+2024-05-31 23:38:12,684 [mHTTP GET /member/add_product/ 200 [0.02, 127.0.0.1:59490][0m
+2024-05-31 23:38:12,740 [mHTTP GET /static/member/add_product_style.css 200 [0.02, 127.0.0.1:59490][0m
+2024-05-31 23:38:12,799 [mHTTP GET /static/member/script.js 200 [0.05, 127.0.0.1:59491][0m
+2024-05-31 23:38:12,863 Not Found: /favicon.ico
+2024-05-31 23:38:12,865 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:59491][0m
+2024-05-31 23:38:26,767 [36mHTTP GET /static/member/add_product_style.css 304 [0.00, 127.0.0.1:59502][0m
+2024-05-31 23:43:13,126 [mHTTP GET /member/add_product/ 200 [0.03, 127.0.0.1:59698][0m
+2024-05-31 23:43:13,197 [mHTTP GET /static/member/add_product_style.css 200 [0.03, 127.0.0.1:59698][0m
+2024-05-31 23:43:21,510 [mHTTP GET /static/member/script.js 200 [8.33, 127.0.0.1:59699][0m
+2024-05-31 23:49:22,721 [32mHTTP POST /member/add_product/ 302 [0.02, 127.0.0.1:59913][0m
+2024-05-31 23:49:22,808 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:59913][0m
+2024-05-31 23:50:05,417 [32mHTTP POST /registration/authentication/?next= 302 [1.24, 127.0.0.1:59913][0m
+2024-05-31 23:50:05,451 [mHTTP GET / 200 [0.03, 127.0.0.1:59913][0m
+2024-05-31 23:50:05,508 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:59913][0m
+2024-05-31 23:50:05,548 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.02, 127.0.0.1:59913][0m
+2024-05-31 23:50:06,972 [mHTTP GET /member/add_product/ 200 [0.03, 127.0.0.1:59913][0m
+2024-05-31 23:50:07,045 [36mHTTP GET /static/member/script.js 304 [0.01, 127.0.0.1:59912][0m
+2024-05-31 23:50:07,046 [36mHTTP GET /static/member/add_product_style.css 304 [0.02, 127.0.0.1:59913][0m
+2024-05-31 23:52:16,792 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\forms.py changed, reloading.
+2024-05-31 23:52:36,575 [mHTTP GET /member/add_product/ 200 [0.79, 127.0.0.1:59978][0m
+2024-05-31 23:52:36,743 [36mHTTP GET /static/member/add_product_style.css 304 [0.08, 127.0.0.1:59978][0m
+2024-05-31 23:52:36,745 [36mHTTP GET /static/member/script.js 304 [0.03, 127.0.0.1:59977][0m
+2024-05-31 23:53:28,638 Internal Server Error: /member/add_product/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: product_products.product_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 75, in add_product
+    product.save()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: product_products.product_price
+2024-05-31 23:53:28,714 [35;1mHTTP POST /member/add_product/ 500 [3.19, 127.0.0.1:59978][0m
+2024-05-31 23:54:35,062 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\forms.py changed, reloading.
+2024-05-31 23:55:14,547 [32mHTTP POST /member/add_product/ 302 [0.21, 127.0.0.1:60059][0m
+2024-05-31 23:55:14,623 [mHTTP GET /registration/login/ 200 [0.07, 127.0.0.1:60059][0m
+2024-05-31 23:55:17,449 [32mHTTP POST /registration/authentication/?next= 302 [1.10, 127.0.0.1:60059][0m
+2024-05-31 23:55:17,497 [mHTTP GET / 200 [0.04, 127.0.0.1:60059][0m
+2024-05-31 23:55:17,554 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:60059][0m
+2024-05-31 23:55:17,569 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.02, 127.0.0.1:60058][0m
+2024-05-31 23:55:19,564 [mHTTP GET /member/add_product/ 200 [0.07, 127.0.0.1:60058][0m
+2024-05-31 23:55:19,648 [36mHTTP GET /static/member/add_product_style.css 304 [0.01, 127.0.0.1:60058][0m
+2024-05-31 23:55:19,650 [36mHTTP GET /static/member/script.js 304 [0.01, 127.0.0.1:60059][0m
+2024-05-31 23:55:54,670 [32mHTTP POST /member/add_product/ 302 [0.23, 127.0.0.1:60059][0m
+2024-05-31 23:55:55,029 [mHTTP GET /member/user_products/sak098/ 200 [0.35, 127.0.0.1:60059][0m
+2024-05-31 23:55:55,246 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.17, 127.0.0.1:60059][0m
+2024-05-31 23:55:59,009 [mHTTP GET / 200 [0.03, 127.0.0.1:60059][0m
+2024-05-31 23:55:59,081 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:60059][0m
+2024-05-31 23:55:59,122 [36mHTTP GET /media/products/palistineflag_XD3bT3q.webp 304 [0.03, 127.0.0.1:60058][0m
+2024-05-31 23:55:59,126 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.04, 127.0.0.1:60059][0m
+2024-05-31 23:56:02,274 [mHTTP GET /member/add_product/ 200 [0.05, 127.0.0.1:60059][0m
+2024-05-31 23:56:52,855 [32mHTTP POST /member/add_product/ 302 [0.22, 127.0.0.1:60059][0m
+2024-05-31 23:56:52,889 [mHTTP GET /member/user_products/sak098/ 200 [0.03, 127.0.0.1:60059][0m
+2024-05-31 23:56:52,979 [36mHTTP GET /media/products/palistineflag_XD3bT3q.webp 304 [0.01, 127.0.0.1:60058][0m
+2024-05-31 23:56:52,992 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.03, 127.0.0.1:60059][0m
+2024-05-31 23:56:58,590 [mHTTP GET / 200 [0.03, 127.0.0.1:60059][0m
+2024-05-31 23:56:58,692 [36mHTTP GET /static/product/index_style.css 304 [0.03, 127.0.0.1:60059][0m
+2024-05-31 23:56:58,705 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.04, 127.0.0.1:60058][0m
+2024-05-31 23:56:58,717 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.03, 127.0.0.1:60093][0m
+2024-05-31 23:57:00,649 [mHTTP GET /detail/37/ 200 [0.21, 127.0.0.1:60093][0m
+2024-05-31 23:57:00,743 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.03, 127.0.0.1:60058][0m
+2024-05-31 23:57:00,748 [mHTTP GET /media/products/mangoes2_qtjthNh.jpg 200 [0.04, 127.0.0.1:60093][0m
+2024-05-31 23:57:00,811 [mHTTP GET /media/products/mangoes4_6h5M211.jpg 200 [0.10, 127.0.0.1:60094][0m
+2024-05-31 23:57:00,826 [mHTTP GET /media/products/mangoes3_ftwxuxx.jpeg 200 [0.12, 127.0.0.1:60059][0m
+2024-05-31 23:57:01,137 [mHTTP GET /media/products/mangoes5_6XkG5er.jpg 200 [0.42, 127.0.0.1:60095][0m
+2024-05-31 23:57:04,244 [mHTTP GET /media/products/mangoes3_ftwxuxx.jpeg 200 [0.01, 127.0.0.1:60097][0m
+2024-05-31 23:57:18,289 [mHTTP GET /member/chat-with-sellor/37/ 200 [0.11, 127.0.0.1:60095][0m
+2024-05-31 23:57:18,451 [mHTTP GET /static/member/chat_page_style.css 200 [0.10, 127.0.0.1:60095][0m
+2024-05-31 23:57:21,913 [32mHTTP POST /member/chat_system/37/ 302 [0.42, 127.0.0.1:60095][0m
+2024-05-31 23:57:21,947 [mHTTP GET /member/chat-with-sellor/37/ 200 [0.03, 127.0.0.1:60095][0m
+2024-05-31 23:57:35,650 [32mHTTP GET /registration/signout/ 302 [0.12, 127.0.0.1:60095][0m
+2024-05-31 23:57:35,671 [mHTTP GET / 200 [0.02, 127.0.0.1:60095][0m
+2024-05-31 23:57:35,729 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:60095][0m
+2024-05-31 23:57:35,797 [36mHTTP GET /media/products/palistineflag_XD3bT3q.webp 304 [0.07, 127.0.0.1:60059][0m
+2024-05-31 23:57:35,904 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.09, 127.0.0.1:60095][0m
+2024-05-31 23:57:35,925 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.11, 127.0.0.1:60059][0m
+2024-05-31 23:57:39,679 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:60059][0m
+2024-05-31 23:57:42,998 [32mHTTP POST /registration/authentication/?next= 302 [1.20, 127.0.0.1:60059][0m
+2024-05-31 23:57:43,030 [mHTTP GET / 200 [0.03, 127.0.0.1:60059][0m
+2024-05-31 23:57:43,108 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:60059][0m
+2024-05-31 23:57:43,117 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.02, 127.0.0.1:60095][0m
+2024-05-31 23:57:43,122 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.02, 127.0.0.1:60094][0m
+2024-05-31 23:57:45,295 [mHTTP GET /detail/31/ 200 [0.11, 127.0.0.1:60094][0m
+2024-05-31 23:57:47,433 [mHTTP GET /member/chat-with-sellor/31/ 200 [0.03, 127.0.0.1:60094][0m
+2024-05-31 23:57:54,547 [mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 200 [0.07, 127.0.0.1:60097][0m
+2024-05-31 23:57:55,134 [32mHTTP GET /registration/signout/ 302 [0.19, 127.0.0.1:60094][0m
+2024-05-31 23:57:55,153 [mHTTP GET / 200 [0.01, 127.0.0.1:60094][0m
+2024-05-31 23:57:55,218 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:60094][0m
+2024-05-31 23:57:55,263 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.04, 127.0.0.1:60059][0m
+2024-05-31 23:57:55,265 [36mHTTP GET /media/products/palistineflag_XD3bT3q.webp 304 [0.05, 127.0.0.1:60095][0m
+2024-05-31 23:57:55,266 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.04, 127.0.0.1:60093][0m
+2024-05-31 23:57:56,877 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:60093][0m
+2024-05-31 23:58:01,265 [32mHTTP POST /registration/authentication/?next= 302 [1.42, 127.0.0.1:60093][0m
+2024-05-31 23:58:01,294 [mHTTP GET / 200 [0.02, 127.0.0.1:60093][0m
+2024-05-31 23:58:01,370 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:60093][0m
+2024-05-31 23:58:01,394 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.02, 127.0.0.1:60093][0m
+2024-05-31 23:58:01,507 [mHTTP GET /media/products/living_1.jpeg 200 [0.14, 127.0.0.1:60095][0m
+2024-05-31 23:58:06,886 [mHTTP GET /admin/ 200 [0.35, 127.0.0.1:60095][0m
+2024-05-31 23:58:07,046 [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.10, 127.0.0.1:60059][0m
+2024-05-31 23:58:07,061 [mHTTP GET /static/admin/css/dashboard.css 200 [0.12, 127.0.0.1:60094][0m
+2024-05-31 23:58:07,140 [mHTTP GET /static/admin/css/responsive.css 200 [0.19, 127.0.0.1:60105][0m
+2024-05-31 23:58:07,143 [mHTTP GET /static/admin/css/base.css 200 [0.20, 127.0.0.1:60095][0m
+2024-05-31 23:58:07,224 [mHTTP GET /static/admin/css/dark_mode.css 200 [0.28, 127.0.0.1:60093][0m
+2024-05-31 23:58:07,455 [mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.09, 127.0.0.1:60093][0m
+2024-05-31 23:58:07,456 [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.09, 127.0.0.1:60095][0m
+2024-05-31 23:58:07,459 [mHTTP GET /static/admin/img/icon-deletelink.svg 200 [0.09, 127.0.0.1:60059][0m
+2024-05-31 23:58:07,635 [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.49, 127.0.0.1:60094][0m
+2024-05-31 23:58:07,642 [mHTTP GET /static/admin/js/theme.js 200 [0.50, 127.0.0.1:60105][0m
+2024-05-31 23:58:17,331 [mHTTP GET /admin/member/messages/ 200 [0.39, 127.0.0.1:60105][0m
+2024-05-31 23:58:17,492 [mHTTP GET /static/admin/css/changelists.css 200 [0.10, 127.0.0.1:60105][0m
+2024-05-31 23:58:17,508 [mHTTP GET /static/admin/js/jquery.init.js 200 [0.03, 127.0.0.1:60093][0m
+2024-05-31 23:58:17,692 [mHTTP GET /static/admin/js/core.js 200 [0.22, 127.0.0.1:60095][0m
+2024-05-31 23:58:17,730 [mHTTP GET /static/admin/js/urlify.js 200 [0.22, 127.0.0.1:60093][0m
+2024-05-31 23:58:17,809 [mHTTP GET /static/admin/js/prepopulate.js 200 [0.11, 127.0.0.1:60095][0m
+2024-05-31 23:58:17,887 [mHTTP GET /admin/jsi18n/ 200 [0.42, 127.0.0.1:60094][0m
+2024-05-31 23:58:17,890 [mHTTP GET /static/admin/js/actions.js 200 [0.40, 127.0.0.1:60105][0m
+2024-05-31 23:58:17,959 [mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.48, 127.0.0.1:60107][0m
+2024-05-31 23:58:18,586 [mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.85, 127.0.0.1:60093][0m
+2024-05-31 23:58:18,820 [mHTTP GET /static/admin/js/filters.js 200 [0.22, 127.0.0.1:60093][0m
+2024-05-31 23:58:18,962 [mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [1.49, 127.0.0.1:60059][0m
+2024-05-31 23:58:19,047 [mHTTP GET /static/admin/img/tooltag-add.svg 200 [0.01, 127.0.0.1:60059][0m
+2024-05-31 23:58:23,395 [mHTTP GET /admin/member/messages/44/change/ 200 [0.44, 127.0.0.1:60059][0m
+2024-05-31 23:58:23,491 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60107][0m
+2024-05-31 23:58:23,535 [mHTTP GET /static/admin/css/forms.css 200 [0.07, 127.0.0.1:60059][0m
+2024-05-31 23:58:23,549 [mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.08, 127.0.0.1:60093][0m
+2024-05-31 23:58:23,595 [mHTTP GET /static/admin/css/widgets.css 200 [0.05, 127.0.0.1:60107][0m
+2024-05-31 23:58:23,657 [mHTTP GET /static/admin/img/icon-viewlink.svg 200 [0.12, 127.0.0.1:60059][0m
+2024-05-31 23:58:23,667 [mHTTP GET /static/admin/js/change_form.js 200 [0.04, 127.0.0.1:60107][0m
+2024-05-31 23:58:26,852 [mHTTP GET /admin/member/messages/ 200 [0.03, 127.0.0.1:60107][0m
+2024-05-31 23:58:27,845 [mHTTP GET /admin/member/messages/43/change/ 200 [0.03, 127.0.0.1:60107][0m
+2024-05-31 23:58:27,940 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60107][0m
+2024-05-31 23:58:31,007 [mHTTP GET /admin/member/messages/ 200 [0.04, 127.0.0.1:60107][0m
+2024-05-31 23:58:32,342 [mHTTP GET /admin/ 200 [0.02, 127.0.0.1:60107][0m
+2024-05-31 23:58:36,859 [mHTTP GET /detail/37/ 200 [0.10, 127.0.0.1:60107][0m
+2024-05-31 23:58:36,996 [36mHTTP GET /media/products/mangoes3_ftwxuxx.jpeg 304 [0.07, 127.0.0.1:60059][0m
+2024-05-31 23:58:36,998 [36mHTTP GET /media/products/mangoes2_qtjthNh.jpg 304 [0.07, 127.0.0.1:60107][0m
+2024-05-31 23:58:37,000 [36mHTTP GET /media/products/mangoes4_6h5M211.jpg 304 [0.07, 127.0.0.1:60093][0m
+2024-05-31 23:58:37,004 [36mHTTP GET /media/products/mangoes5_6XkG5er.jpg 304 [0.07, 127.0.0.1:60105][0m
+2024-05-31 23:58:39,856 [mHTTP GET /member/chat-with-sellor/37/ 200 [0.03, 127.0.0.1:60105][0m
+2024-05-31 23:58:50,484 [32mHTTP POST /member/chat_system/37/ 302 [0.37, 127.0.0.1:60105][0m
+2024-05-31 23:58:50,509 [mHTTP GET /member/chat-with-sellor/37/ 200 [0.02, 127.0.0.1:60105][0m
