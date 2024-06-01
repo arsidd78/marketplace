@@ -8,11 +8,7 @@
 <body>
     <nav>
         <div class="nav-container">
-            <form action="{% url 'product:search' %}" method="post" class="search-form">
-                {% csrf_token %}
-                <input type="search" name="search_bar" placeholder="Search products...">
-                <input type="submit" value="Search">
-            </form>
+
             <div class="nav-links">
                 <a href="{% url 'product:home' %}">Home Page</a>
                 {% if request.user.is_authenticated %}

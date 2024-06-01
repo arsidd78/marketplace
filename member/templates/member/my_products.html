@@ -1,10 +1,11 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'member/my_product_style.css' %}">
+    <title>My Products</title>
 </head>
 <body>
     <nav>
@@ -32,18 +33,22 @@
                 <a href="{% url 'product:view_all' %}">View All Products</a>
             </section>
         </aside>
-    {% for product in products %}
-    <article>
-        <img src="{{product.product_images.url}}" width="100"><br>
-        <label>{{product.product_name}}</label><br>
-        <label>$ {{product.product_price}}</label><br>
-        {% if product.product_discounted_price %}
-        <label> $ {{product.product_discounted_price}}</label>
-        {% endif %}
-        <label> stock: {{product.product_quantity}}</label><br>
-    </article>
-    <button class="edit_product" onclick=location.href="{% url  'member:update' product.id %}" name="update_prod">Edit</button>
-    <button class="del_prod" onclick=location.href="{% url 'member:delete_product' product.id %}" name="delete_product">Remove</button>
-    {% endfor %}
+        <section class="products-section">
+            {% for product in products %}
+            <article class="product-card">
+                <img src="{{ product.product_images.url }}" alt="{{ product.product_name }}" class="product-image">
+                <div class="product-info">
+                    <label class="product-name">{{ product.product_name }}</label><br>
+                    <label class="product-price">$ {{ product.product_price }}</label><br>
+                    <label class="product-quantity">Stock: {{ product.product_quantity }}</label><br>
+                </div>
+                <div class="product-actions">
+                    <button class="edit-product" onclick=location.href="{% url 'member:update' product.id %}">Edit</button>
+                    <button class="delete-product" onclick=location.href="{% url 'member:delete_product' product.id %}">Remove</button>
+                </div>
+            </article>
+            {% endfor %}
+        </section>
+    </div>
 </body>
 </html>
