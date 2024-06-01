@@ -30,33 +30,32 @@ nav a:hover {
 }
 
 .aside_links {
-    width: 200px;
+    width: 20%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
 }
 
 .aside_links section {
-    background: #fff;
-    padding: 10px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .aside_links h3 {
-    margin-top: 0;
+    color: #4b0082;
+    margin-bottom: 10px;
 }
 
 .aside_links a {
     display: block;
-    color: #4b0082; /* Purple */
+    color: #333;
     text-decoration: none;
-    margin: 5px 0;
-    padding: 5px;
-    border-radius: 4px;
+    margin-bottom: 5px;
 }
 
 .aside_links a:hover {
-    background-color: #ddd;
+    color: #4b0082;
 }
 
 .products-section {
@@ -123,3 +122,26 @@ nav a:hover {
 .edit-product:hover, .delete-product:hover {
     opacity: 0.8;
 }
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer a {
+    color: #fcfbfc;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

@@ -17185,3 +17185,344 @@ AttributeError: 'AnonymousUser' object has no attribute 'is_authencticated'. Did
 2024-06-01 22:35:59,332 [mHTTP GET /static/member/my_product_style.css 200 [0.03, 127.0.0.1:63255][0m
 2024-06-01 22:35:59,366 [36mHTTP GET /media/products/strawberry2_VltATon.png 304 [0.01, 127.0.0.1:63255][0m
 2024-06-01 22:36:03,556 [mHTTP GET /member/wishlist_view/ 200 [0.04, 127.0.0.1:63255][0m
+2024-06-01 22:41:08,798 Internal Server Error: /member/wishlist_view/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 486, in parse
+    command = token.contents.split()[0]
+              ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 141, in view_wishlist
+    return render(request,'member/wishlist.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 488, in parse
+    raise self.error(token, "Empty block tag on line %d" % token.lineno)
+django.template.exceptions.TemplateSyntaxError: Empty block tag on line 1
+2024-06-01 22:41:08,826 [35;1mHTTP GET /member/wishlist_view/ 500 [0.34, 127.0.0.1:63315][0m
+2024-06-01 22:41:24,710 [mHTTP GET /member/wishlist_view/ 200 [0.06, 127.0.0.1:63315][0m
+2024-06-01 22:41:24,888 [mHTTP GET /static/member/wishlist_style.css 200 [0.14, 127.0.0.1:63315][0m
+2024-06-01 22:45:54,614 Internal Server Error: /member/wishlist_view/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 141, in view_wishlist
+    return render(request,'member/wishlist.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static'. Did you forget to register or load this tag?
+2024-06-01 22:45:54,647 [35;1mHTTP GET /member/wishlist_view/ 500 [0.11, 127.0.0.1:63388][0m
+2024-06-01 22:46:18,612 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:63388][0m
+2024-06-01 22:46:18,695 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63388][0m
+2024-06-01 22:46:20,716 [mHTTP GET /member/wishlist_view/ 200 [0.01, 127.0.0.1:63388][0m
+2024-06-01 22:46:22,165 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63388][0m
+2024-06-01 22:46:22,210 [mHTTP GET /static/member/wishlist_style.css 200 [0.00, 127.0.0.1:63388][0m
+2024-06-01 22:46:22,264 [mHTTP GET /media/products/sofa_1.jpg 200 [0.03, 127.0.0.1:63391][0m
+2024-06-01 22:46:22,271 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.04, 127.0.0.1:63389][0m
+2024-06-01 22:46:22,273 [mHTTP GET /media/products/weights.jpeg 200 [0.04, 127.0.0.1:63392][0m
+2024-06-01 22:46:22,276 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.05, 127.0.0.1:63388][0m
+2024-06-01 22:46:22,281 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.05, 127.0.0.1:63390][0m
+2024-06-01 22:46:22,434 Not Found: /favicon.ico
+2024-06-01 22:46:22,436 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:63390][0m
+2024-06-01 22:46:23,119 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63390][0m
+2024-06-01 22:46:23,163 [mHTTP GET /static/member/wishlist_style.css 200 [0.01, 127.0.0.1:63390][0m
+2024-06-01 22:46:23,225 [mHTTP GET /media/products/weights.jpeg 200 [0.04, 127.0.0.1:63392][0m
+2024-06-01 22:46:23,230 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.05, 127.0.0.1:63391][0m
+2024-06-01 22:46:23,235 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.06, 127.0.0.1:63388][0m
+2024-06-01 22:46:23,236 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.05, 127.0.0.1:63390][0m
+2024-06-01 22:46:23,244 [mHTTP GET /media/products/sofa_1.jpg 200 [0.06, 127.0.0.1:63389][0m
+2024-06-01 22:46:23,340 Not Found: /favicon.ico
+2024-06-01 22:46:23,346 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:63389][0m
+2024-06-01 22:46:33,350 [mHTTP GET /detail/17/ 200 [0.14, 127.0.0.1:63389][0m
+2024-06-01 22:47:22,405 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:63389][0m
+2024-06-01 22:47:22,489 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63389][0m
+2024-06-01 22:47:35,532 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63389][0m
+2024-06-01 22:47:35,602 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63389][0m
+2024-06-01 22:47:37,514 [mHTTP GET /member/wishlist_view/ 200 [0.06, 127.0.0.1:63389][0m
+2024-06-01 22:47:37,558 [36mHTTP GET /static/member/wishlist_style.css 304 [0.00, 127.0.0.1:63389][0m
+2024-06-01 22:47:38,400 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63389][0m
+2024-06-01 22:47:38,457 [mHTTP GET /static/member/wishlist_style.css 200 [0.02, 127.0.0.1:63389][0m
+2024-06-01 22:47:38,508 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.04, 127.0.0.1:63401][0m
+2024-06-01 22:47:38,511 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.05, 127.0.0.1:63400][0m
+2024-06-01 22:47:38,513 [mHTTP GET /media/products/weights.jpeg 200 [0.05, 127.0.0.1:63404][0m
+2024-06-01 22:47:38,521 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.05, 127.0.0.1:63402][0m
+2024-06-01 22:47:38,563 [mHTTP GET /media/products/sofa_1.jpg 200 [0.10, 127.0.0.1:63403][0m
+2024-06-01 22:47:38,635 Not Found: /favicon.ico
+2024-06-01 22:47:38,637 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:63403][0m
+2024-06-01 22:47:39,201 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63403][0m
+2024-06-01 22:47:39,257 [mHTTP GET /static/member/wishlist_style.css 200 [0.02, 127.0.0.1:63403][0m
+2024-06-01 22:47:39,309 [mHTTP GET /media/products/weights.jpeg 200 [0.04, 127.0.0.1:63389][0m
+2024-06-01 22:47:39,313 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.05, 127.0.0.1:63400][0m
+2024-06-01 22:47:39,317 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.05, 127.0.0.1:63402][0m
+2024-06-01 22:47:39,325 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.06, 127.0.0.1:63404][0m
+2024-06-01 22:47:39,331 [mHTTP GET /media/products/sofa_1.jpg 200 [0.06, 127.0.0.1:63401][0m
+2024-06-01 22:47:39,425 Not Found: /favicon.ico
+2024-06-01 22:47:39,426 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:63401][0m
+2024-06-01 22:47:55,348 [mHTTP GET /member/wishlist_view/ 200 [0.01, 127.0.0.1:63401][0m
+2024-06-01 22:47:55,418 [mHTTP GET /static/member/wishlist_style.css 200 [0.02, 127.0.0.1:63401][0m
+2024-06-01 22:47:56,433 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63401][0m
+2024-06-01 22:47:56,493 [36mHTTP GET /static/member/wishlist_style.css 304 [0.01, 127.0.0.1:63401][0m
+2024-06-01 22:47:57,188 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63401][0m
+2024-06-01 22:47:57,280 [mHTTP GET /static/member/wishlist_style.css 200 [0.02, 127.0.0.1:63401][0m
+2024-06-01 22:47:57,312 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.05, 127.0.0.1:63402][0m
+2024-06-01 22:47:57,315 [mHTTP GET /media/products/weights.jpeg 200 [0.05, 127.0.0.1:63403][0m
+2024-06-01 22:47:57,317 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.06, 127.0.0.1:63404][0m
+2024-06-01 22:47:57,319 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.06, 127.0.0.1:63400][0m
+2024-06-01 22:47:57,322 [mHTTP GET /media/products/sofa_1.jpg 200 [0.06, 127.0.0.1:63389][0m
+2024-06-01 22:47:57,432 Not Found: /favicon.ico
+2024-06-01 22:47:57,434 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:63389][0m
+2024-06-01 22:48:03,142 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63389][0m
+2024-06-01 22:48:03,216 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63389][0m
+2024-06-01 22:48:04,390 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63389][0m
+2024-06-01 22:48:04,437 [mHTTP GET /static/member/wishlist_style.css 200 [0.00, 127.0.0.1:63389][0m
+2024-06-01 22:48:04,494 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.04, 127.0.0.1:63389][0m
+2024-06-01 22:48:04,496 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.04, 127.0.0.1:63404][0m
+2024-06-01 22:48:04,499 [mHTTP GET /media/products/weights.jpeg 200 [0.04, 127.0.0.1:63402][0m
+2024-06-01 22:48:04,503 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.05, 127.0.0.1:63400][0m
+2024-06-01 22:48:04,505 [mHTTP GET /media/products/sofa_1.jpg 200 [0.04, 127.0.0.1:63403][0m
+2024-06-01 22:48:04,598 Not Found: /favicon.ico
+2024-06-01 22:48:04,600 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:63403][0m
+2024-06-01 22:48:16,278 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63403][0m
+2024-06-01 22:48:16,339 [mHTTP GET /static/member/wishlist_style.css 200 [0.01, 127.0.0.1:63403][0m
+2024-06-01 22:48:27,274 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63403][0m
+2024-06-01 22:48:27,361 [mHTTP GET /static/member/wishlist_style.css 200 [0.02, 127.0.0.1:63403][0m
+2024-06-01 22:48:35,603 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63403][0m
+2024-06-01 22:48:35,707 [mHTTP GET /static/member/wishlist_style.css 200 [0.04, 127.0.0.1:63403][0m
+2024-06-01 22:48:43,151 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63403][0m
+2024-06-01 22:48:43,221 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63403][0m
+2024-06-01 22:48:59,964 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63403][0m
+2024-06-01 22:49:00,052 [mHTTP GET /static/member/wishlist_style.css 200 [0.01, 127.0.0.1:63403][0m
+2024-06-01 22:49:09,834 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63403][0m
+2024-06-01 22:49:09,908 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63403][0m
+2024-06-01 22:50:14,542 [mHTTP GET /member/wishlist_view/ 200 [0.04, 127.0.0.1:63412][0m
+2024-06-01 22:50:14,630 [mHTTP GET /static/member/wishlist_style.css 200 [0.02, 127.0.0.1:63412][0m
+2024-06-01 22:50:30,367 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63412][0m
+2024-06-01 22:50:30,433 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63412][0m
+2024-06-01 22:50:31,781 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63412][0m
+2024-06-01 22:50:31,865 [mHTTP GET /static/member/wishlist_style.css 200 [0.02, 127.0.0.1:63412][0m
+2024-06-01 22:50:31,891 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.05, 127.0.0.1:63413][0m
+2024-06-01 22:50:31,894 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.05, 127.0.0.1:63425][0m
+2024-06-01 22:50:31,895 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.05, 127.0.0.1:63424][0m
+2024-06-01 22:50:31,900 [mHTTP GET /media/products/weights.jpeg 200 [0.05, 127.0.0.1:63427][0m
+2024-06-01 22:50:31,901 [mHTTP GET /media/products/sofa_1.jpg 200 [0.05, 127.0.0.1:63426][0m
+2024-06-01 22:50:31,977 Not Found: /favicon.ico
+2024-06-01 22:50:31,979 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:63426][0m
+2024-06-01 22:50:53,139 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:63426][0m
+2024-06-01 22:50:53,216 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63426][0m
+2024-06-01 22:50:54,971 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:63426][0m
+2024-06-01 22:50:55,051 [mHTTP GET /static/member/wishlist_style.css 200 [0.02, 127.0.0.1:63426][0m
+2024-06-01 22:50:55,062 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.03, 127.0.0.1:63427][0m
+2024-06-01 22:50:55,064 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.03, 127.0.0.1:63424][0m
+2024-06-01 22:50:55,119 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.04, 127.0.0.1:63424][0m
+2024-06-01 22:50:55,131 [mHTTP GET /media/products/weights.jpeg 200 [0.04, 127.0.0.1:63426][0m
+2024-06-01 22:50:55,141 [mHTTP GET /media/products/sofa_1.jpg 200 [0.05, 127.0.0.1:63427][0m
+2024-06-01 22:50:55,233 Not Found: /favicon.ico
+2024-06-01 22:50:55,235 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:63427][0m
+2024-06-01 22:51:08,150 [mHTTP GET /member/wishlist_view/ 200 [0.01, 127.0.0.1:63427][0m
+2024-06-01 22:51:08,224 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63427][0m
+2024-06-01 22:51:09,372 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63427][0m
+2024-06-01 22:51:09,431 [mHTTP GET /static/member/wishlist_style.css 200 [0.01, 127.0.0.1:63427][0m
+2024-06-01 22:51:09,470 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.03, 127.0.0.1:63424][0m
+2024-06-01 22:51:09,470 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.04, 127.0.0.1:63426][0m
+2024-06-01 22:51:09,471 [mHTTP GET /media/products/weights.jpeg 200 [0.04, 127.0.0.1:63412][0m
+2024-06-01 22:51:09,474 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.04, 127.0.0.1:63425][0m
+2024-06-01 22:51:09,480 [mHTTP GET /media/products/sofa_1.jpg 200 [0.05, 127.0.0.1:63413][0m
+2024-06-01 22:51:09,531 Not Found: /favicon.ico
+2024-06-01 22:51:09,533 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:63413][0m
+2024-06-01 22:52:18,830 [mHTTP GET / 200 [0.05, 127.0.0.1:63436][0m
+2024-06-01 22:52:18,919 [36mHTTP GET /media/products/strawberry2_VltATon.png 304 [0.03, 127.0.0.1:63436][0m
+2024-06-01 22:52:21,087 [mHTTP GET /view_all/ 200 [0.05, 127.0.0.1:63436][0m
+2024-06-01 22:54:16,027 [mHTTP GET /view_all/ 200 [0.02, 127.0.0.1:63449][0m
+2024-06-01 22:54:21,741 [mHTTP GET / 200 [0.04, 127.0.0.1:63449][0m
+2024-06-01 22:54:24,887 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:63449][0m
+2024-06-01 22:54:32,570 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:63449][0m
+2024-06-01 22:54:32,644 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63449][0m
+2024-06-01 22:55:23,419 [mHTTP GET /member/wishlist_view/ 200 [0.04, 127.0.0.1:63449][0m
+2024-06-01 22:55:23,483 [36mHTTP GET /static/member/wishlist_style.css 304 [0.00, 127.0.0.1:63449][0m
+2024-06-01 22:55:24,891 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63449][0m
+2024-06-01 22:55:24,934 [mHTTP GET /static/member/wishlist_style.css 200 [0.00, 127.0.0.1:63449][0m
+2024-06-01 22:55:24,993 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.04, 127.0.0.1:63449][0m
+2024-06-01 22:55:25,000 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.03, 127.0.0.1:63456][0m
+2024-06-01 22:55:25,001 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.03, 127.0.0.1:63461][0m
+2024-06-01 22:55:25,005 [mHTTP GET /media/products/weights.jpeg 200 [0.03, 127.0.0.1:63463][0m
+2024-06-01 22:55:25,007 [mHTTP GET /media/products/sofa_1.jpg 200 [0.03, 127.0.0.1:63462][0m
+2024-06-01 22:55:25,097 Not Found: /favicon.ico
+2024-06-01 22:55:25,099 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:63462][0m
+2024-06-01 22:55:26,100 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:63462][0m
+2024-06-01 22:55:26,167 [mHTTP GET /static/member/wishlist_style.css 200 [0.01, 127.0.0.1:63462][0m
+2024-06-01 22:55:26,197 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.03, 127.0.0.1:63463][0m
+2024-06-01 22:55:26,198 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.03, 127.0.0.1:63456][0m
+2024-06-01 22:55:26,199 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.03, 127.0.0.1:63461][0m
+2024-06-01 22:55:26,201 [mHTTP GET /media/products/sofa_1.jpg 200 [0.03, 127.0.0.1:63449][0m
+2024-06-01 22:55:26,203 [mHTTP GET /media/products/weights.jpeg 200 [0.03, 127.0.0.1:63465][0m
+2024-06-01 22:55:26,287 Not Found: /favicon.ico
+2024-06-01 22:55:26,289 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:63449][0m
+2024-06-01 22:57:20,706 [mHTTP GET /member/wishlist_view/ 200 [0.04, 127.0.0.1:63498][0m
+2024-06-01 22:57:20,760 [36mHTTP GET /static/member/wishlist_style.css 304 [0.00, 127.0.0.1:63498][0m
+2024-06-01 23:00:25,672 [mHTTP GET /member/wishlist_view/ 200 [0.06, 127.0.0.1:63558][0m
+2024-06-01 23:00:25,753 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:63558][0m
+2024-06-01 23:00:50,843 [mHTTP GET /member/wishlist_view/ 200 [0.04, 127.0.0.1:63558][0m
+2024-06-01 23:00:50,895 [36mHTTP GET /static/member/wishlist_style.css 304 [0.01, 127.0.0.1:63558][0m
+2024-06-01 23:00:52,411 [mHTTP GET /member/wishlist_view/ 200 [0.07, 127.0.0.1:63558][0m
+2024-06-01 23:00:52,548 [mHTTP GET /static/member/wishlist_style.css 200 [0.06, 127.0.0.1:63558][0m
+2024-06-01 23:00:52,597 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.09, 127.0.0.1:63561][0m
+2024-06-01 23:00:52,598 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.11, 127.0.0.1:63559][0m
+2024-06-01 23:00:52,601 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.08, 127.0.0.1:63562][0m
+2024-06-01 23:00:52,610 [mHTTP GET /media/products/sofa_1.jpg 200 [0.09, 127.0.0.1:63563][0m
+2024-06-01 23:00:52,613 [mHTTP GET /media/products/weights.jpeg 200 [0.08, 127.0.0.1:63564][0m
+2024-06-01 23:00:52,791 Not Found: /favicon.ico
+2024-06-01 23:00:52,795 [33mHTTP GET /favicon.ico 404 [0.05, 127.0.0.1:63563][0m
+2024-06-01 23:01:02,464 [mHTTP GET /member/wishlist_view/ 200 [0.07, 127.0.0.1:63563][0m
+2024-06-01 23:01:02,565 [36mHTTP GET /static/member/wishlist_style.css 304 [0.02, 127.0.0.1:63563][0m
+2024-06-01 23:01:04,156 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:63563][0m
+2024-06-01 23:01:04,213 [mHTTP GET /static/member/wishlist_style.css 200 [0.01, 127.0.0.1:63563][0m
+2024-06-01 23:01:04,286 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.03, 127.0.0.1:63559][0m
+2024-06-01 23:01:04,287 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.02, 127.0.0.1:63564][0m
+2024-06-01 23:01:04,289 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.03, 127.0.0.1:63563][0m
+2024-06-01 23:01:04,290 [mHTTP GET /media/products/weights.jpeg 200 [0.03, 127.0.0.1:63561][0m
+2024-06-01 23:01:04,292 [mHTTP GET /media/products/sofa_1.jpg 200 [0.03, 127.0.0.1:63562][0m
+2024-06-01 23:01:04,439 Not Found: /favicon.ico
+2024-06-01 23:01:04,441 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:63562][0m
+2024-06-01 23:01:24,061 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:63562][0m
+2024-06-01 23:01:24,109 [36mHTTP GET /static/member/wishlist_style.css 304 [0.00, 127.0.0.1:63562][0m
+2024-06-01 23:01:30,967 [mHTTP GET / 200 [0.05, 127.0.0.1:63562][0m
+2024-06-01 23:01:31,091 [36mHTTP GET /media/products/strawberry2_VltATon.png 304 [0.04, 127.0.0.1:63562][0m
+2024-06-01 23:01:32,764 [mHTTP GET /detail/38/ 200 [0.16, 127.0.0.1:63562][0m
+2024-06-01 23:01:32,853 [36mHTTP GET /media/products/strawberrypic_QN494j9.jpeg 304 [0.02, 127.0.0.1:63562][0m
+2024-06-01 23:01:34,724 [32mHTTP GET /member/adding_wishlist/38/ 302 [0.27, 127.0.0.1:63562][0m
+2024-06-01 23:01:34,755 [mHTTP GET / 200 [0.03, 127.0.0.1:63562][0m
+2024-06-01 23:01:36,666 [mHTTP GET /detail/37/ 200 [0.13, 127.0.0.1:63562][0m
+2024-06-01 23:01:39,610 [32mHTTP GET /member/adding_wishlist/37/ 302 [0.27, 127.0.0.1:63562][0m
+2024-06-01 23:01:39,643 [mHTTP GET / 200 [0.03, 127.0.0.1:63562][0m
+2024-06-01 23:01:41,492 [mHTTP GET /detail/35/ 200 [0.14, 127.0.0.1:63562][0m
+2024-06-01 23:01:42,850 [32mHTTP GET /member/adding_wishlist/35/ 302 [0.23, 127.0.0.1:63562][0m
+2024-06-01 23:01:42,881 [mHTTP GET / 200 [0.03, 127.0.0.1:63562][0m
+2024-06-01 23:01:45,285 [mHTTP GET /detail/34/ 200 [0.20, 127.0.0.1:63562][0m
+2024-06-01 23:01:46,496 [32mHTTP GET /member/adding_wishlist/34/ 302 [0.30, 127.0.0.1:63562][0m
+2024-06-01 23:01:46,528 [mHTTP GET / 200 [0.03, 127.0.0.1:63562][0m
+2024-06-01 23:01:48,664 [mHTTP GET /detail/35/ 200 [0.12, 127.0.0.1:63562][0m
+2024-06-01 23:01:49,958 [32mHTTP GET /member/adding_wishlist/35/ 302 [0.21, 127.0.0.1:63562][0m
+2024-06-01 23:01:49,991 [mHTTP GET / 200 [0.03, 127.0.0.1:63562][0m
+2024-06-01 23:01:52,662 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:63562][0m
+2024-06-01 23:01:55,220 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:63562][0m
+2024-06-01 23:01:55,293 [36mHTTP GET /static/member/wishlist_style.css 304 [0.01, 127.0.0.1:63562][0m
+2024-06-01 23:01:58,115 [32mHTTP GET /member/remove_item_wishlist/17/ 302 [0.23, 127.0.0.1:63562][0m
+2024-06-01 23:01:58,161 [mHTTP GET /member/wishlist_view/ 200 [0.04, 127.0.0.1:63562][0m
+2024-06-01 23:03:40,059 [mHTTP GET /member/wishlist_view/ 200 [0.11, 127.0.0.1:63602][0m
+2024-06-01 23:03:40,176 [mHTTP GET /static/member/wishlist_style.css 200 [0.02, 127.0.0.1:63602][0m
+2024-06-01 23:03:46,987 [mHTTP GET / 200 [0.04, 127.0.0.1:63602][0m
+2024-06-01 23:03:50,758 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:63602][0m
+2024-06-01 23:03:56,247 [mHTTP GET /member/user_products/arsidd78/ 200 [0.04, 127.0.0.1:63602][0m
+2024-06-01 23:03:56,339 [mHTTP GET /static/member/my_product_style.css 200 [0.02, 127.0.0.1:63602][0m
+2024-06-01 23:04:44,749 [mHTTP GET /member/user_products/arsidd78/ 200 [0.03, 127.0.0.1:63602][0m
+2024-06-01 23:04:44,847 [mHTTP GET /static/member/my_product_style.css 200 [0.04, 127.0.0.1:63602][0m
+2024-06-01 23:05:14,095 [mHTTP GET / 200 [0.04, 127.0.0.1:63602][0m
