@@ -1,19 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'product/recommended_products_style.css' %}">
     <title>Recommended Products</title>
 </head>
 <body>
     <nav>
-        <div class="search-container">
-            <form action="{% url 'product:search' %}" method="post">
-                {% csrf_token %}
-                <input type="search" name="search_bar" placeholder="Search products...">
-                <input type="submit" value="Search" >
-            </form>
-        </div>
         <a href="{% url 'product:home' %}">Home Page</a>
         {% if request.user.is_authenticated %}
             <a href="{% url 'registration:signout' %}">LogOut</a>
@@ -21,12 +16,19 @@
             <a href="{% url 'registration:login' %}">LogIn</a>
         {% endif %}
         <a href="/admin/">Admin</a>
-        {% if member %}
-        <a href="{% url 'member:profile' request.user.username %}">Profile</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'member:profile' request.user.username %}">Profile</a>
         {% else %}
-        <a href="{% url 'member:register' %}">Complete Profile</a>
+            <a href="{% url 'member:register' %}">Complete Profile</a>
         {% endif %}
         <a href="{% url 'member:add_product_page' %}">Sell</a>
+        <div class="search-container">
+            <form action="{% url 'product:search' %}" method="post">
+                {% csrf_token %}
+                <input type="search" name="search_bar" placeholder="Search products...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
     </nav>
     <div class="main-content">
         <aside class="aside_links">
@@ -38,18 +40,38 @@
                 <h3>Products</h3>
                 <a href="{% url 'product:recent_products' %}">Recent Products</a>
                 <a href="{% url 'product:view_all' %}">View All Products</a>
-                <a href="{% url 'product:recommended'  %}">Recommended Products</a>
+                <a href="{% url 'product:recommended' %}">Recommended Products</a>
             </section>
         </aside>
-    <div class="recommended_products">
-        {% for product in products %}
-        <a href="{% url 'product:details' product.id  %}"
-        <article>
-            <img src="{{product.product_images.url}}" alt="image" width="100" height="100"><br>
-            <label for="">{{product.product_name}}</label><br>
-            <label for="">{{product.product_price}}</label><br>
-        </article>
-        {% endfor %}
+        <section class="recommended-products-section">
+            {% if products %}
+            <h1>Recommended Products</h1>
+            <div class="recommended-products">
+                {% for product in products %}
+                <div class="recommended-product-item">
+                    <a href="{% url 'product:details' product.id %}" class="recommended-product-link">
+                        <article class="product-card">
+                            <img src="{{ product.product_images.url }}" alt="{{ product.product_name }}" class="product-image" width="100">
+                            <div class="product-info">
+                                <label class="product-name">{{ product.product_name }}</label><br>
+                                <label class="product-price">$ {{ product.product_price }}</label><br>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <h1>No Recommended Products</h1>
+            {% endif %}
+        </section>
     </div>
+    <footer>
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>arsidd78@gmail.com</p>
+        <p>Github: <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+    </footer>
 </body>
 </html>
