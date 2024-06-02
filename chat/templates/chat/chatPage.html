@@ -12,7 +12,7 @@
       style="font-size: 20px"
     >
       <br>
-      <input type="text" id="id_message_send_input" />
+      <input type="text" id="id_message_send_input" name="message" />
       <button type="submit" id="id_message_send_button">Send Message</button>
       <br><br>
     </div>
@@ -38,14 +38,35 @@
 
       document.querySelector("#id_message_send_button").onclick = function (e) {
         var messageInput = document.querySelector("#id_message_send_input").value;
+        var csrfToken = '{{ csrf_token }}';
+
+        // Send message via WebSocket
         chatSocket.send(JSON.stringify({ message: messageInput, username: "{{ request.user.username }}" }));
+
+        // Send message via AJAX to save it in the database
+        fetch("{% url 'chat:web-chat' pk=product.pk %}", {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRFToken': csrfToken
+          },
+          body: `message=${messageInput}`
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.status === 'success') {
+            console.log('Message saved successfully');
+          }
+        });
+
+        // Clear the input field
+        document.querySelector("#id_message_send_input").value = "";
       };
 
       chatSocket.onmessage = function (e) {
         const data = JSON.parse(e.data);
         var div = document.createElement("div");
         div.innerHTML = data.username + " : " + data.message;
-        document.querySelector("#id_message_send_input").value = "";
         document.querySelector("#id_chat_item_container").appendChild(div);
       };
     </script>
