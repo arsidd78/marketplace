@@ -21,6 +21,8 @@ def chatPage(request, pk):
             )
             member = get_object_or_404(Member, user = product.name)
             member.user_messages_received.add(message)
+            sender = get_object_or_404(Member, user = request.user)
+            sender.user_messages_send.add(message)
             
             return JsonResponse({'status': 'success', 'message': 'Message sent successfully'})
         else:
@@ -43,4 +45,34 @@ def SellorChatPage(request):
         messages = Messages.objects.filter(receiver=request.user)
         context = {'messages':messages}
         return render(request,'chat/sellorChat.html',context)
+    return redirect('registration:login')
+
+def ChatSellor(request, pk):
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            msg = get_object_or_404(Messages, id=pk)
+            receiver = get_object_or_404(Member, user = msg.sender)
+            sender = get_object_or_404(Member,user = request.user)
+            body = request.POST.get('message')
+            if body:
+                message = Messages.objects.create(
+                    sender=request.user,
+                    receiver=msg.sender,
+                    product=msg.product,
+                    message=body
+                )
+                receiver.user_messages_received.add(message)
+                sender.user_messages_send.add(message)
+
+                return JsonResponse({'status': 200, 'message': 'Message sent successfully'})
+            else:
+                return JsonResponse({'status': 400, 'message': 'Message body is empty'})
+        else:
+            msg = get_object_or_404(Messages, id=pk)
+            member = get_object_or_404(Member, user=request.user)
+            received_messages = member.user_messages_received.filter(sender=msg.sender)
+            sent_messages = member.user_messages_send.filter(receiver=msg.sender)
+            zip_data = zip(received_messages, sent_messages)
+            context = {'msg': msg, 'messages': received_messages, 'sent': sent_messages, 'zip_data': zip_data}
+            return render(request, 'chat/receiverChat.html', context)
     return redirect('registration:login')

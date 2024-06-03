@@ -185,6 +185,20 @@ hr {
   margin: 20px 0;
 }
 
+/* Star Ratings */
+.rating-stars {
+  display: inline-block;
+}
+
+.star {
+  color: #ddd;
+  font-size: 1.2em;
+}
+
+.star.filled {
+  color: #ff0;
+}
+
 /* Footer */
 footer {
   background-color: #333;

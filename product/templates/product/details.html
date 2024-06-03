@@ -44,18 +44,18 @@
         </aside>
         <div class="product_data">
             <h1>{{product.product_name}}</h1>
-            <img src="{{product.product_images.url}}" class="prouduct_image">
+            <img src="{{product.product_images.url}}" class="product_image">
             {% if product.product_images2 %}
-                <img src="{{product.product_images2.url}}" class="prouduct_image">
+                <img src="{{product.product_images2.url}}" class="product_image">
             {% endif %}
             {% if product.product_images3 %}
-                <img src="{{product.product_images3.url}}" class="prouduct_image">
+                <img src="{{product.product_images3.url}}" class="product_image">
             {% endif %}
             {% if product.product_images4 %}
-                <img src="{{product.product_images4.url}}" class="prouduct_image">
+                <img src="{{product.product_images4.url}}" class="product_image">
             {% endif %}
             {% if product.product_images5 %}
-                <img src="{{product.product_images5.url}}" class="prouduct_image">
+                <img src="{{product.product_images5.url}}" class="product_image">
             {% endif %}
             <a href="{% url 'product:purchase_page' product.id %}"><button class="purchase_pd">Buy</button></a>
             <button class="addto_cart" onclick=location.href="{% url 'member:add_to_cart' product.id %}">Add to Cart</button>
@@ -85,9 +85,15 @@
                 <h1>Reviews:</h1>
                 {% for review in reviews %}
                 <hr>
-                <div>
+                <div class="review-item">
                     <label> By:<strong> {{review.reviewer.username}}</strong></label><br>
-                    <label>Rating: {{review.rating}}</label><br>
+                    <label>Rating: 
+                        <span class="rating-stars">
+                                {% for i in range %}
+                                    <span class="star {% if review.rating >= i|add:"0" %}filled{% endif %}">&#9733;</span>
+                                {% endfor %}
+                        </span>
+                    </label><br>
                     <label>Feedback:<p><strong><em> {{review.review}}</em></strong></p></label><br>
                     <label>Posted on : <i>{{review.posted_time}}</i> </label><br>
                 </div>

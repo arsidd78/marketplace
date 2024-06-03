@@ -43,7 +43,8 @@ def product_details(request,pk):
         product = get_object_or_404(Products,id=pk)
         reviews = Reviews.objects.filter(product=product)
         member.user_interest.add(product)
-        context = {'product':product,'reviews':reviews,'member':member}
+        
+        context = {'product':product,'reviews':reviews,'member':member,'range':[x for x in range(1,6)]}
         return render(request,'product/details.html',context)
     except:
         product = get_object_or_404(Products,id=pk)

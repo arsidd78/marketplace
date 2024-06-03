@@ -41,7 +41,7 @@ class Member(models.Model):
     user_messages_received = models.ManyToManyField(Messages)
     user_attachedfile_receive = models.FileField(upload_to='users/rec/att', null=True, blank=True)
     user_attachedfile_send = models.FileField(upload_to='users/send/att', null=True, blank=True)
-    user_messages_send = models.TextField(verbose_name='Messages Sent', null=True, blank=True)
+    user_messages_send = models.ManyToManyField(Messages, related_name='sent')
     def __str__(self):
         return self.username
     

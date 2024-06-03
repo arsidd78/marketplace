@@ -1,15 +1,58 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'product/review_style.css' %}">
+    <title>Feedback</title>
 </head>
 <body>
-    <form  method="post" enctype="multipart/form-data" >
-        {% csrf_token %}
-        {{form.as_p}}
-        <button type="submit">Add</button>
-    </form>
+    <nav>
+        <a href="{% url 'product:home' %}">Home Page</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'registration:signout' %}">LogOut</a>
+        {% else %}
+            <a href="{% url 'registration:login' %}">LogIn</a>
+        {% endif %}
+        <a href="/admin/">Admin</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'member:profile' request.user.username %}">Profile</a>
+        {% else %}
+            <a href="{% url 'member:register' %}">Complete Profile</a>
+        {% endif %}
+        <a href="{% url 'member:add_product_page' %}">Sell</a>
+    </nav>
+    <div class="main-content">
+        <section class="feedback-section">
+            <h1>Leave Your Feedback</h1>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+                <div class="form-group">
+                    <label for="id_rating">Rating:</label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" required /><label for="star5" title="5 stars">&#9733;</label>
+                        <input type="radio" id="star4" name="rating" value="4" required /><label for="star4" title="4 stars">&#9733;</label>
+                        <input type="radio" id="star3" name="rating" value="3" required /><label for="star3" title="3 stars">&#9733;</label>
+                        <input type="radio" id="star2" name="rating" value="2" required /><label for="star2" title="2 stars">&#9733;</label>
+                        <input type="radio" id="star1" name="rating" value="1" required /><label for="star1" title="1 star">&#9733;</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="id_review">Review:</label>
+                    {{ form.review }}
+                </div>
+                <button type="submit" class="submit-button">Add</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>arsidd78@gmail.com</p>
+        <p>Github: <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+    </footer>
 </body>
 </html>
