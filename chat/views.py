@@ -70,9 +70,12 @@ def ChatSellor(request, pk):
         else:
             msg = get_object_or_404(Messages, id=pk)
             member = get_object_or_404(Member, user=request.user)
-            received_messages = member.user_messages_received.filter(sender=msg.sender)
-            sent_messages = member.user_messages_send.filter(receiver=msg.sender)
+            received_messages = member.user_messages_received.filter(sender=msg.sender).all().order_by('-conversation_time')
+            sent_messages = member.user_messages_send.filter(receiver=msg.sender).all().order_by('-conversation_time')
+            messages = list(received_messages) + list(sent_messages)
+            messages.sort(key=lambda x: x.conversation_time)
+            print(f'**************************{messages}*****************************')
             zip_data = zip(received_messages, sent_messages)
-            context = {'msg': msg, 'messages': received_messages, 'sent': sent_messages, 'zip_data': zip_data}
+            context = {'msg': msg,'received_messages':received_messages,'sent_messages':sent_messages,'messages':messages}
             return render(request, 'chat/receiverChat.html', context)
     return redirect('registration:login')

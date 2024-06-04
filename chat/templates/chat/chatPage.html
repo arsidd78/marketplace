@@ -1,72 +1,110 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
-  <body>
-
-    <div
-      class="chat__item__container"
-      id="id_chat_item_container"
-      style="font-size: 20px"
-    >
-      {% for msg in messages %}
-      <p>{{msg.sender}}: {{msg.message}} </p>
-      {% endfor %}
-      <input type="text" id="id_message_send_input" name="message" />
-      <button type="submit" id="id_message_send_button">Send Message</button>
-      <br><br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Initiator</title>
+    <link rel="stylesheet" href="{% static 'chat/chat_initiator_style.css' %}">
+</head>
+<body>
+  <nav>
+    <div class="search-container">
+        <form action="{% url 'product:search' %}" method="post">
+            {% csrf_token %}
+            <input type="search" name="search_bar" placeholder="Search products...">
+            <input type="submit" value="Search" >
+        </form>
     </div>
-    <script>
-      const roomName = "some_room_name"; // Make sure to match the room name
+    <a href="{% url 'product:home' %}">Home Page</a>
+    {% if request.user.is_authenticated %}
+        <a href="{% url 'registration:signout' %}">LogOut</a>
+    {% else %}
+        <a href="{% url 'registration:login' %}">LogIn</a>
+    {% endif %}
+    <a href="/admin/">Admin</a>
+    {% if member %}
+    <a href="{% url 'member:profile' request.user.username %}">Profile</a>
+    {% else %}
+    <a href="{% url 'member:register' %}">Complete Profile</a>
+    {% endif %}
+    <a href="{% url 'member:add_product_page' %}">Sell</a>
+    <a href="{% url 'chat:sellor-chat' %}"><img src="/media/logos/chat_logo.png" alt="chat" width="32"></a>
+</nav>
+  <div class="chat-container">
+      <div class="chat-box" id="id_chat_item_container">
+          {% for msg in messages %}
+          <div class="chat-item">
+              <p><strong>{{msg.sender}}</strong>: {{msg.message}}</p>
+          </div>
+          {% endfor %}
+      </div>
+      <div class="input-container">
+          <input type="text" id="id_message_send_input" placeholder="Type your message here...">
+          <button id="id_message_send_button">Send</button>
+      </div>
+  </div>
+  <script>
+      const roomName = "some_room_name";
       const chatSocket = new WebSocket("ws://" + window.location.host + "/ws/chat/" + roomName + "/");
 
       chatSocket.onopen = function (e) {
-        console.log("The connection was setup successfully !");
+          console.log("The connection was set up successfully!");
       };
 
       chatSocket.onclose = function (e) {
-        console.log("Something unexpected happened !");
+          console.log("Something unexpected happened!");
       };
 
       document.querySelector("#id_message_send_input").focus();
 
       document.querySelector("#id_message_send_input").onkeyup = function (e) {
-        if (e.keyCode == 13) {
-          document.querySelector("#id_message_send_button").click();
-        }
+          if (e.keyCode == 13) {
+              document.querySelector("#id_message_send_button").click();
+          }
       };
 
       document.querySelector("#id_message_send_button").onclick = function (e) {
-        var messageInput = document.querySelector("#id_message_send_input").value;
-        var csrfToken = '{{ csrf_token }}';
+          var messageInput = document.querySelector("#id_message_send_input").value;
+          var csrfToken = '{{ csrf_token }}';
 
-        // Send message via WebSocket
-        chatSocket.send(JSON.stringify({ message: messageInput, username: "{{ request.user.username }}" }));
+          // Send message via WebSocket
+          chatSocket.send(JSON.stringify({ message: messageInput, username: "{{ request.user.username }}" }));
 
-        // Send message via AJAX to save it in the database
-        fetch("{% url 'chat:web-chat' pk=product.pk %}", {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'X-CSRFToken': csrfToken
-          },
-          body: `message=${messageInput}`
-        })
-        .then(response => response.json())
-        .then(data => {
-          if (data.status === 'success') {
-            console.log('Message saved successfully');
-          }
-        });
+          // Send message via AJAX to save it in the database
+          fetch("{% url 'chat:web-chat' pk=product.pk %}", {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded',
+                  'X-CSRFToken': csrfToken
+              },
+              body: `message=${messageInput}`
+          })
+          .then(response => response.json())
+          .then(data => {
+              if (data.status === 'success') {
+                  console.log('Message saved successfully');
+              }
+          });
 
-        // Clear the input field
-        document.querySelector("#id_message_send_input").value = "";
+          // Clear the input field
+          document.querySelector("#id_message_send_input").value = "";
       };
 
       chatSocket.onmessage = function (e) {
-        const data = JSON.parse(e.data);
-        var div = document.createElement("div");
-        div.innerHTML = data.username + " : " + data.message;
-        document.querySelector("#id_chat_item_container").appendChild(div);
+          const data = JSON.parse(e.data);
+          var div = document.createElement("div");
+          div.className = "chat-item";
+          div.innerHTML = "<p><strong>" + data.username + "</strong>: " + data.message + "</p>";
+          document.querySelector("#id_chat_item_container").appendChild(div);
       };
-    </script>
-  </body>
+  </script>
+  <footer>
+    <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+    <p>Creator: Muhammad Arham Siddiqui</p>
+    <p>arsidd78@gmail.com</p>
+    <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+  </footer>
+</body>
 </html>

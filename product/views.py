@@ -13,14 +13,14 @@ def home(request):
         
         member = get_object_or_404(Member, user = request.user)
         products = Products.objects.order_by('-product_posted_date')[:5]
-
+        
         
         try: 
             items = member.user_interest.all()
             context = {
 
                 'products':products,
-                'items':items.order_by('-product_posted_date')[:5] ,
+                'items':items[:5] ,
                 'member':member,
                 'request':request,
             }
