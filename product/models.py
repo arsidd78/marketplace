@@ -151,6 +151,7 @@ class Purchase(models.Model):
     price = models.DecimalField(max_digits=7,decimal_places=2)
     date = models.DateField(auto_now_add=True)
     posted_time = models.DateField(auto_now=True)
+    read = models.BooleanField(default=False)
     buyer = models.ForeignKey(User,on_delete=models.DO_NOTHING)
     buyer_phone = models.CharField(max_length=13)
     buyer_address = models.CharField(max_length=200)

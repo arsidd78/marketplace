@@ -22966,3 +22966,356 @@ TypeError: sort() takes no positional arguments
 2024-06-04 13:01:23,911 [mHTTP POST /chat/chat/17/ 200 [0.51, 127.0.0.1:56509][0m
 2024-06-04 14:05:48,504 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:56507]
 2024-06-04 14:05:52,257 [mHTTP GET / 200 [0.08, 127.0.0.1:56900][0m
+2024-06-04 20:15:31,448 [mHTTP GET / 200 [0.21, 127.0.0.1:59069][0m
+2024-06-04 20:15:32,288 [mHTTP GET /static/product/index_style.css 200 [0.78, 127.0.0.1:59069][0m
+2024-06-04 20:15:32,384 [mHTTP GET /media/logos/chat_logo.png 200 [0.87, 127.0.0.1:59070][0m
+2024-06-04 20:15:32,389 [mHTTP GET /media/products/mangoes1_C874n2S.jpeg 200 [0.71, 127.0.0.1:59074][0m
+2024-06-04 20:15:32,397 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.71, 127.0.0.1:59075][0m
+2024-06-04 20:15:32,502 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.82, 127.0.0.1:59073][0m
+2024-06-04 20:15:32,604 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.11, 127.0.0.1:59074][0m
+2024-06-04 20:15:32,701 [mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 200 [0.19, 127.0.0.1:59073][0m
+2024-06-04 20:15:32,706 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.25, 127.0.0.1:59075][0m
+2024-06-04 20:15:32,736 [mHTTP GET /media/products/sofa_1.jpg 200 [1.03, 127.0.0.1:59076][0m
+2024-06-04 20:15:32,763 [mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 200 [0.16, 127.0.0.1:59074][0m
+2024-06-04 20:15:32,787 [mHTTP GET /media/products/living_1.jpeg 200 [0.49, 127.0.0.1:59069][0m
+2024-06-04 20:15:32,919 [mHTTP GET /media/products/strawberry2_VltATon.png 200 [0.50, 127.0.0.1:59070][0m
+2024-06-04 20:15:34,185 Not Found: /favicon.ico
+2024-06-04 20:15:34,186 [33mHTTP GET /favicon.ico 404 [0.66, 127.0.0.1:59070][0m
+2024-06-04 20:15:51,221 [mHTTP GET /detail/17/ 200 [0.25, 127.0.0.1:59070][0m
+2024-06-04 20:15:51,307 [mHTTP GET /static/product/details_style.css 200 [0.04, 127.0.0.1:59070][0m
+2024-06-04 20:15:54,204 [mHTTP GET /chat/chat/17/ 200 [0.05, 127.0.0.1:59070][0m
+2024-06-04 20:15:54,312 [mHTTP GET /static/chat/chat_initiator_style.css 200 [0.03, 127.0.0.1:59070][0m
+2024-06-04 20:15:54,373 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:59081]
+2024-06-04 20:15:54,434 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:59081]
+2024-06-04 20:16:08,138 [mHTTP POST /chat/chat/17/ 200 [0.33, 127.0.0.1:59070][0m
+2024-06-04 20:16:34,223 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:59081]
+2024-06-04 20:17:20,135 [mHTTP GET /chat/chat/17/ 200 [0.07, 127.0.0.1:59097][0m
+2024-06-04 20:17:20,242 [36mHTTP GET /static/chat/chat_initiator_style.css 304 [0.02, 127.0.0.1:59097][0m
+2024-06-04 20:17:20,253 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:59099]
+2024-06-04 20:17:20,302 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:59099]
+2024-06-04 20:17:34,848 [mHTTP POST /chat/chat/17/ 200 [0.43, 127.0.0.1:59097][0m
+2024-06-04 20:42:43,280 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:59099]
+2024-06-04 23:14:39,572 [mHTTP GET / 200 [0.29, 127.0.0.1:60348][0m
+2024-06-04 23:14:41,384 Not Found: /favicon.ico
+2024-06-04 23:14:41,384 [33mHTTP GET /favicon.ico 404 [0.24, 127.0.0.1:60348][0m
+2024-06-04 23:14:43,714 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.16, 127.0.0.1:60348][0m
+2024-06-04 23:14:44,215 [mHTTP GET /static/member/user_page_style.css 200 [0.41, 127.0.0.1:60348][0m
+2024-06-04 23:14:44,348 [mHTTP GET /media/logos/edit_logo.png 200 [0.54, 127.0.0.1:60349][0m
+2024-06-04 23:14:44,348 [mHTTP GET /media/users/dp/Edited_Dp.jpeg 200 [0.53, 127.0.0.1:60355][0m
+2024-06-04 23:14:47,450 [mHTTP GET /member/purchase_orders/arsidd78/ 200 [0.31, 127.0.0.1:60355][0m
+2024-06-04 23:15:46,293 [mHTTP GET /member/user_products/arsidd78/ 200 [0.07, 127.0.0.1:60355][0m
+2024-06-04 23:15:46,546 [mHTTP GET /static/member/my_product_style.css 200 [0.14, 127.0.0.1:60355][0m
+2024-06-04 23:15:46,597 [mHTTP GET /media/products/doc_tool1.jpeg 200 [0.12, 127.0.0.1:60369][0m
+2024-06-04 23:15:46,666 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.26, 127.0.0.1:60366][0m
+2024-06-04 23:15:46,706 [mHTTP GET /media/products/outdoor_1.jpeg 200 [0.23, 127.0.0.1:60368][0m
+2024-06-04 23:15:46,749 [mHTTP GET /media/products/weights.jpeg 200 [0.10, 127.0.0.1:60369][0m
+2024-06-04 23:15:46,768 [mHTTP GET /media/products/pullover1.jpeg 200 [0.28, 127.0.0.1:60370][0m
+2024-06-04 23:15:46,791 [mHTTP GET /media/products/butterfly_1.jpeg 200 [0.24, 127.0.0.1:60355][0m
+2024-06-04 23:15:46,853 [mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 200 [0.38, 127.0.0.1:60367][0m
+2024-06-04 23:15:47,024 [mHTTP GET /media/products/mouse.jpeg 200 [0.10, 127.0.0.1:60355][0m
+2024-06-04 23:15:47,039 [mHTTP GET /media/products/harry_potter_novel_complete.jpeg 200 [0.12, 127.0.0.1:60366][0m
+2024-06-04 23:15:47,045 [mHTTP GET /media/products/computer_1.jpeg 200 [0.17, 127.0.0.1:60370][0m
+2024-06-04 23:15:47,054 [mHTTP GET /media/products/laptop1.jpeg 200 [0.18, 127.0.0.1:60368][0m
+2024-06-04 23:15:47,079 [mHTTP GET /media/products/mouse_12.jpeg 200 [0.15, 127.0.0.1:60369][0m
+2024-06-04 23:15:47,112 [mHTTP GET /media/products/toys_1.jpeg 200 [0.13, 127.0.0.1:60367][0m
+2024-06-04 23:15:47,119 [mHTTP GET /media/products/toys_2.jpeg 200 [0.06, 127.0.0.1:60366][0m
+2024-06-04 23:16:36,821 [mHTTP GET / 200 [0.02, 127.0.0.1:60366][0m
+2024-06-04 23:17:23,837 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\models.py changed, reloading.
+2024-06-04 23:27:20,159 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:27:22,869 [mHTTP GET /chat/chat/ 200 [0.17, 127.0.0.1:60470][0m
+2024-06-04 23:27:23,102 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.16, 127.0.0.1:60470][0m
+2024-06-04 23:30:17,273 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:30:20,570 [mHTTP GET / 200 [0.07, 127.0.0.1:60490][0m
+2024-06-04 23:30:22,340 Internal Server Error: /chat/chat/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py", line 45, in SellorChatPage
+    messages = Messages.objects.filter(receiver=request.user)[-1]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 431, in __getitem__
+    raise ValueError("Negative indexing is not supported.")
+ValueError: Negative indexing is not supported.
+2024-06-04 23:30:22,348 [35;1mHTTP GET /chat/chat/ 500 [0.41, 127.0.0.1:60490][0m
+2024-06-04 23:33:43,244 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:33:48,722 [mHTTP GET / 200 [0.06, 127.0.0.1:60544][0m
+2024-06-04 23:33:50,221 [mHTTP GET /chat/chat/ 200 [0.06, 127.0.0.1:60544][0m
+2024-06-04 23:35:50,804 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:35:54,368 [mHTTP GET /chat/chat/ 200 [0.14, 127.0.0.1:60576][0m
+2024-06-04 23:36:09,817 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:36:12,257 [mHTTP GET /chat/chat/ 200 [0.06, 127.0.0.1:60586][0m
+2024-06-04 23:44:00,000 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:44:04,363 [mHTTP GET / 200 [0.07, 127.0.0.1:60690][0m
+2024-06-04 23:44:06,170 [mHTTP GET /chat/chat/ 200 [0.05, 127.0.0.1:60690][0m
+2024-06-04 23:44:08,806 [mHTTP GET /chat/receiver_chat/4 200 [0.14, 127.0.0.1:60690][0m
+2024-06-04 23:44:09,000 [mHTTP GET /static/chat/chat_style.css 200 [0.14, 127.0.0.1:60690][0m
+2024-06-04 23:44:09,007 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60692]
+2024-06-04 23:44:09,107 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60692]
+2024-06-04 23:45:28,982 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:46:10,368 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:46:15,470 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:60720][0m
+2024-06-04 23:46:18,100 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60722]
+2024-06-04 23:46:18,164 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60722]
+2024-06-04 23:47:49,794 [mHTTP GET /chat/receiver_chat/4 200 [0.13, 127.0.0.1:60734][0m
+2024-06-04 23:47:49,805 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:60722]
+2024-06-04 23:47:49,882 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60736]
+2024-06-04 23:47:49,894 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60736]
+2024-06-04 23:48:28,331 [mHTTP GET /chat/receiver_chat/4 200 [0.09, 127.0.0.1:60734][0m
+2024-06-04 23:48:28,343 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:60736]
+2024-06-04 23:48:28,422 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60737]
+2024-06-04 23:48:28,437 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60737]
+2024-06-04 23:50:04,261 [mHTTP POST /chat/receiver_chat/4 200 [0.24, 127.0.0.1:60740][0m
+2024-06-04 23:50:29,136 [mHTTP GET / 200 [0.03, 127.0.0.1:60743][0m
+2024-06-04 23:50:29,615 [mHTTP GET /media/logos/chat_logo.png 200 [0.35, 127.0.0.1:60744][0m
+2024-06-04 23:50:29,641 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.38, 127.0.0.1:60748][0m
+2024-06-04 23:50:29,670 [mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 200 [0.40, 127.0.0.1:60747][0m
+2024-06-04 23:50:29,742 [mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 200 [0.12, 127.0.0.1:60744][0m
+2024-06-04 23:50:29,764 [mHTTP GET /static/product/index_style.css 200 [0.51, 127.0.0.1:60743][0m
+2024-06-04 23:50:29,845 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.58, 127.0.0.1:60746][0m
+2024-06-04 23:50:29,895 [mHTTP GET /media/products/strawberry2_VltATon.png 200 [0.63, 127.0.0.1:60745][0m
+2024-06-04 23:50:31,449 [mHTTP GET /registration/login/ 200 [0.08, 127.0.0.1:60745][0m
+2024-06-04 23:50:31,529 [mHTTP GET /static/registration/login_style.css 200 [0.05, 127.0.0.1:60745][0m
+2024-06-04 23:50:35,659 [32mHTTP POST /registration/authentication/?next= 302 [1.05, 127.0.0.1:60745][0m
+2024-06-04 23:50:35,692 [mHTTP GET / 200 [0.03, 127.0.0.1:60745][0m
+2024-06-04 23:50:35,793 [mHTTP GET /media/products/doc_tool1.jpeg 200 [0.05, 127.0.0.1:60743][0m
+2024-06-04 23:50:35,796 [mHTTP GET /media/products/mouse_12.jpeg 200 [0.05, 127.0.0.1:60747][0m
+2024-06-04 23:50:35,806 [mHTTP GET /media/products/weights.jpeg 200 [0.07, 127.0.0.1:60744][0m
+2024-06-04 23:50:35,810 [mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 200 [0.08, 127.0.0.1:60745][0m
+2024-06-04 23:50:35,821 [mHTTP GET /media/products/sofa_1.jpg 200 [0.09, 127.0.0.1:60746][0m
+2024-06-04 23:50:37,716 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:60746][0m
+2024-06-04 23:50:37,747 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.00, 127.0.0.1:60746][0m
+2024-06-04 23:50:42,284 [mHTTP GET / 200 [0.02, 127.0.0.1:60746][0m
+2024-06-04 23:50:44,157 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:60746][0m
+2024-06-04 23:50:50,559 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:60737]
+2024-06-04 23:50:52,318 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:60740][0m
+2024-06-04 23:50:54,263 [mHTTP GET / 200 [0.03, 127.0.0.1:60740][0m
+2024-06-04 23:51:45,431 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:51:59,236 [mHTTP GET /chat/chat/ 200 [0.06, 127.0.0.1:60773][0m
+2024-06-04 23:52:28,783 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:52:31,871 [mHTTP GET /chat/chat/ 200 [0.08, 127.0.0.1:60783][0m
+2024-06-04 23:52:36,962 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:60785][0m
+2024-06-04 23:52:39,784 [mHTTP GET /chat/receiver_chat/2 200 [0.05, 127.0.0.1:60785][0m
+2024-06-04 23:52:39,915 [mHTTP GET /static/chat/chat_style.css 200 [0.09, 127.0.0.1:60785][0m
+2024-06-04 23:52:39,922 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60787]
+2024-06-04 23:52:39,962 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60787]
+2024-06-04 23:53:32,583 [mHTTP POST /chat/receiver_chat/2 200 [0.33, 127.0.0.1:60785][0m
+2024-06-04 23:53:37,705 [mHTTP GET /chat/receiver_chat/4 200 [0.06, 127.0.0.1:60789][0m
+2024-06-04 23:53:37,814 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60791]
+2024-06-04 23:53:37,877 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60791]
+2024-06-04 23:54:03,667 [mHTTP POST /chat/receiver_chat/4 200 [0.28, 127.0.0.1:60789][0m
+2024-06-04 23:54:40,445 [mHTTP POST /chat/receiver_chat/2 200 [0.24, 127.0.0.1:60799][0m
+2024-06-04 23:54:48,025 [mHTTP POST /chat/receiver_chat/4 200 [0.32, 127.0.0.1:60789][0m
+2024-06-04 23:55:08,484 [mHTTP POST /chat/receiver_chat/2 200 [0.26, 127.0.0.1:60799][0m
+2024-06-04 23:55:38,176 [mHTTP GET / 200 [0.04, 127.0.0.1:60789][0m
+2024-06-04 23:55:38,275 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:60791]
+2024-06-04 23:56:03,135 [32mHTTP GET /registration/signout/ 302 [0.14, 127.0.0.1:60799][0m
+2024-06-04 23:56:03,167 [mHTTP GET / 200 [0.01, 127.0.0.1:60799][0m
+2024-06-04 23:56:03,235 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:60787]
+2024-06-04 23:56:05,783 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:60799][0m
+2024-06-04 23:56:09,888 [32mHTTP POST /registration/authentication/?next= 302 [1.04, 127.0.0.1:60799][0m
+2024-06-04 23:56:09,920 [mHTTP GET / 200 [0.03, 127.0.0.1:60799][0m
+2024-06-04 23:56:14,215 [mHTTP GET /view_all/ 200 [0.07, 127.0.0.1:60799][0m
+2024-06-04 23:56:14,350 [mHTTP GET /media/products/outdoor_1.jpeg 200 [0.07, 127.0.0.1:60808][0m
+2024-06-04 23:56:14,353 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.09, 127.0.0.1:60806][0m
+2024-06-04 23:56:14,356 [mHTTP GET /media/products/mangoes1_C874n2S.jpeg 200 [0.10, 127.0.0.1:60805][0m
+2024-06-04 23:56:14,389 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.14, 127.0.0.1:60799][0m
+2024-06-04 23:56:14,397 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.14, 127.0.0.1:60807][0m
+2024-06-04 23:56:14,428 [mHTTP GET /media/products/living_1.jpeg 200 [0.15, 127.0.0.1:60809][0m
+2024-06-04 23:56:14,485 [mHTTP GET /media/products/laptop1.jpeg 200 [0.13, 127.0.0.1:60808][0m
+2024-06-04 23:56:14,487 [mHTTP GET /media/products/mouse.jpeg 200 [0.10, 127.0.0.1:60805][0m
+2024-06-04 23:56:14,500 [mHTTP GET /media/products/butterfly_1.jpeg 200 [0.07, 127.0.0.1:60807][0m
+2024-06-04 23:56:14,502 [mHTTP GET /media/products/pullover1.jpeg 200 [0.10, 127.0.0.1:60799][0m
+2024-06-04 23:56:14,558 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.20, 127.0.0.1:60806][0m
+2024-06-04 23:56:14,561 [mHTTP GET /media/products/harry_potter_novel_complete.jpeg 200 [0.06, 127.0.0.1:60808][0m
+2024-06-04 23:56:14,565 [mHTTP GET /media/products/toys_1.jpeg 200 [0.07, 127.0.0.1:60805][0m
+2024-06-04 23:56:14,569 [mHTTP GET /media/products/computer_1.jpeg 200 [0.08, 127.0.0.1:60809][0m
+2024-06-04 23:56:14,576 [mHTTP GET /media/products/toys_2.jpeg 200 [0.06, 127.0.0.1:60807][0m
+2024-06-04 23:56:18,258 [mHTTP GET /detail/33/ 200 [0.15, 127.0.0.1:60807][0m
+2024-06-04 23:56:18,320 [mHTTP GET /static/product/details_style.css 200 [0.04, 127.0.0.1:60807][0m
+2024-06-04 23:56:20,460 [mHTTP GET /chat/chat/33/ 200 [0.02, 127.0.0.1:60807][0m
+2024-06-04 23:56:20,547 [mHTTP GET /static/chat/chat_initiator_style.css 200 [0.06, 127.0.0.1:60807][0m
+2024-06-04 23:56:20,552 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60810]
+2024-06-04 23:56:20,572 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60810]
+2024-06-04 23:56:46,232 [mHTTP POST /chat/chat/33/ 200 [0.25, 127.0.0.1:60807][0m
+2024-06-04 23:57:00,319 [mHTTP GET /chat/chat/ 200 [0.06, 127.0.0.1:60814][0m
+2024-06-04 23:57:05,281 [mHTTP GET / 200 [0.02, 127.0.0.1:60814][0m
+2024-06-04 23:57:06,620 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:60814][0m
+2024-06-04 23:57:08,953 [mHTTP GET /chat/receiver_chat/5 200 [0.03, 127.0.0.1:60814][0m
+2024-06-04 23:57:09,053 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60820]
+2024-06-04 23:57:09,073 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60820]
+2024-06-04 23:57:12,991 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:60820]
+2024-06-04 23:57:21,397 [mHTTP GET / 200 [0.03, 127.0.0.1:60807][0m
+2024-06-04 23:57:21,452 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:60810]
+2024-06-04 23:57:24,439 [mHTTP GET /chat/chat/ 200 [0.02, 127.0.0.1:60807][0m
+2024-06-04 23:57:29,931 [mHTTP GET /chat/chat/ 200 [0.07, 127.0.0.1:60814][0m
+2024-06-04 23:58:24,051 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:60814][0m
+2024-06-04 23:58:26,050 [mHTTP GET /chat/receiver_chat/5 200 [0.05, 127.0.0.1:60814][0m
+2024-06-04 23:58:26,140 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60832]
+2024-06-04 23:58:26,175 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60832]
+2024-06-04 23:59:02,142 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:60832]
+2024-06-04 23:59:32,432 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:59:35,531 Internal Server Error: /chat/chat/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py", line 48, in SellorChatPage
+    print(f'************************************{sender}*********************************')
+                                                 ^^^^^^
+UnboundLocalError: cannot access local variable 'sender' where it is not associated with a value
+2024-06-04 23:59:35,580 [35;1mHTTP GET /chat/chat/ 500 [0.19, 127.0.0.1:60845][0m
+2024-06-04 23:59:48,015 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-04 23:59:50,368 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:60854][0m
+2024-06-05 00:00:37,734 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 00:00:43,084 [mHTTP GET /chat/chat/ 200 [0.09, 127.0.0.1:60864][0m
+2024-06-05 00:01:31,093 [mHTTP GET /chat/chat/33/ 200 [0.03, 127.0.0.1:60873][0m
+2024-06-05 00:01:31,145 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60874]
+2024-06-05 00:01:31,197 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60874]
+2024-06-05 00:01:32,596 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:60874]
+2024-06-05 00:01:52,545 [mHTTP GET /member/add_product/ 200 [0.35, 127.0.0.1:60873][0m
+2024-06-05 00:01:52,732 [mHTTP GET /static/member/add_product_style.css 200 [0.16, 127.0.0.1:60873][0m
+2024-06-05 00:01:52,844 [mHTTP GET /static/member/script.js 200 [0.26, 127.0.0.1:60877][0m
+2024-06-05 00:02:05,791 [mHTTP GET / 200 [0.03, 127.0.0.1:60877][0m
+2024-06-05 00:02:42,504 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:60882][0m
+2024-06-05 00:03:33,288 [mHTTP GET /chat/chat/ 200 [0.06, 127.0.0.1:60882][0m
+2024-06-05 00:03:53,369 [mHTTP GET / 200 [0.02, 127.0.0.1:60882][0m
+2024-06-05 00:03:55,013 [mHTTP GET /chat/chat/ 200 [0.05, 127.0.0.1:60882][0m
+2024-06-05 00:04:45,291 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 00:04:50,880 [mHTTP GET /chat/chat/ 200 [0.08, 127.0.0.1:60905][0m
+2024-06-05 00:14:00,356 [mHTTP GET /admin/ 200 [0.43, 127.0.0.1:60967][0m
+2024-06-05 00:14:00,766 [mHTTP GET /static/admin/css/base.css 200 [0.36, 127.0.0.1:60967][0m
+2024-06-05 00:14:00,806 [mHTTP GET /static/admin/css/responsive.css 200 [0.40, 127.0.0.1:60972][0m
+2024-06-05 00:14:00,818 [mHTTP GET /static/admin/css/dark_mode.css 200 [0.41, 127.0.0.1:60966][0m
+2024-06-05 00:14:00,829 [mHTTP GET /static/admin/css/dashboard.css 200 [0.43, 127.0.0.1:60973][0m
+2024-06-05 00:14:00,841 [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.44, 127.0.0.1:60974][0m
+2024-06-05 00:14:01,005 [mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.06, 127.0.0.1:60966][0m
+2024-06-05 00:14:01,020 [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.07, 127.0.0.1:60972][0m
+2024-06-05 00:14:01,033 [mHTTP GET /static/admin/img/icon-deletelink.svg 200 [0.08, 127.0.0.1:60967][0m
+2024-06-05 00:14:01,107 [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.23, 127.0.0.1:60973][0m
+2024-06-05 00:14:01,141 [mHTTP GET /static/admin/js/theme.js 200 [0.27, 127.0.0.1:60974][0m
+2024-06-05 00:14:04,384 [mHTTP GET /admin/member/messages/ 200 [0.27, 127.0.0.1:60974][0m
+2024-06-05 00:14:04,482 [mHTTP GET /static/admin/css/changelists.css 200 [0.05, 127.0.0.1:60974][0m
+2024-06-05 00:14:04,546 [mHTTP GET /static/admin/js/jquery.init.js 200 [0.08, 127.0.0.1:60972][0m
+2024-06-05 00:14:04,685 [mHTTP GET /static/admin/js/core.js 200 [0.22, 127.0.0.1:60966][0m
+2024-06-05 00:14:04,711 [mHTTP GET /static/admin/js/actions.js 200 [0.23, 127.0.0.1:60974][0m
+2024-06-05 00:14:04,730 [mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.26, 127.0.0.1:60978][0m
+2024-06-05 00:14:04,819 [mHTTP GET /static/admin/js/prepopulate.js 200 [0.12, 127.0.0.1:60966][0m
+2024-06-05 00:14:04,836 [mHTTP GET /static/admin/js/urlify.js 200 [0.29, 127.0.0.1:60972][0m
+2024-06-05 00:14:04,887 [mHTTP GET /admin/jsi18n/ 200 [0.43, 127.0.0.1:60973][0m
+2024-06-05 00:14:05,437 [mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.97, 127.0.0.1:60967][0m
+2024-06-05 00:14:05,467 [mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.75, 127.0.0.1:60974][0m
+2024-06-05 00:14:05,598 [mHTTP GET /static/admin/js/filters.js 200 [0.03, 127.0.0.1:60967][0m
+2024-06-05 00:14:05,651 [mHTTP GET /static/admin/img/tooltag-add.svg 200 [0.04, 127.0.0.1:60974][0m
+2024-06-05 00:14:24,812 [mHTTP POST /admin/member/messages/ 200 [0.12, 127.0.0.1:60974][0m
+2024-06-05 00:14:24,933 [mHTTP GET /static/admin/js/cancel.js 200 [0.07, 127.0.0.1:60974][0m
+2024-06-05 00:14:31,997 [32mHTTP POST /admin/member/messages/ 302 [2.95, 127.0.0.1:60974][0m
+2024-06-05 00:14:32,025 [mHTTP GET /admin/member/messages/ 200 [0.02, 127.0.0.1:60974][0m
+2024-06-05 00:14:32,100 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60974][0m
+2024-06-05 00:14:32,161 [mHTTP GET /static/admin/img/icon-yes.svg 200 [0.03, 127.0.0.1:60974][0m
+2024-06-05 00:14:36,520 [mHTTP GET /admin/member/messages/ 200 [0.03, 127.0.0.1:60974][0m
+2024-06-05 00:14:36,658 [mHTTP GET /admin/jsi18n/ 200 [0.07, 127.0.0.1:60974][0m
+2024-06-05 00:14:40,053 [mHTTP GET / 200 [0.03, 127.0.0.1:60974][0m
+2024-06-05 00:14:46,013 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:60974][0m
+2024-06-05 00:14:58,838 [mHTTP GET /detail/35/ 200 [0.20, 127.0.0.1:60997][0m
+2024-06-05 00:15:01,955 [mHTTP GET /chat/chat/35/ 200 [0.03, 127.0.0.1:60997][0m
+2024-06-05 00:15:02,028 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:60998]
+2024-06-05 00:15:02,094 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:60998]
+2024-06-05 00:15:43,758 [mHTTP POST /chat/chat/35/ 200 [0.35, 127.0.0.1:60997][0m
+2024-06-05 00:15:47,086 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:60999][0m
+2024-06-05 00:15:48,603 [mHTTP GET /chat/receiver_chat/31 200 [0.03, 127.0.0.1:60999][0m
+2024-06-05 00:15:48,692 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61016]
+2024-06-05 00:15:48,726 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61016]
+2024-06-05 00:15:55,252 [mHTTP POST /chat/receiver_chat/31 200 [0.33, 127.0.0.1:60999][0m
+2024-06-05 00:15:57,124 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61016]
+2024-06-05 00:16:01,841 [mHTTP GET / 200 [0.03, 127.0.0.1:60997][0m
+2024-06-05 00:16:01,901 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:60998]
+2024-06-05 00:16:04,613 [mHTTP GET /chat/chat/ 200 [0.02, 127.0.0.1:60997][0m
+2024-06-05 00:16:08,921 [32mHTTP GET /registration/signout/ 302 [0.13, 127.0.0.1:60997][0m
+2024-06-05 00:16:08,942 [mHTTP GET / 200 [0.02, 127.0.0.1:60997][0m
+2024-06-05 00:16:11,212 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:60997][0m
+2024-06-05 00:16:15,268 [32mHTTP POST /registration/authentication/?next= 302 [1.07, 127.0.0.1:60997][0m
+2024-06-05 00:16:15,288 [mHTTP GET / 200 [0.02, 127.0.0.1:60997][0m
+2024-06-05 00:16:19,909 [mHTTP GET /detail/25/ 200 [0.14, 127.0.0.1:60997][0m
+2024-06-05 00:16:25,249 [mHTTP GET /chat/chat/25/ 200 [0.01, 127.0.0.1:60997][0m
+2024-06-05 00:16:25,333 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61028]
+2024-06-05 00:16:25,379 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61028]
+2024-06-05 00:16:31,187 [mHTTP POST /chat/chat/25/ 200 [0.33, 127.0.0.1:60997][0m
+2024-06-05 00:16:36,447 [mHTTP GET /chat/chat/ 200 [0.05, 127.0.0.1:60999][0m
+2024-06-05 00:16:38,077 [mHTTP GET /chat/receiver_chat/33 200 [0.03, 127.0.0.1:60999][0m
+2024-06-05 00:16:38,159 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61034]
+2024-06-05 00:16:38,203 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61034]
+2024-06-05 00:16:44,779 [mHTTP POST /chat/receiver_chat/33 200 [0.40, 127.0.0.1:60999][0m
+2024-06-05 00:20:31,857 [mHTTP GET / 200 [0.03, 127.0.0.1:61049][0m
+2024-06-05 00:20:31,926 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61028]
+2024-06-05 00:20:33,549 [mHTTP GET /chat/chat/ 200 [0.02, 127.0.0.1:61049][0m
+2024-06-05 00:20:42,228 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61034]
+2024-06-05 00:20:47,372 [mHTTP GET /chat/chat/ 200 [0.02, 127.0.0.1:61049][0m
+2024-06-05 00:20:48,668 [mHTTP GET /chat/receiver_chat/34 200 [0.04, 127.0.0.1:61049][0m
+2024-06-05 00:20:48,736 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61069]
+2024-06-05 00:20:48,785 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61069]
+2024-06-05 00:20:52,984 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61069]
+2024-06-05 00:26:54,927 [mHTTP GET / 200 [0.04, 127.0.0.1:61102][0m
+2024-06-05 00:26:57,718 [mHTTP GET /detail/22/ 200 [0.12, 127.0.0.1:61102][0m
+2024-06-05 00:26:57,820 [mHTTP GET /media/products/doc_tool2.jpeg 200 [0.07, 127.0.0.1:61102][0m
+2024-06-05 00:27:01,194 [mHTTP GET /chat/chat/22/ 200 [0.05, 127.0.0.1:61102][0m
+2024-06-05 00:27:01,269 [mHTTP GET /static/chat/chat_initiator_style.css 200 [0.04, 127.0.0.1:61102][0m
+2024-06-05 00:27:01,277 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61103]
+2024-06-05 00:27:01,316 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61103]
+2024-06-05 00:27:08,058 [mHTTP POST /chat/chat/22/ 200 [0.31, 127.0.0.1:61102][0m
+2024-06-05 00:27:15,276 [mHTTP GET /chat/receiver_chat/33 200 [0.05, 127.0.0.1:61108][0m
+2024-06-05 00:27:15,474 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61110]
+2024-06-05 00:27:15,491 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61110]
+2024-06-05 00:27:22,175 [mHTTP POST /chat/receiver_chat/33 200 [0.27, 127.0.0.1:61108][0m
+2024-06-05 00:29:05,550 [mHTTP GET /chat/receiver_chat/33 200 [0.04, 127.0.0.1:61122][0m
+2024-06-05 00:29:05,559 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61110]
+2024-06-05 00:29:05,627 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61124]
+2024-06-05 00:29:05,650 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61124]
+2024-06-05 00:29:17,210 [mHTTP GET /chat/chat/22/ 200 [0.01, 127.0.0.1:61129][0m
+2024-06-05 00:29:17,228 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61103]
+2024-06-05 00:29:17,279 [mHTTP GET /static/chat/chat_initiator_style.css 200 [0.02, 127.0.0.1:61129][0m
+2024-06-05 00:29:17,285 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61130]
+2024-06-05 00:29:17,310 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61130]
+2024-06-05 00:29:47,375 [mHTTP GET /chat/chat/22/ 200 [0.02, 127.0.0.1:61129][0m
+2024-06-05 00:29:47,381 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61130]
+2024-06-05 00:29:47,402 [mHTTP GET /static/chat/chat_initiator_style.css 200 [0.00, 127.0.0.1:61129][0m
+2024-06-05 00:29:47,417 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61133]
+2024-06-05 00:29:47,452 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61133]
+2024-06-05 00:30:04,685 [mHTTP GET /chat/chat/22/ 200 [0.03, 127.0.0.1:61129][0m
+2024-06-05 00:30:04,693 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61133]
+2024-06-05 00:30:04,734 [mHTTP GET /static/chat/chat_initiator_style.css 200 [0.02, 127.0.0.1:61129][0m
+2024-06-05 00:30:04,740 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61135]
+2024-06-05 00:30:04,776 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61135]
+2024-06-05 00:30:25,593 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61135]

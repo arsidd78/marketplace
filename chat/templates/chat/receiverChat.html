@@ -37,10 +37,12 @@
         {% if msg.sender == request.user %}
         <div class="chat-item sent">
             <p><strong>{{msg.sender}}</strong>: {{msg.message}}</p>
+            <p><small>{{msg.conversation_time}}</small></p>
         </div>
         {% else %}
         <div class="chat-item received">
             <p><strong>{{msg.sender}}</strong>: {{msg.message}}</p>
+            <p><small>{{msg.conversation_time}}</small></p>
         </div>
         {% endif %}
         {% endfor %}

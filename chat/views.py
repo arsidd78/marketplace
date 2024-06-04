@@ -42,7 +42,15 @@ def chatPage(request, pk):
 
 def SellorChatPage(request):
     if request.user.is_authenticated:
-        messages = Messages.objects.filter(receiver=request.user)
+        raw_messages_recieved = list(Messages.objects.filter(receiver=request.user))
+        senders = [msg.sender for msg in raw_messages_recieved]
+        senders = list(set(senders)) # To remove duplicates
+        print(f'************************************{senders}*********************************')
+        messages = []
+        for msg,user in zip(raw_messages_recieved,senders):
+            if msg.sender == user:
+                messages.append(msg)
+        print(f'******************* Messages:{messages}************************')
         context = {'messages':messages}
         return render(request,'chat/sellorChat.html',context)
     return redirect('registration:login')
@@ -74,7 +82,6 @@ def ChatSellor(request, pk):
             sent_messages = member.user_messages_send.filter(receiver=msg.sender).all().order_by('-conversation_time')
             messages = list(received_messages) + list(sent_messages)
             messages.sort(key=lambda x: x.conversation_time)
-            print(f'**************************{messages}*****************************')
             zip_data = zip(received_messages, sent_messages)
             context = {'msg': msg,'received_messages':received_messages,'sent_messages':sent_messages,'messages':messages}
             return render(request, 'chat/receiverChat.html', context)
