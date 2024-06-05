@@ -23898,3 +23898,165 @@ ValueError: Cannot query "arsidd78": Must be "User" instance.
 2024-06-05 11:20:38,728 [mHTTP GET /categories/ 200 [0.12, 127.0.0.1:51604][0m
 2024-06-05 11:20:38,858 [mHTTP GET /static/product/categories_page_style.css 200 [0.06, 127.0.0.1:51604][0m
 2024-06-05 11:20:50,923 [mHTTP POST /search/ 200 [0.11, 127.0.0.1:51604][0m
+2024-06-05 11:30:09,931 [mHTTP POST /search/ 200 [0.07, 127.0.0.1:51669][0m
+2024-06-05 11:37:33,761 [mHTTP POST /search/ 200 [0.05, 127.0.0.1:51711][0m
+2024-06-05 11:37:33,844 [33mHTTP GET /static/search/search_style.css 404 [0.04, 127.0.0.1:51711][0m
+2024-06-05 11:37:34,002 [mHTTP GET /media/logos/chat_logo.png 200 [0.19, 127.0.0.1:51712][0m
+2024-06-05 11:37:34,435 [mHTTP GET /media/products/strawberry2_VltATon.png 200 [0.61, 127.0.0.1:51713][0m
+2024-06-05 11:37:34,563 Not Found: /favicon.ico
+2024-06-05 11:37:34,567 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:51713][0m
+2024-06-05 11:38:32,205 [mHTTP POST /search/ 200 [0.11, 127.0.0.1:51713][0m
+2024-06-05 11:38:32,312 [mHTTP GET /static/product/search_style.css 200 [0.04, 127.0.0.1:51713][0m
+2024-06-05 11:38:41,503 [mHTTP POST /search/ 200 [0.02, 127.0.0.1:51713][0m
+2024-06-05 11:38:41,556 [36mHTTP GET /static/product/search_style.css 304 [0.01, 127.0.0.1:51713][0m
+2024-06-05 11:39:57,553 [mHTTP POST /search/ 200 [0.04, 127.0.0.1:51729][0m
+2024-06-05 11:39:57,653 [mHTTP GET /static/product/search_style.css 200 [0.02, 127.0.0.1:51729][0m
+2024-06-05 11:40:19,608 [mHTTP GET / 200 [0.04, 127.0.0.1:51729][0m
+2024-06-05 11:40:30,093 [mHTTP POST /search/ 200 [0.02, 127.0.0.1:51729][0m
+2024-06-05 11:40:30,153 [36mHTTP GET /static/product/search_style.css 304 [0.01, 127.0.0.1:51729][0m
+2024-06-05 11:40:36,550 [mHTTP GET /detail/24/ 200 [0.13, 127.0.0.1:51729][0m
+2024-06-05 11:40:42,492 [mHTTP GET /chat/chat/24/ 200 [0.07, 127.0.0.1:51729][0m
+2024-06-05 11:40:42,544 [36mHTTP GET /static/chat/chat_initiator_style.css 304 [0.01, 127.0.0.1:51729][0m
+2024-06-05 11:40:42,587 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51735]
+2024-06-05 11:40:42,645 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51735]
+2024-06-05 11:40:47,845 [mHTTP POST /chat/chat/24/ 200 [0.52, 127.0.0.1:51729][0m
+2024-06-05 11:40:51,425 [mHTTP GET / 200 [0.04, 127.0.0.1:51729][0m
+2024-06-05 11:40:51,530 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51735]
+2024-06-05 11:40:53,394 [mHTTP GET /chat/chat/ 200 [0.05, 127.0.0.1:51729][0m
+2024-06-05 11:40:53,472 [36mHTTP GET /static/chat/sellorChat_style.css 304 [0.02, 127.0.0.1:51729][0m
+2024-06-05 11:40:54,982 [mHTTP GET /chat/receiver_chat/47 200 [0.05, 127.0.0.1:51729][0m
+2024-06-05 11:40:55,032 [36mHTTP GET /static/chat/chat_style.css 304 [0.00, 127.0.0.1:51729][0m
+2024-06-05 11:40:55,073 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51738]
+2024-06-05 11:40:55,129 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51738]
+2024-06-05 11:40:58,903 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51738]
+2024-06-05 11:41:02,349 [mHTTP GET / 200 [0.04, 127.0.0.1:51729][0m
+2024-06-05 11:41:05,499 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:51729][0m
+2024-06-05 11:41:09,958 [mHTTP GET /member/user_products/arsidd78/ 200 [0.08, 127.0.0.1:51729][0m
+2024-06-05 11:41:10,013 [36mHTTP GET /static/member/my_product_style.css 304 [0.00, 127.0.0.1:51729][0m
+2024-06-05 11:41:12,604 [mHTTP GET /member/wishlist_view/ 200 [0.04, 127.0.0.1:51729][0m
+2024-06-05 11:41:17,630 Internal Server Error: /member/recent_sales
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 287, in sold_products
+    sales = get_object_or_404(SalesOrder, sellor = request.user)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+member.models.SalesOrder.MultipleObjectsReturned: get() returned more than one SalesOrder -- it returned 6!
+2024-06-05 11:41:17,652 [35;1mHTTP GET /member/recent_sales 500 [0.32, 127.0.0.1:51729][0m
+2024-06-05 11:46:11,344 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-05 11:46:18,736 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-05 11:46:31,988 Internal Server Error: /member/recent_sales
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 288, in sold_products
+    quantity = sales.sale_order.product_quantity
+               ^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'sale_order'
+2024-06-05 11:46:32,008 [35;1mHTTP GET /member/recent_sales 500 [0.19, 127.0.0.1:51833][0m
+2024-06-05 11:47:21,191 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-05 11:47:25,343 [mHTTP GET /member/recent_sales 200 [0.11, 127.0.0.1:51849][0m
+2024-06-05 11:50:37,920 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-05 11:51:36,479 [mHTTP GET /member/recent_sales 200 [0.05, 127.0.0.1:51908][0m
+2024-06-05 11:51:43,672 [mHTTP GET / 200 [0.06, 127.0.0.1:51908][0m
+2024-06-05 11:51:46,755 [mHTTP GET /detail/37/ 200 [0.23, 127.0.0.1:51908][0m
+2024-06-05 11:51:47,132 [mHTTP GET /media/products/mangoes2_qtjthNh.jpg 200 [0.32, 127.0.0.1:51908][0m
+2024-06-05 11:51:47,174 [mHTTP GET /media/products/mangoes3_ftwxuxx.jpeg 200 [0.33, 127.0.0.1:51909][0m
+2024-06-05 11:51:47,221 [mHTTP GET /media/products/mangoes5_6XkG5er.jpg 200 [0.34, 127.0.0.1:51910][0m
+2024-06-05 11:51:47,282 [mHTTP GET /media/products/mangoes4_6h5M211.jpg 200 [0.40, 127.0.0.1:51911][0m
+2024-06-05 11:51:49,061 [mHTTP GET /payment/37/ 200 [0.28, 127.0.0.1:51911][0m
+2024-06-05 11:51:56,641 [mHTTP POST /payment/37/ 200 [0.23, 127.0.0.1:51911][0m
+2024-06-05 11:51:59,421 [mHTTP GET /confirmation/invoice/140/ 200 [0.62, 127.0.0.1:51911][0m
+2024-06-05 11:51:59,521 [mHTTP GET /static/product/invoice_style.css 200 [0.02, 127.0.0.1:51911][0m
+2024-06-05 11:57:40,354 [mHTTP GET /confirmation/invoice/140/ 200 [0.84, 127.0.0.1:52012][0m
+2024-06-05 11:57:40,460 [mHTTP GET /media/logos/chat_logo.png 200 [0.02, 127.0.0.1:52013][0m
+2024-06-05 11:57:40,469 [33mHTTP GET /static/invoice/invoice_style.css 404 [0.05, 127.0.0.1:52012][0m
+2024-06-05 11:57:40,600 Not Found: /favicon.ico
+2024-06-05 11:57:40,602 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:52012][0m
+2024-06-05 11:57:51,028 [mHTTP GET /confirmation/invoice/140/ 200 [0.69, 127.0.0.1:52012][0m
+2024-06-05 11:57:51,121 [33mHTTP GET /static/invoice/invoice_style.css 404 [0.02, 127.0.0.1:52012][0m
+2024-06-05 11:58:28,564 [mHTTP GET /confirmation/invoice/140/ 200 [0.49, 127.0.0.1:52012][0m
+2024-06-05 11:58:28,644 [mHTTP GET /static/product/invoice_style.css 200 [0.03, 127.0.0.1:52012][0m
+2024-06-05 11:58:28,650 [mHTTP GET /media/logos/chat_logo.png 200 [0.02, 127.0.0.1:52013][0m
+2024-06-05 11:58:28,725 Not Found: /favicon.ico
+2024-06-05 11:58:28,727 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:52013][0m
+2024-06-05 11:59:51,749 [mHTTP GET /confirmation/invoice/140/ 200 [1.15, 127.0.0.1:52025][0m
+2024-06-05 11:59:51,841 [mHTTP GET /static/product/invoice_style.css 200 [0.04, 127.0.0.1:52025][0m
+2024-06-05 12:11:21,367 [mHTTP GET /confirmation/invoice/140/ 200 [0.44, 127.0.0.1:52111][0m
+2024-06-05 12:11:21,418 [36mHTTP GET /static/product/invoice_style.css 304 [0.00, 127.0.0.1:52111][0m
+2024-06-05 12:11:23,362 [mHTTP GET / 200 [0.04, 127.0.0.1:52111][0m
+2024-06-05 12:11:25,437 [mHTTP GET /detail/17/ 200 [0.18, 127.0.0.1:52111][0m
+2024-06-05 12:11:27,492 [mHTTP GET /payment/17/ 200 [0.05, 127.0.0.1:52111][0m
+2024-06-05 12:11:27,604 [mHTTP GET /static/product/purchase_page_style.css 200 [0.06, 127.0.0.1:52111][0m
+2024-06-05 12:12:15,806 [mHTTP GET /payment/17/ 200 [0.03, 127.0.0.1:52111][0m
+2024-06-05 12:12:15,890 [mHTTP GET /static/product/purchase_page_style.css 200 [0.03, 127.0.0.1:52111][0m
+2024-06-05 12:12:35,366 [mHTTP GET / 200 [0.03, 127.0.0.1:52111][0m
+2024-06-05 12:12:37,332 [32mHTTP GET /registration/signout/ 302 [0.25, 127.0.0.1:52111][0m
+2024-06-05 12:12:37,366 [mHTTP GET / 200 [0.03, 127.0.0.1:52111][0m
+2024-06-05 12:12:41,616 [mHTTP GET /registration/login/ 200 [0.08, 127.0.0.1:52111][0m
+2024-06-05 12:12:48,083 [32mHTTP POST /registration/authentication/?next= 302 [2.59, 127.0.0.1:52111][0m
+2024-06-05 12:12:48,107 [mHTTP GET / 200 [0.02, 127.0.0.1:52111][0m
+2024-06-05 12:12:50,126 [mHTTP GET /detail/33/ 200 [0.21, 127.0.0.1:52111][0m
+2024-06-05 12:12:51,486 [mHTTP GET /payment/33/ 200 [0.04, 127.0.0.1:52111][0m
+2024-06-05 12:12:51,609 [36mHTTP GET /static/product/purchase_page_style.css 304 [0.04, 127.0.0.1:52111][0m
+2024-06-05 12:13:02,235 [mHTTP POST /payment/33/ 200 [0.20, 127.0.0.1:52111][0m
+2024-06-05 12:13:37,870 [mHTTP GET /confirmation/invoice/141/ 200 [0.64, 127.0.0.1:52111][0m
+2024-06-05 12:13:37,969 [36mHTTP GET /static/product/invoice_style.css 304 [0.01, 127.0.0.1:52111][0m
+2024-06-05 12:14:01,432 [mHTTP GET /member/user_profile/msking12/ 200 [0.04, 127.0.0.1:52111][0m
+2024-06-05 12:14:01,635 [mHTTP GET /media/users/dp/man-is-holding-a-book-in-his-hand-teaching-class-vector-46401250.jpg 200 [0.14, 127.0.0.1:52111][0m
+2024-06-05 12:14:07,545 [mHTTP GET /member/user_products/msking12/ 200 [0.03, 127.0.0.1:52111][0m
+2024-06-05 12:14:16,951 [mHTTP GET /member/purchase_orders/msking12/ 200 [0.05, 127.0.0.1:52111][0m
+2024-06-05 12:14:26,657 Not Found: /member/user_profile/msking12/None
+2024-06-05 12:14:26,659 [33mHTTP GET /member/user_profile/msking12/None 404 [0.03, 127.0.0.1:52111][0m
+2024-06-05 12:14:45,576 [mHTTP GET / 200 [0.04, 127.0.0.1:52111][0m
+2024-06-05 12:14:59,531 [32mHTTP GET /registration/signout/ 302 [0.12, 127.0.0.1:52111][0m
+2024-06-05 12:14:59,554 [mHTTP GET / 200 [0.02, 127.0.0.1:52111][0m
+2024-06-05 12:15:02,035 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:52111][0m
+2024-06-05 12:15:05,951 [32mHTTP POST /registration/authentication/?next= 302 [1.44, 127.0.0.1:52111][0m
+2024-06-05 12:15:05,982 [mHTTP GET / 200 [0.03, 127.0.0.1:52111][0m
+2024-06-05 12:18:51,449 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:52159][0m
+2024-06-05 12:18:53,450 [mHTTP GET /member/cart_view/ 200 [0.08, 127.0.0.1:52159][0m
+2024-06-05 12:18:56,794 [mHTTP GET /payment/29/ 200 [0.03, 127.0.0.1:52159][0m
+2024-06-05 12:18:56,842 [36mHTTP GET /static/product/purchase_page_style.css 304 [0.01, 127.0.0.1:52159][0m
+2024-06-05 12:18:59,818 [mHTTP GET /member/order_cart/ 200 [0.04, 127.0.0.1:52159][0m
+2024-06-05 12:19:14,783 [mHTTP POST /member/order_cart/ 200 [3.93, 127.0.0.1:52159][0m
+2024-06-05 12:19:16,716 [mHTTP GET /member/order_cart/ 200 [0.03, 127.0.0.1:52159][0m

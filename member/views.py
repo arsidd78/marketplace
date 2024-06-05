@@ -284,10 +284,10 @@ def edit_profile(request):
 def sold_products(request):
     if request.user.is_authenticated:
         member = get_object_or_404(Member, user = request.user)
-        sales = get_object_or_404(SalesOrder, sellor = request.user)
-        quantity = sales.sale_order.product_quantity
-        print('*******************************{quantity}*************************************')
+        sales = SalesOrder.objects.filter(sellor = request.user)
+        # quantity = sales.sale_order.product_quantity
         products = member.user_recent_sales.all()
         context = {'products':products}
         return render(request,'member/recent_sales.html',context)
     return redirect('registration:login')
+
