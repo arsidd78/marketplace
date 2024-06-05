@@ -5,6 +5,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 from django.db.models import Q
+from django.db.models import Max
 
 @csrf_exempt
 def chatPage(request, pk):
@@ -39,21 +40,27 @@ def chatPage(request, pk):
                 context = {'product': product, 'messages': messages}
                 return render(request, 'chat/chatPage.html', context)
     return redirect('registration:login')
-
 def SellorChatPage(request):
     if request.user.is_authenticated:
-        raw_messages_recieved = list(Messages.objects.filter(receiver=request.user))
-        senders = [msg.sender for msg in raw_messages_recieved]
-        senders = list(set(senders)) # To remove duplicates
-        print(f'************************************{senders}*********************************')
+        member = get_object_or_404(Member, user=request.user)
+        
+        
+        latest_messages = Messages.objects.filter(receiver= request.user).values('sender').annotate(latest_conversation_time=Max('conversation_time'))
+        
+       
         messages = []
-        for msg,user in zip(raw_messages_recieved,senders):
-            if msg.sender == user:
-                messages.append(msg)
-        print(f'******************* Messages:{messages}************************')
-        context = {'messages':messages}
-        return render(request,'chat/sellorChat.html',context)
+        for latest in latest_messages:
+            latest_msg = Messages.objects.filter(sender=latest['sender'], conversation_time=latest['latest_conversation_time']).first()
+            if latest_msg:
+                messages.append(latest_msg)
+        
+        # Sort messages by latest conversation time in descending order
+        messages = sorted(messages, key=lambda x: x.conversation_time, reverse=True)
+        
+        context = {'messages': messages,'member':member}
+        return render(request, 'chat/sellorChat.html', context)
     return redirect('registration:login')
+
 
 def ChatSellor(request, pk):
     if request.user.is_authenticated:
@@ -82,7 +89,6 @@ def ChatSellor(request, pk):
             sent_messages = member.user_messages_send.filter(receiver=msg.sender).all().order_by('-conversation_time')
             messages = list(received_messages) + list(sent_messages)
             messages.sort(key=lambda x: x.conversation_time)
-            zip_data = zip(received_messages, sent_messages)
             context = {'msg': msg,'received_messages':received_messages,'sent_messages':sent_messages,'messages':messages}
             return render(request, 'chat/receiverChat.html', context)
     return redirect('registration:login')

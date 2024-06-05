@@ -23319,3 +23319,582 @@ UnboundLocalError: cannot access local variable 'sender' where it is not associa
 2024-06-05 00:30:04,740 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61135]
 2024-06-05 00:30:04,776 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61135]
 2024-06-05 00:30:25,593 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61135]
+2024-06-05 09:27:40,125 [mHTTP GET / 200 [0.37, 127.0.0.1:62535][0m
+2024-06-05 09:27:40,239 [36mHTTP GET /static/product/index_style.css 304 [0.05, 127.0.0.1:62535][0m
+2024-06-05 09:27:40,314 [36mHTTP GET /media/logos/chat_logo.png 304 [0.12, 127.0.0.1:62536][0m
+2024-06-05 09:27:40,517 [36mHTTP GET /media/products/strawberry2_VltATon.png 304 [0.14, 127.0.0.1:62536][0m
+2024-06-05 09:27:40,530 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.03, 127.0.0.1:62538][0m
+2024-06-05 09:27:40,552 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.05, 127.0.0.1:62539][0m
+2024-06-05 09:27:40,568 [36mHTTP GET /media/products/palistineflag_XD3bT3q.webp 304 [0.17, 127.0.0.1:62535][0m
+2024-06-05 09:27:41,803 Not Found: /favicon.ico
+2024-06-05 09:27:41,805 [33mHTTP GET /favicon.ico 404 [0.74, 127.0.0.1:62535][0m
+2024-06-05 09:28:08,458 [mHTTP GET /chat/chat/ 200 [0.09, 127.0.0.1:62535][0m
+2024-06-05 09:28:08,609 [36mHTTP GET /static/chat/sellorChat_style.css 304 [0.07, 127.0.0.1:62535][0m
+2024-06-05 09:28:09,852 [mHTTP GET /chat/receiver_chat/33 200 [0.30, 127.0.0.1:62535][0m
+2024-06-05 09:28:09,898 [36mHTTP GET /static/chat/chat_style.css 304 [0.01, 127.0.0.1:62535][0m
+2024-06-05 09:28:09,953 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62546]
+2024-06-05 09:28:10,046 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62546]
+2024-06-05 09:28:21,684 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62546]
+2024-06-05 09:28:40,399 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.06, 127.0.0.1:62535][0m
+2024-06-05 09:28:42,709 [mHTTP GET /member/wishlist_view/ 200 [0.07, 127.0.0.1:62535][0m
+2024-06-05 09:28:43,008 [mHTTP GET /static/member/wishlist_style.css 200 [0.26, 127.0.0.1:62535][0m
+2024-06-05 09:28:43,051 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.26, 127.0.0.1:62550][0m
+2024-06-05 09:28:45,158 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:62550][0m
+2024-06-05 09:29:03,146 [mHTTP GET /member/cart_view/ 200 [0.06, 127.0.0.1:62550][0m
+2024-06-05 09:29:03,314 [mHTTP GET /static/member/cart_style.css 200 [0.09, 127.0.0.1:62550][0m
+2024-06-05 09:29:14,076 [mHTTP GET /member/purchase_orders/arsidd78/ 200 [0.24, 127.0.0.1:62550][0m
+2024-06-05 09:29:17,562 Internal Server Error: /member/recent_sales
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 287, in sold_products
+    sales = get_object_or_404(SalesOrder, sellor = request.user)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+member.models.SalesOrder.MultipleObjectsReturned: get() returned more than one SalesOrder -- it returned 6!
+2024-06-05 09:29:17,613 [35;1mHTTP GET /member/recent_sales 500 [0.44, 127.0.0.1:62550][0m
+2024-06-05 09:29:34,459 [mHTTP GET / 200 [0.04, 127.0.0.1:62550][0m
+2024-06-05 09:29:36,189 [mHTTP GET /detail/15/ 200 [0.22, 127.0.0.1:62550][0m
+2024-06-05 09:29:36,238 [36mHTTP GET /static/product/details_style.css 304 [0.01, 127.0.0.1:62550][0m
+2024-06-05 09:29:36,424 [mHTTP GET /media/products/mangoes3_ca04ouu.jpeg 200 [0.15, 127.0.0.1:62535][0m
+2024-06-05 09:29:36,427 [mHTTP GET /media/products/mangoes2_0kofdro.jpg 200 [0.18, 127.0.0.1:62550][0m
+2024-06-05 09:29:36,494 [mHTTP GET /media/products/mangoes5_8BAm1dC.jpg 200 [0.21, 127.0.0.1:62555][0m
+2024-06-05 09:29:36,528 [mHTTP GET /media/products/mangoes4_davqGm1.jpg 200 [0.24, 127.0.0.1:62556][0m
+2024-06-05 09:29:41,378 [mHTTP GET /media/products/mangoes3_ca04ouu.jpeg 200 [0.01, 127.0.0.1:62558][0m
+2024-06-05 09:32:39,349 [mHTTP GET / 200 [0.05, 127.0.0.1:62565][0m
+2024-06-05 09:33:41,344 [mHTTP GET /detail/17/ 200 [0.10, 127.0.0.1:62575][0m
+2024-06-05 09:33:42,978 [mHTTP GET /chat/chat/17/ 200 [0.09, 127.0.0.1:62575][0m
+2024-06-05 09:33:43,035 [mHTTP GET /static/chat/chat_initiator_style.css 200 [0.01, 127.0.0.1:62575][0m
+2024-06-05 09:33:43,084 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62577]
+2024-06-05 09:33:43,127 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62577]
+2024-06-05 09:33:49,531 [mHTTP POST /chat/chat/17/ 200 [0.34, 127.0.0.1:62575][0m
+2024-06-05 09:33:52,343 [mHTTP GET / 200 [0.03, 127.0.0.1:62575][0m
+2024-06-05 09:33:52,474 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62577]
+2024-06-05 09:33:55,143 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:62575][0m
+2024-06-05 09:33:56,499 [mHTTP GET /chat/receiver_chat/35 200 [0.03, 127.0.0.1:62575][0m
+2024-06-05 09:33:56,578 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62580]
+2024-06-05 09:33:56,590 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62580]
+2024-06-05 09:34:00,088 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62580]
+2024-06-05 09:34:16,777 [mHTTP GET / 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:34:17,076 [36mHTTP GET /static/product/index_style.css 304 [0.00, 127.0.0.1:62606][0m
+2024-06-05 09:34:17,333 [36mHTTP GET /media/logos/chat_logo.png 304 [0.01, 127.0.0.1:62606][0m
+2024-06-05 09:34:17,355 [36mHTTP GET /media/products/mangoes1_C874n2S.jpeg 304 [0.01, 127.0.0.1:62607][0m
+2024-06-05 09:34:17,364 [36mHTTP GET /media/products/beef_HYC0s2g.jpeg 304 [0.03, 127.0.0.1:62606][0m
+2024-06-05 09:34:17,396 [36mHTTP GET /media/products/stv1_OAPftt6.jpeg 304 [0.03, 127.0.0.1:62607][0m
+2024-06-05 09:34:17,415 [36mHTTP GET /media/products/sofa_1.jpg 304 [0.04, 127.0.0.1:62606][0m
+2024-06-05 09:34:17,428 [36mHTTP GET /media/products/strawberry2_VltATon.png 304 [0.01, 127.0.0.1:62606][0m
+2024-06-05 09:34:17,441 [36mHTTP GET /media/products/living_1.jpeg 304 [0.04, 127.0.0.1:62607][0m
+2024-06-05 09:34:17,466 [36mHTTP GET /media/products/palistineflag_XD3bT3q.webp 304 [0.02, 127.0.0.1:62607][0m
+2024-06-05 09:34:17,483 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:34:17,488 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.02, 127.0.0.1:62608][0m
+2024-06-05 09:34:17,506 [36mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 304 [0.04, 127.0.0.1:62609][0m
+2024-06-05 09:34:22,984 [mHTTP GET /chat/chat/ 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:34:23,082 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.01, 127.0.0.1:62607][0m
+2024-06-05 09:34:34,150 [mHTTP GET /view_all/ 200 [0.04, 127.0.0.1:62606][0m
+2024-06-05 09:34:34,390 [36mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 304 [0.03, 127.0.0.1:62609][0m
+2024-06-05 09:34:34,397 [36mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 304 [0.04, 127.0.0.1:62608][0m
+2024-06-05 09:34:34,402 [36mHTTP GET /media/products/outdoor_1.jpeg 304 [0.03, 127.0.0.1:62607][0m
+2024-06-05 09:34:34,450 [36mHTTP GET /media/products/doc_tool1.jpeg 304 [0.04, 127.0.0.1:62609][0m
+2024-06-05 09:34:34,470 [36mHTTP GET /media/products/pullover1.jpeg 304 [0.05, 127.0.0.1:62608][0m
+2024-06-05 09:34:34,492 [36mHTTP GET /media/products/butterfly_1.jpeg 304 [0.04, 127.0.0.1:62607][0m
+2024-06-05 09:34:34,524 [36mHTTP GET /media/products/weights.jpeg 304 [0.05, 127.0.0.1:62609][0m
+2024-06-05 09:34:34,539 [36mHTTP GET /media/products/computer_1.jpeg 304 [0.04, 127.0.0.1:62608][0m
+2024-06-05 09:34:34,549 [36mHTTP GET /media/products/mouse.jpeg 304 [0.03, 127.0.0.1:62606][0m
+2024-06-05 09:34:34,570 [36mHTTP GET /media/products/laptop1.jpeg 304 [0.05, 127.0.0.1:62607][0m
+2024-06-05 09:34:34,590 [36mHTTP GET /media/products/mouse_12.jpeg 304 [0.04, 127.0.0.1:62609][0m
+2024-06-05 09:34:34,614 [36mHTTP GET /media/products/harry_potter_novel_complete.jpeg 304 [0.05, 127.0.0.1:62608][0m
+2024-06-05 09:34:34,623 [36mHTTP GET /media/products/toys_2.jpeg 304 [0.04, 127.0.0.1:62606][0m
+2024-06-05 09:34:34,628 [36mHTTP GET /media/products/toys_1.jpeg 304 [0.05, 127.0.0.1:62607][0m
+2024-06-05 09:34:34,643 [36mHTTP GET /media/products/dvd_1.jpeg 304 [0.05, 127.0.0.1:62613][0m
+2024-06-05 09:34:36,751 [mHTTP GET /detail/30/ 200 [0.13, 127.0.0.1:62606][0m
+2024-06-05 09:34:36,948 [mHTTP GET /static/product/details_style.css 200 [0.03, 127.0.0.1:62609][0m
+2024-06-05 09:34:39,827 [mHTTP GET /chat/chat/30/ 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:34:39,884 [mHTTP GET /static/chat/chat_initiator_style.css 200 [0.01, 127.0.0.1:62609][0m
+2024-06-05 09:34:39,899 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62616]
+2024-06-05 09:34:39,906 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62616]
+2024-06-05 09:34:43,094 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62616]
+2024-06-05 09:34:43,285 [32mHTTP GET /registration/signout/ 302 [0.16, 127.0.0.1:62606][0m
+2024-06-05 09:34:43,314 [mHTTP GET / 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:34:44,848 [mHTTP GET /registration/login/ 200 [0.03, 127.0.0.1:62606][0m
+2024-06-05 09:34:44,918 [36mHTTP GET /static/registration/login_style.css 304 [0.00, 127.0.0.1:62609][0m
+2024-06-05 09:34:56,545 [mHTTP POST /registration/authentication/?next= 200 [0.80, 127.0.0.1:62606][0m
+2024-06-05 09:35:14,755 [mHTTP POST /registration/authentication/?next= 200 [0.74, 127.0.0.1:62606][0m
+2024-06-05 09:35:45,646 [mHTTP POST /registration/authentication/?next= 200 [0.76, 127.0.0.1:62606][0m
+2024-06-05 09:35:50,231 [mHTTP GET /admin/ 200 [0.44, 127.0.0.1:62623][0m
+2024-06-05 09:35:53,133 [mHTTP GET /admin/auth/user/ 200 [0.74, 127.0.0.1:62623][0m
+2024-06-05 09:35:53,330 [mHTTP GET /admin/jsi18n/ 200 [0.13, 127.0.0.1:62623][0m
+2024-06-05 09:35:53,365 [mHTTP GET /static/admin/img/icon-no.svg 200 [0.07, 127.0.0.1:62630][0m
+2024-06-05 09:35:53,394 [mHTTP GET /static/admin/img/sorting-icons.svg 200 [0.05, 127.0.0.1:62623][0m
+2024-06-05 09:35:53,405 [mHTTP GET /static/admin/img/search.svg 200 [0.11, 127.0.0.1:62624][0m
+2024-06-05 09:35:53,483 [mHTTP GET /static/admin/img/icon-viewlink.svg 200 [0.05, 127.0.0.1:62630][0m
+2024-06-05 09:36:07,354 [32mHTTP POST /registration/authentication/?next= 302 [1.24, 127.0.0.1:62606][0m
+2024-06-05 09:36:07,380 [mHTTP GET / 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:36:11,417 [mHTTP GET /view_all/ 200 [0.03, 127.0.0.1:62606][0m
+2024-06-05 09:36:13,072 [mHTTP GET /detail/24/ 200 [0.29, 127.0.0.1:62606][0m
+2024-06-05 09:36:15,190 [mHTTP GET /chat/chat/24/ 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:36:15,257 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62632]
+2024-06-05 09:36:15,267 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62632]
+2024-06-05 09:36:22,934 [mHTTP POST /chat/chat/24/ 200 [0.50, 127.0.0.1:62606][0m
+2024-06-05 09:36:30,049 [mHTTP GET / 200 [0.08, 127.0.0.1:62630][0m
+2024-06-05 09:36:31,738 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:62630][0m
+2024-06-05 09:36:35,559 [mHTTP GET / 200 [0.02, 127.0.0.1:62630][0m
+2024-06-05 09:36:36,726 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:62630][0m
+2024-06-05 09:36:41,473 [mHTTP GET /admin/ 200 [0.04, 127.0.0.1:62630][0m
+2024-06-05 09:36:43,124 [mHTTP GET /admin/member/messages/ 200 [0.05, 127.0.0.1:62630][0m
+2024-06-05 09:36:43,224 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:62630][0m
+2024-06-05 09:36:51,199 [mHTTP POST /admin/member/messages/ 200 [0.13, 127.0.0.1:62630][0m
+2024-06-05 09:36:55,933 [32mHTTP POST /admin/member/messages/ 302 [1.25, 127.0.0.1:62630][0m
+2024-06-05 09:36:55,963 [mHTTP GET /admin/member/messages/ 200 [0.02, 127.0.0.1:62630][0m
+2024-06-05 09:36:56,050 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:62630][0m
+2024-06-05 09:37:05,161 [mHTTP GET / 200 [0.03, 127.0.0.1:62630][0m
+2024-06-05 09:37:16,501 [mHTTP POST /chat/chat/24/ 200 [0.42, 127.0.0.1:62606][0m
+2024-06-05 09:37:19,608 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:62630][0m
+2024-06-05 09:37:27,818 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62632]
+2024-06-05 09:37:27,958 [32mHTTP GET /registration/signout/ 302 [0.13, 127.0.0.1:62606][0m
+2024-06-05 09:37:27,981 [mHTTP GET / 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:37:29,569 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:62606][0m
+2024-06-05 09:37:38,638 [32mHTTP POST /registration/authentication/?next= 302 [1.93, 127.0.0.1:62606][0m
+2024-06-05 09:37:38,660 [mHTTP GET / 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:37:42,608 [mHTTP GET /detail/35/ 200 [0.14, 127.0.0.1:62606][0m
+2024-06-05 09:37:44,890 [mHTTP GET /chat/chat/35/ 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:37:44,952 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62652]
+2024-06-05 09:37:44,982 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62652]
+2024-06-05 09:37:49,311 [mHTTP POST /chat/chat/35/ 200 [0.41, 127.0.0.1:62606][0m
+2024-06-05 09:37:51,086 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62652]
+2024-06-05 09:37:51,107 [mHTTP GET / 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:37:56,760 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:62630][0m
+2024-06-05 09:38:07,614 [mHTTP GET /chat/receiver_chat/39 200 [0.02, 127.0.0.1:62630][0m
+2024-06-05 09:38:07,703 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62660]
+2024-06-05 09:38:07,738 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62660]
+2024-06-05 09:38:12,525 [mHTTP POST /chat/receiver_chat/39 200 [0.40, 127.0.0.1:62630][0m
+2024-06-05 09:38:15,452 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62660]
+2024-06-05 09:38:16,434 [mHTTP GET /chat/receiver_chat/40 200 [0.04, 127.0.0.1:62630][0m
+2024-06-05 09:38:16,541 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62661]
+2024-06-05 09:38:16,553 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62661]
+2024-06-05 09:38:22,079 [mHTTP POST /chat/receiver_chat/40 200 [0.57, 127.0.0.1:62630][0m
+2024-06-05 09:38:23,504 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62661]
+2024-06-05 09:38:27,777 [32mHTTP GET /registration/signout/ 302 [0.20, 127.0.0.1:62606][0m
+2024-06-05 09:38:27,813 [mHTTP GET / 200 [0.03, 127.0.0.1:62606][0m
+2024-06-05 09:38:28,993 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:38:40,062 [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:62630][0m
+2024-06-05 09:38:41,806 [mHTTP GET /admin/auth/user/ 200 [0.04, 127.0.0.1:62630][0m
+2024-06-05 09:38:41,914 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:62630][0m
+2024-06-05 09:38:49,731 [32mHTTP POST /registration/authentication/?next= 302 [1.17, 127.0.0.1:62606][0m
+2024-06-05 09:38:49,758 [mHTTP GET / 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:38:53,536 [mHTTP GET /detail/37/ 200 [0.19, 127.0.0.1:62606][0m
+2024-06-05 09:38:53,769 [mHTTP GET /media/products/mangoes3_ftwxuxx.jpeg 200 [0.07, 127.0.0.1:62670][0m
+2024-06-05 09:38:53,905 [mHTTP GET /media/products/mangoes2_qtjthNh.jpg 200 [0.21, 127.0.0.1:62606][0m
+2024-06-05 09:38:54,008 [mHTTP GET /media/products/mangoes4_6h5M211.jpg 200 [0.31, 127.0.0.1:62671][0m
+2024-06-05 09:38:54,054 [mHTTP GET /media/products/mangoes5_6XkG5er.jpg 200 [0.35, 127.0.0.1:62672][0m
+2024-06-05 09:38:58,275 [mHTTP GET /chat/chat/37/ 200 [0.02, 127.0.0.1:62671][0m
+2024-06-05 09:38:58,331 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62677]
+2024-06-05 09:38:58,342 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62677]
+2024-06-05 09:39:02,175 [mHTTP POST /chat/chat/37/ 200 [0.54, 127.0.0.1:62671][0m
+2024-06-05 09:39:03,838 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62677]
+2024-06-05 09:39:03,874 [mHTTP GET / 200 [0.03, 127.0.0.1:62671][0m
+2024-06-05 09:39:11,034 [mHTTP GET /detail/38/ 200 [3.43, 127.0.0.1:62606][0m
+2024-06-05 09:39:11,460 [mHTTP GET /media/products/strawberrypic_QN494j9.jpeg 200 [0.18, 127.0.0.1:62672][0m
+2024-06-05 09:39:20,767 [mHTTP GET /chat/chat/38/ 200 [0.02, 127.0.0.1:62606][0m
+2024-06-05 09:39:20,809 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:61563]
+2024-06-05 09:39:20,832 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:61563]
+2024-06-05 09:39:25,976 [mHTTP POST /chat/chat/38/ 200 [1.13, 127.0.0.1:62606][0m
+2024-06-05 09:39:27,918 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:61563]
+2024-06-05 09:39:27,957 [mHTTP GET / 200 [0.03, 127.0.0.1:62606][0m
+2024-06-05 09:39:31,682 [mHTTP GET /view_all/ 200 [0.03, 127.0.0.1:62606][0m
+2024-06-05 09:39:41,989 [mHTTP GET /detail/16/ 200 [0.42, 127.0.0.1:62606][0m
+2024-06-05 09:39:46,813 [mHTTP GET /detail/14/ 200 [0.18, 127.0.0.1:62606][0m
+2024-06-05 09:40:45,241 [mHTTP GET / 200 [0.06, 127.0.0.1:50339][0m
+2024-06-05 09:40:46,755 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:50339][0m
+2024-06-05 09:40:53,327 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:50339][0m
+2024-06-05 09:40:54,983 [mHTTP GET /chat/receiver_chat/39 200 [0.03, 127.0.0.1:50339][0m
+2024-06-05 09:40:55,063 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:50347]
+2024-06-05 09:40:55,083 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:50347]
+2024-06-05 09:40:57,287 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:50347]
+2024-06-05 09:40:59,603 [mHTTP GET /admin/ 200 [0.03, 127.0.0.1:50339][0m
+2024-06-05 09:41:02,850 [32mHTTP GET /registration/signout/ 302 [0.19, 127.0.0.1:50339][0m
+2024-06-05 09:41:02,868 [mHTTP GET / 200 [0.01, 127.0.0.1:50339][0m
+2024-06-05 09:41:05,014 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:50339][0m
+2024-06-05 09:41:05,193 [mHTTP GET /static/registration/login_style.css 200 [0.12, 127.0.0.1:50339][0m
+2024-06-05 09:41:07,908 [32mHTTP POST /registration/authentication/?next= 302 [1.62, 127.0.0.1:50339][0m
+2024-06-05 09:41:07,954 [mHTTP GET / 200 [0.02, 127.0.0.1:50339][0m
+2024-06-05 09:41:09,749 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:50339][0m
+2024-06-05 09:41:14,062 [mHTTP GET /chat/receiver_chat/39 200 [0.04, 127.0.0.1:50339][0m
+2024-06-05 09:41:14,151 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:50354]
+2024-06-05 09:41:14,160 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:50354]
+2024-06-05 09:41:17,208 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:50354]
+2024-06-05 09:44:36,156 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 09:44:40,460 [mHTTP GET / 200 [0.09, 127.0.0.1:50565][0m
+2024-06-05 09:44:41,126 [32mHTTP GET /chat/chat/ 302 [0.02, 127.0.0.1:50565][0m
+2024-06-05 09:44:41,187 [mHTTP GET /registration/login/ 200 [0.03, 127.0.0.1:50565][0m
+2024-06-05 09:44:44,120 [32mHTTP POST /registration/authentication/?next= 302 [1.41, 127.0.0.1:50565][0m
+2024-06-05 09:44:44,154 [mHTTP GET / 200 [0.03, 127.0.0.1:50565][0m
+2024-06-05 09:44:46,348 [32mHTTP GET /chat/chat/ 302 [0.03, 127.0.0.1:50565][0m
+2024-06-05 09:44:46,376 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:50565][0m
+2024-06-05 09:44:58,523 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 09:45:01,364 [mHTTP GET /registration/login/ 200 [0.04, 127.0.0.1:50586][0m
+2024-06-05 09:45:03,792 [32mHTTP POST /registration/authentication/?next= 302 [1.66, 127.0.0.1:50586][0m
+2024-06-05 09:45:03,836 [mHTTP GET / 200 [0.04, 127.0.0.1:50586][0m
+2024-06-05 09:45:06,071 Internal Server Error: /chat/chat/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py", line 47, in SellorChatPage
+    return render(request, 'chat/sellorChatPage.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: chat/sellorChatPage.html
+2024-06-05 09:45:06,089 [35;1mHTTP GET /chat/chat/ 500 [0.20, 127.0.0.1:50586][0m
+2024-06-05 09:45:29,095 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 09:45:31,799 [mHTTP GET /chat/chat/ 200 [0.06, 127.0.0.1:50601][0m
+2024-06-05 09:45:40,547 [mHTTP GET /chat/receiver_chat/44 200 [0.08, 127.0.0.1:50601][0m
+2024-06-05 09:45:40,660 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:50607]
+2024-06-05 09:45:40,752 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:50607]
+2024-06-05 09:45:46,073 [mHTTP POST /chat/receiver_chat/44 200 [0.56, 127.0.0.1:50601][0m
+2024-06-05 09:45:48,902 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:50601][0m
+2024-06-05 09:45:48,981 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:50607]
+2024-06-05 09:45:55,241 [mHTTP GET / 200 [0.04, 127.0.0.1:50609][0m
+2024-06-05 09:45:56,664 [mHTTP GET /chat/chat/ 200 [0.02, 127.0.0.1:50609][0m
+2024-06-05 09:45:58,120 [mHTTP GET /chat/receiver_chat/45 200 [0.02, 127.0.0.1:50609][0m
+2024-06-05 09:45:58,406 [mHTTP GET /static/chat/chat_style.css 200 [0.19, 127.0.0.1:50609][0m
+2024-06-05 09:45:58,430 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:50610]
+2024-06-05 09:45:58,442 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:50610]
+2024-06-05 09:46:03,317 [mHTTP POST /chat/receiver_chat/45 200 [0.56, 127.0.0.1:50609][0m
+2024-06-05 09:46:06,756 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:50601][0m
+2024-06-05 09:55:23,523 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 09:56:02,284 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:01:35,974 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:03:51,282 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:10:17,412 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:10:29,350 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:10:42,542 Internal Server Error: /chat/chat/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py", line 58, in SellorChatPage
+    return render(request, 'chat/sellorChatPage.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: chat/sellorChatPage.html
+2024-06-05 10:10:43,123 [35;1mHTTP GET /chat/chat/ 500 [0.72, 127.0.0.1:50896][0m
+2024-06-05 10:10:58,449 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:11:03,542 [mHTTP GET /chat/chat/ 200 [0.32, 127.0.0.1:50914][0m
+2024-06-05 10:11:08,408 [mHTTP GET /chat/receiver_chat/39 200 [0.08, 127.0.0.1:50914][0m
+2024-06-05 10:11:08,499 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:50923]
+2024-06-05 10:11:08,520 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:50923]
+2024-06-05 10:11:11,841 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:50923]
+2024-06-05 10:11:36,177 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:11:39,761 Internal Server Error: /chat/chat/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py", line 48, in SellorChatPage
+    return render(request, 'chat/sellorChatPage.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: chat/sellorChatPage.html
+2024-06-05 10:11:39,775 [35;1mHTTP GET /chat/chat/ 500 [0.11, 127.0.0.1:50937][0m
+2024-06-05 10:11:47,866 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:11:50,547 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:50943][0m
+2024-06-05 10:11:53,405 [mHTTP GET /chat/chat/ 200 [0.02, 127.0.0.1:50943][0m
+2024-06-05 10:12:12,405 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:50943][0m
+2024-06-05 10:12:37,516 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:12:41,099 [mHTTP GET /chat/chat/ 200 [0.20, 127.0.0.1:50966][0m
+2024-06-05 10:12:49,301 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:12:54,108 [mHTTP GET /chat/chat/ 200 [0.06, 127.0.0.1:50969][0m
+2024-06-05 10:12:55,423 [mHTTP GET /chat/chat/ 200 [0.02, 127.0.0.1:50969][0m
+2024-06-05 10:12:55,571 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.10, 127.0.0.1:50969][0m
+2024-06-05 10:12:55,646 Not Found: /favicon.ico
+2024-06-05 10:12:55,648 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:50969][0m
+2024-06-05 10:13:20,510 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:13:23,959 [mHTTP GET /chat/chat/ 200 [0.09, 127.0.0.1:50984][0m
+2024-06-05 10:14:17,302 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:14:20,685 [mHTTP GET /chat/chat/ 200 [0.07, 127.0.0.1:50998][0m
+2024-06-05 10:42:19,541 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:43:46,714 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:43:53,337 [mHTTP GET /chat/receiver_chat/45 200 [0.28, 127.0.0.1:51223][0m
+2024-06-05 10:43:53,475 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51224]
+2024-06-05 10:43:53,614 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51224]
+2024-06-05 10:43:54,472 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51224]
+2024-06-05 10:43:54,832 [mHTTP GET / 200 [0.07, 127.0.0.1:51225][0m
+2024-06-05 10:43:56,222 [mHTTP GET / 200 [0.16, 127.0.0.1:51230][0m
+2024-06-05 10:43:57,381 Internal Server Error: /chat/chat/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py", line 47, in SellorChatPage
+    latest_messages = (received_messages.values('sender').annotate(latest_conversation_time = max('conversation_time')).order_by('-conversation_time'))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): v.
+2024-06-05 10:43:57,396 [35;1mHTTP GET /chat/chat/ 500 [0.29, 127.0.0.1:51230][0m
+2024-06-05 10:44:37,719 Internal Server Error: /chat/chat/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py", line 47, in SellorChatPage
+    latest_messages = (received_messages.values('sender').annotate(latest_conversation_time = max('conversation_time')).order_by('-conversation_time'))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): v.
+2024-06-05 10:44:37,727 [35;1mHTTP GET /chat/chat/ 500 [0.06, 127.0.0.1:51242][0m
+2024-06-05 10:45:19,018 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 10:45:23,466 [mHTTP GET /chat/chat/ 200 [0.10, 127.0.0.1:51260][0m
+2024-06-05 10:45:35,658 [mHTTP GET /chat/receiver_chat/46 200 [0.08, 127.0.0.1:51260][0m
+2024-06-05 10:45:35,808 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51264]
+2024-06-05 10:45:35,869 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51264]
+2024-06-05 10:45:38,393 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51264]
+2024-06-05 10:45:40,873 [mHTTP GET /chat/receiver_chat/40 200 [0.03, 127.0.0.1:51260][0m
+2024-06-05 10:45:40,959 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51266]
+2024-06-05 10:45:40,971 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51266]
+2024-06-05 10:45:42,995 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51266]
+2024-06-05 10:45:44,004 [mHTTP GET /chat/receiver_chat/39 200 [0.03, 127.0.0.1:51260][0m
+2024-06-05 10:45:44,091 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51267]
+2024-06-05 10:45:44,127 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51267]
+2024-06-05 10:45:45,938 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51267]
+2024-06-05 11:01:43,156 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 11:02:40,164 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 11:02:45,556 Internal Server Error: /chat/chat/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py", line 48, in SellorChatPage
+    latest_messages = Messages.objects.filter(receiver=member).values('sender').annotate(latest_conversation_time=Max('conversation_time'))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1532, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1346, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1323, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "arsidd78": Must be "User" instance.
+2024-06-05 11:02:45,577 [35;1mHTTP GET /chat/chat/ 500 [0.64, 127.0.0.1:51414][0m
+2024-06-05 11:04:00,522 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 11:04:04,471 [mHTTP GET /chat/chat/ 200 [0.39, 127.0.0.1:51422][0m
+2024-06-05 11:04:09,333 [mHTTP GET /chat/receiver_chat/46 200 [0.28, 127.0.0.1:51422][0m
+2024-06-05 11:04:09,431 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51433]
+2024-06-05 11:04:09,515 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51433]
+2024-06-05 11:04:11,362 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51433]
+2024-06-05 11:04:12,264 [mHTTP GET /chat/receiver_chat/39 200 [0.03, 127.0.0.1:51422][0m
+2024-06-05 11:04:12,368 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51434]
+2024-06-05 11:04:12,392 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51434]
+2024-06-05 11:04:13,533 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51434]
+2024-06-05 11:04:14,189 [mHTTP GET /chat/receiver_chat/40 200 [0.03, 127.0.0.1:51422][0m
+2024-06-05 11:04:14,274 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51436]
+2024-06-05 11:04:14,306 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51436]
+2024-06-05 11:04:15,428 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51436]
+2024-06-05 11:06:17,831 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:51450][0m
+2024-06-05 11:08:43,275 [mHTTP GET /chat/chat/ 200 [0.21, 127.0.0.1:51478][0m
+2024-06-05 11:08:45,257 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:51478][0m
+2024-06-05 11:08:45,565 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.26, 127.0.0.1:51478][0m
+2024-06-05 11:08:45,657 [mHTTP GET /media/logos/chat_logo.png 200 [0.34, 127.0.0.1:51479][0m
+2024-06-05 11:08:45,764 Not Found: /favicon.ico
+2024-06-05 11:08:45,766 [33mHTTP GET /favicon.ico 404 [0.09, 127.0.0.1:51479][0m
+2024-06-05 11:09:59,257 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:51487][0m
+2024-06-05 11:09:59,335 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.03, 127.0.0.1:51487][0m
+2024-06-05 11:12:48,042 [mHTTP GET /member/registration/ 200 [0.27, 127.0.0.1:51545][0m
+2024-06-05 11:12:52,088 [mHTTP GET / 200 [0.11, 127.0.0.1:51545][0m
+2024-06-05 11:12:55,073 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.05, 127.0.0.1:51545][0m
+2024-06-05 11:12:58,090 [mHTTP GET /detail/17/ 200 [0.12, 127.0.0.1:51545][0m
+2024-06-05 11:12:59,750 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:51545][0m
+2024-06-05 11:13:08,773 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:51545][0m
+2024-06-05 11:13:08,812 [36mHTTP GET /static/chat/sellorChat_style.css 304 [0.01, 127.0.0.1:51545][0m
+2024-06-05 11:13:43,823 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-05 11:13:47,686 [mHTTP GET /chat/chat/ 200 [0.08, 127.0.0.1:51566][0m
+2024-06-05 11:13:47,771 [36mHTTP GET /static/chat/sellorChat_style.css 304 [0.01, 127.0.0.1:51566][0m
+2024-06-05 11:13:50,253 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.04, 127.0.0.1:51566][0m
+2024-06-05 11:14:25,339 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:51566][0m
+2024-06-05 11:14:25,526 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.13, 127.0.0.1:51566][0m
+2024-06-05 11:14:37,061 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:51566][0m
+2024-06-05 11:14:37,124 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.01, 127.0.0.1:51566][0m
+2024-06-05 11:14:42,637 [mHTTP GET /chat/chat/ 200 [0.02, 127.0.0.1:51566][0m
+2024-06-05 11:14:42,697 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.01, 127.0.0.1:51566][0m
+2024-06-05 11:15:56,321 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:51582][0m
+2024-06-05 11:15:56,405 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.03, 127.0.0.1:51582][0m
+2024-06-05 11:15:59,839 [mHTTP GET /chat/receiver_chat/46 200 [0.07, 127.0.0.1:51582][0m
+2024-06-05 11:15:59,959 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51590]
+2024-06-05 11:16:00,064 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51590]
+2024-06-05 11:16:04,213 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51590]
+2024-06-05 11:16:44,196 [mHTTP GET /chat/receiver_chat/40 200 [0.04, 127.0.0.1:51582][0m
+2024-06-05 11:16:44,289 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51591]
+2024-06-05 11:16:44,301 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51591]
+2024-06-05 11:16:49,040 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51591]
+2024-06-05 11:20:23,054 [mHTTP GET / 200 [0.05, 127.0.0.1:51604][0m
+2024-06-05 11:20:28,838 [mHTTP GET /recommended_products/ 200 [0.06, 127.0.0.1:51604][0m
+2024-06-05 11:20:28,940 [mHTTP GET /static/product/recommended_products_style.css 200 [0.06, 127.0.0.1:51604][0m
+2024-06-05 11:20:32,671 [mHTTP GET /view_all/ 200 [0.39, 127.0.0.1:51604][0m
+2024-06-05 11:20:35,818 [mHTTP GET /recent_products/ 200 [0.05, 127.0.0.1:51604][0m
+2024-06-05 11:20:38,728 [mHTTP GET /categories/ 200 [0.12, 127.0.0.1:51604][0m
+2024-06-05 11:20:38,858 [mHTTP GET /static/product/categories_page_style.css 200 [0.06, 127.0.0.1:51604][0m
+2024-06-05 11:20:50,923 [mHTTP POST /search/ 200 [0.11, 127.0.0.1:51604][0m
