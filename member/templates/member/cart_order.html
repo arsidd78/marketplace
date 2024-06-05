@@ -1,28 +1,56 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purchase order_cart</title>
+    <title>Purchase Order Cart</title>
+    <link rel="stylesheet" href="{% static 'member/order_cart_style.css' %}">
 </head>
 <body>
-    <form action="{% url 'member:order_cart' %}" method="post">
-        {% csrf_token %}
-        <label for="">Buyer Phone</label>
-        <input type="text" required name="phone"><br>
-        <label for="">Buyer Address</label>
-        <input type="text" required name="address"><br>
-        <label for="">Buyer City</label>
-        <input type="text" required name="city"><br>
-        <label for="">Buyer State</label>
-        <input type="text" required name="state"><br>
-        <label for="">Buyer Zip Code</label>
-        <input type="text" required name="zip_code"><br>
-        {% for product in cart_products %}
-        <label>Quantity of {{ product.product_name }}</label><br>
-        <input type="number" name="product_quantity_{{ product.id }}" value="1" min="1" max="{{ product.product_quantity }}"><br>
-        {% endfor %}
-        <input type="submit" value="Proceed"><br>
-    </form>
+    <nav>
+        <a href="{% url 'product:home' %}">Home Page</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'registration:signout' %}">LogOut</a>
+        {% else %}
+            <a href="{% url 'registration:login' %}">LogIn</a>
+        {% endif %}
+        <a href="/admin/">Admin</a>
+        {% if member %}
+        <a href="{% url 'member:profile' request.user.username %}">Profile</a>
+        {% else %}
+        <a href="{% url 'member:register' %}">Complete Profile</a>
+        {% endif %}
+        <a href="{% url 'member:add_product_page' %}">Sell</a>
+        <a href="{% url 'chat:sellor-chat' %}"><img src="/media/logos/chat_logo.png" alt="chat" width="32"></a>
+    </nav>
+    <div class="order-cart-container">
+        <h2>Purchase Order Cart</h2>
+        <form action="{% url 'member:order_cart' %}" method="post">
+            {% csrf_token %}
+            <label for="phone">Buyer Phone</label>
+            <input type="text" required name="phone" id="phone"><br>
+            <label for="address">Buyer Address</label>
+            <input type="text" required name="address" id="address"><br>
+            <label for="city">Buyer City</label>
+            <input type="text" required name="city" id="city"><br>
+            <label for="state">Buyer State</label>
+            <input type="text" required name="state" id="state"><br>
+            <label for="zip_code">Buyer Zip Code</label>
+            <input type="text" required name="zip_code" id="zip_code"><br>
+            {% for product in cart_products %}
+            <label for="product_quantity_{{ product.id }}">Quantity of {{ product.product_name }}</label><br>
+            <input type="number" name="product_quantity_{{ product.id }}" id="product_quantity_{{ product.id }}" value="1" min="1" max="{{ product.product_quantity }}"><br>
+            {% endfor %}
+            <input type="submit" value="Proceed"><br>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>arsidd78@gmail.com</p>
+        <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+    </footer>
 </body>
 </html>

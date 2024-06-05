@@ -1,33 +1,75 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmation</title>
+    <title>Invoice Confirmation</title>
+    <link rel="stylesheet" href="{% static 'member/confirmation_style.css' %}">
 </head>
 <body>
-    <div class="show_invoice" >
-
-        <h1>Invoice</h1>
-        {% for invoice in purchases %}
-        {% if forloop.first %}
-            <label >{{invoice.buyer}}</label><br>
-            <label >{{invoice.buyer_phone}}</label><br>
-            <label >{{invoice.buyer_address}}</label><br>
-            <label >{{invoice.buyer_state}}</label><br>
-            <label >{{invoice.buyer_city}}</label><br>
-            <label >{{invoice.zip_code}}</label><br>
+    <nav>
+        <a href="{% url 'product:home' %}">Home Page</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'registration:signout' %}">LogOut</a>
+        {% else %}
+            <a href="{% url 'registration:login' %}">LogIn</a>
         {% endif %}
-        {%  endfor %}
-        <!-- Above lines represent constant data from purchases  -->
-        {% for invoice in purchases %}<br>
-        <label >{{invoice.product.product_name}}</label><br>
-        <label >{{invoice.quantity}}</label><br>
-        <label >{{invoice.price}}</label><br>
-        {% endfor %}
-        <label for="">Total Price : {{total}} </label>
-
+        <a href="/admin/">Admin</a>
+        {% if member %}
+        <a href="{% url 'member:profile' request.user.username %}">Profile</a>
+        {% else %}
+        <a href="{% url 'member:register' %}">Complete Profile</a>
+        {% endif %}
+        <a href="{% url 'member:add_product_page' %}">Sell</a>
+        <a href="{% url 'chat:sellor-chat' %}"><img src="/media/logos/chat_logo.png" alt="chat" width="32"></a>
+    </nav>
+    <div class="show_invoice">
+        <h1>Invoice</h1>
+        <div class="buyer-details">
+            {% for invoice in purchases %}
+            {% if forloop.first %}
+                <p><strong>Buyer:</strong> {{invoice.buyer}}</p>
+                <p><strong>Phone:</strong> {{invoice.buyer_phone}}</p>
+                <p><strong>Address:</strong> {{invoice.buyer_address}}</p>
+                <p><strong>State:</strong> {{invoice.buyer_state}}</p>
+                <p><strong>City:</strong> {{invoice.buyer_city}}</p>
+                <p><strong>Zip Code:</strong> {{invoice.zip_code}}</p>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <table class="invoice-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for invoice in purchases %}
+                <tr>
+                    <td>{{invoice.product.product_name}}</td>
+                    <td>{{invoice.quantity}}</td>
+                    <td>${{invoice.price}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><strong>Total Price:</strong></td>
+                    <td>${{total}}</td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
-    <button  onclick=location.href="{% url 'member:confirmation' %}" > Confirm Order</button>
+    <button onclick=location.href="{% url 'member:confirmation' %}" class="confirm-button">Confirm Order</button>
+    <footer>
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>arsidd78@gmail.com</p>
+        <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+    </footer>
 </body>
 </html>

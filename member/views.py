@@ -224,7 +224,8 @@ def order_cart(request):
             cart_products = member.user_cart_list.all()
             context = {
                 'request': request,
-                'cart_products': cart_products
+                'cart_products': cart_products,
+                'member':member
             }
             return render(request, 'member/cart_order.html', context)
     

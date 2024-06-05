@@ -1,24 +1,55 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Purchase Orders</title>
+    <link rel="stylesheet" href="{% static 'member/purchase_orders_style.css' %}">
 </head>
 <body>
-    {% for order in purchases %}
-    <article>
-        <h4>Buyer: {{order.buyer.username}}</h4>
-        <h4>Buyer Address: {{order.buyer_address}}</h4>
-        <h4>Buyer City: {{order.buyer_city}}</h4>
-        <h4>Buyer State: {{order.buyer_state}}</h4>
-        <h4>Buyer Phone No: {{order.buyer_phone}}</h4>
-        <h4>Product : {{order.product.product_name}}</h4>
-        <h4>Price: {{order.price}}</h4>
-        <h4>Quantity: {{order.quantity}}</h4>
-        <h4>Total: {{order.price}} X {{order.quantity}}</h4>
-        <h4>Date: {{order.date}}</h4>
-    </article> <hr>
-    {% endfor %}
+    <nav>
+        <a href="{% url 'product:home' %}">Home Page</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'registration:signout' %}">LogOut</a>
+        {% else %}
+            <a href="{% url 'registration:login' %}">LogIn</a>
+        {% endif %}
+        <a href="/admin/">Admin</a>
+        {% if member %}
+        <a href="{% url 'member:profile' request.user.username %}">Profile</a>
+        {% else %}
+        <a href="{% url 'member:register' %}">Complete Profile</a>
+        {% endif %}
+        <a href="{% url 'member:add_product_page' %}">Sell</a>
+        <a href="{% url 'chat:sellor-chat' %}"><img src="/media/logos/chat_logo.png" alt="chat" width="32"></a>
+    </nav>
+    <div class="header">
+        <h1>Purchase Orders</h1>
+    </div>
+    <div class="container">
+        {% for order in purchases %}
+        <article>
+            <h4>Buyer: {{order.buyer.username}}</h4>
+            <h4>Buyer Address: {{order.buyer_address}}</h4>
+            <h4>Buyer City: {{order.buyer_city}}</h4>
+            <h4>Buyer State: {{order.buyer_state}}</h4>
+            <h4>Buyer Phone No: {{order.buyer_phone}}</h4>
+            <h4>Product: {{order.product.product_name}}</h4>
+            <h4>Price: ${{order.price}}</h4>
+            <h4>Quantity: {{order.quantity}}</h4>
+            <h4>Total: $<span class="total-price">{{order.price|multiply: order.quantity}}</span></h4>
+            <h4>Date: {{order.date}}</h4>
+        </article>
+        {% endfor %}
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+    <footer>
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>arsidd78@gmail.com</p>
+        <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+    </footer>
 </body>
 </html>
