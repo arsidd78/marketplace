@@ -24650,3 +24650,796 @@ Traceback (most recent call last):
 AttributeError: 'QuerySet' object has no attribute 'product_quantity'
 2024-06-06 00:08:31,366 [35;1mHTTP GET /member/purchase_orders/arsidd78/ 500 [3.78, 127.0.0.1:50811][0m
 2024-06-06 00:09:04,285 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-06 00:24:02,253 [mHTTP GET / 200 [0.48, 127.0.0.1:63126][0m
+2024-06-06 00:32:44,505 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:63193][0m
+2024-06-06 00:32:48,969 [mHTTP GET /member/cart_view/ 200 [0.02, 127.0.0.1:63193][0m
+2024-06-06 00:32:57,002 [mHTTP GET /view_all/ 200 [0.55, 127.0.0.1:63193][0m
+2024-06-06 00:33:03,366 [mHTTP GET /detail/29/ 200 [0.22, 127.0.0.1:63193][0m
+2024-06-06 00:33:05,150 [32mHTTP GET /member/adding_cart/29/ 302 [0.26, 127.0.0.1:63193][0m
+2024-06-06 00:33:05,243 [mHTTP GET / 200 [0.02, 127.0.0.1:63193][0m
+2024-06-06 00:33:08,244 [mHTTP GET /view_all/ 200 [0.05, 127.0.0.1:63193][0m
+2024-06-06 00:33:10,787 [mHTTP GET /detail/25/ 200 [0.11, 127.0.0.1:63193][0m
+2024-06-06 00:33:12,723 [32mHTTP GET /member/adding_cart/25/ 302 [0.21, 127.0.0.1:63193][0m
+2024-06-06 00:33:12,766 [mHTTP GET / 200 [0.03, 127.0.0.1:63193][0m
+2024-06-06 00:33:14,627 [mHTTP GET /detail/19/ 200 [0.16, 127.0.0.1:63193][0m
+2024-06-06 00:33:15,206 [mHTTP GET /media/products/Sofa2.jpg 200 [0.48, 127.0.0.1:63193][0m
+2024-06-06 00:33:17,105 [32mHTTP GET /member/adding_cart/19/ 302 [0.20, 127.0.0.1:63193][0m
+2024-06-06 00:33:17,136 [mHTTP GET / 200 [0.03, 127.0.0.1:63193][0m
+2024-06-06 00:33:19,472 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:63193][0m
+2024-06-06 00:33:20,916 [mHTTP GET /member/cart_view/ 200 [0.03, 127.0.0.1:63193][0m
+2024-06-06 00:33:23,676 [mHTTP GET /member/order_cart/ 200 [0.04, 127.0.0.1:63193][0m
+2024-06-06 00:33:23,817 [mHTTP GET /static/member/order_cart_style.css 200 [0.03, 127.0.0.1:63193][0m
+2024-06-06 00:34:04,816 [32mHTTP GET /member/remove_item_cart/29/ 302 [0.30, 127.0.0.1:63193][0m
+2024-06-06 00:34:04,840 [mHTTP GET /member/cart_view/ 200 [0.02, 127.0.0.1:63193][0m
+2024-06-06 00:34:12,778 [32mHTTP GET /member/remove_item_cart/19/ 302 [0.33, 127.0.0.1:63193][0m
+2024-06-06 00:34:12,800 [mHTTP GET /member/cart_view/ 200 [0.02, 127.0.0.1:63193][0m
+2024-06-06 00:34:19,308 [mHTTP GET / 200 [0.04, 127.0.0.1:63193][0m
+2024-06-06 00:34:20,948 [mHTTP GET /detail/15/ 200 [0.06, 127.0.0.1:63193][0m
+2024-06-06 00:34:23,759 [32mHTTP GET /member/adding_cart/15/ 302 [0.36, 127.0.0.1:63193][0m
+2024-06-06 00:34:23,809 [mHTTP GET / 200 [0.04, 127.0.0.1:63193][0m
+2024-06-06 00:34:26,085 [mHTTP GET /detail/14/ 200 [0.29, 127.0.0.1:63193][0m
+2024-06-06 00:34:27,631 [32mHTTP GET /member/adding_cart/14/ 302 [0.20, 127.0.0.1:63193][0m
+2024-06-06 00:34:27,660 [mHTTP GET / 200 [0.02, 127.0.0.1:63193][0m
+2024-06-06 00:34:31,951 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:63193][0m
+2024-06-06 00:34:44,946 Internal Server Error: /member/purchase_orders/arsidd78/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 247, in purchase_orders
+    return render(request, 'member/purchase_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+2024-06-06 00:34:44,994 [35;1mHTTP GET /member/purchase_orders/arsidd78/ 500 [0.51, 127.0.0.1:63193][0m
+2024-06-06 00:35:37,742 [mHTTP GET /member/purchase_orders/arsidd78/ 200 [0.36, 127.0.0.1:63193][0m
+2024-06-06 00:35:37,898 [33mHTTP GET /static/js/script.js 404 [0.06, 127.0.0.1:63193][0m
+2024-06-06 00:35:37,946 [mHTTP GET /static/member/purchase_orders_style.css 200 [0.15, 127.0.0.1:63213][0m
+2024-06-06 00:35:54,729 [mHTTP GET / 200 [0.03, 127.0.0.1:63213][0m
+2024-06-07 11:29:42,839 [mHTTP GET / 200 [0.74, 127.0.0.1:50492][0m
+2024-06-07 11:29:43,047 [36mHTTP GET /static/product/index_style.css 304 [0.02, 127.0.0.1:50492][0m
+2024-06-07 11:29:43,104 [36mHTTP GET /media/logos/chat_logo.png 304 [0.07, 127.0.0.1:50491][0m
+2024-06-07 11:29:43,174 [36mHTTP GET /media/products/sofa_1.jpg 304 [0.04, 127.0.0.1:50495][0m
+2024-06-07 11:29:43,182 [36mHTTP GET /media/products/stv1_OAPftt6.jpeg 304 [0.06, 127.0.0.1:50494][0m
+2024-06-07 11:29:43,185 [36mHTTP GET /media/products/beef_HYC0s2g.jpeg 304 [0.06, 127.0.0.1:50492][0m
+2024-06-07 11:29:43,191 [36mHTTP GET /media/products/living_1.jpeg 304 [0.06, 127.0.0.1:50496][0m
+2024-06-07 11:29:43,217 [36mHTTP GET /media/products/strawberry2_VltATon.png 304 [0.01, 127.0.0.1:50495][0m
+2024-06-07 11:29:43,228 [36mHTTP GET /media/products/mangoes1_C874n2S.jpeg 304 [0.10, 127.0.0.1:50491][0m
+2024-06-07 11:29:43,274 [36mHTTP GET /media/products/palistineflag_XD3bT3q.webp 304 [0.02, 127.0.0.1:50491][0m
+2024-06-07 11:29:43,276 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.02, 127.0.0.1:50495][0m
+2024-06-07 11:29:43,356 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.04, 127.0.0.1:50495][0m
+2024-06-07 11:29:43,569 [36mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 304 [0.06, 127.0.0.1:50495][0m
+2024-06-07 11:29:44,476 Not Found: /favicon.ico
+2024-06-07 11:29:44,478 [33mHTTP GET /favicon.ico 404 [0.34, 127.0.0.1:50495][0m
+2024-06-07 11:30:18,508 [mHTTP POST /search/ 200 [0.09, 127.0.0.1:50495][0m
+2024-06-07 11:30:18,559 [36mHTTP GET /static/product/search_style.css 304 [0.01, 127.0.0.1:50495][0m
+2024-06-07 11:31:26,349 [mHTTP POST /search/ 200 [0.02, 127.0.0.1:50509][0m
+2024-06-07 11:32:30,789 [mHTTP POST /search/ 200 [0.02, 127.0.0.1:50526][0m
+2024-06-07 11:32:33,442 [mHTTP POST /search/ 200 [0.02, 127.0.0.1:50526][0m
+2024-06-07 11:32:33,915 [mHTTP GET /static/product/search_style.css 200 [0.42, 127.0.0.1:50526][0m
+2024-06-07 11:32:33,976 [mHTTP GET /media/products/mangoes1_C874n2S.jpeg 200 [0.47, 127.0.0.1:50531][0m
+2024-06-07 11:32:33,979 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.44, 127.0.0.1:50532][0m
+2024-06-07 11:32:33,980 [mHTTP GET /media/logos/chat_logo.png 200 [0.48, 127.0.0.1:50525][0m
+2024-06-07 11:32:34,036 Not Found: /favicon.ico
+2024-06-07 11:32:34,040 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:50532][0m
+2024-06-07 11:36:58,204 [mHTTP POST /search/ 200 [0.02, 127.0.0.1:50571][0m
+2024-06-07 11:36:58,297 [mHTTP GET /static/product/search_style.css 200 [0.04, 127.0.0.1:50571][0m
+2024-06-07 11:37:10,730 [mHTTP POST /search/ 200 [0.02, 127.0.0.1:50571][0m
+2024-06-07 11:37:10,789 [mHTTP GET /static/product/search_style.css 200 [0.01, 127.0.0.1:50571][0m
+2024-06-07 11:37:14,095 [mHTTP GET / 200 [0.09, 127.0.0.1:50571][0m
+2024-06-07 11:37:20,710 [mHTTP POST /search/ 200 [0.03, 127.0.0.1:50571][0m
+2024-06-07 11:37:20,799 [36mHTTP GET /static/product/search_style.css 304 [0.02, 127.0.0.1:50571][0m
+2024-06-07 11:37:20,899 [36mHTTP GET /media/products/mouse.jpeg 304 [0.06, 127.0.0.1:50572][0m
+2024-06-07 11:37:20,902 [36mHTTP GET /media/products/mouse_12.jpeg 304 [0.06, 127.0.0.1:50575][0m
+2024-06-07 11:37:20,906 [36mHTTP GET /media/products/computer_1.jpeg 304 [0.07, 127.0.0.1:50571][0m
+2024-06-07 11:37:20,909 [36mHTTP GET /media/products/harry_potter_novel_complete.jpeg 304 [0.07, 127.0.0.1:50576][0m
+2024-06-07 11:39:03,501 [mHTTP POST /search/ 200 [0.04, 127.0.0.1:50582][0m
+2024-06-07 11:39:03,596 [mHTTP GET /static/product/search_style.css 200 [0.01, 127.0.0.1:50582][0m
+2024-06-07 11:39:45,571 [mHTTP POST /search/ 200 [0.03, 127.0.0.1:50582][0m
+2024-06-07 11:39:45,667 [mHTTP GET /static/product/search_style.css 200 [0.04, 127.0.0.1:50582][0m
+2024-06-07 11:39:58,121 [mHTTP GET / 200 [0.03, 127.0.0.1:50582][0m
+2024-06-07 11:40:10,662 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.08, 127.0.0.1:50582][0m
+2024-06-07 11:40:10,768 [36mHTTP GET /media/users/dp/Edited_Dp.jpeg 304 [0.05, 127.0.0.1:50604][0m
+2024-06-07 11:40:10,777 [36mHTTP GET /media/logos/edit_logo.png 304 [0.06, 127.0.0.1:50582][0m
+2024-06-07 11:40:10,800 [36mHTTP GET /static/member/user_page_style.css 304 [0.07, 127.0.0.1:50605][0m
+2024-06-07 11:46:18,220 [mHTTP GET /member/add_product/ 200 [0.54, 127.0.0.1:50686][0m
+2024-06-07 11:46:18,377 [mHTTP GET /static/member/add_product_style.css 200 [0.10, 127.0.0.1:50686][0m
+2024-06-07 11:46:18,730 [mHTTP GET /static/member/script.js 200 [0.42, 127.0.0.1:50687][0m
+2024-06-07 11:50:47,688 [32mHTTP POST /member/add_product/ 302 [5.11, 127.0.0.1:51626][0m
+2024-06-07 11:50:47,764 [mHTTP GET /member/user_products/arsidd78/ 200 [0.07, 127.0.0.1:51626][0m
+2024-06-07 11:50:47,860 [36mHTTP GET /static/member/my_product_style.css 304 [0.03, 127.0.0.1:51626][0m
+2024-06-07 11:50:47,907 [36mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 304 [0.07, 127.0.0.1:51625][0m
+2024-06-07 11:50:47,910 [36mHTTP GET /media/products/outdoor_1.jpeg 304 [0.05, 127.0.0.1:51634][0m
+2024-06-07 11:50:47,915 [36mHTTP GET /media/products/pullover1.jpeg 304 [0.04, 127.0.0.1:51635][0m
+2024-06-07 11:50:47,936 [36mHTTP GET /media/products/butterfly_1.jpeg 304 [0.06, 127.0.0.1:51636][0m
+2024-06-07 11:50:47,940 [36mHTTP GET /media/products/doc_tool1.jpeg 304 [0.07, 127.0.0.1:51626][0m
+2024-06-07 11:50:47,943 [36mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 304 [0.09, 127.0.0.1:51633][0m
+2024-06-07 11:50:47,980 [36mHTTP GET /media/products/weights.jpeg 304 [0.07, 127.0.0.1:51625][0m
+2024-06-07 11:50:48,053 [36mHTTP GET /media/products/toys_2.jpeg 304 [0.02, 127.0.0.1:51626][0m
+2024-06-07 11:50:48,055 [36mHTTP GET /media/products/toys_1.jpeg 304 [0.02, 127.0.0.1:51633][0m
+2024-06-07 11:50:48,073 [36mHTTP GET /media/products/laptop1.jpeg 304 [0.06, 127.0.0.1:51625][0m
+2024-06-07 11:50:48,172 [mHTTP GET /media/products/makeup1.jpeg 200 [0.03, 127.0.0.1:51625][0m
+2024-06-07 11:51:47,960 [mHTTP GET /member/add_product/ 200 [0.06, 127.0.0.1:51625][0m
+2024-06-07 11:52:32,508 [32mHTTP POST /member/add_product/ 302 [0.27, 127.0.0.1:51625][0m
+2024-06-07 11:52:32,581 [mHTTP GET /member/user_products/arsidd78/ 200 [0.07, 127.0.0.1:51625][0m
+2024-06-07 11:52:32,766 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.03, 127.0.0.1:64510][0m
+2024-06-07 11:52:32,780 [mHTTP GET /media/products/sport_1.jpeg 200 [0.07, 127.0.0.1:51625][0m
+2024-06-07 11:52:38,002 [32mHTTP GET /registration/signout/ 302 [0.14, 127.0.0.1:51625][0m
+2024-06-07 11:52:38,031 [mHTTP GET / 200 [0.02, 127.0.0.1:51625][0m
+2024-06-07 11:52:38,157 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.02, 127.0.0.1:51625][0m
+2024-06-07 11:52:42,353 [mHTTP GET /registration/login/ 200 [0.20, 127.0.0.1:51625][0m
+2024-06-07 11:52:42,433 [36mHTTP GET /static/registration/login_style.css 304 [0.01, 127.0.0.1:51625][0m
+2024-06-07 11:52:49,441 [32mHTTP POST /registration/authentication/?next= 302 [1.43, 127.0.0.1:51625][0m
+2024-06-07 11:52:49,484 [mHTTP GET / 200 [0.04, 127.0.0.1:51625][0m
+2024-06-07 11:52:49,576 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.01, 127.0.0.1:64510][0m
+2024-06-07 11:52:49,578 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.02, 127.0.0.1:51625][0m
+2024-06-07 11:52:53,726 [mHTTP GET /member/add_product/ 200 [0.05, 127.0.0.1:51625][0m
+2024-06-07 11:53:53,386 [32mHTTP POST /member/add_product/ 302 [0.20, 127.0.0.1:51625][0m
+2024-06-07 11:53:53,425 [mHTTP GET /member/user_products/sak098/ 200 [0.03, 127.0.0.1:51625][0m
+2024-06-07 11:53:53,532 [mHTTP GET /media/products/tennis.jpeg 200 [0.03, 127.0.0.1:51625][0m
+2024-06-07 11:53:56,468 [mHTTP GET /member/add_product/ 200 [0.04, 127.0.0.1:51625][0m
+2024-06-07 11:54:28,711 [32mHTTP POST /member/add_product/ 302 [0.28, 127.0.0.1:51625][0m
+2024-06-07 11:54:28,754 [mHTTP GET /member/user_products/sak098/ 200 [0.03, 127.0.0.1:51625][0m
+2024-06-07 11:54:28,887 [36mHTTP GET /media/products/tennis.jpeg 304 [0.04, 127.0.0.1:64518][0m
+2024-06-07 11:54:28,901 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.08, 127.0.0.1:51625][0m
+2024-06-07 11:54:38,451 [32mHTTP GET /registration/signout/ 302 [0.10, 127.0.0.1:51625][0m
+2024-06-07 11:54:38,481 [mHTTP GET / 200 [0.02, 127.0.0.1:51625][0m
+2024-06-07 11:54:38,617 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.05, 127.0.0.1:51625][0m
+2024-06-07 11:54:38,620 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.04, 127.0.0.1:64518][0m
+2024-06-07 11:54:38,623 [36mHTTP GET /media/products/tennis.jpeg 304 [0.04, 127.0.0.1:64533][0m
+2024-06-07 11:54:38,626 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.04, 127.0.0.1:64534][0m
+2024-06-07 11:54:43,697 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:64534][0m
+2024-06-07 11:54:50,260 [32mHTTP POST /registration/authentication/?next= 302 [1.19, 127.0.0.1:64534][0m
+2024-06-07 11:54:50,287 [mHTTP GET / 200 [0.02, 127.0.0.1:64534][0m
+2024-06-07 11:54:50,377 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.02, 127.0.0.1:64533][0m
+2024-06-07 11:54:50,381 [36mHTTP GET /media/products/tennis.jpeg 304 [0.02, 127.0.0.1:64534][0m
+2024-06-07 11:54:55,995 [mHTTP GET /member/add_product/ 200 [0.05, 127.0.0.1:64534][0m
+2024-06-07 11:56:15,217 [32mHTTP POST /member/add_product/ 302 [0.22, 127.0.0.1:64538][0m
+2024-06-07 11:56:15,238 [mHTTP GET /member/user_products/msking12/ 200 [0.01, 127.0.0.1:64538][0m
+2024-06-07 11:56:15,332 [36mHTTP GET /media/products/dvd_1.jpeg 304 [0.02, 127.0.0.1:64539][0m
+2024-06-07 11:56:15,348 [mHTTP GET /media/products/crockery.jpeg 200 [0.04, 127.0.0.1:64538][0m
+2024-06-07 11:56:18,223 [mHTTP GET /member/add_product/ 200 [0.04, 127.0.0.1:64538][0m
+2024-06-07 11:57:47,817 [32mHTTP POST /member/add_product/ 302 [0.19, 127.0.0.1:64563][0m
+2024-06-07 11:57:47,844 [mHTTP GET /member/user_products/msking12/ 200 [0.02, 127.0.0.1:64563][0m
+2024-06-07 11:57:47,945 [36mHTTP GET /media/products/crockery.jpeg 304 [0.02, 127.0.0.1:64564][0m
+2024-06-07 11:57:47,962 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.04, 127.0.0.1:64563][0m
+2024-06-07 11:57:52,168 [32mHTTP GET /registration/signout/ 302 [0.12, 127.0.0.1:64563][0m
+2024-06-07 11:57:52,197 [mHTTP GET / 200 [0.02, 127.0.0.1:64563][0m
+2024-06-07 11:57:52,326 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.05, 127.0.0.1:64563][0m
+2024-06-07 11:57:52,328 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.05, 127.0.0.1:64564][0m
+2024-06-07 11:57:52,331 [36mHTTP GET /media/products/tennis.jpeg 304 [0.04, 127.0.0.1:64569][0m
+2024-06-07 11:57:52,334 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.04, 127.0.0.1:64570][0m
+2024-06-07 11:58:33,445 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:64570][0m
+2024-06-07 11:58:44,918 [32mHTTP POST /registration/authentication/?next= 302 [1.21, 127.0.0.1:64570][0m
+2024-06-07 11:58:44,953 [mHTTP GET / 200 [0.03, 127.0.0.1:64570][0m
+2024-06-07 11:58:45,098 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.05, 127.0.0.1:64569][0m
+2024-06-07 11:58:45,103 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.05, 127.0.0.1:64563][0m
+2024-06-07 11:58:45,107 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.06, 127.0.0.1:64570][0m
+2024-06-07 11:58:45,110 [36mHTTP GET /media/products/tennis.jpeg 304 [0.06, 127.0.0.1:64564][0m
+2024-06-07 11:58:45,113 [36mHTTP GET /media/products/crockery.jpeg 304 [0.05, 127.0.0.1:64577][0m
+2024-06-07 11:58:55,386 [mHTTP GET /member/add_product/ 200 [0.04, 127.0.0.1:64563][0m
+2024-06-07 12:00:55,524 [32mHTTP POST /member/add_product/ 302 [0.22, 127.0.0.1:64587][0m
+2024-06-07 12:00:55,569 [mHTTP GET /member/user_products/khalid1/ 200 [0.02, 127.0.0.1:64587][0m
+2024-06-07 12:00:55,669 [mHTTP GET /media/products/joggers.jpeg 200 [0.03, 127.0.0.1:64587][0m
+2024-06-07 12:00:58,630 [mHTTP GET /member/add_product/ 200 [0.05, 127.0.0.1:64587][0m
+2024-06-07 12:01:33,294 [32mHTTP POST /member/add_product/ 302 [0.18, 127.0.0.1:64587][0m
+2024-06-07 12:01:33,319 [mHTTP GET /member/user_products/khalid1/ 200 [0.02, 127.0.0.1:64587][0m
+2024-06-07 12:01:33,413 [36mHTTP GET /media/products/joggers.jpeg 304 [0.02, 127.0.0.1:64586][0m
+2024-06-07 12:01:33,428 [mHTTP GET /media/products/shoes.jpeg 200 [0.03, 127.0.0.1:64587][0m
+2024-06-07 12:02:21,541 [mHTTP GET / 200 [0.04, 127.0.0.1:64587][0m
+2024-06-07 12:02:21,754 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.12, 127.0.0.1:64587][0m
+2024-06-07 12:02:21,759 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.12, 127.0.0.1:64586][0m
+2024-06-07 12:02:21,765 [36mHTTP GET /media/products/crockery.jpeg 304 [0.08, 127.0.0.1:64604][0m
+2024-06-07 12:02:21,767 [36mHTTP GET /media/products/tennis.jpeg 304 [0.11, 127.0.0.1:64602][0m
+2024-06-07 12:02:21,769 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.11, 127.0.0.1:64603][0m
+2024-06-07 12:02:31,854 [mHTTP GET /member/user_profile/khalid1/ 200 [0.03, 127.0.0.1:64603][0m
+2024-06-07 12:02:31,962 [mHTTP GET /media/users/dp/toys_1.jpeg 200 [0.05, 127.0.0.1:64603][0m
+2024-06-07 12:02:36,639 [mHTTP GET /member/wishlist_view/ 200 [0.08, 127.0.0.1:64603][0m
+2024-06-07 12:02:36,717 [36mHTTP GET /static/member/wishlist_style.css 304 [0.03, 127.0.0.1:64603][0m
+2024-06-07 12:03:09,593 [mHTTP GET /member/cart_view/ 200 [0.07, 127.0.0.1:64603][0m
+2024-06-07 12:03:09,723 [36mHTTP GET /static/member/cart_style.css 304 [0.02, 127.0.0.1:64603][0m
+2024-06-07 12:03:11,743 [mHTTP GET /member/purchase_orders/khalid1/ 200 [0.07, 127.0.0.1:64603][0m
+2024-06-07 12:03:11,826 [36mHTTP GET /static/member/purchase_orders_style.css 304 [0.03, 127.0.0.1:64603][0m
+2024-06-07 12:03:11,835 [33mHTTP GET /static/js/script.js 404 [0.03, 127.0.0.1:64602][0m
+2024-06-07 12:03:13,451 [mHTTP GET /member/recent_sales 200 [0.08, 127.0.0.1:64602][0m
+2024-06-07 12:03:40,351 [mHTTP GET / 200 [0.03, 127.0.0.1:64602][0m
+2024-06-07 12:03:40,468 [36mHTTP GET /media/products/tennis.jpeg 304 [0.04, 127.0.0.1:64609][0m
+2024-06-07 12:03:40,471 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.05, 127.0.0.1:64603][0m
+2024-06-07 12:03:40,472 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.05, 127.0.0.1:64602][0m
+2024-06-07 12:03:40,473 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.04, 127.0.0.1:64610][0m
+2024-06-07 12:03:40,474 [36mHTTP GET /media/products/crockery.jpeg 304 [0.03, 127.0.0.1:64611][0m
+2024-06-07 12:04:17,993 [mHTTP GET /member/user_profile/khalid1/ 200 [0.03, 127.0.0.1:64610][0m
+2024-06-07 12:04:19,397 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:64610][0m
+2024-06-07 12:06:36,440 [32mHTTP GET /registration/signout/ 302 [0.14, 127.0.0.1:64643][0m
+2024-06-07 12:06:36,513 [mHTTP GET / 200 [0.06, 127.0.0.1:64643][0m
+2024-06-07 12:06:36,638 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.04, 127.0.0.1:64646][0m
+2024-06-07 12:06:36,646 [36mHTTP GET /media/products/tennis.jpeg 304 [0.05, 127.0.0.1:64645][0m
+2024-06-07 12:06:36,653 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.06, 127.0.0.1:64644][0m
+2024-06-07 12:06:36,668 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.08, 127.0.0.1:64643][0m
+2024-06-07 12:06:36,676 [36mHTTP GET /media/products/crockery.jpeg 304 [0.07, 127.0.0.1:64647][0m
+2024-06-07 12:06:39,797 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:64647][0m
+2024-06-07 12:06:45,955 [32mHTTP POST /registration/authentication/?next= 302 [1.38, 127.0.0.1:64647][0m
+2024-06-07 12:06:45,984 [mHTTP GET / 200 [0.02, 127.0.0.1:64647][0m
+2024-06-07 12:06:50,232 [mHTTP GET /view_all/ 200 [0.09, 127.0.0.1:64647][0m
+2024-06-07 12:06:50,387 [36mHTTP GET /media/products/joggers.jpeg 304 [0.03, 127.0.0.1:64643][0m
+2024-06-07 12:06:50,430 [36mHTTP GET /media/products/shoes.jpeg 304 [0.08, 127.0.0.1:64644][0m
+2024-06-07 12:06:50,435 [36mHTTP GET /media/products/8_ball_pool.jpeg 304 [0.09, 127.0.0.1:64647][0m
+2024-06-07 12:07:02,613 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:64647][0m
+2024-06-07 12:07:05,123 [mHTTP GET /member/purchase_orders/arsidd78/ 200 [0.31, 127.0.0.1:64647][0m
+2024-06-07 12:07:05,213 [33mHTTP GET /static/js/script.js 404 [0.01, 127.0.0.1:64647][0m
+2024-06-07 12:14:09,902 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 12:16:42,679 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 12:17:05,092 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 12:18:56,775 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 12:19:02,040 Internal Server Error: /member/purchase_orders/arsidd78/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'arsidd78'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 246, in purchase_orders
+    member = get_object_or_404(Member, user=user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'arsidd78'.
+2024-06-07 12:19:02,094 [35;1mHTTP GET /member/purchase_orders/arsidd78/ 500 [1.28, 127.0.0.1:64825][0m
+2024-06-07 16:39:19,167 [mHTTP GET / 200 [0.70, 127.0.0.1:59448][0m
+2024-06-07 16:39:19,798 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.01, 127.0.0.1:59448][0m
+2024-06-07 16:39:19,859 [36mHTTP GET /media/products/tennis.jpeg 304 [0.02, 127.0.0.1:59448][0m
+2024-06-07 16:39:19,901 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.02, 127.0.0.1:59448][0m
+2024-06-07 16:39:19,988 [36mHTTP GET /media/products/crockery.jpeg 304 [0.02, 127.0.0.1:59448][0m
+2024-06-07 16:39:20,057 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.04, 127.0.0.1:59449][0m
+2024-06-07 16:39:20,548 Not Found: /favicon.ico
+2024-06-07 16:39:20,549 [33mHTTP GET /favicon.ico 404 [0.26, 127.0.0.1:59449][0m
+2024-06-07 16:40:18,564 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.04, 127.0.0.1:59449][0m
+2024-06-07 16:40:21,718 Internal Server Error: /member/purchase_orders/arsidd78/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'arsidd78'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 246, in purchase_orders
+    member = get_object_or_404(Member, user=user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'arsidd78'.
+2024-06-07 16:40:21,752 [35;1mHTTP GET /member/purchase_orders/arsidd78/ 500 [0.36, 127.0.0.1:59449][0m
+2024-06-07 16:41:35,455 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\urls.py changed, reloading.
+2024-06-07 16:41:52,363 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 16:42:44,531 Not Found: /member/purchase_orders/arsidd78/
+2024-06-07 16:42:44,533 [33mHTTP GET /member/purchase_orders/arsidd78/ 404 [0.06, 127.0.0.1:59483][0m
+2024-06-07 16:42:48,054 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.38, 127.0.0.1:59483][0m
+2024-06-07 16:42:51,249 [mHTTP GET /member/purchase_orders/ 200 [0.45, 127.0.0.1:59483][0m
+2024-06-07 16:42:51,355 [36mHTTP GET /static/member/purchase_orders_style.css 304 [0.02, 127.0.0.1:59483][0m
+2024-06-07 16:42:51,370 [33mHTTP GET /static/js/script.js 404 [0.02, 127.0.0.1:59484][0m
+2024-06-07 16:45:44,303 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 16:47:07,703 [mHTTP GET /member/purchase_orders/ 200 [1.78, 127.0.0.1:59529][0m
+2024-06-07 16:47:07,804 [33mHTTP GET /static/js/script.js 404 [0.04, 127.0.0.1:59529][0m
+2024-06-07 16:49:59,242 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 16:51:16,557 [mHTTP GET /member/purchase_orders/ 200 [0.61, 127.0.0.1:59570][0m
+2024-06-07 16:51:16,645 [33mHTTP GET /static/js/script.js 404 [0.03, 127.0.0.1:59570][0m
+2024-06-07 16:56:45,140 [mHTTP GET / 200 [0.05, 127.0.0.1:59629][0m
+2024-06-07 16:57:18,910 [32mHTTP GET /registration/signout/ 302 [0.14, 127.0.0.1:59629][0m
+2024-06-07 16:57:18,986 [mHTTP GET / 200 [0.03, 127.0.0.1:59629][0m
+2024-06-07 16:57:21,615 [mHTTP GET /registration/login/ 200 [0.03, 127.0.0.1:59629][0m
+2024-06-07 16:57:30,258 [32mHTTP POST /registration/authentication/?next= 302 [2.00, 127.0.0.1:59630][0m
+2024-06-07 16:57:30,334 [mHTTP GET / 200 [0.07, 127.0.0.1:59630][0m
+2024-06-07 16:57:46,996 [mHTTP GET /member/user_profile/sak098/ 200 [0.04, 127.0.0.1:59630][0m
+2024-06-07 16:57:47,394 [mHTTP GET /media/users/dp/_25984db0-158f-46bb-a668-d3337e1285e4.jpeg 200 [0.32, 127.0.0.1:59630][0m
+2024-06-07 16:57:50,944 [mHTTP GET /member/user_products/sak098/ 200 [0.04, 127.0.0.1:59630][0m
+2024-06-07 16:58:40,102 [mHTTP GET /member/user_products/sak098/ 200 [0.05, 127.0.0.1:59630][0m
+2024-06-07 16:58:42,026 [mHTTP GET /member/user_products/sak098/ 200 [0.02, 127.0.0.1:59630][0m
+2024-06-07 16:58:42,138 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.05, 127.0.0.1:59672][0m
+2024-06-07 16:58:42,143 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.06, 127.0.0.1:59670][0m
+2024-06-07 16:58:42,178 [mHTTP GET /media/products/tennis.jpeg 200 [0.09, 127.0.0.1:59671][0m
+2024-06-07 16:58:42,263 [mHTTP GET /static/member/my_product_style.css 200 [0.20, 127.0.0.1:59630][0m
+2024-06-07 16:58:42,287 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.20, 127.0.0.1:59664][0m
+2024-06-07 16:58:42,370 Not Found: /favicon.ico
+2024-06-07 16:58:42,371 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:59664][0m
+2024-06-07 16:58:43,086 [mHTTP GET /member/user_products/sak098/ 200 [0.02, 127.0.0.1:59664][0m
+2024-06-07 16:58:43,149 [mHTTP GET /static/member/my_product_style.css 200 [0.01, 127.0.0.1:59664][0m
+2024-06-07 16:58:43,195 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.05, 127.0.0.1:59630][0m
+2024-06-07 16:58:43,197 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.05, 127.0.0.1:59671][0m
+2024-06-07 16:58:43,211 [mHTTP GET /media/products/tennis.jpeg 200 [0.05, 127.0.0.1:59670][0m
+2024-06-07 16:58:43,214 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.05, 127.0.0.1:59672][0m
+2024-06-07 16:58:43,396 [mHTTP GET /member/user_products/sak098/ 200 [0.05, 127.0.0.1:59630][0m
+2024-06-07 16:58:43,405 Not Found: /favicon.ico
+2024-06-07 16:58:43,407 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:59672][0m
+2024-06-07 16:58:43,489 [mHTTP GET /static/member/my_product_style.css 200 [0.03, 127.0.0.1:59630][0m
+2024-06-07 16:58:43,516 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.05, 127.0.0.1:59671][0m
+2024-06-07 16:58:43,521 [mHTTP GET /media/products/tennis.jpeg 200 [0.04, 127.0.0.1:59664][0m
+2024-06-07 16:58:43,524 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.06, 127.0.0.1:59670][0m
+2024-06-07 16:58:43,528 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.05, 127.0.0.1:59673][0m
+2024-06-07 16:58:43,903 Not Found: /favicon.ico
+2024-06-07 16:58:43,904 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:59670][0m
+2024-06-07 16:59:09,475 [mHTTP GET /member/user_products/sak098/ 200 [0.07, 127.0.0.1:59670][0m
+2024-06-07 16:59:11,681 [mHTTP GET /member/user_products/sak098/ 200 [0.03, 127.0.0.1:59670][0m
+2024-06-07 16:59:11,759 [mHTTP GET /static/member/my_product_style.css 200 [0.02, 127.0.0.1:59670][0m
+2024-06-07 16:59:11,785 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.04, 127.0.0.1:59664][0m
+2024-06-07 16:59:11,793 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.05, 127.0.0.1:59673][0m
+2024-06-07 16:59:11,811 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.04, 127.0.0.1:59630][0m
+2024-06-07 16:59:11,813 [mHTTP GET /media/products/tennis.jpeg 200 [0.05, 127.0.0.1:59671][0m
+2024-06-07 16:59:11,989 Not Found: /favicon.ico
+2024-06-07 16:59:11,990 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:59671][0m
+2024-06-07 16:59:58,314 [mHTTP GET /member/user_products/sak098/ 200 [0.05, 127.0.0.1:59671][0m
+2024-06-07 17:00:00,431 [mHTTP GET /member/user_products/sak098/ 200 [0.02, 127.0.0.1:59671][0m
+2024-06-07 17:00:00,490 [mHTTP GET /static/member/my_product_style.css 200 [0.01, 127.0.0.1:59671][0m
+2024-06-07 17:00:00,605 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.11, 127.0.0.1:59673][0m
+2024-06-07 17:00:00,607 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.11, 127.0.0.1:59630][0m
+2024-06-07 17:00:00,609 [mHTTP GET /media/products/tennis.jpeg 200 [0.10, 127.0.0.1:59671][0m
+2024-06-07 17:00:00,613 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.10, 127.0.0.1:59664][0m
+2024-06-07 17:00:00,784 Not Found: /favicon.ico
+2024-06-07 17:00:00,785 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:59630][0m
+2024-06-07 17:09:02,088 [mHTTP GET /member/user_profile/sak098/ 200 [0.03, 127.0.0.1:59784][0m
+2024-06-07 17:09:05,299 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 1034, in find_library
+    return parser.libraries[name]
+           ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'custom_filters'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 253, in purchase_orders
+    return render(request, 'member/purchase_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 1096, in load
+    lib = find_library(parser, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 1036, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'custom_filters' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2024-06-07 17:09:05,339 [35;1mHTTP GET /member/purchase_orders/ 500 [0.90, 127.0.0.1:59784][0m
+2024-06-07 17:11:30,920 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 253, in purchase_orders
+    return render(request, 'member/purchase_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+2024-06-07 17:11:30,959 [35;1mHTTP GET /member/purchase_orders/ 500 [0.22, 127.0.0.1:59809][0m
+2024-06-07 17:12:52,358 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 253, in purchase_orders
+    return render(request, 'member/purchase_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+2024-06-07 17:12:52,387 [35;1mHTTP GET /member/purchase_orders/ 500 [0.19, 127.0.0.1:59817][0m
+2024-06-07 17:12:59,742 [mHTTP GET /member/purchase_orders/ 200 [0.09, 127.0.0.1:59817][0m
+2024-06-07 17:12:59,825 [mHTTP GET /static/member/purchases_script.js 200 [0.01, 127.0.0.1:59817][0m
+2024-06-07 17:13:37,461 [mHTTP GET /member/purchase_orders/ 200 [0.14, 127.0.0.1:59817][0m
+2024-06-07 17:13:37,541 [33mHTTP GET /static/js/script.js 404 [0.02, 127.0.0.1:59817][0m
+2024-06-07 17:14:20,650 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 17:14:23,963 [mHTTP GET /member/purchase_orders/ 200 [0.15, 127.0.0.1:59969][0m
+2024-06-07 17:14:24,053 [33mHTTP GET /static/js/script.js 404 [0.03, 127.0.0.1:59969][0m
+2024-06-07 17:14:28,850 [mHTTP GET /member/user_profile/sak098/ 200 [0.03, 127.0.0.1:59969][0m
+2024-06-07 17:14:32,258 [mHTTP GET /member/purchase_orders/ 200 [0.12, 127.0.0.1:59969][0m
+2024-06-07 17:14:32,371 [33mHTTP GET /static/js/script.js 404 [0.05, 127.0.0.1:59969][0m
+2024-06-07 17:16:30,533 [mHTTP GET /member/purchase_orders/ 200 [0.11, 127.0.0.1:60110][0m
+2024-06-07 17:16:30,609 [33mHTTP GET /static/js/script.js 404 [0.02, 127.0.0.1:60110][0m
+2024-06-07 17:16:36,212 [mHTTP GET /member/purchase_orders/ 200 [0.09, 127.0.0.1:60110][0m
+2024-06-07 17:16:36,305 [33mHTTP GET /static/js/script.js 404 [0.02, 127.0.0.1:60110][0m
+2024-06-07 17:16:37,429 [mHTTP GET /member/purchase_orders/ 200 [0.08, 127.0.0.1:60110][0m
+2024-06-07 17:16:37,515 [33mHTTP GET /static/js/script.js 404 [0.03, 127.0.0.1:60117][0m
+2024-06-07 17:16:37,646 [mHTTP GET /static/member/purchase_orders_style.css 200 [0.17, 127.0.0.1:60110][0m
+2024-06-07 17:16:37,665 [mHTTP GET /media/logos/chat_logo.png 200 [0.18, 127.0.0.1:60111][0m
+2024-06-07 17:16:37,743 Not Found: /favicon.ico
+2024-06-07 17:16:37,747 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:60111][0m
+2024-06-07 17:21:51,592 [mHTTP GET /member/purchase_orders/ 200 [0.14, 127.0.0.1:60453][0m
+2024-06-07 17:21:51,687 [33mHTTP GET /static/js/script.js 404 [0.03, 127.0.0.1:60454][0m
+2024-06-07 17:21:51,691 [mHTTP GET /static/member/purchase_orders_style.css 200 [0.04, 127.0.0.1:60453][0m
+2024-06-07 17:23:31,132 [mHTTP GET / 200 [0.05, 127.0.0.1:60474][0m
+2024-06-07 17:23:31,362 [36mHTTP GET /media/products/crockery.jpeg 304 [0.06, 127.0.0.1:60476][0m
+2024-06-07 17:23:31,364 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.06, 127.0.0.1:60475][0m
+2024-06-07 17:23:31,366 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.13, 127.0.0.1:60474][0m
+2024-06-07 17:23:35,066 [mHTTP GET /member/user_profile/sak098/ 200 [0.03, 127.0.0.1:60474][0m
+2024-06-07 17:23:37,031 [mHTTP GET / 200 [0.03, 127.0.0.1:60474][0m
+2024-06-07 17:24:05,916 [mHTTP GET /member/user_profile/sak098/ 200 [0.03, 127.0.0.1:60474][0m
+2024-06-07 17:24:20,819 [mHTTP GET /member/edit_profile/ 200 [0.13, 127.0.0.1:60474][0m
+2024-06-07 17:32:26,801 [mHTTP GET /member/edit_profile/ 200 [0.09, 127.0.0.1:60545][0m
+2024-06-07 17:32:26,971 [mHTTP GET /static/member/edit_profile_style.css 200 [0.04, 127.0.0.1:60545][0m
+2024-06-07 17:32:50,447 [32mHTTP POST /member/edit_profile/ 302 [1.40, 127.0.0.1:60545][0m
+2024-06-07 17:32:50,503 [mHTTP GET /member/user_profile/sak098/ 200 [0.05, 127.0.0.1:60545][0m
+2024-06-07 17:32:50,637 [mHTTP GET /media/users/dp/palistineflag.webp 200 [0.04, 127.0.0.1:60545][0m
+2024-06-07 17:33:00,919 [mHTTP GET / 200 [0.05, 127.0.0.1:60545][0m
+2024-06-07 17:33:01,236 [36mHTTP GET /media/products/tennis.jpeg 304 [0.18, 127.0.0.1:60545][0m
+2024-06-07 17:33:01,260 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.21, 127.0.0.1:60546][0m
+2024-06-07 17:33:11,433 [mHTTP GET /member/user_profile/sak098/ 200 [0.03, 127.0.0.1:60545][0m
+2024-06-07 17:33:11,548 [36mHTTP GET /media/users/dp/palistineflag.webp 304 [0.02, 127.0.0.1:60545][0m
+2024-06-07 17:34:14,518 [mHTTP GET /member/wishlist_view/ 200 [0.06, 127.0.0.1:60561][0m
+2024-06-07 17:34:35,698 [mHTTP GET / 200 [0.04, 127.0.0.1:60561][0m

@@ -1,15 +1,77 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'member/edit_profile_style.css' %}">
 </head>
 <body>
-    <form enctype="multipart/form-data" method="post">
-        {% csrf_token %}
-        {{form.as_p}}
-        <button type="submit" >Save</button>
-    </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'product:home' %}">Home Page</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                {% if request.user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'registration:signout' %}">LogOut</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'registration:login' %}">LogIn</a>
+                    </li>
+                {% endif %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/">Admin</a>
+                </li>
+                {% if member %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'member:profile' request.user.username %}">Profile</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'member:register' %}">Complete Profile</a>
+                    </li>
+                {% endif %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'member:add_product_page' %}">Sell</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'chat:sellor-chat' %}">
+                        <img src="/media/logos/chat_logo.png" alt="chat" width="32">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Edit Profile</h2>
+                    </div>
+                    <div class="card-body">
+                        <form enctype="multipart/form-data" method="post">
+                            {% csrf_token %}
+                            {{form.as_p}}
+                            <button type="submit" class="btn btn-primary btn-block">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>Email: <a href="mailto:arsidd78@gmail.com">arsidd78@gmail.com</a></p>
+        <p>Github: <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/arsidd78">https://www.linkedin.com/in/arsidd78</a></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

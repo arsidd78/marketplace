@@ -5,6 +5,7 @@ from django.contrib.auth import get_user_model
 from django.contrib import messages
 from product.models import Products,Purchase
 from .forms import ProductsForm,MemberForm
+from django.db.models import Max
 
 def profile(request,username):
     if request.user.is_authenticated:
@@ -240,10 +241,15 @@ def order_confirmation(request):
         return render(request,'member/order_confirmation.html')
     return redirect('registration:login')
 
-def purchase_orders(request, user):
+def purchase_orders(request):
     if request.user.is_authenticated:
+        member = get_object_or_404(Member, user=request.user)
         purchases = Purchase.objects.filter(sellor = request.user)
-        context = {'purchases':purchases}
+        totals = []
+        for purchase in purchases:
+           total =  purchase.price * purchase.quantity
+           totals.append(total)   
+        context = {'purchases':purchases,'data':zip(purchases,totals),'member':member}
         return render(request, 'member/purchase_orders.html', context)
     return redirect('registration:login')
 

@@ -61,10 +61,13 @@ nav a {
 }
 
 .aside-links a {
-    color: #6200ea;
+    color: #333;
     text-decoration: none;
     display: block;
     margin: 5px 0;
+}
+.aside-links :hover{
+    color: #6200ea;
 }
 
 .search-results {
