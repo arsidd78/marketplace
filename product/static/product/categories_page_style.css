@@ -86,9 +86,7 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-top: auto;
 }
 
 footer p {
@@ -96,7 +94,7 @@ footer p {
 }
 
 footer a {
-  color: #f3f3f4; /* Purple color */
+  color: #fcfbfc;
   text-decoration: none;
 }
 

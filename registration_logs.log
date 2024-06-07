@@ -25443,3 +25443,1445 @@ django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
 2024-06-07 17:33:11,548 [36mHTTP GET /media/users/dp/palistineflag.webp 304 [0.02, 127.0.0.1:60545][0m
 2024-06-07 17:34:14,518 [mHTTP GET /member/wishlist_view/ 200 [0.06, 127.0.0.1:60561][0m
 2024-06-07 17:34:35,698 [mHTTP GET / 200 [0.04, 127.0.0.1:60561][0m
+2024-06-07 20:19:23,836 [mHTTP GET / 200 [1.15, 127.0.0.1:65485][0m
+2024-06-07 20:19:24,297 [36mHTTP GET /media/products/crockery.jpeg 304 [0.03, 127.0.0.1:65487][0m
+2024-06-07 20:19:24,297 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.03, 127.0.0.1:65485][0m
+2024-06-07 20:19:24,302 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.03, 127.0.0.1:65486][0m
+2024-06-07 20:19:24,359 [36mHTTP GET /media/products/tennis.jpeg 304 [0.03, 127.0.0.1:65487][0m
+2024-06-07 20:19:24,409 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.02, 127.0.0.1:65487][0m
+2024-06-07 20:19:25,606 Not Found: /favicon.ico
+2024-06-07 20:19:25,606 [33mHTTP GET /favicon.ico 404 [0.80, 127.0.0.1:65487][0m
+2024-06-07 20:19:43,413 [mHTTP GET /detail/19/ 200 [4.79, 127.0.0.1:65487][0m
+2024-06-07 20:19:43,447 [36mHTTP GET /static/product/details_style.css 304 [0.00, 127.0.0.1:65487][0m
+2024-06-07 20:19:43,490 [36mHTTP GET /media/products/Sofa2.jpg 304 [0.02, 127.0.0.1:65487][0m
+2024-06-07 20:21:23,128 [mHTTP GET /media/products/sofa_1.jpg 200 [0.30, 127.0.0.1:65528][0m
+2024-06-07 20:21:25,029 [mHTTP GET / 200 [0.03, 127.0.0.1:65530][0m
+2024-06-07 20:21:26,990 [mHTTP GET / 200 [0.02, 127.0.0.1:65530][0m
+2024-06-07 20:21:28,785 [mHTTP GET / 200 [0.02, 127.0.0.1:65530][0m
+2024-06-07 20:21:28,888 [mHTTP GET /static/product/index_style.css 200 [0.05, 127.0.0.1:65530][0m
+2024-06-07 20:21:28,896 [mHTTP GET /media/products/sofa_1.jpg 200 [0.02, 127.0.0.1:49157][0m
+2024-06-07 20:21:28,921 [mHTTP GET /media/logos/chat_logo.png 200 [0.08, 127.0.0.1:65531][0m
+2024-06-07 20:21:28,952 [mHTTP GET /media/products/weights.jpeg 200 [0.08, 127.0.0.1:49155][0m
+2024-06-07 20:21:28,988 [mHTTP GET /media/products/tennis.jpeg 200 [0.07, 127.0.0.1:49157][0m
+2024-06-07 20:21:28,988 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.06, 127.0.0.1:65531][0m
+2024-06-07 20:21:29,028 [mHTTP GET /media/products/sport_1.jpeg 200 [0.07, 127.0.0.1:49155][0m
+2024-06-07 20:21:29,046 [mHTTP GET /media/products/mouse_12.jpeg 200 [0.14, 127.0.0.1:65530][0m
+2024-06-07 20:21:29,046 [mHTTP GET /media/products/doc_tool1.jpeg 200 [0.17, 127.0.0.1:49156][0m
+2024-06-07 20:21:29,080 [mHTTP GET /media/products/crockery.jpeg 200 [0.08, 127.0.0.1:49157][0m
+2024-06-07 20:21:29,095 [mHTTP GET /media/products/makeup1.jpeg 200 [0.09, 127.0.0.1:65531][0m
+2024-06-07 20:21:29,137 [mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 200 [0.27, 127.0.0.1:49158][0m
+2024-06-07 20:21:29,196 Not Found: /favicon.ico
+2024-06-07 20:21:29,196 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:49158][0m
+2024-06-07 20:21:51,393 [mHTTP GET / 200 [0.05, 127.0.0.1:49158][0m
+2024-06-07 20:21:51,490 [mHTTP GET /static/product/index_style.css 200 [0.03, 127.0.0.1:49158][0m
+2024-06-07 20:21:53,186 [mHTTP GET / 200 [0.03, 127.0.0.1:49158][0m
+2024-06-07 20:21:53,232 [mHTTP GET /static/product/index_style.css 200 [0.00, 127.0.0.1:49158][0m
+2024-06-07 20:21:53,318 [mHTTP GET /media/logos/chat_logo.png 200 [0.07, 127.0.0.1:65531][0m
+2024-06-07 20:21:53,318 [mHTTP GET /media/products/doc_tool1.jpeg 200 [0.07, 127.0.0.1:65530][0m
+2024-06-07 20:21:53,318 [mHTTP GET /media/products/sofa_1.jpg 200 [0.07, 127.0.0.1:49156][0m
+2024-06-07 20:21:53,318 [mHTTP GET /media/products/mouse_12.jpeg 200 [0.06, 127.0.0.1:49158][0m
+2024-06-07 20:21:53,331 [mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 200 [0.08, 127.0.0.1:49157][0m
+2024-06-07 20:21:53,331 [mHTTP GET /media/products/weights.jpeg 200 [0.08, 127.0.0.1:49155][0m
+2024-06-07 20:21:53,443 [mHTTP GET /media/products/makeup1.jpeg 200 [0.13, 127.0.0.1:65531][0m
+2024-06-07 20:21:53,451 [mHTTP GET /media/products/crockery.jpeg 200 [0.10, 127.0.0.1:49158][0m
+2024-06-07 20:21:53,451 [mHTTP GET /media/products/sport_1.jpeg 200 [0.12, 127.0.0.1:65530][0m
+2024-06-07 20:21:53,459 [mHTTP GET /media/products/tennis.jpeg 200 [0.08, 127.0.0.1:49156][0m
+2024-06-07 20:21:53,465 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.08, 127.0.0.1:49155][0m
+2024-06-07 20:21:54,114 Not Found: /favicon.ico
+2024-06-07 20:21:54,122 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:49155][0m
+2024-06-07 20:22:03,029 [mHTTP GET / 200 [0.04, 127.0.0.1:49155][0m
+2024-06-07 20:22:03,096 [mHTTP GET /static/product/index_style.css 200 [0.01, 127.0.0.1:49155][0m
+2024-06-07 20:22:21,349 [mHTTP GET /categories/ 200 [0.09, 127.0.0.1:49155][0m
+2024-06-07 20:22:21,462 [mHTTP GET /static/product/categories_page_style.css 200 [0.07, 127.0.0.1:49155][0m
+2024-06-07 20:22:21,560 [36mHTTP GET /media/products/8_ball_pool.jpeg 304 [0.02, 127.0.0.1:49155][0m
+2024-06-07 20:22:21,568 [36mHTTP GET /media/products/joggers.jpeg 304 [0.02, 127.0.0.1:49156][0m
+2024-06-07 20:22:52,031 [mHTTP GET /categories/ 200 [0.06, 127.0.0.1:49156][0m
+2024-06-07 20:22:53,451 [mHTTP GET /categories/ 200 [0.04, 127.0.0.1:49156][0m
+2024-06-07 20:22:53,533 [mHTTP GET /static/product/categories_page_style.css 200 [0.04, 127.0.0.1:49156][0m
+2024-06-07 20:22:53,624 [mHTTP GET /media/products/sport_1.jpeg 200 [0.11, 127.0.0.1:49167][0m
+2024-06-07 20:22:53,632 [mHTTP GET /media/products/crockery.jpeg 200 [0.10, 127.0.0.1:49156][0m
+2024-06-07 20:22:53,652 [mHTTP GET /media/products/makeup1.jpeg 200 [0.02, 127.0.0.1:49167][0m
+2024-06-07 20:22:53,684 [mHTTP GET /media/products/harry_potter_novel_complete.jpeg 200 [0.15, 127.0.0.1:49169][0m
+2024-06-07 20:22:53,710 [mHTTP GET /media/products/joggers.jpeg 200 [0.06, 127.0.0.1:49167][0m
+2024-06-07 20:22:53,724 [mHTTP GET /media/products/sofa_1.jpg 200 [0.03, 127.0.0.1:49169][0m
+2024-06-07 20:22:53,747 [mHTTP GET /media/products/toys_1.jpeg 200 [0.23, 127.0.0.1:49155][0m
+2024-06-07 20:22:53,803 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.28, 127.0.0.1:49166][0m
+2024-06-07 20:22:53,880 [mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 200 [0.02, 127.0.0.1:49169][0m
+2024-06-07 20:22:53,933 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.29, 127.0.0.1:49156][0m
+2024-06-07 20:22:54,007 [mHTTP GET /media/products/computer_1.jpeg 200 [0.28, 127.0.0.1:49167][0m
+2024-06-07 20:22:54,058 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.23, 127.0.0.1:49155][0m
+2024-06-07 20:22:54,082 [mHTTP GET /media/products/doc_tool1.jpeg 200 [0.02, 127.0.0.1:49155][0m
+2024-06-07 20:22:54,091 [mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 200 [0.08, 127.0.0.1:49167][0m
+2024-06-07 20:22:54,106 [mHTTP GET /media/products/laptop1.jpeg 200 [0.16, 127.0.0.1:49156][0m
+2024-06-07 20:22:54,154 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.07, 127.0.0.1:49155][0m
+2024-06-07 20:22:54,186 [mHTTP GET /media/products/pullover1.jpeg 200 [0.66, 127.0.0.1:49168][0m
+2024-06-07 20:22:54,450 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.62, 127.0.0.1:49166][0m
+2024-06-07 20:22:54,465 [mHTTP GET /media/products/living_1.jpeg 200 [0.58, 127.0.0.1:49169][0m
+2024-06-07 20:22:54,555 Not Found: /favicon.ico
+2024-06-07 20:22:54,596 [33mHTTP GET /favicon.ico 404 [0.08, 127.0.0.1:49169][0m
+2024-06-07 20:22:59,282 [mHTTP GET /categories/ 200 [0.07, 127.0.0.1:49169][0m
+2024-06-07 20:22:59,378 [36mHTTP GET /static/product/categories_page_style.css 304 [0.04, 127.0.0.1:49169][0m
+2024-06-07 20:23:01,815 [mHTTP GET /categories/ 200 [0.04, 127.0.0.1:49169][0m
+2024-06-07 20:23:01,865 [36mHTTP GET /static/product/categories_page_style.css 304 [0.01, 127.0.0.1:49169][0m
+2024-06-07 20:23:02,588 [mHTTP GET /categories/ 200 [0.04, 127.0.0.1:49169][0m
+2024-06-07 20:23:03,347 [mHTTP GET /categories/ 200 [0.04, 127.0.0.1:49155][0m
+2024-06-07 20:23:03,415 [36mHTTP GET /static/product/categories_page_style.css 304 [0.00, 127.0.0.1:49155][0m
+2024-06-07 20:23:04,105 [mHTTP GET /categories/ 200 [0.05, 127.0.0.1:49167][0m
+2024-06-07 20:24:22,050 Internal Server Error: /categories/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 71, in categories_page
+    return render(request,'product/categories_page.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profile' with no arguments not found. 1 pattern(s) tried: ['member/user_profile/(?P<username>[^/]+)/\\Z']
+2024-06-07 20:24:22,090 [35;1mHTTP GET /categories/ 500 [0.53, 127.0.0.1:49179][0m
+2024-06-07 20:24:51,260 [mHTTP GET /categories/ 200 [0.05, 127.0.0.1:49179][0m
+2024-06-07 20:24:51,318 [36mHTTP GET /static/product/categories_page_style.css 304 [0.01, 127.0.0.1:49179][0m
+2024-06-07 20:24:56,278 [mHTTP GET /categories/ 200 [0.06, 127.0.0.1:49179][0m
+2024-06-07 20:24:57,986 [mHTTP GET /member/user_profile/sak098/ 200 [0.04, 127.0.0.1:49179][0m
+2024-06-07 20:24:58,061 [36mHTTP GET /media/users/dp/palistineflag.webp 304 [0.01, 127.0.0.1:49179][0m
+2024-06-07 20:25:02,893 [32mHTTP GET /registration/signout/ 302 [0.16, 127.0.0.1:49179][0m
+2024-06-07 20:25:02,918 [mHTTP GET / 200 [0.01, 127.0.0.1:49179][0m
+2024-06-07 20:25:02,969 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:49179][0m
+2024-06-07 20:25:06,052 [mHTTP GET /categories/ 200 [0.03, 127.0.0.1:49179][0m
+2024-06-07 20:25:06,125 [36mHTTP GET /static/product/categories_page_style.css 304 [0.01, 127.0.0.1:49179][0m
+2024-06-07 20:25:10,394 [mHTTP GET / 200 [0.03, 127.0.0.1:49179][0m
+2024-06-07 20:25:12,065 [mHTTP GET /recent_products/ 200 [0.05, 127.0.0.1:49179][0m
+2024-06-07 20:25:12,165 [36mHTTP GET /media/products/shoes.jpeg 304 [0.02, 127.0.0.1:49179][0m
+2024-06-07 20:25:15,766 [mHTTP GET /view_all/ 200 [0.03, 127.0.0.1:49179][0m
+2024-06-07 20:25:19,505 [mHTTP GET / 200 [0.03, 127.0.0.1:49179][0m
+2024-06-07 20:25:21,330 Internal Server Error: /recommended_products/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 175, in recommended_products
+    member = get_object_or_404(Member, user = request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000228EB4591C0>>.
+2024-06-07 20:25:21,350 [35;1mHTTP GET /recommended_products/ 500 [0.39, 127.0.0.1:49179][0m
+2024-06-07 20:26:42,087 [mHTTP GET / 200 [0.04, 127.0.0.1:49195][0m
+2024-06-07 20:26:42,160 [36mHTTP GET /static/product/index_style.css 304 [0.03, 127.0.0.1:49195][0m
+2024-06-07 20:26:42,755 [mHTTP GET / 200 [0.01, 127.0.0.1:49195][0m
+2024-06-07 20:26:42,958 [mHTTP GET / 200 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:26:43,137 [mHTTP GET / 200 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:26:43,311 [mHTTP GET / 200 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:26:43,478 [mHTTP GET / 200 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:26:43,645 [mHTTP GET / 200 [0.01, 127.0.0.1:49195][0m
+2024-06-07 20:26:45,019 [mHTTP GET / 200 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:26:45,937 [mHTTP GET / 200 [0.03, 127.0.0.1:49195][0m
+2024-06-07 20:26:46,125 [mHTTP GET / 200 [0.03, 127.0.0.1:49195][0m
+2024-06-07 20:26:46,300 [mHTTP GET / 200 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:26:46,480 [mHTTP GET / 200 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:26:46,666 [mHTTP GET / 200 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:26:46,844 [mHTTP GET / 200 [0.01, 127.0.0.1:49195][0m
+2024-06-07 20:26:57,724 [mHTTP GET /view_all/ 200 [0.03, 127.0.0.1:49195][0m
+2024-06-07 20:27:14,993 [mHTTP GET / 200 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:27:15,114 [36mHTTP GET /static/product/index_style.css 304 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:27:26,941 [mHTTP GET /detail/42/ 200 [0.03, 127.0.0.1:49195][0m
+2024-06-07 20:27:28,282 [32mHTTP GET /payment/42/ 302 [0.00, 127.0.0.1:49195][0m
+2024-06-07 20:27:28,323 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:49195][0m
+2024-06-07 20:27:33,848 [32mHTTP POST /registration/authentication/?next= 302 [1.48, 127.0.0.1:49195][0m
+2024-06-07 20:27:33,885 [mHTTP GET / 200 [0.04, 127.0.0.1:49195][0m
+2024-06-07 20:27:36,113 [mHTTP GET /member/user_profile/msking12/ 200 [0.03, 127.0.0.1:49195][0m
+2024-06-07 20:27:36,242 [mHTTP GET /media/users/dp/man-is-holding-a-book-in-his-hand-teaching-class-vector-46401250.jpg 200 [0.06, 127.0.0.1:49195][0m
+2024-06-07 20:27:38,442 [mHTTP GET /member/purchase_orders/ 200 [0.10, 127.0.0.1:49195][0m
+2024-06-07 20:27:38,574 [36mHTTP GET /static/member/purchase_orders_style.css 304 [0.00, 127.0.0.1:49195][0m
+2024-06-07 20:27:38,586 [33mHTTP GET /static/js/script.js 404 [0.01, 127.0.0.1:49196][0m
+2024-06-07 20:36:29,354 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-07 20:37:28,932 [mHTTP GET /member/user_profile/msking12/ 200 [0.09, 127.0.0.1:51743][0m
+2024-06-07 20:37:34,315 [mHTTP GET /member/user_products/msking12/ 200 [0.05, 127.0.0.1:51743][0m
+2024-06-07 20:37:35,905 [mHTTP GET /member/user_products/msking12/ 200 [0.03, 127.0.0.1:51743][0m
+2024-06-07 20:37:37,247 [mHTTP GET /member/user_products/msking12/ 200 [0.02, 127.0.0.1:51743][0m
+2024-06-07 20:37:37,499 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.20, 127.0.0.1:51744][0m
+2024-06-07 20:37:37,522 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.22, 127.0.0.1:51750][0m
+2024-06-07 20:37:37,530 [mHTTP GET /media/products/crockery.jpeg 200 [0.23, 127.0.0.1:51749][0m
+2024-06-07 20:37:37,538 [mHTTP GET /static/member/my_product_style.css 200 [0.25, 127.0.0.1:51743][0m
+2024-06-07 20:37:37,618 Not Found: /favicon.ico
+2024-06-07 20:37:37,618 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:51744][0m
+2024-06-07 20:37:38,282 [mHTTP GET /member/user_products/msking12/ 200 [0.02, 127.0.0.1:51744][0m
+2024-06-07 20:37:38,316 [mHTTP GET /static/member/my_product_style.css 200 [0.00, 127.0.0.1:51744][0m
+2024-06-07 20:37:38,371 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.03, 127.0.0.1:51749][0m
+2024-06-07 20:37:38,379 [mHTTP GET /media/products/crockery.jpeg 200 [0.04, 127.0.0.1:51743][0m
+2024-06-07 20:37:38,379 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.04, 127.0.0.1:51744][0m
+2024-06-07 20:37:38,462 Not Found: /favicon.ico
+2024-06-07 20:37:38,462 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:51744][0m
+2024-06-07 20:37:38,838 [mHTTP GET /member/user_products/msking12/ 200 [0.02, 127.0.0.1:51744][0m
+2024-06-07 20:37:38,883 [mHTTP GET /static/member/my_product_style.css 200 [0.01, 127.0.0.1:51744][0m
+2024-06-07 20:37:38,921 [mHTTP GET /media/products/crockery.jpeg 200 [0.04, 127.0.0.1:51749][0m
+2024-06-07 20:37:38,921 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.02, 127.0.0.1:51744][0m
+2024-06-07 20:37:38,930 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.05, 127.0.0.1:51743][0m
+2024-06-07 20:37:38,993 Not Found: /favicon.ico
+2024-06-07 20:37:39,001 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:51743][0m
+2024-06-07 20:37:39,071 [mHTTP GET /member/user_products/msking12/ 200 [0.03, 127.0.0.1:51743][0m
+2024-06-07 20:37:39,121 [mHTTP GET /static/member/my_product_style.css 200 [0.00, 127.0.0.1:51743][0m
+2024-06-07 20:37:39,170 [mHTTP GET /media/products/crockery.jpeg 200 [0.04, 127.0.0.1:51749][0m
+2024-06-07 20:37:39,170 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.04, 127.0.0.1:51743][0m
+2024-06-07 20:37:39,170 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.04, 127.0.0.1:51744][0m
+2024-06-07 20:37:39,252 Not Found: /favicon.ico
+2024-06-07 20:37:39,252 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:51744][0m
+2024-06-07 20:37:39,301 [mHTTP GET /member/user_products/msking12/ 200 [0.02, 127.0.0.1:51744][0m
+2024-06-07 20:37:39,388 [mHTTP GET /static/member/my_product_style.css 200 [0.02, 127.0.0.1:51744][0m
+2024-06-07 20:37:39,404 [mHTTP GET /media/products/crockery.jpeg 200 [0.04, 127.0.0.1:51749][0m
+2024-06-07 20:37:39,404 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.04, 127.0.0.1:51750][0m
+2024-06-07 20:37:39,413 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.05, 127.0.0.1:51743][0m
+2024-06-07 20:37:39,526 [mHTTP GET /member/user_products/msking12/ 200 [0.02, 127.0.0.1:51743][0m
+2024-06-07 20:37:39,579 [mHTTP GET /static/member/my_product_style.css 200 [0.01, 127.0.0.1:51743][0m
+2024-06-07 20:37:39,619 [mHTTP GET /media/products/crockery.jpeg 200 [0.04, 127.0.0.1:51749][0m
+2024-06-07 20:37:39,619 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.03, 127.0.0.1:51743][0m
+2024-06-07 20:37:39,627 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.05, 127.0.0.1:51750][0m
+2024-06-07 20:37:39,733 Not Found: /favicon.ico
+2024-06-07 20:37:39,733 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:51743][0m
+2024-06-07 20:37:39,741 [mHTTP GET /member/user_products/msking12/ 200 [0.04, 127.0.0.1:51750][0m
+2024-06-07 20:37:39,822 [mHTTP GET /static/member/my_product_style.css 200 [0.01, 127.0.0.1:51750][0m
+2024-06-07 20:37:39,881 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.07, 127.0.0.1:51744][0m
+2024-06-07 20:37:39,881 [mHTTP GET /media/products/crockery.jpeg 200 [0.07, 127.0.0.1:51749][0m
+2024-06-07 20:37:39,887 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.07, 127.0.0.1:51743][0m
+2024-06-07 20:37:54,298 [mHTTP GET /member/user_products/msking12/ 200 [0.03, 127.0.0.1:51743][0m
+2024-06-07 20:37:54,368 [mHTTP GET /static/member/my_product_style.css 200 [0.04, 127.0.0.1:51743][0m
+2024-06-07 20:38:30,925 [mHTTP GET /member/user_products/msking12/ 200 [0.03, 127.0.0.1:51743][0m
+2024-06-07 20:38:30,991 [mHTTP GET /static/member/my_product_style.css 200 [0.02, 127.0.0.1:51743][0m
+2024-06-07 20:38:33,186 [mHTTP GET /member/user_products/msking12/ 200 [0.02, 127.0.0.1:51743][0m
+2024-06-07 20:38:33,236 [mHTTP GET /static/member/my_product_style.css 200 [0.00, 127.0.0.1:51743][0m
+2024-06-07 20:38:33,291 [mHTTP GET /media/products/crockery.jpeg 200 [0.04, 127.0.0.1:51744][0m
+2024-06-07 20:38:33,291 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.04, 127.0.0.1:51749][0m
+2024-06-07 20:38:33,306 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.04, 127.0.0.1:51743][0m
+2024-06-07 20:38:33,382 Not Found: /favicon.ico
+2024-06-07 20:38:33,390 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:51749][0m
+2024-06-07 20:38:43,031 [mHTTP GET / 200 [0.05, 127.0.0.1:51749][0m
+2024-06-07 20:38:43,072 [36mHTTP GET /static/product/index_style.css 304 [0.00, 127.0.0.1:51749][0m
+2024-06-07 20:39:53,669 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-07 20:41:21,676 [mHTTP GET / 200 [0.15, 127.0.0.1:51809][0m
+2024-06-07 20:41:21,728 [36mHTTP GET /static/product/index_style.css 304 [0.00, 127.0.0.1:51809][0m
+2024-06-07 20:41:23,851 [mHTTP GET /chat/chat/ 200 [0.11, 127.0.0.1:51809][0m
+2024-06-07 20:41:23,924 [36mHTTP GET /static/chat/sellorChat_style.css 304 [0.01, 127.0.0.1:51809][0m
+2024-06-07 20:41:31,127 [mHTTP GET /member/user_profile/msking12/ 200 [0.02, 127.0.0.1:51809][0m
+2024-06-07 20:43:41,298 [32mHTTP GET /registration/signout/ 302 [0.20, 127.0.0.1:51842][0m
+2024-06-07 20:43:41,327 [mHTTP GET / 200 [0.02, 127.0.0.1:51842][0m
+2024-06-07 20:43:41,393 [36mHTTP GET /static/product/index_style.css 304 [0.00, 127.0.0.1:51842][0m
+2024-06-07 20:43:42,682 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:51842][0m
+2024-06-07 20:43:47,230 [32mHTTP POST /registration/authentication/?next= 302 [1.44, 127.0.0.1:51842][0m
+2024-06-07 20:43:47,258 [mHTTP GET / 200 [0.03, 127.0.0.1:51842][0m
+2024-06-07 20:43:49,522 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:51842][0m
+2024-06-07 20:45:05,886 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-07 20:48:59,851 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-07 20:50:54,854 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-07 20:51:29,398 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-07 21:51:05,011 [mHTTP GET / 200 [0.13, 127.0.0.1:51995][0m
+2024-06-07 21:51:05,062 [36mHTTP GET /static/product/index_style.css 304 [0.00, 127.0.0.1:51995][0m
+2024-06-07 21:51:05,210 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.04, 127.0.0.1:51995][0m
+2024-06-07 21:51:05,228 [36mHTTP GET /media/products/tennis.jpeg 304 [0.05, 127.0.0.1:51997][0m
+2024-06-07 21:51:05,236 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.06, 127.0.0.1:51996][0m
+2024-06-07 21:51:05,246 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.06, 127.0.0.1:51998][0m
+2024-06-07 21:51:05,254 [36mHTTP GET /media/products/crockery.jpeg 304 [0.07, 127.0.0.1:51999][0m
+2024-06-07 21:51:26,380 [mHTTP GET / 200 [0.03, 127.0.0.1:51999][0m
+2024-06-07 21:51:34,139 [32mHTTP GET /registration/signout/ 302 [0.17, 127.0.0.1:51999][0m
+2024-06-07 21:51:34,162 [mHTTP GET / 200 [0.02, 127.0.0.1:51999][0m
+2024-06-07 21:51:37,187 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:51999][0m
+2024-06-07 21:51:51,893 [32mHTTP POST /registration/authentication/?next= 302 [0.89, 127.0.0.1:51999][0m
+2024-06-07 21:51:51,929 [mHTTP GET / 200 [0.03, 127.0.0.1:51999][0m
+2024-06-07 21:55:00,011 [mHTTP GET / 200 [0.04, 127.0.0.1:53097][0m
+2024-06-07 21:55:01,960 [mHTTP GET / 200 [0.02, 127.0.0.1:53097][0m
+2024-06-07 21:55:04,073 [mHTTP GET / 200 [0.03, 127.0.0.1:53097][0m
+2024-06-07 21:55:08,718 [32mHTTP GET /registration/signout/ 302 [0.12, 127.0.0.1:53097][0m
+2024-06-07 21:55:08,776 [mHTTP GET / 200 [0.04, 127.0.0.1:53097][0m
+2024-06-07 21:55:11,127 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:53097][0m
+2024-06-07 21:55:16,283 [32mHTTP POST /registration/authentication/?next= 302 [1.50, 127.0.0.1:53097][0m
+2024-06-07 21:55:16,356 [mHTTP GET / 200 [0.04, 127.0.0.1:53097][0m
+2024-06-07 21:55:16,758 [mHTTP GET /media/logos/mark_logo.png 200 [0.32, 127.0.0.1:53097][0m
+2024-06-07 21:57:07,840 [mHTTP GET / 200 [0.03, 127.0.0.1:53179][0m
+2024-06-07 21:57:07,952 [mHTTP GET /media/logos/mark_logo.png 200 [0.05, 127.0.0.1:53179][0m
+2024-06-07 21:57:12,137 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:53179][0m
+2024-06-07 21:57:30,868 [mHTTP GET / 200 [0.04, 127.0.0.1:53179][0m
+2024-06-07 21:57:30,938 [36mHTTP GET /media/logos/mark_logo.png 304 [0.02, 127.0.0.1:53179][0m
+2024-06-07 21:57:40,813 [mHTTP GET / 200 [0.04, 127.0.0.1:53179][0m
+2024-06-07 21:57:40,874 [36mHTTP GET /media/logos/mark_logo.png 304 [0.01, 127.0.0.1:53179][0m
+2024-06-07 21:57:53,910 [mHTTP GET / 200 [0.03, 127.0.0.1:53179][0m
+2024-06-07 21:57:54,002 [36mHTTP GET /media/logos/mark_logo.png 304 [0.02, 127.0.0.1:53179][0m
+2024-06-07 21:58:13,623 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:53179][0m
+2024-06-07 22:03:03,661 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:07:31,767 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.13, 127.0.0.1:53490][0m
+2024-06-07 22:08:35,768 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.04, 127.0.0.1:53544][0m
+2024-06-07 22:09:04,418 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:53544][0m
+2024-06-07 22:09:35,554 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.04, 127.0.0.1:53544][0m
+2024-06-07 22:09:52,866 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:53544][0m
+2024-06-07 22:12:08,981 [mHTTP GET /member/edit_profile/ 200 [0.09, 127.0.0.1:53664][0m
+2024-06-07 22:12:09,048 [36mHTTP GET /static/member/edit_profile_style.css 304 [0.03, 127.0.0.1:53664][0m
+2024-06-07 22:12:46,007 [mHTTP GET / 200 [0.03, 127.0.0.1:53664][0m
+2024-06-07 22:12:46,056 [36mHTTP GET /static/product/index_style.css 304 [0.00, 127.0.0.1:53664][0m
+2024-06-07 22:12:46,094 [36mHTTP GET /media/logos/mark_logo.png 304 [0.02, 127.0.0.1:53664][0m
+2024-06-07 22:12:49,237 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:53664][0m
+2024-06-07 22:14:04,320 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:53738][0m
+2024-06-07 22:14:08,919 [mHTTP GET /member/purchase_orders/ 200 [0.30, 127.0.0.1:53738][0m
+2024-06-07 22:14:09,002 [36mHTTP GET /static/member/purchase_orders_style.css 304 [0.03, 127.0.0.1:53738][0m
+2024-06-07 22:14:09,018 [33mHTTP GET /static/js/script.js 404 [0.05, 127.0.0.1:53739][0m
+2024-06-07 22:15:51,941 [mHTTP GET /member/purchase_orders/ 200 [0.40, 127.0.0.1:53795][0m
+2024-06-07 22:15:52,037 [33mHTTP GET /static/js/script.js 404 [0.04, 127.0.0.1:53795][0m
+2024-06-07 22:16:52,102 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:17:12,306 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:18:05,059 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:18:43,250 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.04, 127.0.0.1:53874][0m
+2024-06-07 22:18:45,749 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:53874][0m
+2024-06-07 22:18:47,332 [mHTTP GET /member/purchase_orders/ 200 [0.34, 127.0.0.1:53874][0m
+2024-06-07 22:18:47,449 [33mHTTP GET /static/js/script.js 404 [0.04, 127.0.0.1:53874][0m
+2024-06-07 22:21:13,642 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:22:10,876 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:23:18,489 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:25:57,894 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 262, in purchase_orders
+    return render(request, 'member/purchase_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dispatch' not found. 'dispatch' is not a valid view function or pattern name.
+2024-06-07 22:25:57,926 [35;1mHTTP GET /member/purchase_orders/ 500 [0.42, 127.0.0.1:54193][0m
+2024-06-07 22:27:39,908 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\urls.py changed, reloading.
+2024-06-07 22:27:47,639 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 262, in purchase_orders
+    return render(request, 'member/purchase_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dispatch' with arguments '(141,)' not found. 1 pattern(s) tried: ['member/order_dispatch/\\Z']
+2024-06-07 22:27:47,666 [35;1mHTTP GET /member/purchase_orders/ 500 [0.35, 127.0.0.1:54265][0m
+2024-06-07 22:28:02,513 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 262, in purchase_orders
+    return render(request, 'member/purchase_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dispatch' with arguments '(141,)' not found. 1 pattern(s) tried: ['member/order_dispatch/\\Z']
+2024-06-07 22:28:02,527 [35;1mHTTP GET /member/purchase_orders/ 500 [0.26, 127.0.0.1:54265][0m
+2024-06-07 22:28:17,264 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\urls.py changed, reloading.
+2024-06-07 22:28:20,156 [mHTTP GET /member/purchase_orders/ 200 [0.69, 127.0.0.1:54288][0m
+2024-06-07 22:28:20,248 [33mHTTP GET /static/js/script.js 404 [0.02, 127.0.0.1:54288][0m
+2024-06-07 22:28:32,970 Internal Server Error: /member/order_dispatch/142
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view member.views.dispatch didn't return an HttpResponse object. It returned None instead.
+2024-06-07 22:28:32,970 [35;1mHTTP GET /member/order_dispatch/142 500 [0.22, 127.0.0.1:54288][0m
+2024-06-07 22:29:09,559 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:29:16,668 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:29:22,149 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:29:24,828 Not Found: /member/order_dispatch/142
+2024-06-07 22:29:24,836 [33mHTTP GET /member/order_dispatch/142 404 [0.04, 127.0.0.1:54373][0m
+2024-06-07 22:29:29,921 [mHTTP GET /member/purchase_orders/ 200 [0.40, 127.0.0.1:54373][0m
+2024-06-07 22:29:30,028 [33mHTTP GET /static/js/script.js 404 [0.02, 127.0.0.1:54373][0m
+2024-06-07 22:29:42,888 [32mHTTP GET /member/order_dispatch/144 302 [0.16, 127.0.0.1:54373][0m
+2024-06-07 22:29:43,193 [mHTTP GET /member/purchase_orders/ 200 [0.31, 127.0.0.1:54373][0m
+2024-06-07 22:29:43,263 [33mHTTP GET /static/js/script.js 404 [0.01, 127.0.0.1:54373][0m
+2024-06-07 22:34:25,808 [32mHTTP GET /member/order_dispatch/14 302 [0.09, 127.0.0.1:54574][0m
+2024-06-07 22:34:26,084 [mHTTP GET /member/purchase_orders/ 200 [0.27, 127.0.0.1:54574][0m
+2024-06-07 22:34:26,156 [33mHTTP GET /static/js/script.js 404 [0.02, 127.0.0.1:54574][0m
+2024-06-07 22:35:28,918 [mHTTP GET /member/purchase_orders/ 200 [0.37, 127.0.0.1:54615][0m
+2024-06-07 22:35:31,367 [mHTTP GET /member/purchase_orders/ 200 [0.26, 127.0.0.1:54615][0m
+2024-06-07 22:35:36,584 [mHTTP GET / 200 [0.03, 127.0.0.1:54615][0m
+2024-06-07 22:35:36,623 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:54615][0m
+2024-06-07 22:35:36,662 [36mHTTP GET /media/logos/mark_logo.png 304 [0.04, 127.0.0.1:54616][0m
+2024-06-07 22:35:40,489 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:54616][0m
+2024-06-07 22:39:22,227 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:54753][0m
+2024-06-07 22:39:23,927 [mHTTP GET /member/purchase_orders/ 200 [0.30, 127.0.0.1:54753][0m
+2024-06-07 22:39:27,526 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:54753][0m
+2024-06-07 22:39:32,665 [mHTTP GET / 200 [0.04, 127.0.0.1:54753][0m
+2024-06-07 22:39:32,726 [36mHTTP GET /media/logos/mark_logo.png 304 [0.02, 127.0.0.1:54753][0m
+2024-06-07 22:39:35,741 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:54753][0m
+2024-06-07 22:39:37,639 [mHTTP GET /chat/receiver_chat/40 200 [0.25, 127.0.0.1:54753][0m
+2024-06-07 22:39:37,701 [36mHTTP GET /static/chat/chat_style.css 304 [0.01, 127.0.0.1:54753][0m
+2024-06-07 22:39:37,750 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:54763]
+2024-06-07 22:39:37,797 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:54763]
+2024-06-07 22:40:00,291 [mHTTP POST /chat/receiver_chat/40 200 [0.39, 127.0.0.1:54753][0m
+2024-06-07 22:40:39,572 [mHTTP GET / 200 [0.04, 127.0.0.1:54753][0m
+2024-06-07 22:40:39,656 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:54763]
+2024-06-07 22:40:47,389 [32mHTTP GET /registration/signout/ 302 [0.10, 127.0.0.1:54753][0m
+2024-06-07 22:40:47,430 [mHTTP GET / 200 [0.04, 127.0.0.1:54753][0m
+2024-06-07 22:43:03,505 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:54916][0m
+2024-06-07 22:43:10,003 [32mHTTP POST /registration/authentication/?next= 302 [1.04, 127.0.0.1:54916][0m
+2024-06-07 22:43:10,036 [mHTTP GET / 200 [0.03, 127.0.0.1:54916][0m
+2024-06-07 22:43:13,804 [mHTTP GET /chat/chat/ 200 [0.01, 127.0.0.1:54916][0m
+2024-06-07 22:43:17,551 [mHTTP GET /chat/receiver_chat/45 200 [0.03, 127.0.0.1:54916][0m
+2024-06-07 22:43:17,626 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:54928]
+2024-06-07 22:43:17,642 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:54928]
+2024-06-07 22:43:21,539 [mHTTP POST /chat/receiver_chat/45 200 [0.46, 127.0.0.1:54916][0m
+2024-06-07 22:43:24,200 [mHTTP GET / 200 [0.03, 127.0.0.1:54916][0m
+2024-06-07 22:43:24,267 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:54928]
+2024-06-07 22:43:26,350 [32mHTTP GET /registration/signout/ 302 [0.12, 127.0.0.1:54916][0m
+2024-06-07 22:43:26,366 [mHTTP GET / 200 [0.01, 127.0.0.1:54916][0m
+2024-06-07 22:43:28,282 [mHTTP GET /registration/login/ 200 [0.00, 127.0.0.1:54916][0m
+2024-06-07 22:43:32,547 [32mHTTP POST /registration/authentication/?next= 302 [1.08, 127.0.0.1:54916][0m
+2024-06-07 22:43:32,584 [mHTTP GET / 200 [0.03, 127.0.0.1:54916][0m
+2024-06-07 22:43:35,815 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:54916][0m
+2024-06-07 22:43:38,063 [mHTTP GET /member/purchase_orders/ 200 [0.38, 127.0.0.1:54916][0m
+2024-06-07 22:43:38,154 [36mHTTP GET /static/member/purchase_orders_style.css 304 [0.03, 127.0.0.1:54916][0m
+2024-06-07 22:45:53,590 [mHTTP GET / 200 [0.05, 127.0.0.1:65006][0m
+2024-06-07 22:45:53,679 [36mHTTP GET /media/logos/mark_logo.png 304 [0.04, 127.0.0.1:65006][0m
+2024-06-07 22:45:55,728 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65006][0m
+2024-06-07 22:49:10,582 [mHTTP GET /member/purchase_orders/ 200 [0.37, 127.0.0.1:65110][0m
+2024-06-07 22:52:41,887 [mHTTP GET /member/purchase_orders/ 200 [0.32, 127.0.0.1:65199][0m
+2024-06-07 22:52:46,092 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65199][0m
+2024-06-07 22:52:47,344 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65199][0m
+2024-06-07 22:52:49,188 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:65199][0m
+2024-06-07 22:52:49,382 [mHTTP GET /static/member/user_page_style.css 200 [0.16, 127.0.0.1:65199][0m
+2024-06-07 22:52:49,494 [mHTTP GET /media/logos/edit_logo.png 200 [0.27, 127.0.0.1:65200][0m
+2024-06-07 22:52:49,676 [mHTTP GET /media/users/dp/Edited_Dp.jpeg 200 [0.44, 127.0.0.1:65225][0m
+2024-06-07 22:52:49,714 Not Found: /favicon.ico
+2024-06-07 22:52:49,714 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:65225][0m
+2024-06-07 22:57:36,725 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 22:57:40,237 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.05, 127.0.0.1:65317][0m
+2024-06-07 22:57:40,288 [36mHTTP GET /static/member/user_page_style.css 304 [0.00, 127.0.0.1:65317][0m
+2024-06-07 22:57:41,788 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65317][0m
+2024-06-07 22:58:11,446 [mHTTP GET /member/purchase_orders/ 200 [28.05, 127.0.0.1:65317][0m
+2024-06-07 22:59:33,614 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65351][0m
+2024-06-07 22:59:33,660 [36mHTTP GET /static/member/user_page_style.css 304 [0.00, 127.0.0.1:65351][0m
+2024-06-07 22:59:36,308 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:65351][0m
+2024-06-07 22:59:36,560 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65351][0m
+2024-06-07 22:59:36,711 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65351][0m
+2024-06-07 22:59:36,892 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65351][0m
+2024-06-07 22:59:37,058 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65351][0m
+2024-06-07 22:59:37,227 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:65351][0m
+2024-06-07 22:59:37,400 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:65351][0m
+2024-06-07 22:59:37,553 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:65351][0m
+2024-06-07 23:00:11,083 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 23:00:14,916 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.05, 127.0.0.1:65368][0m
+2024-06-07 23:00:36,068 [mHTTP GET /member/purchase_orders/ 200 [19.32, 127.0.0.1:65368][0m
+2024-06-07 23:01:48,626 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65410][0m
+2024-06-07 23:01:50,446 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:65410][0m
+2024-06-07 23:01:50,617 [mHTTP GET /static/member/user_page_style.css 200 [0.13, 127.0.0.1:65410][0m
+2024-06-07 23:01:50,627 [mHTTP GET /media/users/dp/Edited_Dp.jpeg 200 [0.13, 127.0.0.1:65425][0m
+2024-06-07 23:01:50,642 [mHTTP GET /media/logos/edit_logo.png 200 [0.15, 127.0.0.1:65409][0m
+2024-06-07 23:01:50,722 Not Found: /favicon.ico
+2024-06-07 23:01:50,722 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:65409][0m
+2024-06-07 23:06:25,439 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 23:06:31,257 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 23:06:33,872 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.06, 127.0.0.1:65477][0m
+2024-06-07 23:06:33,955 [36mHTTP GET /static/member/user_page_style.css 304 [0.01, 127.0.0.1:65477][0m
+2024-06-07 23:06:35,144 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:65477][0m
+2024-06-07 23:06:36,088 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:06:36,088 [35;1mHTTP GET /member/purchase_orders/ 500 [0.18, 127.0.0.1:65477][0m
+2024-06-07 23:07:03,764 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 23:07:10,079 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:10,097 [35;1mHTTP GET /member/purchase_orders/ 500 [0.10, 127.0.0.1:65524][0m
+2024-06-07 23:07:10,896 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:10,904 [35;1mHTTP GET /member/purchase_orders/ 500 [0.05, 127.0.0.1:65524][0m
+2024-06-07 23:07:11,180 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:11,328 [35;1mHTTP GET /member/purchase_orders/ 500 [0.19, 127.0.0.1:65524][0m
+2024-06-07 23:07:11,987 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:11,996 [35;1mHTTP GET /member/purchase_orders/ 500 [0.05, 127.0.0.1:65524][0m
+2024-06-07 23:07:12,146 Not Found: /favicon.ico
+2024-06-07 23:07:12,146 [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:65524][0m
+2024-06-07 23:07:12,642 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:12,653 [35;1mHTTP GET /member/purchase_orders/ 500 [0.06, 127.0.0.1:65524][0m
+2024-06-07 23:07:12,846 Not Found: /favicon.ico
+2024-06-07 23:07:12,848 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:65524][0m
+2024-06-07 23:07:12,929 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:12,929 [35;1mHTTP GET /member/purchase_orders/ 500 [0.06, 127.0.0.1:65524][0m
+2024-06-07 23:07:13,087 Not Found: /favicon.ico
+2024-06-07 23:07:13,087 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:65524][0m
+2024-06-07 23:07:13,164 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:13,164 [35;1mHTTP GET /member/purchase_orders/ 500 [0.05, 127.0.0.1:65524][0m
+2024-06-07 23:07:13,363 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:13,387 Not Found: /favicon.ico
+2024-06-07 23:07:13,412 [33mHTTP GET /favicon.ico 404 [0.08, 127.0.0.1:65525][0m
+2024-06-07 23:07:13,415 [35;1mHTTP GET /member/purchase_orders/ 500 [0.10, 127.0.0.1:65524][0m
+2024-06-07 23:07:13,553 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:13,562 [35;1mHTTP GET /member/purchase_orders/ 500 [0.06, 127.0.0.1:65524][0m
+2024-06-07 23:07:13,803 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:13,820 [35;1mHTTP GET /member/purchase_orders/ 500 [0.14, 127.0.0.1:65524][0m
+2024-06-07 23:07:13,820 Not Found: /favicon.ico
+2024-06-07 23:07:13,828 [33mHTTP GET /favicon.ico 404 [0.05, 127.0.0.1:65526][0m
+2024-06-07 23:07:13,986 Not Found: /favicon.ico
+2024-06-07 23:07:13,994 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:65526][0m
+2024-06-07 23:07:14,578 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:14,586 [35;1mHTTP GET /member/purchase_orders/ 500 [0.04, 127.0.0.1:65526][0m
+2024-06-07 23:07:14,828 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:14,836 [35;1mHTTP GET /member/purchase_orders/ 500 [0.04, 127.0.0.1:65526][0m
+2024-06-07 23:07:15,075 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:15,078 [35;1mHTTP GET /member/purchase_orders/ 500 [0.04, 127.0.0.1:65526][0m
+2024-06-07 23:07:15,269 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:15,278 [35;1mHTTP GET /member/purchase_orders/ 500 [0.03, 127.0.0.1:65526][0m
+2024-06-07 23:07:15,486 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:15,495 [35;1mHTTP GET /member/purchase_orders/ 500 [0.03, 127.0.0.1:65526][0m
+2024-06-07 23:07:15,695 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:15,704 [35;1mHTTP GET /member/purchase_orders/ 500 [0.04, 127.0.0.1:65526][0m
+2024-06-07 23:07:15,903 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:15,911 [35;1mHTTP GET /member/purchase_orders/ 500 [0.03, 127.0.0.1:65526][0m
+2024-06-07 23:07:16,145 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:16,153 [35;1mHTTP GET /member/purchase_orders/ 500 [0.04, 127.0.0.1:65526][0m
+2024-06-07 23:07:16,361 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:16,369 [35;1mHTTP GET /member/purchase_orders/ 500 [0.05, 127.0.0.1:65526][0m
+2024-06-07 23:07:16,578 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:16,586 [35;1mHTTP GET /member/purchase_orders/ 500 [0.06, 127.0.0.1:65526][0m
+2024-06-07 23:07:16,803 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:16,811 [35;1mHTTP GET /member/purchase_orders/ 500 [0.07, 127.0.0.1:65526][0m
+2024-06-07 23:07:17,002 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:17,011 [35;1mHTTP GET /member/purchase_orders/ 500 [0.06, 127.0.0.1:65526][0m
+2024-06-07 23:07:17,223 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:17,266 [35;1mHTTP GET /member/purchase_orders/ 500 [0.11, 127.0.0.1:65526][0m
+2024-06-07 23:07:17,439 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:17,452 [35;1mHTTP GET /member/purchase_orders/ 500 [0.08, 127.0.0.1:65526][0m
+2024-06-07 23:07:24,334 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 23:07:26,726 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 257, in purchase_orders
+    for purchase in purchases:
+TypeError: 'int' object is not iterable
+2024-06-07 23:07:26,726 [35;1mHTTP GET /member/purchase_orders/ 500 [0.09, 127.0.0.1:49165][0m
+2024-06-07 23:07:33,132 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-07 23:07:53,785 Application instance <Task pending name='Task-1' coro=<ASGIStaticFilesHandler.__call__() running at C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\contrib\staticfiles\handlers.py:101> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]>> for connection <WebRequest at 0x1bb36a7aa80 method=GET uri=/member/purchase_orders/ clientproto=HTTP/1.1> took too long to shut down and was killed.
+2024-06-07 23:07:58,275 Internal Server Error: /member/purchase_orders/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 259, in purchase_orders
+    purchase.save(force_update= True)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 1036, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 1101, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+2024-06-07 23:07:58,304 [35;1mHTTP GET /member/purchase_orders/ 500 [14.67, 127.0.0.1:49177][0m
+2024-06-07 23:08:22,233 [mHTTP GET /member/purchase_orders/ 200 [19.23, 127.0.0.1:49177][0m
+2024-06-07 23:08:37,182 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:49177][0m
+2024-06-07 23:08:37,224 [36mHTTP GET /static/member/user_page_style.css 304 [0.00, 127.0.0.1:49177][0m
+2024-06-07 23:08:43,981 [mHTTP GET / 200 [0.07, 127.0.0.1:49177][0m
+2024-06-07 23:08:44,022 [36mHTTP GET /static/product/index_style.css 304 [0.01, 127.0.0.1:49177][0m
+2024-06-07 23:08:44,097 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.04, 127.0.0.1:49177][0m
+2024-06-07 23:08:44,097 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.04, 127.0.0.1:49181][0m
+2024-06-07 23:08:44,105 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.03, 127.0.0.1:49183][0m
+2024-06-07 23:08:44,105 [36mHTTP GET /media/products/tennis.jpeg 304 [0.03, 127.0.0.1:49182][0m
+2024-06-07 23:08:44,105 [36mHTTP GET /media/products/crockery.jpeg 304 [0.03, 127.0.0.1:49185][0m

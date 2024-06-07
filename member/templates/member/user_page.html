@@ -48,7 +48,7 @@
                 <a href="{% url 'member:user_products' request.user %}" class="profile-link">My Products</a>
                 <a href="{% url 'member:wishlist_page' %}" class="profile-link">My Wishlist</a>
                 <a href="{% url 'member:cart_page' %}" class="profile-link">My Cart</a>
-                <a href="{% url 'member:purchase_orders' %}" class="profile-link">Purchase Orders</a>
+                <a href="{% url 'member:purchase_orders' %}" class="profile-link"> Purchase Orders <small>{% if new_sales_no %}<label class="new_sales">{{new_sales_no}} new </label>{% endif %}</small></a>
                 <a href="{% url 'member:sold_products' %}" class="profile-link">Recently Sold Products</a>
             </div>
             <div class="profile-stats">

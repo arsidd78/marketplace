@@ -13,7 +13,19 @@ def home(request):
         
         member = get_object_or_404(Member, user = request.user)
         products = Products.objects.order_by('-product_posted_date')[:5]
-        
+        messages_recieved = member.user_messages_received.all()
+        unread_messages = 0
+        new_sales_order = 0
+        try:
+            purchase_orders = Purchase.objects.filter(sellor = request.user)
+            for order in purchase_orders:
+                if order.read == False:
+                  new_sales_order +=1
+        except:# Incase there is no sale order
+            purchase_orders = None
+        for msg in messages_recieved:
+            if msg.read == False:
+                unread_messages+=1
         
         try: 
             items = member.user_interest.all()
@@ -23,18 +35,22 @@ def home(request):
                 'items':items[:5] ,
                 'member':member,
                 'request':request,
+                'unread_messages':unread_messages,
+                'new_sales_order': new_sales_order
             }
         except: # Incase there is no user_interest:
             context = {
                 'products':products,
                 'request':request,
                 'member':member,
+                'unread_messages':unread_messages,
+                'new_sales_order': new_sales_order
                 }
             
         return render(request,'product/index.html',context=context)
     except :    
         products = Products.objects.order_by('-product_posted_date')[:5]
-        context = {'products':products,'request':request}
+        context = {'products':products}
         return render(request,'product/index.html',context=context)
 
 def product_details(request,pk):

@@ -24,6 +24,32 @@ header {
 }
 
 /* Navigation bar styling */
+
+
+.search-container {
+  flex-grow: 1;
+}
+
+.search-container form {
+  display: flex;
+}
+
+.search-container input[type="search"] {
+  padding: 5px;
+  border: none;
+  margin-left: 15px;
+  border-radius: 5px 0 0 5px;
+  
+}
+
+.search-container input[type="submit"] {
+  padding: 5px 10px;
+  border: none;
+  background-color: #9400d3; /* Lighter purplish color */
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
 nav {
   background-color: #6a0dad; /* Purple color */
   display: flex;

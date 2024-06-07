@@ -11,7 +11,15 @@ def profile(request,username):
     if request.user.is_authenticated:
         if request.user.username == username:
             member = get_object_or_404(Member,username = request.user.username)
-            context = {'member': member,'request':request}
+            new_sales_no = 0
+            try:
+                sales = Purchase.objects.filter(sellor = request.user)
+                for sale in sales:
+                    if sale.read == False:
+                        new_sales_no +=1
+            except:
+                new_sales_no = 0            
+            context = {'member': member,'request':request,'new_sales_no':new_sales_no}
             return render(request,'member/user_page.html',context)
         else: 
             messages.add_message(request,messages.ERROR,'Complete Your Profile First')
@@ -244,13 +252,23 @@ def order_confirmation(request):
 def purchase_orders(request):
     if request.user.is_authenticated:
         member = get_object_or_404(Member, user=request.user)
-        purchases = Purchase.objects.filter(sellor = request.user)
+        purchases = Purchase.objects.filter(sellor = request.user).order_by('-posted_time')
         totals = []
         for purchase in purchases:
+           purchase.read == True
+           purchase.save(force_update= True)
            total =  purchase.price * purchase.quantity
            totals.append(total)   
         context = {'purchases':purchases,'data':zip(purchases,totals),'member':member}
         return render(request, 'member/purchase_orders.html', context)
+    return redirect('registration:login')
+
+def dispatch(request,pk):
+    if request.user.is_authenticated:
+        member = get_object_or_404(Member, user=request.user)
+        purchase = get_object_or_404(Purchase, id = pk)
+        purchase.delete()
+        return redirect('member:purchase_orders')
     return redirect('registration:login')
 
 # Member Create:    

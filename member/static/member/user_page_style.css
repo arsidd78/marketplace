@@ -159,6 +159,9 @@
   .profile-stats a:hover {
     text-decoration: underline;
   }
+  .new_sales{
+    color: red;
+  }
   
   /* Footer */
   footer {
