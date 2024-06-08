@@ -3,6 +3,8 @@ from .models import Member,Messages,SalesOrder
 from django.shortcuts import get_object_or_404,redirect,HttpResponse
 from django.contrib.auth import get_user_model
 from django.contrib import messages
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 from product.models import Products,Purchase
 from .forms import ProductsForm,MemberForm
 from django.db.models import Max
@@ -255,8 +257,6 @@ def purchase_orders(request):
         purchases = Purchase.objects.filter(sellor = request.user).order_by('-posted_time')
         totals = []
         for purchase in purchases:
-           purchase.read == True
-           purchase.save(force_update= True)
            total =  purchase.price * purchase.quantity
            totals.append(total)   
         context = {'purchases':purchases,'data':zip(purchases,totals),'member':member}
@@ -315,4 +315,17 @@ def sold_products(request):
         context = {'products':products}
         return render(request,'member/recent_sales.html',context)
     return redirect('registration:login')
+
+
+
+@csrf_exempt
+def update_purchase_read_status(request):
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            purchases = Purchase.objects.filter(sellor=request.user, read=False)
+            purchases.update(read=True)
+            return JsonResponse({'status': 'success'})
+        return JsonResponse({'status': 'failure'})
+    return redirect('registration:login')
+
 

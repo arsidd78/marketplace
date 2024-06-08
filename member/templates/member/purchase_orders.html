@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purchase Orders</title>
     <link rel="stylesheet" href="{% static 'member/purchase_orders_style.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function updatePurchaseReadStatus() {
+            $.ajax({
+                url: "{% url 'member:update_read_status' %}",
+                type: "POST",
+                headers: {
+                    "X-CSRFToken": "{{ csrf_token }}"
+                },
+                success: function(response) {
+                    if (response.status === 'success') {
+                        console.log('Purchase read status updated successfully');
+                    } else {
+                        console.log('Failed to update purchase read status');
+                    }
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            updatePurchaseReadStatus();
+        });
+    </script>
 </head>
 <body>
     <nav>
@@ -28,7 +51,7 @@
         <h1>Purchase Orders</h1>
     </div>
     <div class="container">
-        {% for order,total in data %}
+        {% for order, total in data %}
         <article>
             <h4>Buyer: {{order.buyer.username}}</h4>
             <h4>Buyer Address: {{order.buyer_address}}</h4>
@@ -38,20 +61,18 @@
             <h4>Product: {{order.product.product_name}}</h4>
             <h4>Price: ${{order.price}}</h4>
             <h4>Quantity: {{order.quantity}}</h4>
-            <h4>Total:${{total}}</h4>
+            <h4>Total: ${{total}}</h4>
             <h4>Date: {{order.date}}</h4>
-            <button class="dispath-button" onclick=location.href="{% url 'member:dispatch' order.id %}" >Dispatch</button>
+            <button class="dispath-button" onclick=location.href="{% url 'member:dispatch' order.id %}">Dispatch</button>
         </article>
         {% endfor %}
     </div>
-    <div>
-        <footer>
-            <p>&copy; 2024 Online Market Place. All rights reserved.</p>
-            <p>Creator: Muhammad Arham Siddiqui</p>
-            <p>arsidd78@gmail.com</p>
-            <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
-            <p>LinkedIn: <a href="www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
-        </footer>
-    </div>
+    <footer>
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>arsidd78@gmail.com</p>
+        <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+    </footer>
 </body>
 </html>
