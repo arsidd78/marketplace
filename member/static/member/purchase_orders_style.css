@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-    background-color: #4b0082;
+    background-color: #661a9d;
     padding: 10px;
     text-align: center;
 }
@@ -67,12 +67,14 @@ hr {
     margin: 20px 0;
 }
 
+/* Footer styling */
 footer {
     background-color: #333;
+    position: relative;
     color: white;
     padding: 20px;
     text-align: center;
-    margin-top: auto;
+    margin-top: 25%;
   }
   
   footer p {
@@ -87,6 +89,7 @@ footer {
   footer a:hover {
     text-decoration: underline;
   }
+  
 
 @media (max-width: 768px) {
     .container {

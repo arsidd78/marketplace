@@ -133,7 +133,7 @@ def wishlist(request,pk):
         member.user_wish_list.add(product)
         member.save()
         return redirect('product:home')
-    return redirect('product:home')
+    return redirect('registration:login')
 
 def cart(request,pk):
     if request.user.is_authenticated:

@@ -145,7 +145,7 @@ class Products(models.Model):
         return self.product_name
             
 class Purchase(models.Model):
-    product = models.ForeignKey(Products,on_delete=models.DO_NOTHING)
+    product = models.ForeignKey(Products,on_delete=models.CASCADE)
     sellor = models.ForeignKey(User,on_delete=models.DO_NOTHING,related_name='sellor')
     quantity = models.PositiveIntegerField()     
     price = models.DecimalField(max_digits=7,decimal_places=2)

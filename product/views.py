@@ -28,16 +28,17 @@ def home(request):
                 unread_messages+=1
         
         try: 
-            items = member.user_interest.all()
-            context = {
+            if request.user.is_authenticated:
+                items = member.user_interest.all()
+                context = {
 
-                'products':products,
-                'items':items[:5] ,
-                'member':member,
-                'request':request,
-                'unread_messages':unread_messages,
-                'new_sales_order': new_sales_order
-            }
+                    'products':products,
+                    'items':items[:5] ,
+                    'member':member,
+                    'request':request,
+                    'unread_messages':unread_messages,
+                    'new_sales_order': new_sales_order
+                }
         except: # Incase there is no user_interest:
             context = {
                 'products':products,
@@ -188,6 +189,8 @@ def search(request):
         return render(request,'product/search_result.html')
 
 def recommended_products(request):
-    member = get_object_or_404(Member, user = request.user)
-    products = member.user_interest.all()
-    return render(request, 'product/recommended.html', {'products':products})
+    if request.user.is_authenticated:
+        member = get_object_or_404(Member, user = request.user)
+        products = member.user_interest.all()
+        return render(request, 'product/recommended.html', {'products':products})
+    return redirect('registration:login')

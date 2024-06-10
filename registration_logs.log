@@ -27789,3 +27789,663 @@ AttributeError: 'Messages' object has no attribute 'update'
 2024-06-08 12:30:13,472 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:50371]
 2024-06-08 12:30:15,122 [mHTTP GET / 200 [0.04, 127.0.0.1:50355][0m
 2024-06-08 12:30:15,194 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:50371]
+2024-06-10 09:35:46,381 [mHTTP GET / 200 [4.90, 127.0.0.1:61519][0m
+2024-06-10 09:35:46,602 [36mHTTP GET /static/product/index_style.css 304 [0.08, 127.0.0.1:61519][0m
+2024-06-10 09:35:46,671 [36mHTTP GET /media/logos/chat_logo.png 304 [0.08, 127.0.0.1:61520][0m
+2024-06-10 09:35:46,798 [36mHTTP GET /media/products/mangoes1_C874n2S.jpeg 304 [0.02, 127.0.0.1:61520][0m
+2024-06-10 09:35:46,838 [36mHTTP GET /media/products/sofa_1.jpg 304 [0.04, 127.0.0.1:61535][0m
+2024-06-10 09:35:46,842 [36mHTTP GET /media/products/beef_HYC0s2g.jpeg 304 [0.06, 127.0.0.1:61519][0m
+2024-06-10 09:35:46,855 [36mHTTP GET /media/products/living_1.jpeg 304 [0.07, 127.0.0.1:61534][0m
+2024-06-10 09:35:47,015 [36mHTTP GET /media/products/stv1_OAPftt6.jpeg 304 [0.02, 127.0.0.1:61535][0m
+2024-06-10 09:35:47,016 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.01, 127.0.0.1:61534][0m
+2024-06-10 09:35:47,058 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.06, 127.0.0.1:61519][0m
+2024-06-10 09:35:47,185 [36mHTTP GET /media/products/crockery.jpeg 304 [0.03, 127.0.0.1:61534][0m
+2024-06-10 09:35:47,213 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.05, 127.0.0.1:61535][0m
+2024-06-10 09:35:47,224 [36mHTTP GET /media/products/tennis.jpeg 304 [0.07, 127.0.0.1:61519][0m
+2024-06-10 09:35:48,868 Not Found: /favicon.ico
+2024-06-10 09:35:48,868 [33mHTTP GET /favicon.ico 404 [0.76, 127.0.0.1:61519][0m
+2024-06-10 09:35:57,017 [32mHTTP GET /registration/signout/ 302 [0.27, 127.0.0.1:61519][0m
+2024-06-10 09:35:57,040 [mHTTP GET / 200 [0.02, 127.0.0.1:61519][0m
+2024-06-10 09:36:00,658 [mHTTP GET /recent_products/ 200 [0.06, 127.0.0.1:61519][0m
+2024-06-10 09:36:00,746 [36mHTTP GET /media/products/8_ball_pool.jpeg 304 [0.04, 127.0.0.1:61519][0m
+2024-06-10 09:36:00,845 [36mHTTP GET /media/products/shoes.jpeg 304 [0.05, 127.0.0.1:61535][0m
+2024-06-10 09:36:00,938 [36mHTTP GET /media/products/strawberry2_VltATon.png 304 [0.14, 127.0.0.1:61534][0m
+2024-06-10 09:36:00,957 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.07, 127.0.0.1:61535][0m
+2024-06-10 09:36:00,962 [36mHTTP GET /media/products/toys_2.jpeg 304 [0.08, 127.0.0.1:61539][0m
+2024-06-10 09:36:00,965 [36mHTTP GET /media/products/palistineflag_XD3bT3q.webp 304 [0.10, 127.0.0.1:61520][0m
+2024-06-10 09:36:00,967 [36mHTTP GET /media/products/outdoor_1.jpeg 304 [0.08, 127.0.0.1:61540][0m
+2024-06-10 09:36:00,971 [36mHTTP GET /media/products/joggers.jpeg 304 [0.10, 127.0.0.1:61519][0m
+2024-06-10 09:36:01,154 [36mHTTP GET /media/products/dvd_1.jpeg 304 [0.16, 127.0.0.1:61520][0m
+2024-06-10 09:36:01,160 [36mHTTP GET /media/products/toys_1.jpeg 304 [0.14, 127.0.0.1:61519][0m
+2024-06-10 09:36:01,162 [36mHTTP GET /media/products/pullover1.jpeg 304 [0.17, 127.0.0.1:61535][0m
+2024-06-10 09:36:01,201 [36mHTTP GET /media/products/doc_tool1.jpeg 304 [0.21, 127.0.0.1:61534][0m
+2024-06-10 09:36:01,267 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.27, 127.0.0.1:61539][0m
+2024-06-10 09:36:01,294 [36mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 304 [0.30, 127.0.0.1:61540][0m
+2024-06-10 09:36:01,678 [36mHTTP GET /media/products/weights.jpeg 304 [0.03, 127.0.0.1:61534][0m
+2024-06-10 09:36:01,775 [36mHTTP GET /media/products/butterfly_1.jpeg 304 [0.30, 127.0.0.1:61540][0m
+2024-06-10 09:36:01,777 [36mHTTP GET /media/products/computer_1.jpeg 304 [0.16, 127.0.0.1:61539][0m
+2024-06-10 09:36:01,847 [36mHTTP GET /media/products/mouse.jpeg 304 [0.01, 127.0.0.1:61539][0m
+2024-06-10 09:36:01,855 [36mHTTP GET /media/products/mouse_12.jpeg 304 [0.01, 127.0.0.1:61540][0m
+2024-06-10 09:36:01,878 [36mHTTP GET /media/products/laptop1.jpeg 304 [0.17, 127.0.0.1:61534][0m
+2024-06-10 09:36:01,942 [36mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 304 [0.05, 127.0.0.1:61540][0m
+2024-06-10 09:36:02,027 [36mHTTP GET /media/products/harry_potter_novel_complete.jpeg 304 [0.06, 127.0.0.1:61540][0m
+2024-06-10 09:36:02,033 [36mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 304 [0.15, 127.0.0.1:61534][0m
+2024-06-10 09:36:07,744 [mHTTP GET /view_all/ 200 [0.13, 127.0.0.1:61534][0m
+2024-06-10 09:36:14,729 [mHTTP GET / 200 [0.02, 127.0.0.1:61534][0m
+2024-06-10 09:36:20,003 Internal Server Error: /recommended_products/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 191, in recommended_products
+    member = get_object_or_404(Member, user = request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000023575CF2960>>.
+2024-06-10 09:36:20,057 [35;1mHTTP GET /recommended_products/ 500 [1.66, 127.0.0.1:61534][0m
+2024-06-10 09:39:29,421 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-10 09:40:28,407 [mHTTP GET / 200 [0.08, 127.0.0.1:61622][0m
+2024-06-10 09:40:30,572 [mHTTP GET / 200 [0.01, 127.0.0.1:61622][0m
+2024-06-10 09:40:31,761 [mHTTP GET / 200 [0.02, 127.0.0.1:61622][0m
+2024-06-10 09:40:32,182 [mHTTP GET /media/products/makeup1.jpeg 200 [0.35, 127.0.0.1:61632][0m
+2024-06-10 09:40:32,187 [mHTTP GET /media/products/tennis.jpeg 200 [0.35, 127.0.0.1:61634][0m
+2024-06-10 09:40:32,228 [mHTTP GET /static/product/index_style.css 200 [0.42, 127.0.0.1:61622][0m
+2024-06-10 09:40:32,243 [mHTTP GET /media/products/crockery.jpeg 200 [0.06, 127.0.0.1:61632][0m
+2024-06-10 09:40:32,248 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.28, 127.0.0.1:61635][0m
+2024-06-10 09:40:32,337 [mHTTP GET /media/products/sport_1.jpeg 200 [0.50, 127.0.0.1:61633][0m
+2024-06-10 09:40:32,521 [mHTTP GET /media/logos/chat_logo.png 200 [0.71, 127.0.0.1:61621][0m
+2024-06-10 09:40:32,560 Not Found: /favicon.ico
+2024-06-10 09:40:32,562 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:61621][0m
+2024-06-10 09:40:34,472 Internal Server Error: /recommended_products/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 192, in recommended_products
+    member = get_object_or_404(Member, user = request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000002D403768CE0>>.
+2024-06-10 09:40:34,495 [35;1mHTTP GET /recommended_products/ 500 [0.09, 127.0.0.1:61621][0m
+2024-06-10 09:41:10,544 [mHTTP GET /detail/39/ 200 [0.06, 127.0.0.1:61621][0m
+2024-06-10 09:41:10,594 [36mHTTP GET /static/product/details_style.css 304 [0.00, 127.0.0.1:61621][0m
+2024-06-10 09:41:10,814 [mHTTP GET /media/products/makeup3.jpeg 200 [0.18, 127.0.0.1:61633][0m
+2024-06-10 09:41:10,854 [mHTTP GET /media/products/makeup2.jpeg 200 [0.23, 127.0.0.1:61621][0m
+2024-06-10 09:41:10,868 [mHTTP GET /media/products/makeup5.jpeg 200 [0.23, 127.0.0.1:61632][0m
+2024-06-10 09:41:10,906 [mHTTP GET /media/products/makeup4.jpeg 200 [0.27, 127.0.0.1:61635][0m
+2024-06-10 09:41:11,330 [mHTTP GET /detail/39/ 200 [0.03, 127.0.0.1:61635][0m
+2024-06-10 09:41:14,966 [mHTTP GET / 200 [0.02, 127.0.0.1:61635][0m
+2024-06-10 09:41:16,178 [mHTTP GET / 200 [0.02, 127.0.0.1:61635][0m
+2024-06-10 09:41:17,363 [mHTTP GET / 200 [0.01, 127.0.0.1:61635][0m
+2024-06-10 09:41:17,414 [mHTTP GET /static/product/index_style.css 200 [0.01, 127.0.0.1:61635][0m
+2024-06-10 09:41:17,480 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.05, 127.0.0.1:61622][0m
+2024-06-10 09:41:17,481 [mHTTP GET /media/products/sport_1.jpeg 200 [0.05, 127.0.0.1:61635][0m
+2024-06-10 09:41:17,482 [mHTTP GET /media/logos/chat_logo.png 200 [0.06, 127.0.0.1:61632][0m
+2024-06-10 09:41:17,484 [mHTTP GET /media/products/crockery.jpeg 200 [0.05, 127.0.0.1:61634][0m
+2024-06-10 09:41:17,486 [mHTTP GET /media/products/makeup1.jpeg 200 [0.06, 127.0.0.1:61621][0m
+2024-06-10 09:41:17,493 [mHTTP GET /media/products/tennis.jpeg 200 [0.06, 127.0.0.1:61633][0m
+2024-06-10 09:41:17,557 Not Found: /favicon.ico
+2024-06-10 09:41:17,558 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:61633][0m
+2024-06-10 09:41:18,181 [mHTTP GET / 200 [0.01, 127.0.0.1:61633][0m
+2024-06-10 09:41:18,238 [mHTTP GET /static/product/index_style.css 200 [0.00, 127.0.0.1:61633][0m
+2024-06-10 09:41:18,308 [mHTTP GET /media/logos/chat_logo.png 200 [0.05, 127.0.0.1:61621][0m
+2024-06-10 09:41:18,309 [mHTTP GET /media/products/crockery.jpeg 200 [0.04, 127.0.0.1:61633][0m
+2024-06-10 09:41:18,310 [mHTTP GET /media/products/makeup1.jpeg 200 [0.05, 127.0.0.1:61634][0m
+2024-06-10 09:41:18,311 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.05, 127.0.0.1:61632][0m
+2024-06-10 09:41:18,316 [mHTTP GET /media/products/sport_1.jpeg 200 [0.05, 127.0.0.1:61622][0m
+2024-06-10 09:41:18,336 [mHTTP GET /media/products/tennis.jpeg 200 [0.07, 127.0.0.1:61635][0m
+2024-06-10 09:41:18,454 Not Found: /favicon.ico
+2024-06-10 09:41:18,456 [33mHTTP GET /favicon.ico 404 [0.08, 127.0.0.1:61635][0m
+2024-06-10 09:41:18,462 [mHTTP GET / 200 [0.07, 127.0.0.1:61622][0m
+2024-06-10 09:41:18,548 [mHTTP GET /media/logos/chat_logo.png 200 [0.03, 127.0.0.1:61635][0m
+2024-06-10 09:41:18,554 [mHTTP GET /static/product/index_style.css 200 [0.04, 127.0.0.1:61622][0m
+2024-06-10 09:41:18,611 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.07, 127.0.0.1:61621][0m
+2024-06-10 09:41:18,617 [mHTTP GET /media/products/makeup1.jpeg 200 [0.08, 127.0.0.1:61634][0m
+2024-06-10 09:41:18,624 [mHTTP GET /media/products/tennis.jpeg 200 [0.08, 127.0.0.1:61633][0m
+2024-06-10 09:41:18,626 [mHTTP GET /media/products/crockery.jpeg 200 [0.07, 127.0.0.1:61635][0m
+2024-06-10 09:41:18,627 [mHTTP GET /media/products/sport_1.jpeg 200 [0.09, 127.0.0.1:61632][0m
+2024-06-10 09:41:18,660 [mHTTP GET / 200 [0.06, 127.0.0.1:61622][0m
+2024-06-10 09:41:18,755 [mHTTP GET /static/product/index_style.css 200 [0.03, 127.0.0.1:61622][0m
+2024-06-10 09:41:18,802 [mHTTP GET /media/products/tennis.jpeg 200 [0.06, 127.0.0.1:61621][0m
+2024-06-10 09:41:18,804 [mHTTP GET /media/logos/chat_logo.png 200 [0.07, 127.0.0.1:61635][0m
+2024-06-10 09:41:18,809 [mHTTP GET /media/products/makeup1.jpeg 200 [0.07, 127.0.0.1:61633][0m
+2024-06-10 09:41:18,820 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.08, 127.0.0.1:61647][0m
+2024-06-10 09:41:18,822 [mHTTP GET /media/products/sport_1.jpeg 200 [0.08, 127.0.0.1:61634][0m
+2024-06-10 09:41:18,841 [mHTTP GET /media/products/crockery.jpeg 200 [0.08, 127.0.0.1:61622][0m
+2024-06-10 09:41:18,856 [mHTTP GET / 200 [0.05, 127.0.0.1:61621][0m
+2024-06-10 09:41:18,977 [mHTTP GET /static/product/index_style.css 200 [0.03, 127.0.0.1:61621][0m
+2024-06-10 09:41:19,022 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.06, 127.0.0.1:61635][0m
+2024-06-10 09:41:19,028 [mHTTP GET /media/products/sport_1.jpeg 200 [0.07, 127.0.0.1:61647][0m
+2024-06-10 09:41:19,042 [mHTTP GET /media/products/makeup1.jpeg 200 [0.08, 127.0.0.1:61634][0m
+2024-06-10 09:41:19,044 [mHTTP GET /media/logos/chat_logo.png 200 [0.08, 127.0.0.1:61622][0m
+2024-06-10 09:41:19,048 [mHTTP GET /media/products/tennis.jpeg 200 [0.09, 127.0.0.1:61633][0m
+2024-06-10 09:41:19,061 [mHTTP GET / 200 [0.08, 127.0.0.1:61621][0m
+2024-06-10 09:41:19,077 [mHTTP GET /media/products/crockery.jpeg 200 [0.04, 127.0.0.1:61635][0m
+2024-06-10 09:41:19,172 [mHTTP GET / 200 [0.07, 127.0.0.1:61621][0m
+2024-06-10 09:41:19,173 Not Found: /favicon.ico
+2024-06-10 09:41:19,175 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:61635][0m
+2024-06-10 09:41:19,286 [mHTTP GET /static/product/index_style.css 200 [0.03, 127.0.0.1:61635][0m
+2024-06-10 09:41:19,330 [mHTTP GET /media/logos/chat_logo.png 200 [0.07, 127.0.0.1:61621][0m
+2024-06-10 09:41:19,334 [mHTTP GET /media/products/tennis.jpeg 200 [0.07, 127.0.0.1:61622][0m
+2024-06-10 09:41:19,335 [mHTTP GET /media/products/sport_1.jpeg 200 [0.07, 127.0.0.1:61634][0m
+2024-06-10 09:41:19,339 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.07, 127.0.0.1:61647][0m
+2024-06-10 09:41:19,342 [mHTTP GET /media/products/makeup1.jpeg 200 [0.08, 127.0.0.1:61633][0m
+2024-06-10 09:41:19,361 [mHTTP GET /media/products/crockery.jpeg 200 [0.06, 127.0.0.1:61635][0m
+2024-06-10 09:41:19,425 Not Found: /favicon.ico
+2024-06-10 09:41:19,426 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:61635][0m
+2024-06-10 09:42:24,403 [mHTTP GET / 200 [0.02, 127.0.0.1:61672][0m
+2024-06-10 09:42:26,212 [mHTTP GET / 200 [0.01, 127.0.0.1:61672][0m
+2024-06-10 09:42:26,295 [mHTTP GET /static/product/index_style.css 200 [0.02, 127.0.0.1:61672][0m
+2024-06-10 09:42:26,336 [mHTTP GET /media/logos/chat_logo.png 200 [0.06, 127.0.0.1:61673][0m
+2024-06-10 09:42:26,359 [mHTTP GET /media/products/sport_1.jpeg 200 [0.06, 127.0.0.1:61674][0m
+2024-06-10 09:42:26,360 [mHTTP GET /media/products/makeup1.jpeg 200 [0.06, 127.0.0.1:61675][0m
+2024-06-10 09:42:26,365 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.06, 127.0.0.1:61677][0m
+2024-06-10 09:42:26,367 [mHTTP GET /media/products/crockery.jpeg 200 [0.06, 127.0.0.1:61672][0m
+2024-06-10 09:42:26,369 [mHTTP GET /media/products/tennis.jpeg 200 [0.07, 127.0.0.1:61676][0m
+2024-06-10 09:42:26,466 Not Found: /favicon.ico
+2024-06-10 09:42:26,467 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:61676][0m
+2024-06-10 09:42:29,124 Internal Server Error: /recommended_products/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py", line 192, in recommended_products
+    member = get_object_or_404(Member, user = request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000002D403801D60>>.
+2024-06-10 09:42:29,139 [35;1mHTTP GET /recommended_products/ 500 [0.09, 127.0.0.1:61676][0m
+2024-06-10 09:43:54,969 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-10 09:44:09,152 [mHTTP GET / 200 [0.06, 127.0.0.1:61713][0m
+2024-06-10 09:44:09,329 [mHTTP GET / 200 [0.03, 127.0.0.1:61713][0m
+2024-06-10 09:44:11,223 [32mHTTP GET /recommended_products/ 302 [0.01, 127.0.0.1:61713][0m
+2024-06-10 09:44:12,049 [mHTTP GET /registration/login/ 200 [0.36, 127.0.0.1:61713][0m
+2024-06-10 09:44:12,231 [36mHTTP GET /static/registration/login_style.css 304 [0.01, 127.0.0.1:61713][0m
+2024-06-10 09:44:17,876 [mHTTP GET /categories/ 200 [0.21, 127.0.0.1:61713][0m
+2024-06-10 09:44:18,525 [36mHTTP GET /static/product/categories_page_style.css 304 [0.57, 127.0.0.1:61713][0m
+2024-06-10 09:44:31,390 [mHTTP GET /recent_products/ 200 [0.03, 127.0.0.1:61713][0m
+2024-06-10 09:44:42,382 [mHTTP GET / 200 [0.02, 127.0.0.1:61713][0m
+2024-06-10 09:46:38,757 [mHTTP GET / 200 [1.17, 127.0.0.1:61743][0m
+2024-06-10 09:46:40,054 [mHTTP GET /detail/39/ 200 [0.21, 127.0.0.1:61743][0m
+2024-06-10 09:46:42,815 [mHTTP GET / 200 [0.02, 127.0.0.1:61743][0m
+2024-06-10 09:46:49,533 [mHTTP GET /detail/41/ 200 [0.01, 127.0.0.1:61743][0m
+2024-06-10 09:46:55,416 [32mHTTP GET /add_review/41/ 302 [0.01, 127.0.0.1:61743][0m
+2024-06-10 09:46:55,484 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:61743][0m
+2024-06-10 09:47:08,621 [32mHTTP GET /payment/41/ 302 [0.01, 127.0.0.1:61743][0m
+2024-06-10 09:47:08,646 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:61743][0m
+2024-06-10 09:47:11,411 [32mHTTP GET /member/adding_cart/41/ 302 [0.01, 127.0.0.1:61743][0m
+2024-06-10 09:47:11,439 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:61743][0m
+2024-06-10 09:47:14,706 [32mHTTP GET /member/adding_wishlist/41/ 302 [0.01, 127.0.0.1:61743][0m
+2024-06-10 09:47:14,730 [mHTTP GET / 200 [0.02, 127.0.0.1:61743][0m
+2024-06-10 09:48:23,932 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-10 09:48:28,179 [mHTTP GET / 200 [0.08, 127.0.0.1:61773][0m
+2024-06-10 09:48:32,286 [32mHTTP GET /member/add_product/ 302 [0.01, 127.0.0.1:61773][0m
+2024-06-10 09:48:32,306 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:61773][0m
+2024-06-10 09:48:37,072 [32mHTTP GET /chat/chat/ 302 [0.01, 127.0.0.1:61773][0m
+2024-06-10 09:48:37,114 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:61773][0m
+2024-06-10 10:10:36,110 [mHTTP GET / 200 [0.03, 127.0.0.1:61943][0m
+2024-06-10 10:10:40,181 [mHTTP GET / 200 [0.03, 127.0.0.1:61943][0m
+2024-06-10 10:10:41,016 [mHTTP GET / 200 [0.02, 127.0.0.1:61943][0m
+2024-06-10 10:10:42,804 [32mHTTP GET /chat/chat/ 302 [0.01, 127.0.0.1:61943][0m
+2024-06-10 10:10:42,841 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:61943][0m
+2024-06-10 10:10:47,693 [32mHTTP GET /admin/ 302 [0.04, 127.0.0.1:61943][0m
+2024-06-10 10:10:49,697 [mHTTP GET /admin/login/?next=/admin/ 200 [2.00, 127.0.0.1:61943][0m
+2024-06-10 10:10:50,953 [mHTTP GET /static/admin/css/login.css 200 [0.28, 127.0.0.1:61943][0m
+2024-06-10 10:11:40,685 [mHTTP GET /categories/ 200 [0.07, 127.0.0.1:61943][0m
+2024-06-10 10:11:48,378 [mHTTP GET /prod_by_cat/SPORTS%20&%20OUTDOORS/ 200 [0.04, 127.0.0.1:61943][0m
+2024-06-10 10:14:13,883 [mHTTP GET /categories/ 200 [0.08, 127.0.0.1:62022][0m
+2024-06-10 10:15:29,883 [mHTTP GET /categories/ 200 [0.07, 127.0.0.1:62049][0m
+2024-06-10 10:15:34,075 [mHTTP GET /prod_by_cat/ACCESSORIES/ 200 [0.03, 127.0.0.1:62049][0m
+2024-06-10 10:15:43,206 [mHTTP POST /search/ 200 [0.20, 127.0.0.1:62049][0m
+2024-06-10 10:15:43,298 [36mHTTP GET /static/product/search_style.css 304 [0.02, 127.0.0.1:62049][0m
+2024-06-10 10:16:02,017 [mHTTP GET / 200 [0.03, 127.0.0.1:62049][0m
+2024-06-10 10:16:09,061 [mHTTP POST /search/ 200 [0.03, 127.0.0.1:62049][0m
+2024-06-10 10:16:16,884 [mHTTP GET / 200 [0.02, 127.0.0.1:62049][0m
+2024-06-10 10:16:20,059 [mHTTP GET /registration/login/ 200 [0.48, 127.0.0.1:62049][0m
+2024-06-10 10:16:25,020 [32mHTTP POST /registration/authentication/?next= 302 [3.31, 127.0.0.1:62049][0m
+2024-06-10 10:16:25,128 [mHTTP GET / 200 [0.07, 127.0.0.1:62049][0m
+2024-06-10 10:16:44,745 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.11, 127.0.0.1:62049][0m
+2024-06-10 10:16:45,171 [36mHTTP GET /static/member/user_page_style.css 304 [0.05, 127.0.0.1:62072][0m
+2024-06-10 10:16:45,213 [36mHTTP GET /media/logos/edit_logo.png 304 [0.11, 127.0.0.1:62049][0m
+2024-06-10 10:16:49,029 [mHTTP GET /member/user_products/arsidd78/ 200 [0.05, 127.0.0.1:62049][0m
+2024-06-10 10:16:49,102 [36mHTTP GET /static/member/my_product_style.css 304 [0.01, 127.0.0.1:62049][0m
+2024-06-10 10:17:25,745 Internal Server Error: /member/delete_prod/15/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 124, in del_prod
+    product.delete()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 1179, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\deletion.py", line 459, in delete
+    with transaction.atomic(using=self.using, savepoint=False):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\transaction.py", line 263, in __exit__
+    connection.commit()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 323, in commit
+    self._commit()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 298, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2024-06-10 10:17:25,765 [35;1mHTTP GET /member/delete_prod/15/ 500 [1.34, 127.0.0.1:62049][0m
+2024-06-10 10:18:58,779 Internal Server Error: /member/delete_prod/15/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 124, in del_prod
+    product.delete()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 1179, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\deletion.py", line 459, in delete
+    with transaction.atomic(using=self.using, savepoint=False):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\transaction.py", line 263, in __exit__
+    connection.commit()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 323, in commit
+    self._commit()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 298, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2024-06-10 10:18:58,797 [35;1mHTTP GET /member/delete_prod/15/ 500 [0.10, 127.0.0.1:62096][0m
+2024-06-10 10:19:00,865 Internal Server Error: /member/delete_prod/15/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 124, in del_prod
+    product.delete()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 1179, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\deletion.py", line 459, in delete
+    with transaction.atomic(using=self.using, savepoint=False):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\transaction.py", line 263, in __exit__
+    connection.commit()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 323, in commit
+    self._commit()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 298, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2024-06-10 10:19:00,882 [35;1mHTTP GET /member/delete_prod/15/ 500 [0.10, 127.0.0.1:62096][0m
+2024-06-10 10:19:01,172 Not Found: /favicon.ico
+2024-06-10 10:19:01,174 [33mHTTP GET /favicon.ico 404 [0.06, 127.0.0.1:62096][0m
+2024-06-10 10:19:08,673 Internal Server Error: /member/delete_prod/16/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 124, in del_prod
+    product.delete()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\base.py", line 1179, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\deletion.py", line 459, in delete
+    with transaction.atomic(using=self.using, savepoint=False):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\transaction.py", line 263, in __exit__
+    connection.commit()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 323, in commit
+    self._commit()
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 298, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2024-06-10 10:19:08,691 [35;1mHTTP GET /member/delete_prod/16/ 500 [0.15, 127.0.0.1:62096][0m
+2024-06-10 10:24:44,251 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\models.py changed, reloading.
+2024-06-10 10:25:09,602 [32mHTTP GET /member/delete_prod/15/ 302 [0.55, 127.0.0.1:62337][0m
+2024-06-10 10:25:09,914 [mHTTP GET /member/user_products/arsidd78/ 200 [0.30, 127.0.0.1:62337][0m
+2024-06-10 10:25:16,013 [32mHTTP GET /member/delete_prod/22/ 302 [0.35, 127.0.0.1:62337][0m
+2024-06-10 10:25:16,071 [mHTTP GET /member/user_products/arsidd78/ 200 [0.04, 127.0.0.1:62337][0m
+2024-06-10 10:25:42,582 [mHTTP GET / 200 [0.04, 127.0.0.1:62337][0m
+2024-06-10 10:25:45,594 [mHTTP GET /detail/20/ 200 [0.19, 127.0.0.1:62337][0m
+2024-06-10 10:25:53,492 [mHTTP GET /media/products/living_1.jpeg 200 [0.40, 127.0.0.1:62350][0m
+2024-06-10 10:25:56,271 [mHTTP GET /add_review/20/ 200 [0.78, 127.0.0.1:62337][0m
+2024-06-10 10:25:56,380 [mHTTP GET /static/product/review_style.css 200 [0.06, 127.0.0.1:62337][0m
+2024-06-10 10:26:28,532 [32mHTTP POST /add_review/20/ 302 [0.22, 127.0.0.1:62337][0m
+2024-06-10 10:26:28,689 [mHTTP GET /detail/20/ 200 [0.15, 127.0.0.1:62337][0m
+2024-06-10 10:27:03,121 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.04, 127.0.0.1:62337][0m
+2024-06-10 10:27:04,710 [mHTTP GET /member/wishlist_view/ 200 [0.13, 127.0.0.1:62337][0m
+2024-06-10 10:27:04,927 [36mHTTP GET /static/member/wishlist_style.css 304 [0.07, 127.0.0.1:62337][0m
+2024-06-10 10:27:10,898 [32mHTTP GET /member/remove_item_wishlist/25/ 302 [0.29, 127.0.0.1:62337][0m
+2024-06-10 10:27:10,933 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:62337][0m
+2024-06-10 10:27:12,668 [32mHTTP GET /member/remove_item_wishlist/19/ 302 [0.52, 127.0.0.1:62337][0m
+2024-06-10 10:27:12,771 [mHTTP GET /member/wishlist_view/ 200 [0.09, 127.0.0.1:62337][0m
+2024-06-10 10:27:14,076 [32mHTTP GET /member/remove_item_wishlist/16/ 302 [0.32, 127.0.0.1:62337][0m
+2024-06-10 10:27:14,157 [mHTTP GET /member/wishlist_view/ 200 [0.05, 127.0.0.1:62337][0m
+2024-06-10 10:27:16,920 [32mHTTP GET /member/remove_item_wishlist/14/ 302 [1.69, 127.0.0.1:62337][0m
+2024-06-10 10:27:16,952 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:62337][0m
+2024-06-10 10:31:02,292 [mHTTP GET /member/wishlist_view/ 200 [0.04, 127.0.0.1:62413][0m
+2024-06-10 10:31:05,440 [mHTTP GET /member/wishlist_view/ 200 [0.03, 127.0.0.1:62413][0m
+2024-06-10 10:31:05,550 [mHTTP GET /static/member/wishlist_style.css 200 [0.03, 127.0.0.1:62413][0m
+2024-06-10 10:31:05,593 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.07, 127.0.0.1:62412][0m
+2024-06-10 10:31:05,607 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.08, 127.0.0.1:62423][0m
+2024-06-10 10:31:05,648 [mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 200 [0.12, 127.0.0.1:62422][0m
+2024-06-10 10:31:05,680 [mHTTP GET /media/products/strawberry2_VltATon.png 200 [0.15, 127.0.0.1:62424][0m
+2024-06-10 10:31:05,995 Not Found: /favicon.ico
+2024-06-10 10:31:05,997 [33mHTTP GET /favicon.ico 404 [0.18, 127.0.0.1:62424][0m
+2024-06-10 10:31:11,597 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:62424][0m
+2024-06-10 10:31:13,543 [mHTTP GET /member/cart_view/ 200 [0.07, 127.0.0.1:62424][0m
+2024-06-10 10:31:13,676 [mHTTP GET /static/member/cart_style.css 200 [0.04, 127.0.0.1:62424][0m
+2024-06-10 10:31:27,331 [mHTTP GET /member/order_cart/ 200 [0.04, 127.0.0.1:62424][0m
+2024-06-10 10:31:27,411 [36mHTTP GET /static/member/order_cart_style.css 304 [0.01, 127.0.0.1:62424][0m
+2024-06-10 10:32:05,284 [mHTTP GET /member/order_cart/ 200 [0.03, 127.0.0.1:62424][0m
+2024-06-10 10:32:06,559 [mHTTP GET /member/order_cart/ 200 [0.02, 127.0.0.1:62424][0m
+2024-06-10 10:32:06,626 [mHTTP GET /static/member/order_cart_style.css 200 [0.02, 127.0.0.1:62424][0m
+2024-06-10 10:32:06,696 [mHTTP GET /media/logos/chat_logo.png 200 [0.06, 127.0.0.1:62437][0m
+2024-06-10 10:32:06,813 Not Found: /favicon.ico
+2024-06-10 10:32:06,814 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:62437][0m
+2024-06-10 10:33:03,897 [mHTTP GET /member/order_cart/ 200 [0.03, 127.0.0.1:62437][0m
+2024-06-10 10:33:05,287 [mHTTP GET /member/order_cart/ 200 [0.02, 127.0.0.1:62437][0m
+2024-06-10 10:33:05,386 [mHTTP GET /media/logos/chat_logo.png 200 [0.02, 127.0.0.1:62424][0m
+2024-06-10 10:33:05,394 [mHTTP GET /static/member/order_cart_style.css 200 [0.03, 127.0.0.1:62437][0m
+2024-06-10 10:33:05,461 Not Found: /favicon.ico
+2024-06-10 10:33:05,464 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:62437][0m
+2024-06-10 10:33:21,269 [mHTTP POST /member/order_cart/ 200 [2.36, 127.0.0.1:62437][0m
+2024-06-10 10:33:21,348 [mHTTP GET /static/member/confirmation_style.css 200 [0.02, 127.0.0.1:62437][0m
+2024-06-10 10:33:25,395 [mHTTP GET /member/order_confirmation/ 200 [0.12, 127.0.0.1:62424][0m
+2024-06-10 10:33:38,858 [mHTTP GET / 200 [0.04, 127.0.0.1:62424][0m
+2024-06-10 10:33:38,946 [36mHTTP GET /media/logos/mark_logo.png 304 [0.02, 127.0.0.1:62424][0m
+2024-06-10 10:33:42,081 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:62424][0m
+2024-06-10 10:33:44,598 [mHTTP GET /member/purchase_orders/ 200 [0.74, 127.0.0.1:62424][0m
+2024-06-10 10:33:44,696 [mHTTP GET /static/member/purchase_orders_style.css 200 [0.05, 127.0.0.1:62424][0m
+2024-06-10 10:33:45,071 [mHTTP POST /member/order_read/ 200 [0.19, 127.0.0.1:62424][0m
+2024-06-10 10:37:29,442 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.05, 127.0.0.1:62478][0m
+2024-06-10 10:37:35,878 [mHTTP GET /member/recent_sales 200 [0.06, 127.0.0.1:62478][0m
+2024-06-10 10:37:36,052 [mHTTP GET /static/member/recent_sales_style.css 200 [0.04, 127.0.0.1:62478][0m
+2024-06-10 10:37:49,712 [mHTTP GET / 200 [0.04, 127.0.0.1:62478][0m

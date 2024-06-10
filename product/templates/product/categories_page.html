@@ -26,10 +26,13 @@
 
     <div class="pd_cat">
         {% for images, categories in data %}
-            <div class="category">
-                <img src="{{ images.url }}" alt="{{ categories }}" width="100" height="100">
-                <a href="{% url 'product:prod_cat' categories %}">{{ categories }}</a>
-            </div>
+            <a href="{% url 'product:prod_cat' categories %}">
+                <div class="category">
+                    <img src="{{ images.url }}" alt="{{ categories }}" width="100" height="100">
+                    <a href="{% url 'product:prod_cat' categories %}">{{ categories }}</a>
+                    
+                </div>
+           </a>
         {% endfor %}
     </div>
     <footer>

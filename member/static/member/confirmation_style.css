@@ -81,12 +81,14 @@ nav a {
     background-color: #6200ea;
 }
 
+/* Footer styling */
 footer {
     background-color: #333;
+    position: relative;
     color: white;
     padding: 20px;
     text-align: center;
-    margin-top: auto;
+    margin-top: 25%;
   }
   
   footer p {
@@ -101,6 +103,7 @@ footer {
   footer a:hover {
     text-decoration: underline;
   }
+  
 
 @media (max-width: 768px) {
     .show_invoice {
