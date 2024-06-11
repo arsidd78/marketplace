@@ -117,6 +117,16 @@ def purchase_view(request,pk):
                 product.product = item
                 product.save()
                 purchase = get_object_or_404(Purchase, id = product.id)
+                sellor = get_object_or_404(Member, user = item.name)
+                buyer = get_object_or_404(Member, user = request.user)
+                # Adjust quantity of products after purchase order
+                item.product_quantity -= product.quantity
+                sellor.user_recent_sales.add(item)
+                sellor.user_sales += product.price * product.quantity
+                # Adding records of purchase for buyer:
+                buyer.user_recent_purchase.add(item)
+                buyer.user_purchases += product.price * product.quantity
+
                 return render(request,'product/confirmation.html',{'item':item,'purchase':purchase})
         else:    
             item = get_object_or_404(Products,id=pk)

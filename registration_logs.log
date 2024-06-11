@@ -28449,3 +28449,310 @@ django.db.utils.IntegrityError: FOREIGN KEY constraint failed
 2024-06-10 10:37:35,878 [mHTTP GET /member/recent_sales 200 [0.06, 127.0.0.1:62478][0m
 2024-06-10 10:37:36,052 [mHTTP GET /static/member/recent_sales_style.css 200 [0.04, 127.0.0.1:62478][0m
 2024-06-10 10:37:49,712 [mHTTP GET / 200 [0.04, 127.0.0.1:62478][0m
+2024-06-11 12:17:48,928 [mHTTP GET / 200 [1.73, 127.0.0.1:55402][0m
+2024-06-11 12:17:49,116 [36mHTTP GET /media/logos/chat_logo.png 304 [0.01, 127.0.0.1:55402][0m
+2024-06-11 12:17:49,285 [36mHTTP GET /static/product/index_style.css 304 [0.16, 127.0.0.1:55402][0m
+2024-06-11 12:17:50,107 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.07, 127.0.0.1:55401][0m
+2024-06-11 12:17:50,149 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.11, 127.0.0.1:55402][0m
+2024-06-11 12:17:50,317 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.02, 127.0.0.1:55403][0m
+2024-06-11 12:17:50,319 [36mHTTP GET /media/products/tennis.jpeg 304 [0.07, 127.0.0.1:55401][0m
+2024-06-11 12:17:50,320 [36mHTTP GET /media/products/crockery.jpeg 304 [0.04, 127.0.0.1:55402][0m
+2024-06-11 12:17:52,908 Not Found: /favicon.ico
+2024-06-11 12:17:52,908 [33mHTTP GET /favicon.ico 404 [2.14, 127.0.0.1:55402][0m
+2024-06-11 12:18:26,635 [mHTTP GET / 200 [0.02, 127.0.0.1:55409][0m
+2024-06-11 12:18:27,605 [mHTTP GET /static/product/index_style.css 200 [0.66, 127.0.0.1:55409][0m
+2024-06-11 12:18:28,165 [mHTTP GET /media/logos/chat_logo.png 200 [0.56, 127.0.0.1:55410][0m
+2024-06-11 12:18:28,173 [mHTTP GET /media/products/sport_1.jpeg 200 [0.57, 127.0.0.1:55409][0m
+2024-06-11 12:18:28,289 [mHTTP GET /media/products/makeup1.jpeg 200 [0.68, 127.0.0.1:55414][0m
+2024-06-11 12:18:28,297 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.12, 127.0.0.1:55409][0m
+2024-06-11 12:18:28,304 [mHTTP GET /media/products/mouse_12.jpeg 200 [0.70, 127.0.0.1:55412][0m
+2024-06-11 12:18:28,343 [mHTTP GET /media/products/weights.jpeg 200 [0.74, 127.0.0.1:55411][0m
+2024-06-11 12:18:28,353 [mHTTP GET /media/products/tennis.jpeg 200 [0.19, 127.0.0.1:55410][0m
+2024-06-11 12:18:28,384 [mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 200 [0.78, 127.0.0.1:55413][0m
+2024-06-11 12:18:28,384 [mHTTP GET /media/products/crockery.jpeg 200 [0.10, 127.0.0.1:55414][0m
+2024-06-11 12:18:28,615 Not Found: /favicon.ico
+2024-06-11 12:18:28,615 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:55413][0m
+2024-06-11 12:18:30,485 [36mHTTP GET /media/products/sofa_1.jpg 304 [0.02, 127.0.0.1:55414][0m
+2024-06-11 12:18:30,485 [36mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 304 [0.05, 127.0.0.1:55413][0m
+2024-06-11 12:18:56,974 [mHTTP GET /detail/19/ 200 [0.32, 127.0.0.1:55415][0m
+2024-06-11 12:18:57,065 [36mHTTP GET /static/product/details_style.css 304 [0.00, 127.0.0.1:55415][0m
+2024-06-11 12:18:57,141 [36mHTTP GET /media/products/Sofa2.jpg 304 [0.03, 127.0.0.1:55415][0m
+2024-06-11 12:19:21,360 [mHTTP GET / 200 [0.04, 127.0.0.1:55415][0m
+2024-06-11 12:19:29,100 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.07, 127.0.0.1:55415][0m
+2024-06-11 12:19:29,208 [36mHTTP GET /static/member/user_page_style.css 304 [0.00, 127.0.0.1:55415][0m
+2024-06-11 12:19:29,257 [36mHTTP GET /media/users/dp/Edited_Dp.jpeg 304 [0.04, 127.0.0.1:55415][0m
+2024-06-11 12:19:31,099 [mHTTP GET /member/user_products/arsidd78/ 200 [0.05, 127.0.0.1:55415][0m
+2024-06-11 12:19:31,216 [36mHTTP GET /static/member/my_product_style.css 304 [0.00, 127.0.0.1:55415][0m
+2024-06-11 12:19:31,698 [36mHTTP GET /media/products/strawberry2_VltATon.png 304 [0.01, 127.0.0.1:55415][0m
+2024-06-11 12:19:40,682 [mHTTP GET /member/user_products/arsidd78/ 200 [0.03, 127.0.0.1:55415][0m
+2024-06-11 12:19:44,429 [mHTTP GET /member/wishlist_view/ 200 [0.05, 127.0.0.1:55415][0m
+2024-06-11 12:19:44,538 [36mHTTP GET /static/member/wishlist_style.css 304 [0.01, 127.0.0.1:55415][0m
+2024-06-11 12:19:44,546 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.01, 127.0.0.1:55415][0m
+2024-06-11 12:19:52,464 [32mHTTP GET /member/remove_item_wishlist/35/ 302 [0.25, 127.0.0.1:55415][0m
+2024-06-11 12:19:52,488 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:55415][0m
+2024-06-11 12:19:53,758 [32mHTTP GET /member/remove_item_wishlist/34/ 302 [0.36, 127.0.0.1:55415][0m
+2024-06-11 12:19:53,821 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:55415][0m
+2024-06-11 12:19:56,938 [32mHTTP GET /member/remove_item_wishlist/38/ 302 [0.31, 127.0.0.1:55415][0m
+2024-06-11 12:19:56,962 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:55415][0m
+2024-06-11 12:19:57,842 [32mHTTP GET /member/remove_item_wishlist/37/ 302 [0.31, 127.0.0.1:55415][0m
+2024-06-11 12:19:57,862 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:55415][0m
+2024-06-11 12:20:11,131 [mHTTP GET /member/cart_view/ 200 [0.02, 127.0.0.1:55415][0m
+2024-06-11 12:20:11,190 [36mHTTP GET /static/member/cart_style.css 304 [0.01, 127.0.0.1:55415][0m
+2024-06-11 12:20:23,719 [mHTTP GET /member/purchase_orders/ 200 [0.35, 127.0.0.1:55415][0m
+2024-06-11 12:20:23,869 [36mHTTP GET /static/member/purchase_orders_style.css 304 [0.02, 127.0.0.1:55415][0m
+2024-06-11 12:20:24,027 [mHTTP POST /member/order_read/ 200 [0.02, 127.0.0.1:55415][0m
+2024-06-11 12:21:05,261 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.04, 127.0.0.1:55415][0m
+2024-06-11 12:21:09,741 [mHTTP GET /member/recent_sales 200 [0.05, 127.0.0.1:55415][0m
+2024-06-11 12:21:09,794 [36mHTTP GET /static/member/recent_sales_style.css 304 [0.01, 127.0.0.1:55415][0m
+2024-06-11 12:24:38,140 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-11 12:24:53,870 Internal Server Error: /member/recent_sales
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 313, in sold_products
+    quantity = sales.sale_order.product_quantity
+               ^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'sale_order'
+2024-06-11 12:24:53,902 [35;1mHTTP GET /member/recent_sales 500 [0.57, 127.0.0.1:55423][0m
+2024-06-11 12:25:40,037 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-11 12:25:42,641 [mHTTP GET /member/recent_sales 200 [0.08, 127.0.0.1:55431][0m
+2024-06-11 12:26:03,820 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.04, 127.0.0.1:55431][0m
+2024-06-11 12:26:11,051 [mHTTP GET /member/cart_view/ 200 [0.03, 127.0.0.1:55431][0m
+2024-06-11 12:29:32,364 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-11 12:34:29,797 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-11 12:34:49,664 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-11 12:35:24,097 [mHTTP GET /member/recent_sales 200 [0.08, 127.0.0.1:55444][0m
+2024-06-11 12:35:24,339 [36mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 304 [0.03, 127.0.0.1:55444][0m
+2024-06-11 12:35:29,345 [mHTTP GET /member/cart_view/ 200 [0.01, 127.0.0.1:55444][0m
+2024-06-11 12:35:35,208 [32mHTTP GET /registration/signout/ 302 [0.14, 127.0.0.1:55446][0m
+2024-06-11 12:35:35,245 [mHTTP GET / 200 [0.04, 127.0.0.1:55446][0m
+2024-06-11 12:35:37,461 [mHTTP GET /registration/login/ 200 [0.08, 127.0.0.1:55446][0m
+2024-06-11 12:35:37,592 [36mHTTP GET /static/registration/login_style.css 304 [0.00, 127.0.0.1:55446][0m
+2024-06-11 12:35:43,543 [32mHTTP POST /registration/authentication/?next= 302 [1.02, 127.0.0.1:55446][0m
+2024-06-11 12:35:43,578 [mHTTP GET / 200 [0.03, 127.0.0.1:55446][0m
+2024-06-11 12:35:43,775 [36mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 304 [0.00, 127.0.0.1:55448][0m
+2024-06-11 12:35:43,790 [36mHTTP GET /media/products/beef_HYC0s2g.jpeg 304 [0.06, 127.0.0.1:55446][0m
+2024-06-11 12:35:43,799 [36mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 304 [0.06, 127.0.0.1:55447][0m
+2024-06-11 12:35:43,815 [36mHTTP GET /media/products/strawberry2_VltATon.png 304 [0.01, 127.0.0.1:55448][0m
+2024-06-11 12:36:06,378 [mHTTP GET / 200 [0.04, 127.0.0.1:55444][0m
+2024-06-11 12:36:23,207 [mHTTP GET /detail/38/ 200 [0.11, 127.0.0.1:55446][0m
+2024-06-11 12:36:23,299 [36mHTTP GET /static/product/details_style.css 304 [0.00, 127.0.0.1:55447][0m
+2024-06-11 12:36:23,365 [36mHTTP GET /media/products/strawberrypic_QN494j9.jpeg 304 [0.01, 127.0.0.1:55448][0m
+2024-06-11 12:36:39,313 [mHTTP GET /chat/chat/38/ 200 [0.11, 127.0.0.1:55446][0m
+2024-06-11 12:36:39,386 [36mHTTP GET /static/chat/chat_initiator_style.css 304 [0.01, 127.0.0.1:55447][0m
+2024-06-11 12:36:39,397 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:55449]
+2024-06-11 12:36:39,431 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:55449]
+2024-06-11 12:37:25,965 [mHTTP POST /chat/chat/38/ 200 [0.33, 127.0.0.1:55446][0m
+2024-06-11 12:37:35,123 [mHTTP GET / 200 [0.05, 127.0.0.1:55450][0m
+2024-06-11 12:37:39,213 [mHTTP GET /chat/chat/ 200 [0.07, 127.0.0.1:55450][0m
+2024-06-11 12:37:39,255 [36mHTTP GET /static/chat/sellorChat_style.css 304 [0.00, 127.0.0.1:55450][0m
+2024-06-11 12:37:42,266 [mHTTP GET /chat/receiver_chat/51 200 [0.42, 127.0.0.1:55450][0m
+2024-06-11 12:37:42,358 [36mHTTP GET /static/chat/chat_style.css 304 [0.02, 127.0.0.1:55450][0m
+2024-06-11 12:37:42,398 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:55452]
+2024-06-11 12:37:42,431 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:55452]
+2024-06-11 12:38:12,044 [mHTTP POST /chat/receiver_chat/51 200 [0.30, 127.0.0.1:55450][0m
+2024-06-11 12:38:15,126 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:55449]
+2024-06-11 12:38:15,195 [mHTTP GET /chat/chat/38/ 200 [0.05, 127.0.0.1:55446][0m
+2024-06-11 12:38:15,281 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:55453]
+2024-06-11 12:38:15,297 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:55453]
+2024-06-11 12:38:20,555 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:55453]
+2024-06-11 12:38:20,581 [mHTTP GET / 200 [0.02, 127.0.0.1:55446][0m
+2024-06-11 12:38:22,113 [mHTTP GET /chat/chat/ 200 [0.02, 127.0.0.1:55446][0m
+2024-06-11 12:38:22,260 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.07, 127.0.0.1:55446][0m
+2024-06-11 12:38:23,768 [mHTTP GET /chat/receiver_chat/52 200 [0.24, 127.0.0.1:55446][0m
+2024-06-11 12:38:23,877 [36mHTTP GET /static/chat/chat_style.css 304 [0.00, 127.0.0.1:55446][0m
+2024-06-11 12:38:23,895 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:55454]
+2024-06-11 12:38:23,915 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:55454]
+2024-06-11 12:38:37,885 [mHTTP POST /chat/receiver_chat/52 200 [0.29, 127.0.0.1:55446][0m
+2024-06-11 12:40:56,396 [mHTTP POST /chat/receiver_chat/51 200 [0.38, 127.0.0.1:55458][0m
+2024-06-11 12:42:01,421 [mHTTP POST /chat/receiver_chat/52 200 [0.26, 127.0.0.1:55459][0m
+2024-06-11 12:43:04,976 [mHTTP POST /chat/receiver_chat/51 200 [0.25, 127.0.0.1:55460][0m
+2024-06-11 12:43:18,651 [mHTTP POST /chat/receiver_chat/51 200 [0.24, 127.0.0.1:55460][0m
+2024-06-11 12:43:38,811 [mHTTP POST /chat/receiver_chat/52 200 [0.27, 127.0.0.1:55462][0m
+2024-06-11 12:44:22,299 [mHTTP POST /chat/receiver_chat/51 200 [0.30, 127.0.0.1:55463][0m
+2024-06-11 12:44:39,326 [mHTTP POST /chat/receiver_chat/52 200 [0.24, 127.0.0.1:55464][0m
+2024-06-11 12:45:22,189 [mHTTP POST /chat/receiver_chat/51 200 [0.26, 127.0.0.1:55463][0m
+2024-06-11 12:45:32,197 [mHTTP GET / 200 [0.04, 127.0.0.1:55463][0m
+2024-06-11 12:45:32,304 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:55452]
+2024-06-11 12:45:40,430 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:55463][0m
+2024-06-11 12:45:42,594 [mHTTP GET /chat/receiver_chat/50 200 [0.37, 127.0.0.1:55463][0m
+2024-06-11 12:45:42,712 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:55466]
+2024-06-11 12:45:42,720 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:55466]
+2024-06-11 12:45:44,755 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:55466]
+2024-06-11 12:45:46,145 [mHTTP GET /chat/receiver_chat/47 200 [0.09, 127.0.0.1:55463][0m
+2024-06-11 12:45:46,229 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:55467]
+2024-06-11 12:45:46,249 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:55467]
+2024-06-11 12:45:47,886 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:55467]
+2024-06-11 12:45:49,061 [mHTTP GET /chat/receiver_chat/39 200 [0.10, 127.0.0.1:55463][0m
+2024-06-11 12:45:49,151 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:55468]
+2024-06-11 12:45:49,183 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:55468]
+2024-06-11 12:45:50,967 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:55468]
+2024-06-11 12:45:53,772 [mHTTP GET / 200 [0.02, 127.0.0.1:55463][0m
+2024-06-11 12:45:56,592 [mHTTP GET / 200 [0.02, 127.0.0.1:55463][0m
+2024-06-11 12:45:57,383 [mHTTP GET / 200 [0.03, 127.0.0.1:55463][0m
+2024-06-11 12:45:59,181 [mHTTP GET /chat/chat/ 200 [0.03, 127.0.0.1:55463][0m
+2024-06-11 12:46:01,844 [mHTTP GET /chat/receiver_chat/60 200 [0.79, 127.0.0.1:55463][0m
+2024-06-11 12:46:01,929 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:55469]
+2024-06-11 12:46:01,937 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:55469]
+2024-06-11 12:46:09,884 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:55469]
+2024-06-11 12:46:12,121 [mHTTP GET / 200 [0.04, 127.0.0.1:55463][0m
+2024-06-11 12:46:14,044 [mHTTP GET / 200 [0.04, 127.0.0.1:55463][0m
+2024-06-11 12:46:49,611 [mHTTP GET /detail/39/ 200 [0.10, 127.0.0.1:55463][0m
+2024-06-11 12:46:49,759 [36mHTTP GET /media/products/makeup3.jpeg 304 [0.07, 127.0.0.1:55470][0m
+2024-06-11 12:46:49,788 [36mHTTP GET /media/products/makeup5.jpeg 304 [0.06, 127.0.0.1:55471][0m
+2024-06-11 12:46:49,801 [36mHTTP GET /media/products/makeup2.jpeg 304 [0.11, 127.0.0.1:55463][0m
+2024-06-11 12:46:49,807 [36mHTTP GET /media/products/makeup4.jpeg 304 [0.08, 127.0.0.1:55472][0m
+2024-06-11 12:46:56,951 [mHTTP GET / 200 [0.03, 127.0.0.1:55472][0m
+2024-06-11 12:47:05,058 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:55454]
+2024-06-11 12:47:05,082 [mHTTP GET / 200 [0.02, 127.0.0.1:55473][0m
+2024-06-11 12:47:08,121 [mHTTP GET /detail/38/ 200 [0.12, 127.0.0.1:55473][0m
+2024-06-11 12:47:11,181 [mHTTP GET /payment/38/ 200 [0.22, 127.0.0.1:55473][0m
+2024-06-11 12:47:11,288 [36mHTTP GET /static/product/purchase_page_style.css 304 [0.01, 127.0.0.1:55473][0m
+2024-06-11 12:47:19,015 [mHTTP GET /payment/38/ 200 [0.02, 127.0.0.1:55473][0m
+2024-06-11 12:47:59,747 [mHTTP POST /payment/38/ 200 [0.31, 127.0.0.1:55473][0m
+2024-06-11 12:48:05,463 [mHTTP GET /confirmation/invoice/216/ 200 [0.48, 127.0.0.1:55473][0m
+2024-06-11 12:48:05,526 [36mHTTP GET /static/product/invoice_style.css 304 [0.00, 127.0.0.1:55473][0m
+2024-06-11 12:48:29,487 [mHTTP GET /member/user_profile/khalid1/ 200 [0.02, 127.0.0.1:55473][0m
+2024-06-11 12:48:29,594 [36mHTTP GET /static/member/user_page_style.css 304 [0.01, 127.0.0.1:55474][0m
+2024-06-11 12:48:29,642 [36mHTTP GET /media/logos/edit_logo.png 304 [0.00, 127.0.0.1:55474][0m
+2024-06-11 12:48:29,659 [mHTTP GET /media/users/dp/toys_1.jpeg 200 [0.13, 127.0.0.1:55473][0m
+2024-06-11 12:48:42,843 [mHTTP GET /member/purchase_orders/ 200 [0.02, 127.0.0.1:55473][0m
+2024-06-11 12:48:43,043 [mHTTP GET /static/member/purchase_orders_style.css 200 [0.03, 127.0.0.1:55474][0m
+2024-06-11 12:48:43,133 [mHTTP POST /member/order_read/ 200 [0.02, 127.0.0.1:55474][0m
+2024-06-11 12:48:49,868 [mHTTP GET /member/recent_sales 200 [0.02, 127.0.0.1:55473][0m
+2024-06-11 12:48:49,965 [mHTTP GET /static/member/recent_sales_style.css 200 [0.09, 127.0.0.1:55474][0m
+2024-06-11 12:49:12,361 [mHTTP GET / 200 [0.04, 127.0.0.1:55475][0m
+2024-06-11 12:49:12,459 [36mHTTP GET /media/logos/mark_logo.png 304 [0.01, 127.0.0.1:55475][0m
+2024-06-11 12:49:15,890 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:55475][0m
+2024-06-11 12:49:20,407 [mHTTP GET /member/purchase_orders/ 200 [0.32, 127.0.0.1:55475][0m
+2024-06-11 12:49:20,736 [mHTTP POST /member/order_read/ 200 [0.11, 127.0.0.1:55475][0m
+2024-06-11 12:49:24,656 [32mHTTP GET /member/order_dispatch/216 302 [0.16, 127.0.0.1:55475][0m
+2024-06-11 12:49:25,000 [mHTTP GET /member/purchase_orders/ 200 [0.34, 127.0.0.1:55475][0m
+2024-06-11 12:49:25,201 [mHTTP POST /member/order_read/ 200 [0.04, 127.0.0.1:55475][0m
+2024-06-11 12:49:28,213 [mHTTP POST /member/order_read/ 200 [0.02, 127.0.0.1:55475][0m
+2024-06-11 12:49:33,940 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:55475][0m
+2024-06-11 12:49:50,399 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.01, 127.0.0.1:55475][0m
+2024-06-11 12:49:58,164 [mHTTP GET /admin/ 200 [0.28, 127.0.0.1:55475][0m
+2024-06-11 12:50:03,947 [mHTTP GET /admin/member/member/ 200 [0.25, 127.0.0.1:55475][0m
+2024-06-11 12:50:04,101 [36mHTTP GET /static/admin/css/changelists.css 304 [0.03, 127.0.0.1:55475][0m
+2024-06-11 12:50:04,107 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.04, 127.0.0.1:55478][0m
+2024-06-11 12:50:04,107 [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.03, 127.0.0.1:55480][0m
+2024-06-11 12:50:04,107 [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.04, 127.0.0.1:55477][0m
+2024-06-11 12:50:04,107 [36mHTTP GET /static/admin/js/core.js 304 [0.04, 127.0.0.1:55479][0m
+2024-06-11 12:50:04,129 [36mHTTP GET /static/admin/js/actions.js 304 [0.02, 127.0.0.1:55475][0m
+2024-06-11 12:50:04,129 [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:55479][0m
+2024-06-11 12:50:04,129 [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:55478][0m
+2024-06-11 12:50:04,129 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:55477][0m
+2024-06-11 12:50:04,271 [mHTTP GET /admin/jsi18n/ 200 [0.20, 127.0.0.1:55476][0m
+2024-06-11 12:50:04,299 [36mHTTP GET /static/admin/js/filters.js 304 [0.00, 127.0.0.1:55476][0m
+2024-06-11 12:50:04,345 [36mHTTP GET /static/admin/img/tooltag-add.svg 304 [0.00, 127.0.0.1:55476][0m
+2024-06-11 12:50:07,578 [mHTTP GET /admin/member/member/4/change/ 200 [0.30, 127.0.0.1:55476][0m
+2024-06-11 12:50:07,669 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:55479][0m
+2024-06-11 12:50:07,716 [mHTTP GET /static/admin/css/forms.css 200 [0.08, 127.0.0.1:55476][0m
+2024-06-11 12:50:07,770 [mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.12, 127.0.0.1:55477][0m
+2024-06-11 12:50:07,812 [36mHTTP GET /static/admin/img/icon-viewlink.svg 304 [0.00, 127.0.0.1:55479][0m
+2024-06-11 12:50:07,866 [mHTTP GET /static/admin/css/widgets.css 200 [0.07, 127.0.0.1:55476][0m
+2024-06-11 12:50:07,918 [mHTTP GET /static/admin/js/change_form.js 200 [0.11, 127.0.0.1:55479][0m
+2024-06-11 12:50:29,774 [mHTTP GET /admin/member/member/ 200 [0.04, 127.0.0.1:55479][0m
+2024-06-11 12:50:30,557 [mHTTP GET /admin/ 200 [0.02, 127.0.0.1:55479][0m
+2024-06-11 12:50:42,370 [mHTTP GET / 200 [0.04, 127.0.0.1:55479][0m
+2024-06-11 12:52:15,383 [mHTTP GET / 200 [0.19, 127.0.0.1:55506][0m
+2024-06-11 12:52:20,540 [32mHTTP GET /registration/signout/ 302 [0.15, 127.0.0.1:55506][0m
+2024-06-11 12:52:20,573 [mHTTP GET / 200 [0.03, 127.0.0.1:55506][0m
+2024-06-11 12:52:22,688 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:55506][0m
+2024-06-11 12:52:29,199 [mHTTP POST /registration/authentication/?next= 200 [1.21, 127.0.0.1:55506][0m
+2024-06-11 12:52:31,519 [32mHTTP POST /registration/authentication/?next= 302 [1.31, 127.0.0.1:55506][0m
+2024-06-11 12:52:31,575 [mHTTP GET / 200 [0.05, 127.0.0.1:55506][0m
+2024-06-11 12:52:39,014 [mHTTP GET /detail/14/ 200 [0.09, 127.0.0.1:55506][0m
+2024-06-11 12:52:45,864 [32mHTTP GET /member/adding_wishlist/14/ 302 [0.21, 127.0.0.1:55506][0m
+2024-06-11 12:52:45,918 [mHTTP GET / 200 [0.05, 127.0.0.1:55506][0m
+2024-06-11 12:52:51,254 [mHTTP GET /categories/ 200 [0.11, 127.0.0.1:55506][0m
+2024-06-11 12:52:51,431 [36mHTTP GET /static/product/categories_page_style.css 304 [0.04, 127.0.0.1:55505][0m
+2024-06-11 12:52:51,446 [36mHTTP GET /media/products/8_ball_pool.jpeg 304 [0.08, 127.0.0.1:55506][0m
+2024-06-11 12:52:51,476 [36mHTTP GET /media/products/joggers.jpeg 304 [0.07, 127.0.0.1:55507][0m
+2024-06-11 12:53:54,215 [mHTTP GET /categories/ 200 [0.05, 127.0.0.1:55508][0m
+2024-06-11 12:53:56,613 [mHTTP GET /categories/ 200 [0.02, 127.0.0.1:55508][0m
+2024-06-11 12:53:56,863 [mHTTP GET /static/product/categories_page_style.css 200 [0.21, 127.0.0.1:55508][0m
+2024-06-11 12:53:56,923 [mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 200 [0.27, 127.0.0.1:55509][0m
+2024-06-11 12:53:56,989 [mHTTP GET /media/products/makeup1.jpeg 200 [0.29, 127.0.0.1:55512][0m
+2024-06-11 12:53:57,013 [mHTTP GET /media/products/computer_1.jpeg 200 [0.32, 127.0.0.1:55513][0m
+2024-06-11 12:53:57,038 [mHTTP GET /media/products/laptop1.jpeg 200 [0.34, 127.0.0.1:55511][0m
+2024-06-11 12:53:57,062 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.36, 127.0.0.1:55510][0m
+2024-06-11 12:53:57,075 [mHTTP GET /media/products/toys_1.jpeg 200 [0.12, 127.0.0.1:55509][0m
+2024-06-11 12:53:57,146 [mHTTP GET /media/products/crockery.jpeg 200 [0.02, 127.0.0.1:55510][0m
+2024-06-11 12:53:57,170 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.05, 127.0.0.1:55513][0m
+2024-06-11 12:53:57,206 [mHTTP GET /media/products/sport_1.jpeg 200 [0.05, 127.0.0.1:55510][0m
+2024-06-11 12:53:57,206 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.28, 127.0.0.1:55508][0m
+2024-06-11 12:53:57,291 [mHTTP GET /media/products/harry_potter_novel_complete.jpeg 200 [0.17, 127.0.0.1:55509][0m
+2024-06-11 12:53:57,360 [mHTTP GET /media/products/living_1.jpeg 200 [0.37, 127.0.0.1:55512][0m
+2024-06-11 12:53:57,376 [mHTTP GET /media/products/joggers.jpeg 200 [0.16, 127.0.0.1:55510][0m
+2024-06-11 12:53:57,376 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.10, 127.0.0.1:55508][0m
+2024-06-11 12:53:57,424 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.25, 127.0.0.1:55513][0m
+2024-06-11 12:53:57,486 [mHTTP GET /media/products/pullover1.jpeg 200 [0.36, 127.0.0.1:55511][0m
+2024-06-11 12:53:57,689 [mHTTP GET /media/products/sofa_1.jpg 200 [0.37, 127.0.0.1:55509][0m
+2024-06-11 12:53:57,729 [mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 200 [0.25, 127.0.0.1:55510][0m
+2024-06-11 12:53:57,901 Not Found: /favicon.ico
+2024-06-11 12:53:57,901 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:55510][0m
+2024-06-11 12:54:19,518 [mHTTP GET /categories/ 200 [0.05, 127.0.0.1:55510][0m
+2024-06-11 12:54:19,583 [mHTTP GET /static/product/categories_page_style.css 200 [0.02, 127.0.0.1:55510][0m
+2024-06-11 12:54:30,314 [mHTTP GET /prod_by_cat/HIKING%20GEAR/ 200 [0.06, 127.0.0.1:55510][0m
+2024-06-11 12:54:36,032 [mHTTP GET /prod_by_cat/EXERCISE%20EQUIPMENT/ 200 [0.02, 127.0.0.1:55510][0m
+2024-06-11 12:54:40,694 [mHTTP GET /prod_by_cat/FURNITURE/ 200 [0.02, 127.0.0.1:55510][0m
+2024-06-11 12:54:46,310 [mHTTP GET /prod_by_cat/TOYS%20&%20GAMES/ 200 [0.02, 127.0.0.1:55510][0m
+2024-06-11 12:54:51,358 [mHTTP GET /prod_by_cat/MAKEUP/ 200 [0.02, 127.0.0.1:55510][0m
+2024-06-11 12:54:55,909 [mHTTP GET /prod_by_cat/FOOD%20&%20GROCERIES/ 200 [0.03, 127.0.0.1:55510][0m
+2024-06-11 12:55:03,572 [mHTTP GET /prod_by_cat/BOARD%20GAMES/ 200 [0.02, 127.0.0.1:55510][0m
+2024-06-11 12:55:06,071 [mHTTP GET /detail/18/ 200 [0.18, 127.0.0.1:55510][0m
+2024-06-11 12:55:06,197 [mHTTP GET /media/products/chess_board2_VYL9f83.webp 200 [0.06, 127.0.0.1:55510][0m
+2024-06-11 12:55:09,922 [32mHTTP GET /member/adding_cart/18/ 302 [0.20, 127.0.0.1:55510][0m
+2024-06-11 12:55:09,963 [mHTTP GET / 200 [0.02, 127.0.0.1:55510][0m
+2024-06-11 12:58:11,783 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-11 12:58:38,369 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py changed, reloading.
+2024-06-11 12:58:48,600 [mHTTP GET / 200 [0.07, 127.0.0.1:55523][0m
+2024-06-11 12:58:50,649 [mHTTP GET /detail/19/ 200 [0.16, 127.0.0.1:55523][0m
+2024-06-11 12:58:52,651 [32mHTTP GET /member/adding_cart/19/ 302 [0.26, 127.0.0.1:55523][0m
+2024-06-11 12:58:52,809 [mHTTP GET /detail/19/ 200 [0.15, 127.0.0.1:55523][0m
+2024-06-11 12:58:55,106 [32mHTTP GET /member/adding_wishlist/19/ 302 [0.30, 127.0.0.1:55523][0m
+2024-06-11 12:58:55,216 [mHTTP GET /detail/19/ 200 [0.11, 127.0.0.1:55523][0m
+2024-06-11 12:59:13,801 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:55523][0m
+2024-06-11 12:59:17,417 [mHTTP GET /member/wishlist_view/ 200 [0.02, 127.0.0.1:55523][0m
+2024-06-11 12:59:19,376 [mHTTP GET /detail/19/ 200 [0.09, 127.0.0.1:55523][0m
+2024-06-11 12:59:24,576 [mHTTP GET /member/cart_view/ 200 [0.03, 127.0.0.1:55523][0m
+2024-06-11 12:59:33,858 [32mHTTP GET /member/remove_item_cart/18/ 302 [0.18, 127.0.0.1:55523][0m
+2024-06-11 12:59:33,882 [mHTTP GET /member/cart_view/ 200 [0.02, 127.0.0.1:55523][0m
+2024-06-11 12:59:35,506 [32mHTTP GET /member/remove_item_cart/19/ 302 [0.19, 127.0.0.1:55523][0m
+2024-06-11 12:59:35,524 [mHTTP GET /member/cart_view/ 200 [0.02, 127.0.0.1:55523][0m
+2024-06-11 12:59:39,046 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.04, 127.0.0.1:55523][0m
+2024-06-11 13:00:00,749 [mHTTP GET /member/recent_sales 200 [0.03, 127.0.0.1:55523][0m
+2024-06-11 13:00:09,395 [mHTTP GET /member/purchase_orders/ 200 [0.29, 127.0.0.1:55523][0m
+2024-06-11 13:00:09,626 [mHTTP POST /member/order_read/ 200 [0.02, 127.0.0.1:55523][0m
+2024-06-11 13:00:19,670 [mHTTP GET / 200 [0.03, 127.0.0.1:55523][0m
+2024-06-11 13:00:23,016 [mHTTP GET /chat/chat/ 200 [0.04, 127.0.0.1:55523][0m
+2024-06-11 13:00:43,339 [mHTTP GET /recent_products/ 200 [0.04, 127.0.0.1:55523][0m
+2024-06-11 13:00:43,456 [36mHTTP GET /media/products/shoes.jpeg 304 [0.02, 127.0.0.1:55523][0m
+2024-06-11 13:00:43,456 [36mHTTP GET /media/products/palistineflag_XD3bT3q.webp 304 [0.02, 127.0.0.1:55525][0m
+2024-06-11 13:01:33,694 [mHTTP GET / 200 [0.05, 127.0.0.1:55525][0m
+2024-06-11 13:01:44,406 [mHTTP GET /categories/ 200 [0.08, 127.0.0.1:55525][0m
+2024-06-11 13:01:44,457 [36mHTTP GET /static/product/categories_page_style.css 304 [0.00, 127.0.0.1:55525][0m
+2024-06-11 13:05:47,482 [mHTTP GET /categories/ 200 [0.08, 127.0.0.1:55527][0m
+2024-06-11 13:05:47,630 [36mHTTP GET /static/product/categories_page_style.css 304 [0.03, 127.0.0.1:55527][0m
+2024-06-11 13:06:01,827 [mHTTP GET /categories/ 200 [0.03, 127.0.0.1:55527][0m
+2024-06-11 13:06:07,800 [mHTTP GET / 200 [0.04, 127.0.0.1:55527][0m
+2024-06-11 13:06:11,865 [mHTTP GET /view_all/ 200 [0.03, 127.0.0.1:55527][0m

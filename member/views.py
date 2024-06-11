@@ -132,7 +132,7 @@ def wishlist(request,pk):
         member = Member.objects.get(username = request.user.username)
         member.user_wish_list.add(product)
         member.save()
-        return redirect('product:home')
+        return redirect('product:details', pk = pk)
     return redirect('registration:login')
 
 def cart(request,pk):
@@ -141,7 +141,7 @@ def cart(request,pk):
         member = get_object_or_404(Member,username = request.user.username)
         member.user_cart_list.add(product)
         member.save()
-        return redirect('product:home')
+        return redirect('product:details', pk = pk)
     return redirect('registration:login')
 
 def view_wishlist(request):
@@ -213,7 +213,7 @@ def order_cart(request):
                     member.user_purchases += product.product_price * int(quantity)
                     # Sellor Sales history update:
                     sellor.user_recent_sales.add(product)
-                    sellor.user_sales += product.product_price * int(quantity)
+                    sellor.user_sales += product.product_price * int(quantity) 
                     product.save()
 
                     purchase = get_object_or_404(Purchase, id=purchase_order.id)
@@ -312,7 +312,7 @@ def sold_products(request):
         sales = SalesOrder.objects.filter(sellor = request.user)
         # quantity = sales.sale_order.product_quantity
         products = member.user_recent_sales.all()
-        context = {'products':products}
+        context = {'products':products,'member':member}
         return render(request,'member/recent_sales.html',context)
     return redirect('registration:login')
 
