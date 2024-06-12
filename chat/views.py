@@ -6,8 +6,10 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 from django.db.models import Q
 from django.db.models import Max
+from marketplace.custom_decorators import profile_required
 
 @csrf_exempt
+@profile_required
 def chatPage(request, pk):
     if request.user.is_authenticated:
         product = get_object_or_404(Products, id=pk)
@@ -40,6 +42,7 @@ def chatPage(request, pk):
                 context = {'product': product, 'messages': messages}
                 return render(request, 'chat/chatPage.html', context)
     return redirect('registration:login')
+@profile_required
 def SellorChatPage(request):
     if request.user.is_authenticated:
         member = get_object_or_404(Member, user=request.user)

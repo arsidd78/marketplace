@@ -8,6 +8,24 @@
     <title>Registration</title>
 </head>
 <body>
+    <nav>
+        <a href="{% url 'product:home' %}">Home Page</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'registration:signout' %}">LogOut</a>
+        {% else %}
+            <a href="{% url 'registration:login' %}">LogIn</a>
+        {% endif %}
+        <a href="/admin/">Admin</a>
+        {% if request.user.is_authenticated %}
+            {% if member %}
+                <a href="{% url 'member:profile' request.user.username %}">{% if new_sales_order %}<img src="/media/logos/mark_logo.png" alt="Dot" width="15"> {% endif %}Profile</a>
+            {% else %}
+                <a href="{% url 'member:register' %}">Complete Profile</a>
+            {% endif %}
+        {% endif %}
+        <a href="{% url 'member:add_product_page' %}">Sell</a>
+        <a href="{% url 'chat:sellor-chat' %}">{{unread_messages}}<img src="/media/logos/chat_logo.png" alt="chat" width="32"></a>
+    </nav>
     <div class="form-container">
         <h1>Sign Up</h1>
         <form action="{% url 'registration:register' %}" method="post" enctype="multipart/form-data">
@@ -32,7 +50,6 @@
                 <label for="password">Password:</label>
                 <input type="password" name="password" id="password" required>
             </div>
-
             <div class="form-group">
                 <input type="submit" value="Sign Up">
             </div>
@@ -45,6 +62,14 @@
         </ul>
         {% endif %}
     </div>
+
+    <footer>
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>arsidd78@gmail.com</p>
+        <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+    </footer>
 
 </body>
 </html>

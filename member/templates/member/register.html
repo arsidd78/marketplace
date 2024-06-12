@@ -1,15 +1,78 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'member/register_style.css' %}">
+    <title>Complete Your Profile</title>
 </head>
 <body>
-    <form enctype="multipart/form-data" method="post">
-        {% csrf_token %}
-        {{form.as_p}}
-        <button type="submit">Register</button>
-    </form>
-</body> 
+    <nav>
+        <div class="search-container">
+            <form action="{% url 'product:search' %}" method="post">
+                {% csrf_token %}
+                <input type="search" name="search_bar" placeholder="Search products...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <a href="{% url 'product:home' %}">Home Page</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'registration:signout' %}">LogOut</a>
+        {% else %}
+            <a href="{% url 'registration:login' %}">LogIn</a>
+        {% endif %}
+        <a href="/admin/">Admin</a>
+        {% if request.user.is_authenticated %}
+            {% if member %}
+                <a href="{% url 'member:profile' request.user.username %}">{% if new_sales_order %}<img src="/media/logos/mark_logo.png" alt="Dot" width="15"> {% endif %}Profile</a>
+            {% else %}
+                <a href="{% url 'member:register' %}"><img src="/media/logos/warning_logo.png" alt="warning">Complete Profile</a>
+            {% endif %}
+        {% endif %}
+        <a href="{% url 'member:add_product_page' %}">Sell</a>
+        <a href="{% url 'chat:sellor-chat' %}">{{unread_messages}}<img src="/media/logos/chat_logo.png" alt="chat" width="32"></a>
+    </nav>
+
+    <div class="form-container">
+        <h1>Complete Your Profile to Use All Features</h1>
+        <form enctype="multipart/form-data" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="profile_picture">Profile Picture:</label>
+                <input type="file" name="profile_picture" id="profile_picture" accept="image/*" onchange="previewImage(event)">
+                <img id="profile_image_preview" src="#" alt="Profile Image Preview" style="display:none;"/>
+            </div>
+            {{form.as_p}}
+            <button type="submit">Register</button>
+        </form>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Market Place. All rights reserved.</p>
+        <p>Creator: Muhammad Arham Siddiqui</p>
+        <p>arsidd78@gmail.com</p>
+        <p>Github <a href="https://github.com/arsidd78">https://github.com/arsidd78</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/arsidd78">www.linkedin.com/in/arsidd78</a></p>
+    </footer>
+
+    <script>
+        function previewImage(event) {
+            const reader = new FileReader();
+            reader.onload = function(){
+                const output = document.getElementById('profile_image_preview');
+                output.src = reader.result;
+                output.style.display = 'block';
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+</body>
 </html>

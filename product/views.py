@@ -4,6 +4,7 @@ from .models import Products,Purchase,Reviews
 from member.models import Member
 from .forms import PurchaseForm,ReviewForm
 from collections import deque
+from marketplace.custom_decorators import profile_required
 
 
 # Create your views here.
@@ -101,7 +102,7 @@ def view_all(request):
     products = Products.objects.all()
     context = {'products':products}
     return render(request,'product/view_all.html',context)
-
+@profile_required
 def purchase_view(request,pk):
     if request.user.is_authenticated:
         if request.method == 'POST':
@@ -197,7 +198,7 @@ def search(request):
         return render(request, 'product/search_result.html', {'search':search,'products': products})
     else:
         return render(request,'product/search_result.html')
-
+@profile_required
 def recommended_products(request):
     if request.user.is_authenticated:
         member = get_object_or_404(Member, user = request.user)

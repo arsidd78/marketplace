@@ -28756,3 +28756,123 @@ AttributeError: 'QuerySet' object has no attribute 'sale_order'
 2024-06-11 13:06:01,827 [mHTTP GET /categories/ 200 [0.03, 127.0.0.1:55527][0m
 2024-06-11 13:06:07,800 [mHTTP GET / 200 [0.04, 127.0.0.1:55527][0m
 2024-06-11 13:06:11,865 [mHTTP GET /view_all/ 200 [0.03, 127.0.0.1:55527][0m
+2024-06-11 16:36:51,707 [mHTTP GET / 200 [0.73, 127.0.0.1:52514][0m
+2024-06-11 16:36:53,098 Not Found: /favicon.ico
+2024-06-11 16:36:53,100 [33mHTTP GET /favicon.ico 404 [0.72, 127.0.0.1:52514][0m
+2024-06-11 16:37:17,195 [32mHTTP GET /registration/signout/ 302 [0.13, 127.0.0.1:52514][0m
+2024-06-11 16:37:17,251 [mHTTP GET / 200 [0.01, 127.0.0.1:52514][0m
+2024-06-11 16:37:19,407 [mHTTP GET /registration/login/ 200 [0.05, 127.0.0.1:52514][0m
+2024-06-11 16:37:19,512 [36mHTTP GET /static/registration/login_style.css 304 [0.02, 127.0.0.1:52514][0m
+2024-06-11 16:37:22,513 [mHTTP GET /registration/signup/ 200 [0.06, 127.0.0.1:52514][0m
+2024-06-11 16:37:22,788 [mHTTP GET /static/registration/signup_style.css 200 [0.23, 127.0.0.1:52514][0m
+2024-06-11 16:42:39,570 [mHTTP GET /registration/signup/ 200 [0.02, 127.0.0.1:52664][0m
+2024-06-11 16:42:41,045 [mHTTP GET /registration/signup/ 200 [0.01, 127.0.0.1:52664][0m
+2024-06-11 16:42:41,187 [mHTTP GET /static/registration/signup_style.css 200 [0.06, 127.0.0.1:52664][0m
+2024-06-11 16:42:41,358 [mHTTP GET /media/logos/chat_logo.png 200 [0.22, 127.0.0.1:52665][0m
+2024-06-11 16:42:41,397 Not Found: /favicon.ico
+2024-06-11 16:42:41,398 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:52665][0m
+2024-06-11 16:43:33,752 [mHTTP GET /registration/signup/ 200 [0.03, 127.0.0.1:52665][0m
+2024-06-11 16:43:33,834 [mHTTP GET /static/registration/signup_style.css 200 [0.03, 127.0.0.1:52665][0m
+2024-06-11 16:43:48,253 [mHTTP GET /registration/signup/ 200 [0.01, 127.0.0.1:52665][0m
+2024-06-11 16:43:48,322 [mHTTP GET /static/registration/signup_style.css 200 [0.03, 127.0.0.1:52665][0m
+2024-06-11 16:46:50,683 [mHTTP GET /registration/signup/ 200 [0.02, 127.0.0.1:52729][0m
+2024-06-11 16:46:50,738 [36mHTTP GET /static/registration/signup_style.css 304 [0.01, 127.0.0.1:52729][0m
+2024-06-11 16:47:22,607 [32mHTTP POST /registration/register/ 302 [1.21, 127.0.0.1:52729][0m
+2024-06-11 16:47:22,619 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:52729][0m
+2024-06-11 16:47:33,693 [mHTTP POST /registration/authentication/?next= 200 [1.43, 127.0.0.1:52729][0m
+2024-06-11 16:47:46,782 [32mHTTP POST /registration/authentication/?next= 302 [1.21, 127.0.0.1:52729][0m
+2024-06-11 16:47:46,819 [mHTTP GET / 200 [0.03, 127.0.0.1:52729][0m
+2024-06-11 16:47:51,926 [mHTTP GET /detail/40/ 200 [0.08, 127.0.0.1:52729][0m
+2024-06-11 16:47:54,601 Not Found: /member/adding_cart/40/
+2024-06-11 16:47:54,603 [33mHTTP GET /member/adding_cart/40/ 404 [0.03, 127.0.0.1:52729][0m
+2024-06-11 16:48:01,833 Internal Server Error: /member/adding_wishlist/40/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\views.py", line 132, in wishlist
+    member = Member.objects.get(username = request.user.username)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+2024-06-11 16:48:01,845 [35;1mHTTP GET /member/adding_wishlist/40/ 500 [0.81, 127.0.0.1:52729][0m
+2024-06-11 16:48:13,535 [mHTTP GET /payment/40/ 200 [0.30, 127.0.0.1:52729][0m
+2024-06-11 16:48:13,589 [36mHTTP GET /static/product/purchase_page_style.css 304 [0.01, 127.0.0.1:52729][0m
+2024-06-11 16:48:22,975 Not Found: /payment/40/
+2024-06-11 16:48:22,976 [33mHTTP POST /payment/40/ 404 [0.29, 127.0.0.1:52729][0m
+2024-06-11 16:48:41,847 [mHTTP GET / 200 [0.03, 127.0.0.1:52729][0m
+2024-06-11 16:48:48,301 [mHTTP GET /categories/ 200 [0.05, 127.0.0.1:52729][0m
+2024-06-11 16:48:48,351 [36mHTTP GET /static/product/categories_page_style.css 304 [0.01, 127.0.0.1:52729][0m
+2024-06-11 16:48:52,159 [mHTTP GET /recent_products/ 200 [0.04, 127.0.0.1:52729][0m
+2024-06-11 16:48:57,015 [mHTTP GET /view_all/ 200 [0.03, 127.0.0.1:52729][0m
+2024-06-11 16:49:00,854 Not Found: /recommended_products/
+2024-06-11 16:49:00,855 [33mHTTP GET /recommended_products/ 404 [0.04, 127.0.0.1:52729][0m
+2024-06-11 16:49:08,536 [mHTTP GET / 200 [0.02, 127.0.0.1:52729][0m
+2024-06-11 16:51:33,924 [mHTTP GET / 200 [0.08, 127.0.0.1:52805][0m
+2024-06-11 16:55:44,037 [mHTTP GET / 200 [0.04, 127.0.0.1:54315][0m
+2024-06-11 16:55:44,414 [mHTTP GET /media/logos/warning_logo.png 200 [0.30, 127.0.0.1:54315][0m
+2024-06-12 22:12:54,895 [mHTTP GET / 200 [7.83, 127.0.0.1:55240][0m
+2024-06-12 22:12:55,152 [36mHTTP GET /static/product/index_style.css 304 [0.09, 127.0.0.1:55240][0m
+2024-06-12 22:12:55,167 [36mHTTP GET /media/logos/warning_logo.png 304 [0.10, 127.0.0.1:55241][0m
+2024-06-12 22:12:55,217 [36mHTTP GET /media/logos/chat_logo.png 304 [0.15, 127.0.0.1:55242][0m
+2024-06-12 22:12:55,331 [36mHTTP GET /media/products/baseball_2.jpeg 304 [0.02, 127.0.0.1:55244][0m
+2024-06-12 22:12:55,332 [36mHTTP GET /media/products/makeup1.jpeg 304 [0.03, 127.0.0.1:55242][0m
+2024-06-12 22:12:55,355 [36mHTTP GET /media/products/crockery.jpeg 304 [0.02, 127.0.0.1:55245][0m
+2024-06-12 22:12:55,402 [36mHTTP GET /media/products/tennis.jpeg 304 [0.10, 127.0.0.1:55240][0m
+2024-06-12 22:12:55,467 [36mHTTP GET /media/products/sport_1.jpeg 304 [0.16, 127.0.0.1:55241][0m
+2024-06-12 22:12:56,142 Not Found: /favicon.ico
+2024-06-12 22:12:56,144 [33mHTTP GET /favicon.ico 404 [0.47, 127.0.0.1:55241][0m
+2024-06-12 22:13:11,167 [mHTTP GET /member/registration/ 200 [9.64, 127.0.0.1:55241][0m
+2024-06-12 22:16:54,169 Not Found: /member/add_product/
+2024-06-12 22:16:54,171 [33mHTTP GET /member/add_product/ 404 [0.06, 127.0.0.1:55489][0m
+2024-06-12 22:40:32,643 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-12 22:41:20,307 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-12 22:41:24,429 [mHTTP GET / 200 [0.35, 127.0.0.1:56009][0m
+2024-06-12 22:42:24,269 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-12 22:42:36,009 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\chat\views.py changed, reloading.
+2024-06-12 22:42:39,013 [mHTTP GET / 200 [0.06, 127.0.0.1:56060][0m
+2024-06-12 22:42:40,328 [mHTTP GET / 200 [0.02, 127.0.0.1:56060][0m
+2024-06-12 22:42:40,886 [mHTTP GET /media/products/sport_1.jpeg 200 [0.46, 127.0.0.1:56074][0m
+2024-06-12 22:42:40,897 [mHTTP GET /media/products/tennis.jpeg 200 [0.46, 127.0.0.1:56075][0m
+2024-06-12 22:42:40,900 [mHTTP GET /media/products/makeup1.jpeg 200 [0.47, 127.0.0.1:56073][0m
+2024-06-12 22:42:40,928 [mHTTP GET /static/product/index_style.css 200 [0.54, 127.0.0.1:56060][0m
+2024-06-12 22:42:41,029 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.10, 127.0.0.1:56074][0m
+2024-06-12 22:42:41,034 [mHTTP GET /media/products/crockery.jpeg 200 [0.07, 127.0.0.1:56073][0m
+2024-06-12 22:42:41,224 [mHTTP GET /media/logos/warning_logo.png 200 [0.82, 127.0.0.1:56061][0m
+2024-06-12 22:42:41,242 [mHTTP GET /media/logos/chat_logo.png 200 [0.84, 127.0.0.1:56062][0m
+2024-06-12 22:42:41,973 Not Found: /favicon.ico
+2024-06-12 22:42:41,975 [33mHTTP GET /favicon.ico 404 [0.64, 127.0.0.1:56062][0m
+2024-06-12 22:42:43,062 [32mHTTP GET /chat/chat/ 302 [0.03, 127.0.0.1:56062][0m
+2024-06-12 22:42:43,456 [mHTTP GET /member/registration/ 200 [0.32, 127.0.0.1:56062][0m
+2024-06-12 22:52:35,406 [mHTTP GET /member/registration/ 200 [0.05, 127.0.0.1:56242][0m
+2024-06-12 22:52:35,557 [mHTTP GET /member/registration/ 200 [0.02, 127.0.0.1:56243][0m
+2024-06-12 22:52:35,562 [mHTTP GET /static/member/register_style.css 200 [0.11, 127.0.0.1:56242][0m
+2024-06-12 22:53:15,567 [mHTTP GET /member/registration/ 200 [0.03, 127.0.0.1:56242][0m
+2024-06-12 22:53:15,656 [mHTTP GET /static/member/register_style.css 200 [0.04, 127.0.0.1:56242][0m
+2024-06-12 22:53:15,676 [mHTTP GET /member/registration/ 200 [0.03, 127.0.0.1:56243][0m
+2024-06-12 22:53:56,178 [32mHTTP POST /member/registration/ 302 [0.29, 127.0.0.1:56243][0m
+2024-06-12 22:53:56,213 [mHTTP GET / 200 [0.03, 127.0.0.1:56243][0m
+2024-06-12 22:54:00,148 [mHTTP GET /chat/chat/ 200 [0.15, 127.0.0.1:56243][0m
+2024-06-12 22:54:00,235 [36mHTTP GET /static/chat/sellorChat_style.css 304 [0.01, 127.0.0.1:56243][0m
+2024-06-12 22:54:18,354 [mHTTP GET /recommended_products/ 200 [0.05, 127.0.0.1:56243][0m
+2024-06-12 22:54:18,450 [mHTTP GET /static/product/recommended_products_style.css 200 [0.04, 127.0.0.1:56243][0m

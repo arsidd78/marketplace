@@ -30,7 +30,7 @@
         {% if member %}
         <a href="{% url 'member:profile' request.user.username %}">{% if new_sales_order %}<img src="/media/logos/mark_logo.png"  alt="Dot" width="15"> {% endif %}Profile</a>
         {% else %}
-        <a href="{% url 'member:register' %}">Complete Profile</a>
+        <a href="{% url 'member:register' %}"><img src="/media/logos/warning_logo.png" alt="warning">Complete Profile</a>
         {% endif %}
         {% endif %}
         <a href="{% url 'member:add_product_page' %}">Sell</a>
@@ -46,7 +46,9 @@
                 <h3>Products</h3>
                 <a href="{% url 'product:recent_products' %}">Recent Products</a>
                 <a href="{% url 'product:view_all' %}">View All Products</a>
+                {% if member %}
                 <a href="{% url 'product:recommended'  %}">Recommended Products</a>
+                {% endif %}
             </section>
         </aside>
         {% if request.user.is_authenticated %}
