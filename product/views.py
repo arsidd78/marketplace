@@ -135,7 +135,7 @@ def purchase_view(request,pk):
             return render(request,'product/purchase_page.html',{'form':form,'item':item})
     else:
         return redirect('registration:login')
-
+@ profile_required
 def confirmation(request, pk):
     if request.user.is_authenticated:
         purchase = get_object_or_404(Purchase,id = pk)
