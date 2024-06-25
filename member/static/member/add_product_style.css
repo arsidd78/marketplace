@@ -14,57 +14,23 @@ body {
 
 /* Navigation bar styling */
 nav {
-  background-color: #6a0dad;
-  padding: 10px 0;
-}
-
-.nav-container {
+  background-color: #4b0082; /* Purple */
+  padding: 10px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.search-form {
-  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
-.search-form input[type="search"] {
-  padding: 5px 10px;
-  border: 2px solid #ddd;
-  border-radius: 20px 0 0 20px;
-  outline: none;
-}
-
-.search-form input[type="submit"] {
-  padding: 5px 10px;
-  border: 2px solid #ddd;
-  border-left: none;
-  border-radius: 0 20px 20px 0;
-  background-color: #fff;
-  color: #6a0dad;
-  cursor: pointer;
-}
-
-.search-form input[type="submit"]:hover {
-  background-color: #6a0dad;
-  color: #fff;
-}
-
-.nav-links a {
+nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
-  transition: color 0.3s;
+  padding: 8px 16px;
+  border-radius: 4px;
 }
 
-.nav-links a:hover {
-  color: #ddd;
+nav a:hover {
+  background-color: #3a006e; /* Darker Purple */
 }
-
-/* Main content styling */
 h1 {
   text-align: center;
   color: #6a0dad;

@@ -18,7 +18,7 @@
         <a href="/admin/">Admin</a>
         {% if request.user.is_authenticated %}
         {% if member %}
-        <a href="{% url 'member:profile' request.user.username %}">{% if new_sales_order %}<img src="/media/logos/mark_logo.png" alt="Dot" width="15"> {% endif %}Profile</a>
+        <a href="{% url 'member:profile' request.user %}">{% if new_sales_order %}<img src="/media/logos/mark_logo.png" alt="Dot" width="15"> {% endif %}Profile</a>
         {% else %}
         <a href="{% url 'member:register' %}"><img src="/media/logos/warning_logo.png" alt="warning">Complete Profile</a>
         {% endif %}

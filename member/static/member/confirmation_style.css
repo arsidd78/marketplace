@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-    background-color: #6200ea;
+    background-color: #7c20a3;
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -60,8 +60,7 @@ nav a {
 .invoice-table tfoot td {
     font-weight: bold;
 }
-
-.confirm-button {
+.cancel-btn{
     display: block;
     width: 25%;
     padding: 10px;
@@ -73,11 +72,31 @@ nav a {
     text-align: center;
     margin-top: 20px;
     margin-left: 37%;
+    text-transform: uppercase;
+}  
+
+
+
+.confirm-button {
+    display: block;
+    width: 25%;
+    padding: 10px;
+    background-color: #3700b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 37%;
     margin-bottom: 10%;
     text-transform: uppercase;
 }
 
 .confirm-button:hover {
+    background-color: #6200ea;
+}
+.cancel-btn :hover{
     background-color: #6200ea;
 }
 

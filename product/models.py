@@ -137,7 +137,7 @@ class Products(models.Model):
     }
 
     product_category = models.CharField('category',max_length=100,choices=categories_choices)
-    product_quantity = models.IntegerField()
+    product_quantity = models.PositiveIntegerField()
     sellor_name = models.CharField(max_length=100)
     company_name = models.CharField(null= True, blank= True, max_length=200)
     product_website = models.URLField(null= True,blank=True)
@@ -150,7 +150,7 @@ class Purchase(models.Model):
     quantity = models.PositiveIntegerField()     
     price = models.DecimalField(max_digits=7,decimal_places=2)
     date = models.DateField(auto_now_add=True)
-    posted_time = models.DateField(auto_now=True)
+    posted_time = models.DateTimeField(auto_now_add= True)
     read = models.BooleanField(default=False)
     buyer = models.ForeignKey(User,on_delete=models.DO_NOTHING)
     buyer_phone = models.CharField(max_length=13)

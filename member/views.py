@@ -164,9 +164,9 @@ def remove_wishlist_item(request,pk):
 def view_cart(request):
 
     if request.user.is_authenticated:
-        member = get_object_or_404(Member, username = request.user.username)
+        member = get_object_or_404(Member, username = request.user)
         products = member.user_cart_list.all()
-        context = {'products':products}
+        context = {'products':products,'member':member}
         return render(request,'member/cart.html',context)
     return redirect('registration:login')
 
@@ -185,6 +185,7 @@ def order_cart(request):
             member = get_object_or_404(Member, user=request.user)
             cart_products = member.user_cart_list.all()
             purchases = []
+            orders_id = []
             total = []
             
             for product in cart_products:
@@ -215,7 +216,7 @@ def order_cart(request):
                     sellor.user_recent_sales.add(product)
                     sellor.user_sales += product.product_price * int(quantity) 
                     product.save()
-
+                    orders_id.append(purchase_order.id)
                     purchase = get_object_or_404(Purchase, id=purchase_order.id)
                     sales = SalesOrder.objects.create(sellor = purchase.sellor)
                     sales.save()
@@ -227,7 +228,8 @@ def order_cart(request):
                 'request': request,
                 'cart_products': cart_products,
                 'purchases': purchases,
-                'total':sum(total)
+                'orders_id':orders_id,
+                'total':sum(total),
             }
             return render(request, 'member/confirmation.html', context)
         else:
@@ -241,6 +243,7 @@ def order_cart(request):
             return render(request, 'member/cart_order.html', context)
     
     return redirect('registration:login')
+
 
 def order_confirmation(request):
     if request.user.is_authenticated:
@@ -316,7 +319,11 @@ def sold_products(request):
         return render(request,'member/recent_sales.html',context)
     return redirect('registration:login')
 
-
+def read_purchase_order(request):
+    orders = Purchase.objects.filter(sellor = request.user)
+    for order in orders:
+        order.read = True
+        return JsonResponse({'status':'Orders Read Status Updated! '})
 
 @csrf_exempt
 def update_purchase_read_status(request):

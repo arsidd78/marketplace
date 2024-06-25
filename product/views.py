@@ -152,7 +152,7 @@ def confirmation(request, pk):
         if product.product_quantity >= selected_quantity:
             product.product_quantity -= selected_quantity
         else:
-            return render(request, 'product/error.html', {'message': 'Not enough stock'})
+            return render(request, 'product/error.html', {'message': 'Not enough stock','member':member})
     
         member.user_recent_purchase.add(product)
         total_price = purchase.quantity * purchase.price
@@ -162,7 +162,7 @@ def confirmation(request, pk):
         context = {
             'purchase': purchase,
             'total_price': total_price,
-            'request':request
+            'member':member
             }
         return render(request, 'product/invoice.html', context)
     return redirect('registration:login')

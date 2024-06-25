@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="{% static 'member/purchase_orders_style.css' %}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        function read_purchase_order(){
+            url : "{% url 'member:read' %}"
+        };
+    </script>
+    <script>
         function updatePurchaseReadStatus() {
             $.ajax({
                 url: "{% url 'member:update_read_status' %}",
@@ -62,7 +67,7 @@
             <h4>Price: ${{order.price}}</h4>
             <h4>Quantity: {{order.quantity}}</h4>
             <h4>Total: ${{total}}</h4>
-            <h4>Date: {{order.date}}</h4>
+            <h4>Date: {{order.posted_time}}</h4>
             <button class="dispath-button" onclick=location.href="{% url 'member:dispatch' order.id %}">Dispatch</button>
         </article>
         {% endfor %}
