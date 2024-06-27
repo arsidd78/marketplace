@@ -13,7 +13,10 @@ def home(request):
     try: 
         
         member = get_object_or_404(Member, user = request.user)
-        products = Products.objects.order_by('-product_posted_date')[:5]
+        if request.user.is_authenticated:
+            products = Products.objects.order_by('-product_posted_date')[:5]
+        else:
+            products = Products.objects.order_by('-product_posted_date')[:10]    
         messages_recieved = member.user_messages_received.all()
         unread_messages = 0
         new_sales_order = 0

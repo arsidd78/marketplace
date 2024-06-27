@@ -30750,3 +30750,638 @@ TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contr
 2024-06-25 22:15:53,230 [mHTTP GET / 200 [0.05, 127.0.0.1:50992][0m
 2024-06-25 22:16:12,426 [32mHTTP GET /registration/signout/ 302 [0.15, 127.0.0.1:50992][0m
 2024-06-25 22:16:12,497 [mHTTP GET / 200 [0.03, 127.0.0.1:50992][0m
+2024-06-26 13:05:03,559 [mHTTP GET / 200 [4.18, 127.0.0.1:51310][0m
+2024-06-26 13:05:04,205 [36mHTTP GET /media/products/chicken2_ZJm9k6T.webp 304 [0.05, 127.0.0.1:51309][0m
+2024-06-26 13:05:05,028 [mHTTP GET /media/logos/chat_logo.png 200 [1.01, 127.0.0.1:51310][0m
+2024-06-26 13:05:06,711 Not Found: /favicon.ico
+2024-06-26 13:05:06,722 [33mHTTP GET /favicon.ico 404 [1.61, 127.0.0.1:51310][0m
+2024-06-26 13:07:24,271 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-26 13:07:33,101 [mHTTP GET / 200 [0.10, 127.0.0.1:51426][0m
+2024-06-26 13:07:33,578 [mHTTP GET /media/logos/chat_logo.png 200 [0.38, 127.0.0.1:51425][0m
+2024-06-26 13:07:33,591 [mHTTP GET /media/products/makeup1.jpeg 200 [0.38, 127.0.0.1:51428][0m
+2024-06-26 13:07:33,616 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.40, 127.0.0.1:51427][0m
+2024-06-26 13:07:33,641 [mHTTP GET /media/products/sport_1.jpeg 200 [0.42, 127.0.0.1:51429][0m
+2024-06-26 13:07:33,652 [mHTTP GET /static/product/index_style.css 200 [0.45, 127.0.0.1:51426][0m
+2024-06-26 13:07:33,674 [mHTTP GET /media/products/tennis.jpeg 200 [0.45, 127.0.0.1:51430][0m
+2024-06-26 13:07:34,134 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.10, 127.0.0.1:51430][0m
+2024-06-26 13:07:34,262 Not Found: /favicon.ico
+2024-06-26 13:07:34,264 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:51430][0m
+2024-06-26 13:07:47,571 [mHTTP GET / 200 [0.02, 127.0.0.1:51430][0m
+2024-06-26 13:07:47,776 [mHTTP GET /static/product/index_style.css 200 [0.05, 127.0.0.1:51430][0m
+2024-06-26 13:07:47,817 [mHTTP GET /media/logos/chat_logo.png 200 [0.09, 127.0.0.1:51429][0m
+2024-06-26 13:07:47,827 [mHTTP GET /media/products/tennis.jpeg 200 [0.10, 127.0.0.1:51425][0m
+2024-06-26 13:07:47,832 [mHTTP GET /media/products/makeup1.jpeg 200 [0.10, 127.0.0.1:51428][0m
+2024-06-26 13:07:47,833 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.11, 127.0.0.1:51427][0m
+2024-06-26 13:07:47,848 [mHTTP GET /media/products/sport_1.jpeg 200 [0.12, 127.0.0.1:51426][0m
+2024-06-26 13:07:47,907 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.08, 127.0.0.1:51430][0m
+2024-06-26 13:07:48,031 Not Found: /favicon.ico
+2024-06-26 13:07:48,042 [33mHTTP GET /favicon.ico 404 [0.07, 127.0.0.1:51430][0m
+2024-06-26 13:07:48,640 [mHTTP GET / 200 [0.02, 127.0.0.1:51430][0m
+2024-06-26 13:07:48,862 [mHTTP GET /static/product/index_style.css 200 [0.10, 127.0.0.1:51430][0m
+2024-06-26 13:07:48,899 [mHTTP GET /media/products/makeup1.jpeg 200 [0.10, 127.0.0.1:51428][0m
+2024-06-26 13:07:48,908 [mHTTP GET /media/products/sport_1.jpeg 200 [0.11, 127.0.0.1:51425][0m
+2024-06-26 13:07:48,909 [mHTTP GET /media/logos/chat_logo.png 200 [0.11, 127.0.0.1:51426][0m
+2024-06-26 13:07:48,923 [mHTTP GET /media/products/tennis.jpeg 200 [0.13, 127.0.0.1:51429][0m
+2024-06-26 13:07:48,961 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.17, 127.0.0.1:51427][0m
+2024-06-26 13:07:48,967 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.08, 127.0.0.1:51430][0m
+2024-06-26 13:07:49,028 [mHTTP GET / 200 [0.05, 127.0.0.1:51428][0m
+2024-06-26 13:07:49,222 [mHTTP GET / 200 [0.04, 127.0.0.1:51430][0m
+2024-06-26 13:07:49,222 Not Found: /favicon.ico
+2024-06-26 13:07:49,224 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:51428][0m
+2024-06-26 13:07:49,338 [mHTTP GET /static/product/index_style.css 200 [0.05, 127.0.0.1:51428][0m
+2024-06-26 13:07:49,367 [mHTTP GET /media/logos/chat_logo.png 200 [0.05, 127.0.0.1:51430][0m
+2024-06-26 13:07:49,369 [mHTTP GET /media/products/makeup1.jpeg 200 [0.05, 127.0.0.1:51429][0m
+2024-06-26 13:07:49,374 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.06, 127.0.0.1:51427][0m
+2024-06-26 13:07:49,383 [mHTTP GET /media/products/sport_1.jpeg 200 [0.06, 127.0.0.1:51426][0m
+2024-06-26 13:07:49,392 [mHTTP GET /media/products/tennis.jpeg 200 [0.07, 127.0.0.1:51425][0m
+2024-06-26 13:07:49,438 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.08, 127.0.0.1:51428][0m
+2024-06-26 13:07:49,679 Not Found: /favicon.ico
+2024-06-26 13:07:49,685 [33mHTTP GET /favicon.ico 404 [0.09, 127.0.0.1:51428][0m
+2024-06-26 13:07:52,044 [mHTTP GET / 200 [0.03, 127.0.0.1:51428][0m
+2024-06-26 13:07:52,959 [mHTTP GET / 200 [0.02, 127.0.0.1:51428][0m
+2024-06-26 13:07:53,249 [mHTTP GET / 200 [0.03, 127.0.0.1:51428][0m
+2024-06-26 13:07:53,447 [mHTTP GET / 200 [0.02, 127.0.0.1:51443][0m
+2024-06-26 13:07:53,673 [mHTTP GET / 200 [0.02, 127.0.0.1:51443][0m
+2024-06-26 13:07:53,913 [mHTTP GET / 200 [0.02, 127.0.0.1:51443][0m
+2024-06-26 13:07:54,173 [mHTTP GET / 200 [0.02, 127.0.0.1:51443][0m
+2024-06-26 13:07:54,407 [mHTTP GET / 200 [0.02, 127.0.0.1:51443][0m
+2024-06-26 13:07:54,640 [mHTTP GET / 200 [0.02, 127.0.0.1:51443][0m
+2024-06-26 13:07:54,893 [mHTTP GET / 200 [0.02, 127.0.0.1:51443][0m
+2024-06-26 13:07:55,143 [mHTTP GET / 200 [0.03, 127.0.0.1:51443][0m
+2024-06-26 13:07:55,438 [mHTTP GET / 200 [0.03, 127.0.0.1:51443][0m
+2024-06-26 13:07:55,691 [mHTTP GET / 200 [0.09, 127.0.0.1:51443][0m
+2024-06-26 13:08:22,322 [mHTTP GET / 200 [0.03, 127.0.0.1:51443][0m
+2024-06-26 13:08:46,932 [mHTTP GET / 200 [0.08, 127.0.0.1:51482][0m
+2024-06-26 13:08:48,251 [mHTTP GET / 200 [0.04, 127.0.0.1:51482][0m
+2024-06-26 13:08:48,730 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.36, 127.0.0.1:51484][0m
+2024-06-26 13:08:48,869 [mHTTP GET /static/product/index_style.css 200 [0.52, 127.0.0.1:51482][0m
+2024-06-26 13:08:48,891 [mHTTP GET /media/products/makeup1.jpeg 200 [0.52, 127.0.0.1:51485][0m
+2024-06-26 13:08:48,914 [mHTTP GET /media/logos/chat_logo.png 200 [0.56, 127.0.0.1:51483][0m
+2024-06-26 13:08:48,924 [mHTTP GET /media/products/sport_1.jpeg 200 [0.54, 127.0.0.1:51486][0m
+2024-06-26 13:08:48,926 [mHTTP GET /media/products/tennis.jpeg 200 [0.53, 127.0.0.1:51487][0m
+2024-06-26 13:08:48,929 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.11, 127.0.0.1:51484][0m
+2024-06-26 13:08:49,073 Not Found: /favicon.ico
+2024-06-26 13:08:49,074 [33mHTTP GET /favicon.ico 404 [0.05, 127.0.0.1:51484][0m
+2024-06-26 21:55:00,028 [mHTTP GET / 200 [0.49, 127.0.0.1:61987][0m
+2024-06-26 21:55:00,465 [mHTTP GET /static/product/index_style.css 200 [0.33, 127.0.0.1:61987][0m
+2024-06-26 21:55:00,553 [mHTTP GET /media/logos/chat_logo.png 200 [0.41, 127.0.0.1:61988][0m
+2024-06-26 21:55:00,649 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.10, 127.0.0.1:61987][0m
+2024-06-26 21:55:00,651 [mHTTP GET /media/products/sport_1.jpeg 200 [0.30, 127.0.0.1:61993][0m
+2024-06-26 21:55:00,730 [mHTTP GET /media/products/makeup1.jpeg 200 [0.38, 127.0.0.1:61992][0m
+2024-06-26 21:55:00,735 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.38, 127.0.0.1:61991][0m
+2024-06-26 21:55:00,745 [mHTTP GET /media/products/tennis.jpeg 200 [0.39, 127.0.0.1:61994][0m
+2024-06-26 21:55:01,512 Not Found: /favicon.ico
+2024-06-26 21:55:01,514 [33mHTTP GET /favicon.ico 404 [0.60, 127.0.0.1:61994][0m
+2024-06-26 21:56:21,409 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-26 21:56:37,952 [mHTTP GET / 200 [0.10, 127.0.0.1:62006][0m
+2024-06-26 21:56:38,604 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.36, 127.0.0.1:62028][0m
+2024-06-26 21:56:38,614 [mHTTP GET /media/products/crockery.jpeg 200 [0.39, 127.0.0.1:62006][0m
+2024-06-26 21:56:38,645 [mHTTP GET /media/products/shoes.jpeg 200 [0.40, 127.0.0.1:62030][0m
+2024-06-26 21:56:38,648 [mHTTP GET /media/products/joggers.jpeg 200 [0.40, 127.0.0.1:62029][0m
+2024-06-26 21:56:38,666 [mHTTP GET /media/products/strawberry2_VltATon.png 200 [0.42, 127.0.0.1:62031][0m
+2024-06-26 21:57:11,979 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-26 21:57:15,935 [mHTTP GET / 200 [0.07, 127.0.0.1:62033][0m
+2024-06-26 21:57:16,511 [mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 200 [0.47, 127.0.0.1:62035][0m
+2024-06-26 21:57:16,576 [mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 200 [0.50, 127.0.0.1:62041][0m
+2024-06-26 21:57:16,626 [mHTTP GET /media/products/toys_1.jpeg 200 [0.55, 127.0.0.1:62042][0m
+2024-06-26 21:57:16,752 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.71, 127.0.0.1:62034][0m
+2024-06-26 21:57:16,757 [mHTTP GET /media/products/toys_2.jpeg 200 [0.65, 127.0.0.1:62043][0m
+2024-06-26 21:57:16,819 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.78, 127.0.0.1:62033][0m
+2024-06-26 21:57:16,902 [mHTTP GET /media/products/weights.jpeg 200 [0.22, 127.0.0.1:62041][0m
+2024-06-26 21:57:16,960 [mHTTP GET /media/products/outdoor_1.jpeg 200 [0.09, 127.0.0.1:62033][0m
+2024-06-26 21:57:16,985 [mHTTP GET /media/products/sofa_1.jpg 200 [0.15, 127.0.0.1:62043][0m
+2024-06-26 21:57:17,019 [mHTTP GET /media/products/pullover1.jpeg 200 [0.29, 127.0.0.1:62042][0m
+2024-06-26 21:57:17,020 [mHTTP GET /media/products/butterfly_1.jpeg 200 [0.20, 127.0.0.1:62034][0m
+2024-06-26 21:57:17,221 [mHTTP GET /media/products/living_1.jpeg 200 [0.54, 127.0.0.1:62035][0m
+2024-06-26 21:57:17,229 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.31, 127.0.0.1:62041][0m
+2024-06-26 21:57:17,247 [mHTTP GET /media/products/computer_1.jpeg 200 [0.25, 127.0.0.1:62033][0m
+2024-06-26 21:57:17,308 [mHTTP GET /media/products/mouse_12.jpeg 200 [0.14, 127.0.0.1:62042][0m
+2024-06-26 21:57:17,320 [mHTTP GET /media/products/laptop1.jpeg 200 [0.28, 127.0.0.1:62034][0m
+2024-06-26 21:57:17,370 [mHTTP GET /media/products/mouse.jpeg 200 [0.27, 127.0.0.1:62043][0m
+2024-06-26 21:57:17,452 [mHTTP GET /media/products/harry_potter_novel_complete.jpeg 200 [0.11, 127.0.0.1:62042][0m
+2024-06-26 21:57:17,467 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.11, 127.0.0.1:62033][0m
+2024-06-26 21:57:17,498 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.10, 127.0.0.1:62035][0m
+2024-06-26 21:57:17,509 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.15, 127.0.0.1:62034][0m
+2024-06-26 21:57:17,559 [mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 200 [0.15, 127.0.0.1:62043][0m
+2024-06-26 21:58:24,815 [mHTTP GET / 200 [0.07, 127.0.0.1:64556][0m
+2024-06-26 21:58:26,621 [mHTTP GET / 200 [0.04, 127.0.0.1:64556][0m
+2024-06-26 21:58:26,743 [mHTTP GET /static/product/index_style.css 200 [0.02, 127.0.0.1:64556][0m
+2024-06-26 21:58:26,785 [mHTTP GET /media/logos/chat_logo.png 200 [0.06, 127.0.0.1:64555][0m
+2024-06-26 21:58:26,794 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.07, 127.0.0.1:64559][0m
+2024-06-26 21:58:26,796 [mHTTP GET /media/products/makeup1.jpeg 200 [0.07, 127.0.0.1:64560][0m
+2024-06-26 21:58:26,798 [mHTTP GET /media/products/tennis.jpeg 200 [0.07, 127.0.0.1:64562][0m
+2024-06-26 21:58:26,813 [mHTTP GET /media/products/sport_1.jpeg 200 [0.08, 127.0.0.1:64561][0m
+2024-06-26 21:58:26,834 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.08, 127.0.0.1:64556][0m
+2024-06-26 21:58:26,968 [mHTTP GET /media/products/toys_2.jpeg 200 [0.05, 127.0.0.1:64559][0m
+2024-06-26 21:58:26,969 [mHTTP GET /media/products/crockery.jpeg 200 [0.11, 127.0.0.1:64555][0m
+2024-06-26 21:58:26,971 [mHTTP GET /media/products/weights.jpeg 200 [0.05, 127.0.0.1:64556][0m
+2024-06-26 21:58:26,973 [mHTTP GET /media/products/computer_1.jpeg 200 [0.05, 127.0.0.1:64561][0m
+2024-06-26 21:58:26,974 [mHTTP GET /media/products/sofa_1.jpg 200 [0.05, 127.0.0.1:64560][0m
+2024-06-26 21:58:26,975 [mHTTP GET /media/products/pullover1.jpeg 200 [0.06, 127.0.0.1:64562][0m
+2024-06-26 21:58:27,108 [mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 200 [0.12, 127.0.0.1:64559][0m
+2024-06-26 21:58:27,112 [mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 200 [0.06, 127.0.0.1:64562][0m
+2024-06-26 21:58:27,135 [mHTTP GET /media/products/outdoor_1.jpeg 200 [0.14, 127.0.0.1:64555][0m
+2024-06-26 21:58:27,144 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.09, 127.0.0.1:64556][0m
+2024-06-26 21:58:27,160 [mHTTP GET /media/products/living_1.jpeg 200 [0.11, 127.0.0.1:64561][0m
+2024-06-26 21:58:27,161 [mHTTP GET /media/products/strawberry2_VltATon.png 200 [0.09, 127.0.0.1:64560][0m
+2024-06-26 21:58:27,271 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.04, 127.0.0.1:64556][0m
+2024-06-26 21:58:27,277 [mHTTP GET /media/products/butterfly_1.jpeg 200 [0.06, 127.0.0.1:64555][0m
+2024-06-26 21:58:27,281 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.13, 127.0.0.1:64559][0m
+2024-06-26 21:58:27,484 [mHTTP GET /media/products/joggers.jpeg 200 [0.31, 127.0.0.1:64562][0m
+2024-06-26 21:58:27,522 [mHTTP GET /media/products/toys_1.jpeg 200 [0.24, 127.0.0.1:64561][0m
+2024-06-26 21:58:27,530 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.19, 127.0.0.1:64555][0m
+2024-06-26 21:58:27,531 [mHTTP GET /media/products/shoes.jpeg 200 [0.20, 127.0.0.1:64556][0m
+2024-06-26 21:58:27,535 [mHTTP GET /media/products/laptop1.jpeg 200 [0.10, 127.0.0.1:64560][0m
+2024-06-26 21:58:27,626 [mHTTP GET /media/products/harry_potter_novel_complete.jpeg 200 [0.05, 127.0.0.1:64555][0m
+2024-06-26 21:58:27,627 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.05, 127.0.0.1:64562][0m
+2024-06-26 21:58:27,627 [mHTTP GET /media/products/mouse.jpeg 200 [0.07, 127.0.0.1:64561][0m
+2024-06-26 21:58:27,630 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.04, 127.0.0.1:64559][0m
+2024-06-26 21:58:27,631 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.05, 127.0.0.1:64556][0m
+2024-06-26 21:58:27,632 [mHTTP GET /media/products/mouse_12.jpeg 200 [0.05, 127.0.0.1:64560][0m
+2024-06-26 21:58:27,681 [mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 200 [0.02, 127.0.0.1:64560][0m
+2024-06-26 21:58:28,404 Not Found: /favicon.ico
+2024-06-26 21:58:28,406 [33mHTTP GET /favicon.ico 404 [0.05, 127.0.0.1:64560][0m
+2024-06-26 21:58:42,039 [mHTTP GET / 200 [0.06, 127.0.0.1:64560][0m
+2024-06-26 21:58:43,389 [mHTTP GET / 200 [0.03, 127.0.0.1:64560][0m
+2024-06-26 21:58:43,548 [mHTTP GET /static/product/index_style.css 200 [0.05, 127.0.0.1:64560][0m
+2024-06-26 21:58:43,664 [mHTTP GET /media/products/makeup1.jpeg 200 [0.16, 127.0.0.1:64555][0m
+2024-06-26 21:58:43,665 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.16, 127.0.0.1:64559][0m
+2024-06-26 21:58:43,669 [mHTTP GET /media/products/sport_1.jpeg 200 [0.17, 127.0.0.1:64562][0m
+2024-06-26 21:58:43,676 [mHTTP GET /media/products/tennis.jpeg 200 [0.17, 127.0.0.1:64561][0m
+2024-06-26 21:58:43,679 [mHTTP GET /media/logos/chat_logo.png 200 [0.18, 127.0.0.1:64556][0m
+2024-06-26 21:58:43,781 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.14, 127.0.0.1:64560][0m
+2024-06-26 21:58:43,824 [mHTTP GET /media/products/toys_1.jpeg 200 [0.15, 127.0.0.1:64555][0m
+2024-06-26 21:58:43,858 [mHTTP GET /media/products/computer_1.jpeg 200 [0.10, 127.0.0.1:64556][0m
+2024-06-26 21:58:43,861 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.14, 127.0.0.1:64562][0m
+2024-06-26 21:58:43,864 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.15, 127.0.0.1:64561][0m
+2024-06-26 21:58:43,866 [mHTTP GET /media/products/outdoor_1.jpeg 200 [0.15, 127.0.0.1:64559][0m
+2024-06-26 21:58:43,902 [mHTTP GET /media/products/weights.jpeg 200 [0.11, 127.0.0.1:64560][0m
+2024-06-26 21:58:43,987 [mHTTP GET /media/products/crockery.jpeg 200 [0.16, 127.0.0.1:64555][0m
+2024-06-26 21:58:44,001 [mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 200 [0.11, 127.0.0.1:64562][0m
+2024-06-26 21:58:44,004 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.12, 127.0.0.1:64556][0m
+2024-06-26 21:58:44,075 [mHTTP GET /media/products/butterfly_1.jpeg 200 [0.12, 127.0.0.1:64560][0m
+2024-06-26 21:58:44,076 [mHTTP GET /media/products/living_1.jpeg 200 [0.17, 127.0.0.1:64559][0m
+2024-06-26 21:58:44,095 [mHTTP GET /media/products/strawberry2_VltATon.png 200 [0.13, 127.0.0.1:64561][0m
+2024-06-26 21:58:44,147 [mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 200 [0.16, 127.0.0.1:64555][0m
+2024-06-26 21:58:44,177 [mHTTP GET /media/products/toys_2.jpeg 200 [0.13, 127.0.0.1:64556][0m
+2024-06-26 21:58:44,181 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.13, 127.0.0.1:64562][0m
+2024-06-26 21:58:44,212 [mHTTP GET /media/products/sofa_1.jpg 200 [0.12, 127.0.0.1:64560][0m
+2024-06-26 21:58:44,268 [mHTTP GET /media/products/joggers.jpeg 200 [0.16, 127.0.0.1:64559][0m
+2024-06-26 21:58:44,275 [mHTTP GET /media/products/shoes.jpeg 200 [0.12, 127.0.0.1:64555][0m
+2024-06-26 21:58:44,408 [mHTTP GET /media/products/pullover1.jpeg 200 [0.09, 127.0.0.1:64556][0m
+2024-06-26 21:58:44,409 [mHTTP GET /media/products/laptop1.jpeg 200 [0.07, 127.0.0.1:64555][0m
+2024-06-26 21:58:44,410 [mHTTP GET /media/products/mouse_12.jpeg 200 [0.05, 127.0.0.1:64561][0m
+2024-06-26 21:58:44,413 [mHTTP GET /media/products/harry_potter_novel_complete.jpeg 200 [0.05, 127.0.0.1:64560][0m
+2024-06-26 21:58:44,415 [mHTTP GET /media/products/mouse.jpeg 200 [0.08, 127.0.0.1:64559][0m
+2024-06-26 21:58:44,415 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.05, 127.0.0.1:64562][0m
+2024-06-26 21:58:44,490 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.05, 127.0.0.1:64555][0m
+2024-06-26 21:58:44,493 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.05, 127.0.0.1:64561][0m
+2024-06-26 21:58:44,496 [mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 200 [0.03, 127.0.0.1:64562][0m
+2024-06-26 21:58:45,059 Not Found: /favicon.ico
+2024-06-26 21:58:45,060 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:64562][0m
+2024-06-26 21:58:56,620 [mHTTP GET / 200 [0.06, 127.0.0.1:64562][0m
+2024-06-26 21:59:29,181 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-26 21:59:33,840 [mHTTP GET / 200 [0.09, 127.0.0.1:64574][0m
+2024-06-26 21:59:37,311 [mHTTP GET / 200 [0.05, 127.0.0.1:64574][0m
+2024-06-26 21:59:37,847 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.42, 127.0.0.1:64573][0m
+2024-06-26 21:59:37,883 [mHTTP GET /media/logos/chat_logo.png 200 [0.46, 127.0.0.1:64572][0m
+2024-06-26 21:59:37,899 [mHTTP GET /media/products/makeup1.jpeg 200 [0.48, 127.0.0.1:64583][0m
+2024-06-26 21:59:37,900 [mHTTP GET /media/products/sport_1.jpeg 200 [0.45, 127.0.0.1:64584][0m
+2024-06-26 21:59:37,932 [mHTTP GET /media/products/tennis.jpeg 200 [0.48, 127.0.0.1:64585][0m
+2024-06-26 21:59:37,942 [mHTTP GET /static/product/index_style.css 200 [0.52, 127.0.0.1:64574][0m
+2024-06-26 21:59:38,091 [mHTTP GET /media/products/shoes.jpeg 200 [0.08, 127.0.0.1:64573][0m
+2024-06-26 21:59:38,096 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.13, 127.0.0.1:64585][0m
+2024-06-26 21:59:38,100 [mHTTP GET /media/products/joggers.jpeg 200 [0.09, 127.0.0.1:64574][0m
+2024-06-26 21:59:38,101 [mHTTP GET /media/products/crockery.jpeg 200 [0.09, 127.0.0.1:64584][0m
+2024-06-26 21:59:38,102 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.09, 127.0.0.1:64583][0m
+2024-06-26 21:59:38,111 [mHTTP GET /media/products/strawberry2_VltATon.png 200 [0.10, 127.0.0.1:64572][0m
+2024-06-26 21:59:38,287 [mHTTP GET /media/products/toys_2.jpeg 200 [0.12, 127.0.0.1:64574][0m
+2024-06-26 21:59:38,295 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.13, 127.0.0.1:64573][0m
+2024-06-26 21:59:38,297 [mHTTP GET /media/products/sofa_1.jpg 200 [0.13, 127.0.0.1:64584][0m
+2024-06-26 21:59:38,298 [mHTTP GET /media/products/living_1.jpeg 200 [0.13, 127.0.0.1:64583][0m
+2024-06-26 21:59:38,309 [mHTTP GET /media/products/outdoor_1.jpeg 200 [0.14, 127.0.0.1:64585][0m
+2024-06-26 21:59:38,676 [mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 200 [0.28, 127.0.0.1:64585][0m
+2024-06-26 21:59:38,698 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.20, 127.0.0.1:64573][0m
+2024-06-26 21:59:38,699 [mHTTP GET /media/products/toys_1.jpeg 200 [0.20, 127.0.0.1:64584][0m
+2024-06-26 21:59:38,702 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.37, 127.0.0.1:64572][0m
+2024-06-26 21:59:38,762 [mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 200 [0.37, 127.0.0.1:64574][0m
+2024-06-26 21:59:39,196 Not Found: /favicon.ico
+2024-06-26 21:59:39,212 [33mHTTP GET /favicon.ico 404 [0.09, 127.0.0.1:64572][0m
+2024-06-26 21:59:44,803 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-26 21:59:48,499 [mHTTP GET / 200 [0.06, 127.0.0.1:64589][0m
+2024-06-26 22:00:14,697 [mHTTP GET /detail/40/ 200 [0.12, 127.0.0.1:64589][0m
+2024-06-26 22:00:14,918 [mHTTP GET /static/product/details_style.css 200 [0.13, 127.0.0.1:64589][0m
+2024-06-26 22:00:19,717 [mHTTP GET /registration/login/ 200 [0.08, 127.0.0.1:64589][0m
+2024-06-26 22:00:20,051 [mHTTP GET /static/registration/login_style.css 200 [0.20, 127.0.0.1:64589][0m
+2024-06-26 22:02:18,260 [mHTTP GET / 200 [0.23, 127.0.0.1:64662][0m
+2024-06-26 22:02:19,001 [mHTTP GET /media/products/tennis.jpeg 200 [0.38, 127.0.0.1:64667][0m
+2024-06-26 22:02:19,027 [mHTTP GET /media/logos/chat_logo.png 200 [0.53, 127.0.0.1:64663][0m
+2024-06-26 22:02:19,030 [mHTTP GET /media/products/makeup1.jpeg 200 [0.53, 127.0.0.1:64664][0m
+2024-06-26 22:02:19,057 [mHTTP GET /media/products/sport_1.jpeg 200 [0.46, 127.0.0.1:64666][0m
+2024-06-26 22:02:19,197 [mHTTP GET /static/product/index_style.css 200 [0.80, 127.0.0.1:64662][0m
+2024-06-26 22:02:19,226 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.70, 127.0.0.1:64665][0m
+2024-06-26 22:02:19,274 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.13, 127.0.0.1:64667][0m
+2024-06-26 22:02:22,794 [mHTTP GET /registration/login/ 200 [0.08, 127.0.0.1:64667][0m
+2024-06-26 22:02:22,958 [mHTTP GET /static/registration/login_style.css 200 [0.11, 127.0.0.1:64667][0m
+2024-06-26 22:02:26,031 [mHTTP GET /registration/signup/ 200 [0.08, 127.0.0.1:64667][0m
+2024-06-26 22:02:26,242 [mHTTP GET /static/registration/signup_style.css 200 [0.17, 127.0.0.1:64667][0m
+2024-06-26 22:02:27,871 [mHTTP GET / 200 [0.06, 127.0.0.1:64669][0m
+2024-06-26 22:03:03,263 [32mHTTP POST /registration/register/ 302 [2.94, 127.0.0.1:64667][0m
+2024-06-26 22:03:03,351 [mHTTP GET /registration/login/ 200 [0.08, 127.0.0.1:64667][0m
+2024-06-26 22:03:16,886 [mHTTP POST /registration/authentication/?next= 200 [2.79, 127.0.0.1:64667][0m
+2024-06-26 22:03:32,682 [mHTTP POST /registration/authentication/?next= 200 [2.66, 127.0.0.1:64667][0m
+2024-06-26 22:03:48,017 [mHTTP POST /registration/authentication/?next= 200 [4.02, 127.0.0.1:64667][0m
+2024-06-26 22:04:06,604 [mHTTP GET /registration/login/ 200 [0.04, 127.0.0.1:64674][0m
+2024-06-26 22:04:15,661 [32mHTTP POST /registration/authentication/?next= 302 [2.86, 127.0.0.1:64674][0m
+2024-06-26 22:04:15,780 [mHTTP GET / 200 [0.11, 127.0.0.1:64674][0m
+2024-06-26 22:05:03,445 [mHTTP GET / 200 [0.29, 127.0.0.1:51227][0m
+2024-06-26 22:05:04,299 [mHTTP GET /media/logos/chat_logo.png 200 [0.38, 127.0.0.1:51232][0m
+2024-06-26 22:05:04,434 [mHTTP GET /static/product/index_style.css 200 [0.72, 127.0.0.1:51227][0m
+2024-06-26 22:05:04,495 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.62, 127.0.0.1:51231][0m
+2024-06-26 22:05:04,570 [mHTTP GET /media/products/makeup1.jpeg 200 [0.74, 127.0.0.1:51230][0m
+2024-06-26 22:05:04,684 [mHTTP GET /media/products/sport_1.jpeg 200 [0.86, 127.0.0.1:51229][0m
+2024-06-26 22:05:04,699 [mHTTP GET /media/products/tennis.jpeg 200 [0.87, 127.0.0.1:51228][0m
+2024-06-26 22:05:04,718 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.35, 127.0.0.1:51232][0m
+2024-06-26 22:05:08,730 [mHTTP GET /detail/47/ 200 [0.06, 127.0.0.1:51232][0m
+2024-06-26 22:05:08,880 [mHTTP GET /static/product/details_style.css 200 [0.08, 127.0.0.1:51232][0m
+2024-06-26 22:05:11,798 [32mHTTP GET /member/adding_cart/47/ 302 [0.14, 127.0.0.1:51232][0m
+2024-06-26 22:05:11,925 [mHTTP GET /registration/login/ 200 [0.07, 127.0.0.1:51232][0m
+2024-06-26 22:05:12,160 [mHTTP GET /static/registration/login_style.css 200 [0.14, 127.0.0.1:51232][0m
+2024-06-26 22:05:15,922 [32mHTTP GET /member/adding_wishlist/47/ 302 [0.02, 127.0.0.1:51232][0m
+2024-06-26 22:05:15,977 [mHTTP GET /registration/login/ 200 [0.05, 127.0.0.1:51232][0m
+2024-06-26 22:05:20,945 Internal Server Error: /payment/47/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 10, in wrapper
+    member = Member.objects.filter(user=request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000001C5710DB230>>.
+2024-06-26 22:05:20,991 [35;1mHTTP GET /payment/47/ 500 [1.03, 127.0.0.1:51232][0m
+2024-06-26 22:05:32,308 [mHTTP GET / 200 [0.04, 127.0.0.1:51232][0m
+2024-06-26 22:05:34,351 [mHTTP GET /registration/login/ 200 [0.05, 127.0.0.1:51232][0m
+2024-06-26 22:05:35,721 [mHTTP GET /registration/signup/ 200 [0.09, 127.0.0.1:51232][0m
+2024-06-26 22:05:35,962 [mHTTP GET /static/registration/signup_style.css 200 [0.17, 127.0.0.1:51232][0m
+2024-06-26 22:06:09,818 [32mHTTP POST /registration/register/ 302 [2.42, 127.0.0.1:51232][0m
+2024-06-26 22:06:09,850 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:51232][0m
+2024-06-26 22:06:26,040 [mHTTP POST /registration/authentication/?next= 200 [2.22, 127.0.0.1:51232][0m
+2024-06-26 22:06:40,809 [32mHTTP POST /registration/authentication/?next= 302 [2.68, 127.0.0.1:51232][0m
+2024-06-26 22:06:40,898 [mHTTP GET / 200 [0.07, 127.0.0.1:51232][0m
+2024-06-26 22:06:41,091 [mHTTP GET /media/logos/warning_logo.png 200 [0.13, 127.0.0.1:51232][0m
+2024-06-26 22:06:47,174 [mHTTP GET /detail/40/ 200 [0.05, 127.0.0.1:51232][0m
+2024-06-26 22:06:48,648 Not Found: /member/adding_cart/40/
+2024-06-26 22:06:48,649 [33mHTTP GET /member/adding_cart/40/ 404 [0.04, 127.0.0.1:51232][0m
+2024-06-26 22:06:53,520 [mHTTP GET / 200 [0.03, 127.0.0.1:51232][0m
+2024-06-26 22:06:55,324 [mHTTP GET /member/registration/ 200 [0.28, 127.0.0.1:51232][0m
+2024-06-26 22:06:55,719 [mHTTP GET /member/registration/ 200 [0.27, 127.0.0.1:51235][0m
+2024-06-26 22:06:55,732 [mHTTP GET /static/member/register_style.css 200 [0.28, 127.0.0.1:51232][0m
+2024-06-26 22:07:43,972 [32mHTTP POST /member/registration/ 302 [0.18, 127.0.0.1:51232][0m
+2024-06-26 22:07:44,070 [mHTTP GET / 200 [0.09, 127.0.0.1:51232][0m
+2024-06-27 12:34:58,048 [mHTTP GET / 200 [0.49, 127.0.0.1:54299][0m
+2024-06-27 12:34:58,335 [36mHTTP GET /media/products/chicken2_ZJm9k6T.webp 304 [0.02, 127.0.0.1:54299][0m
+2024-06-27 12:34:59,210 Not Found: /favicon.ico
+2024-06-27 12:34:59,211 [33mHTTP GET /favicon.ico 404 [0.19, 127.0.0.1:54299][0m
+2024-06-27 12:39:11,136 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.32, 127.0.0.1:54376][0m
+2024-06-27 12:39:11,632 [mHTTP GET /static/member/user_page_style.css 200 [0.44, 127.0.0.1:54376][0m
+2024-06-27 12:39:11,638 [mHTTP GET /media/users/dp/Edited_Dp.jpeg 200 [0.38, 127.0.0.1:54378][0m
+2024-06-27 12:39:11,645 [mHTTP GET /media/logos/edit_logo.png 200 [0.42, 127.0.0.1:54377][0m
+2024-06-27 12:41:36,199 [mHTTP GET / 200 [0.06, 127.0.0.1:54403][0m
+2024-06-27 12:43:40,436 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.03, 127.0.0.1:54435][0m
+2024-06-27 12:43:41,643 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.02, 127.0.0.1:54435][0m
+2024-06-27 12:43:41,714 [mHTTP GET /static/member/user_page_style.css 200 [0.01, 127.0.0.1:54435][0m
+2024-06-27 12:43:41,725 [mHTTP GET /media/logos/edit_logo.png 200 [0.02, 127.0.0.1:54436][0m
+2024-06-27 12:43:41,728 [mHTTP GET /media/users/dp/Edited_Dp.jpeg 200 [0.02, 127.0.0.1:54437][0m
+2024-06-27 12:43:41,843 Not Found: /favicon.ico
+2024-06-27 12:43:41,844 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:54437][0m
+2024-06-27 12:43:43,500 [32mHTTP GET /registration/signout/ 302 [0.19, 127.0.0.1:54437][0m
+2024-06-27 12:43:43,545 [mHTTP GET / 200 [0.03, 127.0.0.1:54437][0m
+2024-06-27 12:43:45,924 Internal Server Error: /registration/login/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\views.py", line 36, in login_view
+    return render(request, 'registration/login.html')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static'. Did you forget to register or load this tag?
+2024-06-27 12:43:45,968 [35;1mHTTP GET /registration/login/ 500 [0.90, 127.0.0.1:54437][0m
+2024-06-27 12:44:06,826 [mHTTP GET /registration/login/ 200 [0.03, 127.0.0.1:54437][0m
+2024-06-27 12:49:44,638 [mHTTP GET / 200 [0.03, 127.0.0.1:54498][0m
+2024-06-27 12:49:54,012 [mHTTP GET /categories/ 200 [0.09, 127.0.0.1:54498][0m
+2024-06-27 12:49:54,254 [mHTTP GET /static/product/categories_page_style.css 200 [0.11, 127.0.0.1:54498][0m
+2024-06-27 12:49:57,452 [mHTTP GET / 200 [0.03, 127.0.0.1:54498][0m
+2024-06-27 12:49:59,041 [mHTTP GET /recent_products/ 200 [0.05, 127.0.0.1:54498][0m
+2024-06-27 12:50:04,046 [mHTTP GET /view_all/ 200 [0.04, 127.0.0.1:54498][0m
+2024-06-27 12:50:21,064 [mHTTP GET / 200 [0.03, 127.0.0.1:54498][0m
+2024-06-27 12:50:22,418 [32mHTTP GET /member/add_product/ 302 [0.03, 127.0.0.1:54498][0m
+2024-06-27 12:50:22,443 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:54498][0m
+2024-06-27 12:50:31,656 [32mHTTP POST /registration/authentication/?next= 302 [2.47, 127.0.0.1:54498][0m
+2024-06-27 12:50:31,728 [mHTTP GET / 200 [0.06, 127.0.0.1:54498][0m
+2024-06-27 12:50:58,136 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.06, 127.0.0.1:54498][0m
+2024-06-27 12:51:04,988 [mHTTP GET /member/purchase_orders/ 200 [1.01, 127.0.0.1:54498][0m
+2024-06-27 12:51:05,122 [mHTTP GET /static/member/purchase_orders_style.css 200 [0.04, 127.0.0.1:54498][0m
+2024-06-27 12:51:05,395 [mHTTP POST /member/order_read/ 200 [0.06, 127.0.0.1:54498][0m
+2024-06-27 12:52:59,229 [mHTTP GET / 200 [0.09, 127.0.0.1:54658][0m
+2024-06-27 12:53:28,687 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.08, 127.0.0.1:54658][0m
+2024-06-27 12:53:31,420 [mHTTP GET /member/user_products/arsidd78/ 200 [0.15, 127.0.0.1:54658][0m
+2024-06-27 12:53:31,701 [mHTTP GET /static/member/my_product_style.css 200 [0.14, 127.0.0.1:54658][0m
+2024-06-27 12:53:36,108 [mHTTP GET /member/update_product/14/ 200 [1.17, 127.0.0.1:54658][0m
+2024-06-27 12:54:01,048 [32mHTTP POST /member/update_product/14/ 302 [0.24, 127.0.0.1:54658][0m
+2024-06-27 12:54:01,110 [mHTTP GET /member/user_products/arsidd78/ 200 [0.05, 127.0.0.1:54658][0m
+2024-06-27 12:57:16,700 [mHTTP GET /member/user_products/arsidd78/ 200 [0.04, 127.0.0.1:60376][0m
+2024-06-27 12:57:21,656 [mHTTP GET / 200 [0.13, 127.0.0.1:60376][0m
+2024-06-27 12:57:25,080 [32mHTTP GET /registration/signout/ 302 [0.21, 127.0.0.1:60376][0m
+2024-06-27 12:57:25,263 [mHTTP GET / 200 [0.06, 127.0.0.1:60376][0m
+2024-06-27 12:57:27,300 [mHTTP GET /registration/login/ 200 [0.11, 127.0.0.1:60376][0m
+2024-06-27 12:57:30,217 [mHTTP GET /registration/login/ 200 [0.03, 127.0.0.1:60376][0m
+2024-06-27 12:57:30,395 [mHTTP GET /static/registration/login_style.css 200 [0.07, 127.0.0.1:60376][0m
+2024-06-27 12:57:30,458 [mHTTP GET /media/logos/chat_logo.png 200 [0.13, 127.0.0.1:60377][0m
+2024-06-27 12:57:30,687 Not Found: /favicon.ico
+2024-06-27 12:57:30,693 [33mHTTP GET /favicon.ico 404 [0.07, 127.0.0.1:60377][0m
+2024-06-27 12:58:06,789 [mHTTP GET /registration/login/ 200 [0.03, 127.0.0.1:60377][0m
+2024-06-27 12:58:06,951 [mHTTP GET /static/registration/login_style.css 200 [0.02, 127.0.0.1:60377][0m
+2024-06-27 12:58:08,203 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:60377][0m
+2024-06-27 12:58:08,387 [mHTTP GET /static/registration/login_style.css 200 [0.01, 127.0.0.1:60377][0m
+2024-06-27 12:58:08,397 [mHTTP GET /media/logos/chat_logo.png 200 [0.02, 127.0.0.1:60376][0m
+2024-06-27 12:58:08,574 Not Found: /favicon.ico
+2024-06-27 12:58:08,590 [33mHTTP GET /favicon.ico 404 [0.08, 127.0.0.1:60376][0m
+2024-06-27 12:58:34,776 [mHTTP GET /registration/login/ 200 [0.05, 127.0.0.1:60376][0m
+2024-06-27 12:58:35,113 [mHTTP GET /static/registration/login_style.css 200 [0.14, 127.0.0.1:60376][0m
+2024-06-27 12:58:35,140 [mHTTP GET /media/logos/chat_logo.png 200 [0.17, 127.0.0.1:60377][0m
+2024-06-27 12:58:35,412 Not Found: /favicon.ico
+2024-06-27 12:58:35,417 [33mHTTP GET /favicon.ico 404 [0.06, 127.0.0.1:60377][0m
+2024-06-27 12:59:19,047 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:60377][0m
+2024-06-27 12:59:19,172 [mHTTP GET /static/registration/login_style.css 200 [0.02, 127.0.0.1:60377][0m
+2024-06-27 12:59:23,925 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60377][0m
+2024-06-27 12:59:24,233 [36mHTTP GET /static/registration/login_style.css 304 [0.03, 127.0.0.1:60377][0m
+2024-06-27 12:59:35,229 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60377][0m
+2024-06-27 12:59:35,419 [mHTTP GET /static/registration/login_style.css 200 [0.01, 127.0.0.1:60377][0m
+2024-06-27 13:00:04,986 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60377][0m
+2024-06-27 13:00:05,217 [mHTTP GET /static/registration/login_style.css 200 [0.14, 127.0.0.1:60377][0m
+2024-06-27 13:01:38,251 [mHTTP POST /registration/login/ 200 [0.02, 127.0.0.1:60403][0m
+2024-06-27 13:01:38,444 [mHTTP GET /static/registration/login_style.css 200 [0.09, 127.0.0.1:60403][0m
+2024-06-27 13:01:50,365 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60403][0m
+2024-06-27 13:01:50,504 [mHTTP GET /static/registration/login_style.css 200 [0.02, 127.0.0.1:60403][0m
+2024-06-27 13:01:56,114 [mHTTP GET / 200 [0.06, 127.0.0.1:60403][0m
+2024-06-27 13:12:20,254 [mHTTP GET / 200 [0.02, 127.0.0.1:60505][0m
+2024-06-27 13:12:23,207 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:60505][0m
+2024-06-27 13:12:23,305 [36mHTTP GET /static/registration/login_style.css 304 [0.01, 127.0.0.1:60505][0m
+2024-06-27 13:12:34,134 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60505][0m
+2024-06-27 13:15:11,646 Internal Server Error: /registration/login/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\registration\views.py", line 36, in login_view
+    return render(request, 'registration/login.html')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'signup' not found. 'signup' is not a valid view function or pattern name.
+2024-06-27 13:15:11,693 [35;1mHTTP POST /registration/login/ 500 [0.53, 127.0.0.1:60515][0m
+2024-06-27 13:15:28,984 [mHTTP POST /registration/login/ 200 [0.04, 127.0.0.1:60515][0m
+2024-06-27 13:15:29,087 [36mHTTP GET /static/registration/login_style.css 304 [0.00, 127.0.0.1:60515][0m
+2024-06-27 13:16:15,231 [mHTTP POST /registration/login/ 200 [0.06, 127.0.0.1:60515][0m
+2024-06-27 13:16:18,681 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60515][0m
+2024-06-27 13:16:18,798 [mHTTP GET /static/registration/login_style.css 200 [0.01, 127.0.0.1:60515][0m
+2024-06-27 13:16:18,805 [mHTTP GET /media/logos/chat_logo.png 200 [0.01, 127.0.0.1:60526][0m
+2024-06-27 13:16:18,971 Not Found: /favicon.ico
+2024-06-27 13:16:18,972 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:60526][0m
+2024-06-27 13:17:39,183 [mHTTP POST /registration/login/ 200 [0.06, 127.0.0.1:60530][0m
+2024-06-27 13:17:41,945 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60530][0m
+2024-06-27 13:17:42,057 [mHTTP GET /static/registration/login_style.css 200 [0.03, 127.0.0.1:60530][0m
+2024-06-27 13:17:42,119 [mHTTP GET /media/logos/chat_logo.png 200 [0.03, 127.0.0.1:60530][0m
+2024-06-27 13:17:42,364 Not Found: /favicon.ico
+2024-06-27 13:17:42,371 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:60530][0m
+2024-06-27 13:17:44,806 [mHTTP GET /registration/signup/ 200 [0.03, 127.0.0.1:60530][0m
+2024-06-27 13:17:44,893 [mHTTP POST /registration/login/ 200 [0.07, 127.0.0.1:60530][0m
+2024-06-27 13:17:44,989 [36mHTTP GET /static/registration/login_style.css 304 [0.01, 127.0.0.1:60530][0m
+2024-06-27 13:17:46,606 [mHTTP GET /registration/signup/ 200 [0.01, 127.0.0.1:60530][0m
+2024-06-27 13:17:46,689 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60530][0m
+2024-06-27 13:17:46,803 [36mHTTP GET /static/registration/login_style.css 304 [0.00, 127.0.0.1:60530][0m
+2024-06-27 13:17:47,256 [mHTTP GET /registration/signup/ 200 [0.03, 127.0.0.1:60530][0m
+2024-06-27 13:17:47,281 [mHTTP POST /registration/login/ 200 [0.02, 127.0.0.1:60531][0m
+2024-06-27 13:17:47,693 [mHTTP GET /registration/signup/ 200 [0.01, 127.0.0.1:60531][0m
+2024-06-27 13:17:47,914 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60531][0m
+2024-06-27 13:17:48,217 [mHTTP GET /registration/signup/ 200 [0.02, 127.0.0.1:60531][0m
+2024-06-27 13:17:48,260 [mHTTP POST /registration/login/ 200 [0.03, 127.0.0.1:60531][0m
+2024-06-27 13:17:48,390 [36mHTTP GET /static/registration/login_style.css 304 [0.04, 127.0.0.1:60531][0m
+2024-06-27 13:17:48,708 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60535][0m
+2024-06-27 13:17:49,202 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60535][0m
+2024-06-27 13:17:49,611 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60535][0m
+2024-06-27 13:17:50,131 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60535][0m
+2024-06-27 13:17:50,270 [36mHTTP GET /static/registration/login_style.css 304 [0.00, 127.0.0.1:60535][0m
+2024-06-27 13:19:17,080 [mHTTP POST /registration/login/ 200 [0.05, 127.0.0.1:60550][0m
+2024-06-27 13:19:17,198 [36mHTTP GET /static/registration/login_style.css 304 [0.03, 127.0.0.1:60550][0m
+2024-06-27 13:19:19,096 [mHTTP GET /registration/signup/ 200 [0.03, 127.0.0.1:60550][0m
+2024-06-27 13:19:19,135 [mHTTP POST /registration/login/ 200 [0.03, 127.0.0.1:60550][0m
+2024-06-27 13:19:19,749 [mHTTP POST /registration/login/ 200 [0.02, 127.0.0.1:60551][0m
+2024-06-27 13:20:51,453 [mHTTP POST /registration/login/ 200 [0.04, 127.0.0.1:60566][0m
+2024-06-27 13:20:51,576 [36mHTTP GET /static/registration/login_style.css 304 [0.01, 127.0.0.1:60566][0m
+2024-06-27 13:20:52,893 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60566][0m
+2024-06-27 13:20:54,110 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60566][0m
+2024-06-27 13:20:55,052 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60566][0m
+2024-06-27 13:20:55,639 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60566][0m
+2024-06-27 13:20:56,035 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60566][0m
+2024-06-27 13:21:26,838 [36mHTTP GET /static/registration/login_style.css 304 [0.01, 127.0.0.1:60566][0m
+2024-06-27 13:21:31,720 [mHTTP GET /registration/signup/ 200 [0.03, 127.0.0.1:60566][0m
+2024-06-27 13:21:31,800 [mHTTP GET /static/registration/signup_style.css 200 [0.01, 127.0.0.1:60566][0m
+2024-06-27 13:22:26,614 [mHTTP POST /registration/login/ 200 [0.02, 127.0.0.1:60566][0m
+2024-06-27 13:22:26,675 [mHTTP GET /static/registration/login_style.css 200 [0.01, 127.0.0.1:60566][0m
+2024-06-27 13:22:26,688 [mHTTP GET /media/logos/chat_logo.png 200 [0.02, 127.0.0.1:60579][0m
+2024-06-27 13:22:26,904 Not Found: /favicon.ico
+2024-06-27 13:22:26,906 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:60579][0m
+2024-06-27 13:22:28,343 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60579][0m
+2024-06-27 13:22:57,037 [mHTTP POST /registration/login/ 200 [0.03, 127.0.0.1:60579][0m
+2024-06-27 13:22:59,764 [mHTTP GET /registration/signup/ 200 [0.02, 127.0.0.1:60579][0m
+2024-06-27 13:23:21,568 [mHTTP POST /registration/login/ 200 [0.02, 127.0.0.1:60579][0m
+2024-06-27 13:23:21,641 [mHTTP GET /static/registration/login_style.css 200 [0.02, 127.0.0.1:60579][0m
+2024-06-27 13:24:21,776 [mHTTP POST /registration/login/ 200 [0.02, 127.0.0.1:60586][0m
+2024-06-27 13:24:21,878 [mHTTP GET /static/registration/login_style.css 200 [0.03, 127.0.0.1:60586][0m
+2024-06-27 13:24:33,312 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60586][0m
+2024-06-27 13:24:33,396 [mHTTP GET /static/registration/login_style.css 200 [0.03, 127.0.0.1:60586][0m
+2024-06-27 13:24:36,280 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60586][0m
+2024-06-27 13:24:36,335 [mHTTP GET /static/registration/login_style.css 200 [0.01, 127.0.0.1:60586][0m
+2024-06-27 13:24:36,349 [mHTTP GET /media/logos/chat_logo.png 200 [0.02, 127.0.0.1:60587][0m
+2024-06-27 13:24:36,439 Not Found: /favicon.ico
+2024-06-27 13:24:36,440 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:60587][0m
+2024-06-27 13:24:46,452 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60587][0m
+2024-06-27 13:24:46,526 [mHTTP GET /static/registration/login_style.css 200 [0.02, 127.0.0.1:60587][0m
+2024-06-27 13:24:54,533 [mHTTP POST /registration/login/ 200 [0.02, 127.0.0.1:60587][0m
+2024-06-27 13:24:54,624 [mHTTP GET /static/registration/login_style.css 200 [0.04, 127.0.0.1:60587][0m
+2024-06-27 13:25:03,488 [mHTTP POST /registration/login/ 200 [0.02, 127.0.0.1:60587][0m
+2024-06-27 13:25:03,573 [mHTTP GET /static/registration/login_style.css 200 [0.03, 127.0.0.1:60587][0m
+2024-06-27 13:25:20,664 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60587][0m
+2024-06-27 13:25:20,756 [36mHTTP GET /static/registration/login_style.css 304 [0.01, 127.0.0.1:60587][0m
+2024-06-27 13:25:27,466 [mHTTP POST /registration/login/ 200 [0.02, 127.0.0.1:60587][0m
+2024-06-27 13:25:27,524 [36mHTTP GET /static/registration/login_style.css 304 [0.00, 127.0.0.1:60587][0m
+2024-06-27 13:25:28,180 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60587][0m
+2024-06-27 13:25:28,789 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60587][0m
+2024-06-27 13:25:29,376 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60587][0m
+2024-06-27 13:25:29,596 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60587][0m
+2024-06-27 13:25:29,937 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60587][0m
+2024-06-27 13:25:30,144 [mHTTP POST /registration/login/ 200 [0.01, 127.0.0.1:60587][0m
+2024-06-27 13:29:19,600 [mHTTP POST /registration/login/ 200 [0.03, 127.0.0.1:60621][0m
+2024-06-27 13:29:19,668 [mHTTP GET /media/logos/chat_logo.png 200 [0.02, 127.0.0.1:60622][0m
+2024-06-27 13:29:19,677 [mHTTP GET /static/registration/login_style.css 200 [0.03, 127.0.0.1:60621][0m
+2024-06-27 13:29:19,779 Not Found: /favicon.ico
+2024-06-27 13:29:19,781 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:60621][0m
+2024-06-27 13:29:22,032 [mHTTP GET /registration/signup/ 200 [0.02, 127.0.0.1:60621][0m
+2024-06-27 13:29:27,271 [32mHTTP POST /registration/authentication/?next= 302 [1.16, 127.0.0.1:60621][0m
+2024-06-27 13:29:27,312 [mHTTP GET / 200 [0.03, 127.0.0.1:60621][0m

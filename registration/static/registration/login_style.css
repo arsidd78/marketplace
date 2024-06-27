@@ -1,108 +1,134 @@
-
-
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
 
 nav {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
 }
 
 nav a {
-    color: rgb(144, 13, 176);
-    text-decoration: none;
-    margin-right: 10px;
-    font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
 }
 
 nav a:hover {
-    text-decoration: underline;
-}
-.messages {
-  position: absolute;
-}
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #dcd8de, #9e48c9);
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  text-decoration: underline;
 }
 
-form {
-    background: linear-gradient(135deg, #9e6fb6, #9e48c9);
-    padding: 40px;
-    border-radius: 10px;
-    border-color: #09090a;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 350px;
-    text-align: center;
-    backdrop-filter: blur(10px);
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+.form-container h1 {
+  text-align: center;
+  color: #6a0dad;
 }
 
-form input[type="text"], form input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    outline: none;
+.form-group {
+  margin-bottom: 15px;
 }
 
-form input[type="submit"] {
-    width: 100%;
-    padding: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(to right, #ff6b81, #ff4757);
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-    margin-top: 10px;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-form input[type="submit"]:hover {
-    background: linear-gradient(to right, #ff4757, #ff6b81);
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #370061;
 }
 
 .signup-button {
-    width: 100%;
-    padding: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(to right, #d6d6d7, #5352ed);
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-    margin-top: 10px;
-    text-decoration: none;
-    display: inline-block;
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  color: #6a0dad;
+  text-decoration: none;
 }
 
 .signup-button:hover {
-    background: linear-gradient(to right, #5352ed, #e9eaed);
+  text-decoration: underline;
 }
 
 .messages {
-    position: absolute;
-    top: 10px;
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .messages li {
-    color: black;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  position: relative;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #fcfbfc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav a {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .form-container {
+      margin: 20px;
+  }
 }
