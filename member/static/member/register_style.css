@@ -1,137 +1,97 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
 }
-
 nav {
-    background-color: #4b0082;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
+    background-color: #6a0dad;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2em;
+    margin: 0 10px;
 }
-
-nav a:hover {
-    text-decoration: underline;
+nav .search-container {
+    flex-grow: 1;
+    margin-right: 20px;
 }
-
-.search-container {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.search-container input[type="search"] {
+nav .search-container input[type="search"] {
     padding: 5px;
-    border: none;
-    border-radius: 4px;
-    font-size: 1em;
+    font-size: 16px;
 }
-
-.search-container input[type="submit"] {
+nav .search-container input[type="submit"] {
     padding: 5px 10px;
-    background-color: #fff;
-    color: #4b0082;
+    background-color: white;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
+    color: #6a0dad;
+    font-weight: bold;
 }
-
-.search-container input[type="submit"]:hover {
-    background-color: #e6e6e6;
-}
-
 .form-container {
-    max-width: 600px;
+    background-color: white;
+    max-width: 500px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .form-container h1 {
-    text-align: center;
-    color: #4b0082;
+    color: #6a0dad;
     margin-bottom: 20px;
 }
-
-.form-group {
-    margin-bottom: 15px;
+.form-container form {
+    display: flex;
+    flex-direction: column;
 }
-
-.form-group label {
-    display: block;
+.form-container label {
+    margin-top: 10px;
     margin-bottom: 5px;
     font-weight: bold;
 }
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="password"],
-.form-group input[type="file"] {
-    width: 100%;
+.form-container input[type="text"],
+.form-container input[type="url"],
+.form-container input[type="file"],
+.form-container textarea {
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1em;
+    border-radius: 5px;
+    font-size: 16px;
 }
-
-.form-group input[type="submit"],
-button[type="submit"] {
-    width: 100%;
+.form-container textarea {
+    resize: vertical;
+}
+.form-container button {
+    background-color: #6a0dad;
+    color: white;
     padding: 10px;
-    background-color: #4b0082;
-    color: #fff;
     border: none;
-    border-radius: 4px;
-    font-size: 1.2em;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+    margin-top: 20px;
 }
-
-.form-group input[type="submit"]:hover,
-button[type="submit"]:hover {
-    background-color: #370061;
+.form-container button:hover {
+    background-color: #5a0b9e;
 }
-
-#profile_image_preview {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+.form-container img {
+    margin-top: 10px;
+    max-width: 100%;
     border-radius: 50%;
-    border: 2px solid #ddd;
+    display: block;
 }
-
-.messages {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.messages li {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-}
-
+/* Footer styling */
 footer {
     background-color: #333;
+    position: relative;
     color: white;
     padding: 20px;
     text-align: center;
-    margin-top: auto;
+    margin-top: 25%;
   }
   
   footer p {
@@ -146,19 +106,3 @@ footer {
   footer a:hover {
     text-decoration: underline;
   }
-  
-
-@media (max-width: 768px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .form-container {
-        margin: 20px;
-    }
-
-    #profile_image_preview {
-        max-width: 100px;
-    }
-}

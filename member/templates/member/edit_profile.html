@@ -35,9 +35,11 @@
             <h2>Edit Profile</h2>
             <form enctype="multipart/form-data" method="post" onsubmit="return displayImage(event)">
                 {% csrf_token %}
-                {{ form.as_p }}
                 <div class="profile-picture">
+                    <img id="profile_image_preview" src="#" alt="Profile Image Preview" style="display:none;"/>
                 </div>
+                {{ form.as_p }}
+
                 <button type="submit" class="btn">Save</button>
             </form>
         </div>
@@ -50,5 +52,17 @@
         <p>LinkedIn: <a href="https://www.linkedin.com/in/arsidd78">https://www.linkedin.com/in/arsidd78</a></p>
     </footer>
 
+    <script>
+        function previewImage(event) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                const output = document.getElementById('profile_image_preview');
+                output.src = reader.result;
+                output.style.display = 'block';
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+        document.querySelector('input[type="file"]').addEventListener('change', previewImage);
+    </script>
 </body>
 </html>

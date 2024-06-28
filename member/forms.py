@@ -21,9 +21,10 @@ class ProductsForm(forms.ModelForm):
 class MemberForm(forms.ModelForm):
     class Meta:
         model = Member
-        fields = ['user_profile_picture','user_phone_number','user_website','user_about']
+        fields = ['user_profile_picture', 'user_phone_number', 'user_website', 'user_about']
         widgets = {
-            'user_phone_number':forms.TextInput(attrs={'class':'phone_no','placeholder':'add phone_no','max_length':13}),
-            'user_website':forms.URLInput(attrs={'class':'user_website','placeholder':'enter your website'}),
-            'user_about': forms.Textarea(attrs={'class':'about','placeholder':'describe yourself'})
+            'user_profile_picture': forms.ClearableFileInput(attrs={'class': 'user_profile_pic', 'id': 'profile_picture', 'accept': 'image/*', 'onchange': 'previewImage(event)'}),
+            'user_phone_number': forms.TextInput(attrs={'class': 'phone_no', 'placeholder': 'add phone_no', 'max_length': 13}),
+            'user_website': forms.URLInput(attrs={'class': 'user_website', 'placeholder': 'enter your website'}),
+            'user_about': forms.Textarea(attrs={'class': 'about', 'placeholder': 'describe yourself'})
         }

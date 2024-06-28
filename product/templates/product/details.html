@@ -29,6 +29,7 @@
         <a href="{% url 'member:register' %}">Complete Profile</a>
         {% endif %}
         <a href="{% url 'member:add_product_page' %}">Sell</a>
+        <a href="{% url 'chat:sellor-chat' %}">{{unread_messages}}<img src="/media/logos/chat_logo.png" alt="chat" width="32"></a>
     </nav>
     <div class="main-content">
         <aside class="aside_links">

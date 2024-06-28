@@ -31385,3 +31385,493 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'signup' not found. 'signup' 
 2024-06-27 13:29:22,032 [mHTTP GET /registration/signup/ 200 [0.02, 127.0.0.1:60621][0m
 2024-06-27 13:29:27,271 [32mHTTP POST /registration/authentication/?next= 302 [1.16, 127.0.0.1:60621][0m
 2024-06-27 13:29:27,312 [mHTTP GET / 200 [0.03, 127.0.0.1:60621][0m
+2024-06-27 13:53:41,590 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py changed, reloading.
+2024-06-27 13:53:57,201 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-27 13:57:48,137 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-27 13:57:57,159 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-27 13:58:02,162 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 13:58:02,212 [35;1mHTTP GET /detail/14/ 500 [0.19, 127.0.0.1:49241][0m
+2024-06-27 13:59:11,224 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py changed, reloading.
+2024-06-27 13:59:16,780 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 13:59:16,803 [35;1mHTTP GET /detail/14/ 500 [0.16, 127.0.0.1:49278][0m
+2024-06-27 13:59:18,303 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 13:59:18,345 [35;1mHTTP GET /detail/14/ 500 [0.10, 127.0.0.1:49278][0m
+2024-06-27 13:59:18,891 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 13:59:18,922 [35;1mHTTP GET /detail/14/ 500 [0.11, 127.0.0.1:49278][0m
+2024-06-27 13:59:19,216 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 13:59:19,368 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 13:59:19,398 [35;1mHTTP GET /detail/14/ 500 [0.14, 127.0.0.1:49279][0m
+2024-06-27 13:59:19,644 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 13:59:19,669 [35;1mHTTP GET /detail/14/ 500 [0.16, 127.0.0.1:49279][0m
+2024-06-27 13:59:19,817 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 13:59:19,857 [35;1mHTTP GET /detail/14/ 500 [0.13, 127.0.0.1:49283][0m
+2024-06-27 13:59:20,101 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 13:59:20,120 [35;1mHTTP GET /detail/14/ 500 [0.13, 127.0.0.1:49283][0m
+2024-06-27 13:59:20,292 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 13:59:20,332 [35;1mHTTP GET /detail/14/ 500 [0.12, 127.0.0.1:49283][0m
+2024-06-27 14:00:03,314 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py changed, reloading.
+2024-06-27 14:00:07,686 Internal Server Error: /detail/14/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 23, in wrapper
+    messages_recieved = member.user_messages_received.all()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
+2024-06-27 14:00:07,711 [35;1mHTTP GET /detail/14/ 500 [0.17, 127.0.0.1:49304][0m
+2024-06-27 14:01:46,022 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-27 14:01:53,787 [mHTTP GET /detail/14/ 200 [0.52, 127.0.0.1:49323][0m
+2024-06-27 14:03:04,868 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py changed, reloading.
+2024-06-27 14:04:13,860 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\product\views.py changed, reloading.
+2024-06-27 14:04:29,531 [mHTTP GET /add_review/14/ 200 [0.16, 127.0.0.1:49360][0m
+2024-06-27 14:04:29,956 [mHTTP GET /static/product/review_style.css 200 [0.27, 127.0.0.1:49360][0m
+2024-06-27 14:05:00,854 [32mHTTP POST /add_review/14/ 302 [0.29, 127.0.0.1:49360][0m
+2024-06-27 14:05:01,021 [mHTTP GET /detail/14/ 200 [0.13, 127.0.0.1:49360][0m
+2024-06-27 14:05:04,372 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.06, 127.0.0.1:49364][0m
+2024-06-28 11:46:35,294 [mHTTP GET / 200 [0.62, 127.0.0.1:63533][0m
+2024-06-28 11:46:35,721 [36mHTTP GET /media/products/chicken2_ZJm9k6T.webp 304 [0.02, 127.0.0.1:63533][0m
+2024-06-28 11:46:37,938 Not Found: /favicon.ico
+2024-06-28 11:46:37,949 [33mHTTP GET /favicon.ico 404 [0.20, 127.0.0.1:63533][0m
+2024-06-28 11:46:46,607 [mHTTP GET /member/user_profile/arsidd78/ 200 [0.09, 127.0.0.1:63533][0m
+2024-06-28 11:46:49,411 [mHTTP GET / 200 [0.07, 127.0.0.1:63533][0m
+2024-06-28 11:47:16,215 [32mHTTP GET /registration/signout/ 302 [0.62, 127.0.0.1:63533][0m
+2024-06-28 11:47:16,267 [mHTTP GET / 200 [0.04, 127.0.0.1:63533][0m
+2024-06-28 11:47:19,492 [mHTTP GET /registration/login/ 200 [1.40, 127.0.0.1:63533][0m
+2024-06-28 11:47:19,710 [36mHTTP GET /static/registration/login_style.css 304 [0.01, 127.0.0.1:63533][0m
+2024-06-28 11:47:22,144 [mHTTP GET /registration/signup/ 200 [0.32, 127.0.0.1:63533][0m
+2024-06-28 11:47:57,472 [32mHTTP POST /registration/register/ 302 [1.77, 127.0.0.1:63533][0m
+2024-06-28 11:47:57,541 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:63533][0m
+2024-06-28 11:48:16,841 [32mHTTP POST /registration/authentication/?next= 302 [1.82, 127.0.0.1:63533][0m
+2024-06-28 11:48:16,876 [mHTTP GET / 200 [0.03, 127.0.0.1:63533][0m
+2024-06-28 11:48:17,335 [mHTTP GET /media/logos/warning_logo.png 200 [0.38, 127.0.0.1:63533][0m
+2024-06-28 11:48:31,041 [mHTTP GET /member/registration/ 200 [0.23, 127.0.0.1:63533][0m
+2024-06-28 11:48:31,189 [mHTTP GET /member/registration/ 200 [0.02, 127.0.0.1:63592][0m
+2024-06-28 11:48:31,193 [mHTTP GET /static/member/register_style.css 200 [0.03, 127.0.0.1:63533][0m
+2024-06-28 11:55:45,933 [mHTTP GET /member/registration/ 200 [0.04, 127.0.0.1:61797][0m
+2024-06-28 11:55:46,042 [mHTTP GET /static/member/register_style.css 200 [0.04, 127.0.0.1:61797][0m
+2024-06-28 11:55:46,086 [mHTTP GET /media/logos/warning_logo.png 200 [0.07, 127.0.0.1:61798][0m
+2024-06-28 11:55:46,114 [mHTTP GET /member/registration/ 200 [0.09, 127.0.0.1:61800][0m
+2024-06-28 11:55:46,173 [mHTTP GET /media/logos/chat_logo.png 200 [0.16, 127.0.0.1:61799][0m
+2024-06-28 11:55:46,547 Not Found: /favicon.ico
+2024-06-28 11:55:46,548 [33mHTTP GET /favicon.ico 404 [0.26, 127.0.0.1:61799][0m
+2024-06-28 12:09:44,394 [mHTTP GET /member/registration/ 200 [0.10, 127.0.0.1:62984][0m
+2024-06-28 12:09:44,470 [mHTTP GET /static/member/register_style.css 200 [0.03, 127.0.0.1:62984][0m
+2024-06-28 12:09:44,482 [mHTTP GET /media/logos/warning_logo.png 200 [0.02, 127.0.0.1:62985][0m
+2024-06-28 12:09:44,485 [mHTTP GET /media/logos/chat_logo.png 200 [0.02, 127.0.0.1:62986][0m
+2024-06-28 12:09:44,609 [mHTTP GET /member/registration/ 200 [0.04, 127.0.0.1:62986][0m
+2024-06-28 12:09:44,664 Not Found: /favicon.ico
+2024-06-28 12:09:44,666 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:62986][0m
+2024-06-28 12:09:46,224 [mHTTP GET /member/registration/ 200 [0.01, 127.0.0.1:62986][0m
+2024-06-28 12:09:46,284 [mHTTP GET /static/member/register_style.css 200 [0.01, 127.0.0.1:62986][0m
+2024-06-28 12:09:46,301 [mHTTP GET /media/logos/chat_logo.png 200 [0.03, 127.0.0.1:62984][0m
+2024-06-28 12:09:46,303 [mHTTP GET /media/logos/warning_logo.png 200 [0.03, 127.0.0.1:62985][0m
+2024-06-28 12:09:46,337 [mHTTP GET /member/registration/ 200 [0.04, 127.0.0.1:62986][0m
+2024-06-28 12:09:46,381 Not Found: /favicon.ico
+2024-06-28 12:09:46,382 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:62986][0m
+2024-06-28 12:12:17,579 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\forms.py changed, reloading.
+2024-06-28 12:15:59,206 [mHTTP GET /member/registration/ 200 [0.13, 127.0.0.1:63074][0m
+2024-06-28 12:15:59,397 [36mHTTP GET /static/member/register_style.css 304 [0.10, 127.0.0.1:63074][0m
+2024-06-28 12:15:59,511 [mHTTP GET /member/registration/ 200 [0.05, 127.0.0.1:63074][0m
+2024-06-28 12:15:59,836 Not Found: /favicon.ico
+2024-06-28 12:15:59,841 [33mHTTP GET /favicon.ico 404 [0.19, 127.0.0.1:63074][0m
+2024-06-28 12:17:11,463 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\member\forms.py changed, reloading.
+2024-06-28 12:17:26,248 [mHTTP GET /member/registration/ 200 [0.14, 127.0.0.1:63136][0m
+2024-06-28 12:17:26,404 [mHTTP GET /member/registration/ 200 [0.04, 127.0.0.1:63139][0m
+2024-06-28 12:17:26,623 [mHTTP GET /media/logos/warning_logo.png 200 [0.26, 127.0.0.1:63135][0m
+2024-06-28 12:17:26,647 [mHTTP GET /media/logos/chat_logo.png 200 [0.28, 127.0.0.1:63138][0m
+2024-06-28 12:17:26,697 [mHTTP GET /static/member/register_style.css 200 [0.37, 127.0.0.1:63136][0m
+2024-06-28 12:17:26,848 Not Found: /favicon.ico
+2024-06-28 12:17:26,862 [33mHTTP GET /favicon.ico 404 [0.09, 127.0.0.1:63136][0m
+2024-06-28 12:23:04,710 [mHTTP GET /member/registration/ 200 [0.04, 127.0.0.1:63180][0m
+2024-06-28 12:23:04,809 [mHTTP GET /static/member/register_style.css 200 [0.02, 127.0.0.1:63180][0m
+2024-06-28 12:23:04,824 [mHTTP GET /media/logos/warning_logo.png 200 [0.03, 127.0.0.1:63181][0m
+2024-06-28 12:23:04,833 [mHTTP GET /media/logos/chat_logo.png 200 [0.03, 127.0.0.1:63182][0m
+2024-06-28 12:23:04,842 [mHTTP GET /member/registration/ 200 [0.04, 127.0.0.1:63183][0m
+2024-06-28 12:23:04,941 Not Found: /favicon.ico
+2024-06-28 12:23:04,943 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:63183][0m
+2024-06-28 12:25:55,183 [mHTTP GET /member/registration/ 200 [0.06, 127.0.0.1:63279][0m
+2024-06-28 12:25:55,369 [mHTTP GET /static/member/register_style.css 200 [0.10, 127.0.0.1:63279][0m
+2024-06-28 12:25:55,393 [mHTTP GET /media/logos/warning_logo.png 200 [0.06, 127.0.0.1:63280][0m
+2024-06-28 12:25:55,410 [mHTTP GET /media/logos/chat_logo.png 200 [0.07, 127.0.0.1:63281][0m
+2024-06-28 12:25:55,732 [mHTTP GET /member/registration/ 200 [0.15, 127.0.0.1:63281][0m
+2024-06-28 12:27:11,517 [mHTTP GET /member/registration/ 200 [0.06, 127.0.0.1:63330][0m
+2024-06-28 12:27:11,619 [mHTTP GET /static/member/register_style.css 200 [0.02, 127.0.0.1:63330][0m
+2024-06-28 12:27:11,631 [mHTTP GET /media/logos/warning_logo.png 200 [0.03, 127.0.0.1:63329][0m
+2024-06-28 12:27:11,651 [mHTTP GET /media/logos/chat_logo.png 200 [0.04, 127.0.0.1:63332][0m
+2024-06-28 12:27:11,849 [mHTTP GET /member/registration/ 200 [0.04, 127.0.0.1:63332][0m
+2024-06-28 12:29:09,233 [mHTTP GET /member/registration/ 200 [0.07, 127.0.0.1:63402][0m
+2024-06-28 12:29:09,318 [mHTTP GET /static/member/register_style.css 200 [0.03, 127.0.0.1:63402][0m
+2024-06-28 12:29:09,340 [mHTTP GET /media/logos/chat_logo.png 200 [0.04, 127.0.0.1:63403][0m
+2024-06-28 12:29:09,351 [mHTTP GET /media/logos/warning_logo.png 200 [0.06, 127.0.0.1:63401][0m
+2024-06-28 12:29:09,536 [mHTTP GET /member/registration/ 200 [0.04, 127.0.0.1:63401][0m
+2024-06-28 12:48:52,045 [mHTTP GET /member/registration/ 200 [0.02, 127.0.0.1:50781][0m
+2024-06-28 12:48:52,127 [mHTTP GET /static/member/register_style.css 200 [0.03, 127.0.0.1:50781][0m
+2024-06-28 12:48:52,132 [mHTTP GET /media/logos/chat_logo.png 200 [0.02, 127.0.0.1:50783][0m
+2024-06-28 12:48:52,135 [mHTTP GET /media/logos/warning_logo.png 200 [0.03, 127.0.0.1:50782][0m
+2024-06-28 12:48:52,257 [mHTTP GET /member/registration/ 200 [0.02, 127.0.0.1:50782][0m
+2024-06-28 12:48:52,352 Not Found: /favicon.ico
+2024-06-28 12:48:52,354 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:50782][0m
+2024-06-28 12:49:22,652 [mHTTP GET /member/registration/ 200 [0.02, 127.0.0.1:50782][0m
+2024-06-28 12:49:22,732 [mHTTP GET /static/member/register_style.css 200 [0.03, 127.0.0.1:50782][0m
+2024-06-28 12:49:22,780 [mHTTP GET /member/registration/ 200 [0.04, 127.0.0.1:50783][0m
+2024-06-28 12:49:54,242 [mHTTP GET /member/registration/ 200 [0.07, 127.0.0.1:50783][0m
+2024-06-28 12:49:54,296 [36mHTTP GET /static/member/register_style.css 304 [0.01, 127.0.0.1:50783][0m
+2024-06-28 12:49:54,371 [mHTTP GET /member/registration/ 200 [0.05, 127.0.0.1:50783][0m
+2024-06-28 12:50:12,810 [mHTTP GET /member/registration/ 200 [0.08, 127.0.0.1:50783][0m
+2024-06-28 12:50:12,962 [36mHTTP GET /static/member/register_style.css 304 [0.06, 127.0.0.1:50783][0m
+2024-06-28 12:50:12,990 [mHTTP GET /member/registration/ 200 [0.09, 127.0.0.1:50782][0m
+2024-06-28 12:52:39,873 [32mHTTP POST /member/registration/ 302 [2.01, 127.0.0.1:50825][0m
+2024-06-28 12:52:40,020 [mHTTP GET / 200 [0.14, 127.0.0.1:50825][0m
+2024-06-28 12:52:42,406 [mHTTP GET /member/user_profile/bk980/ 200 [0.06, 127.0.0.1:50825][0m
+2024-06-28 12:52:42,527 [mHTTP GET /media/users/dp/59.jpg 200 [0.04, 127.0.0.1:50825][0m
+2024-06-28 12:52:44,769 [mHTTP GET /member/edit_profile/ 200 [0.10, 127.0.0.1:50825][0m
+2024-06-28 12:52:44,865 [mHTTP GET /static/member/edit_profile_style.css 200 [0.02, 127.0.0.1:50825][0m
+2024-06-28 12:56:50,017 [mHTTP GET /member/edit_profile/ 200 [0.09, 127.0.0.1:50871][0m
+2024-06-28 12:56:50,113 [mHTTP GET /media/logos/chat_logo.png 200 [0.01, 127.0.0.1:50872][0m
+2024-06-28 12:56:50,125 [mHTTP GET /static/member/edit_profile_style.css 200 [0.05, 127.0.0.1:50871][0m
+2024-06-28 12:56:50,171 [mHTTP GET /member/edit_profile/ 200 [0.05, 127.0.0.1:50873][0m
+2024-06-28 12:56:50,265 Not Found: /favicon.ico
+2024-06-28 12:56:50,266 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:50873][0m
+2024-06-28 12:57:28,930 [mHTTP GET /member/edit_profile/ 200 [0.05, 127.0.0.1:50873][0m
+2024-06-28 12:57:29,042 [mHTTP GET /static/member/edit_profile_style.css 200 [0.03, 127.0.0.1:50873][0m
+2024-06-28 12:57:29,086 [mHTTP GET /member/edit_profile/ 200 [0.05, 127.0.0.1:50871][0m
+2024-06-28 12:57:30,058 [mHTTP GET /member/edit_profile/ 200 [0.03, 127.0.0.1:50871][0m
+2024-06-28 12:57:30,175 [mHTTP GET /static/member/edit_profile_style.css 200 [0.02, 127.0.0.1:50871][0m
+2024-06-28 12:57:30,220 [mHTTP GET /media/logos/chat_logo.png 200 [0.07, 127.0.0.1:50873][0m
+2024-06-28 12:57:30,227 [mHTTP GET /member/edit_profile/ 200 [0.06, 127.0.0.1:50872][0m
+2024-06-28 12:57:30,304 Not Found: /favicon.ico
+2024-06-28 12:57:30,305 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:50872][0m
+2024-06-28 13:00:45,839 [mHTTP GET /member/edit_profile/ 200 [0.13, 127.0.0.1:50943][0m
+2024-06-28 13:00:45,935 [36mHTTP GET /static/member/edit_profile_style.css 304 [0.01, 127.0.0.1:50943][0m
+2024-06-28 13:00:46,035 [mHTTP GET /member/edit_profile/ 200 [0.07, 127.0.0.1:50943][0m
+2024-06-28 13:00:49,556 [36mHTTP GET /media/users/dp/59.jpg 304 [0.03, 127.0.0.1:50943][0m
+2024-06-28 13:01:11,140 [32mHTTP POST /member/edit_profile/ 302 [0.21, 127.0.0.1:50943][0m
+2024-06-28 13:01:11,234 [mHTTP GET /member/user_profile/bk980/ 200 [0.06, 127.0.0.1:50943][0m
+2024-06-28 13:01:11,397 [mHTTP GET /media/users/dp/mangoes1.jpeg 200 [0.05, 127.0.0.1:50943][0m
+2024-06-28 13:01:41,536 [mHTTP GET / 200 [0.07, 127.0.0.1:50943][0m
+2024-06-28 13:21:44,519 [mHTTP GET / 200 [0.03, 127.0.0.1:51392][0m
+2024-06-28 13:21:45,159 [mHTTP GET / 200 [0.03, 127.0.0.1:51392][0m
+2024-06-28 13:21:46,721 [32mHTTP GET /registration/signout/ 302 [0.12, 127.0.0.1:51392][0m
+2024-06-28 13:21:46,743 [mHTTP GET / 200 [0.02, 127.0.0.1:51392][0m
+2024-06-28 13:21:56,087 [mHTTP GET /registration/login/ 200 [0.04, 127.0.0.1:51392][0m
+2024-06-28 13:21:58,440 [mHTTP GET / 200 [0.02, 127.0.0.1:51392][0m
+2024-06-28 13:21:59,527 [mHTTP GET /detail/42/ 200 [0.18, 127.0.0.1:51392][0m
+2024-06-28 13:21:59,643 [mHTTP GET /static/product/details_style.css 200 [0.02, 127.0.0.1:51392][0m
+2024-06-28 13:22:01,566 [mHTTP GET / 200 [0.03, 127.0.0.1:51392][0m
+2024-06-28 13:22:11,499 [mHTTP GET /detail/40/ 200 [0.01, 127.0.0.1:51392][0m
+2024-06-28 13:22:14,493 [mHTTP GET /media/products/sport_1.jpeg 200 [0.04, 127.0.0.1:51399][0m
+2024-06-28 13:23:00,110 [mHTTP GET /registration/login/ 200 [0.02, 127.0.0.1:51392][0m
+2024-06-28 13:23:05,929 [mHTTP GET /registration/signup/ 200 [0.10, 127.0.0.1:51392][0m
+2024-06-28 13:25:22,884 [32mHTTP POST /registration/register/ 302 [2.02, 127.0.0.1:51421][0m
+2024-06-28 13:25:22,942 [mHTTP GET /registration/login/ 200 [0.01, 127.0.0.1:51421][0m
+2024-06-28 13:25:53,578 [32mHTTP POST /registration/authentication/?next= 302 [2.30, 127.0.0.1:51421][0m
+2024-06-28 13:25:53,626 [mHTTP GET / 200 [0.03, 127.0.0.1:51421][0m
+2024-06-28 13:26:03,174 [mHTTP GET /member/registration/ 200 [0.03, 127.0.0.1:51421][0m
+2024-06-28 13:26:03,276 [36mHTTP GET /static/member/register_style.css 304 [0.02, 127.0.0.1:51421][0m
+2024-06-28 13:26:03,313 [mHTTP GET /member/registration/ 200 [0.04, 127.0.0.1:51422][0m
+2024-06-28 13:27:15,896 [32mHTTP POST /member/registration/ 302 [0.24, 127.0.0.1:51434][0m
+2024-06-28 13:27:16,006 [mHTTP GET / 200 [0.10, 127.0.0.1:51434][0m
+2024-06-28 13:27:24,215 [mHTTP GET /member/user_profile/maha/ 200 [0.02, 127.0.0.1:51434][0m
+2024-06-28 13:27:24,345 [mHTTP GET /media/users/dp/R_jkItUhh.jfif 200 [0.03, 127.0.0.1:51434][0m
+2024-06-28 13:28:11,912 [mHTTP GET /recommended_products/ 200 [0.05, 127.0.0.1:51434][0m
+2024-06-28 13:28:12,044 [mHTTP GET /static/product/recommended_products_style.css 200 [0.02, 127.0.0.1:51434][0m
+2024-06-28 13:28:19,542 [mHTTP GET /detail/39/ 200 [0.12, 127.0.0.1:51434][0m
+2024-06-28 13:28:19,666 [36mHTTP GET /static/product/details_style.css 304 [0.01, 127.0.0.1:51440][0m
+2024-06-28 13:28:19,730 [mHTTP GET /media/products/makeup4.jpeg 200 [0.08, 127.0.0.1:51438][0m
+2024-06-28 13:28:19,735 [mHTTP GET /media/products/makeup3.jpeg 200 [0.09, 127.0.0.1:51437][0m
+2024-06-28 13:28:19,744 [mHTTP GET /media/products/makeup5.jpeg 200 [0.09, 127.0.0.1:51439][0m
+2024-06-28 13:28:19,746 [mHTTP GET /media/products/makeup2.jpeg 200 [0.11, 127.0.0.1:51434][0m
+2024-06-28 13:28:24,997 [32mHTTP GET /member/adding_cart/39/ 302 [0.25, 127.0.0.1:51434][0m
+2024-06-28 13:28:25,122 [mHTTP GET /detail/39/ 200 [0.12, 127.0.0.1:51434][0m
+2024-06-28 13:28:32,835 [32mHTTP GET /member/adding_cart/39/ 302 [0.20, 127.0.0.1:51434][0m
+2024-06-28 13:28:32,951 [mHTTP GET /detail/39/ 200 [0.11, 127.0.0.1:51434][0m
+2024-06-28 13:28:36,921 [32mHTTP GET /member/adding_wishlist/39/ 302 [0.33, 127.0.0.1:51434][0m
+2024-06-28 13:28:37,034 [mHTTP GET /detail/39/ 200 [0.09, 127.0.0.1:51434][0m
+2024-06-28 13:29:16,757 [mHTTP GET /payment/39/ 200 [0.10, 127.0.0.1:51434][0m
+2024-06-28 13:29:16,977 [mHTTP GET /static/product/purchase_page_style.css 200 [0.09, 127.0.0.1:51434][0m
+2024-06-28 13:29:35,463 [mHTTP POST /payment/39/ 200 [0.48, 127.0.0.1:51434][0m
+2024-06-28 13:29:35,563 [mHTTP GET /static/product/confirmation_style.css 200 [0.03, 127.0.0.1:51434][0m
+2024-06-28 13:29:47,323 [mHTTP GET /confirmation/invoice/273/ 200 [0.50, 127.0.0.1:51434][0m
+2024-06-28 13:29:47,425 [mHTTP GET /static/product/invoice_style.css 200 [0.03, 127.0.0.1:51434][0m
+2024-06-28 13:29:58,090 [mHTTP GET /member/user_profile/maha/ 200 [0.02, 127.0.0.1:51434][0m
+2024-06-28 13:29:58,217 [36mHTTP GET /media/users/dp/R_jkItUhh.jfif 304 [0.03, 127.0.0.1:51434][0m
+2024-06-28 13:30:10,795 [mHTTP GET / 200 [0.04, 127.0.0.1:51434][0m
+2024-06-28 13:30:22,861 [mHTTP GET /detail/39/ 200 [0.10, 127.0.0.1:51434][0m
+2024-06-28 13:30:27,509 [mHTTP GET /add_review/39/ 200 [0.08, 127.0.0.1:51434][0m
+2024-06-28 13:31:05,164 [32mHTTP POST /add_review/39/ 302 [0.21, 127.0.0.1:51434][0m
+2024-06-28 13:31:05,254 [mHTTP GET /detail/39/ 200 [0.08, 127.0.0.1:51434][0m
+2024-06-28 13:31:07,973 [mHTTP GET /media/products/makeup4.jpeg 200 [0.01, 127.0.0.1:51454][0m
+2024-06-28 13:31:18,054 [mHTTP GET / 200 [0.04, 127.0.0.1:51434][0m
+2024-06-28 13:31:27,801 [mHTTP GET /detail/47/ 200 [0.15, 127.0.0.1:51434][0m
+2024-06-28 13:31:27,921 [36mHTTP GET /static/product/details_style.css 304 [0.03, 127.0.0.1:51434][0m
+2024-06-28 13:31:30,457 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.04, 127.0.0.1:51454][0m
+2024-06-28 13:31:32,092 [mHTTP GET /chat/chat/47/ 200 [0.03, 127.0.0.1:51434][0m
+2024-06-28 13:31:32,183 [mHTTP GET /static/chat/chat_initiator_style.css 200 [0.01, 127.0.0.1:51434][0m
+2024-06-28 13:31:32,192 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:51455]
+2024-06-28 13:31:32,312 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:51455]
+2024-06-28 13:32:26,815 [mHTTP POST /chat/chat/47/ 200 [0.25, 127.0.0.1:51434][0m
+2024-06-28 13:32:30,742 [mHTTP GET / 200 [0.06, 127.0.0.1:51434][0m
+2024-06-28 13:32:30,836 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:51455]
+2024-06-28 13:32:49,595 [mHTTP GET /chat/chat/ 200 [0.20, 127.0.0.1:51434][0m
+2024-06-28 13:32:49,736 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.01, 127.0.0.1:51434][0m
+2024-06-28 13:33:34,145 [mHTTP GET /categories/ 200 [0.13, 127.0.0.1:51434][0m
+2024-06-28 13:33:46,962 [mHTTP GET / 200 [0.05, 127.0.0.1:51434][0m
+2024-06-28 13:34:41,042 [32mHTTP GET /registration/signout/ 302 [0.19, 127.0.0.1:51434][0m
+2024-06-28 13:34:41,110 [mHTTP GET / 200 [0.06, 127.0.0.1:51434][0m
