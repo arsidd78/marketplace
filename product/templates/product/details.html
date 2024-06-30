@@ -58,7 +58,11 @@
             {% if product.product_images5 %}
                 <img src="{{product.product_images5.url}}" class="product_image">
             {% endif %}
+            {% if request.user.is_authenticated %}
             <a href="javascript:void(0);"><button id="buyButton" class="purchase_pd">Buy</button></a>
+            {% else %}
+            <a href="{% url 'registration:login' %}"><button  class="purchase_pd"> login to Buy </button></a>
+            {% endif %}
             <button class="addto_cart" onclick=location.href="{% url 'member:add_to_cart' product.id %}">Add to Cart</button>
             <button class="wishlist" onclick=location.href="{% url 'member:add_to_wishlist' product.id %}">Add to wishlist</button>
             <h2 class="product_price">Price:</h2>
