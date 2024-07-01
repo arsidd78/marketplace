@@ -31875,3 +31875,11 @@ AttributeError: 'QuerySet' object has no attribute 'user_messages_received'
 2024-06-28 13:33:46,962 [mHTTP GET / 200 [0.05, 127.0.0.1:51434][0m
 2024-06-28 13:34:41,042 [32mHTTP GET /registration/signout/ 302 [0.19, 127.0.0.1:51434][0m
 2024-06-28 13:34:41,110 [mHTTP GET / 200 [0.06, 127.0.0.1:51434][0m
+2024-07-01 21:59:00,496 [mHTTP GET / 200 [2.79, 127.0.0.1:61878][0m
+2024-07-01 21:59:01,128 [36mHTTP GET /media/products/chicken2_ZJm9k6T.webp 304 [0.08, 127.0.0.1:61879][0m
+2024-07-01 21:59:01,656 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.61, 127.0.0.1:61878][0m
+2024-07-01 21:59:02,118 Not Found: /favicon.ico
+2024-07-01 21:59:02,128 [33mHTTP GET /favicon.ico 404 [0.32, 127.0.0.1:61878][0m
+2024-07-01 21:59:07,724 [mHTTP GET /registration/login/ 200 [2.32, 127.0.0.1:61878][0m
+2024-07-01 21:59:08,004 [mHTTP GET /static/registration/login_style.css 200 [0.08, 127.0.0.1:61878][0m
+2024-07-01 21:59:10,078 [mHTTP GET / 200 [0.02, 127.0.0.1:61878][0m
