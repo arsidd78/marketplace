@@ -1,0 +1,162 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .search-container {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav input[type="search"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+nav input[type="submit"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #6200ea;
+    cursor: pointer;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #e6e6fa;
+}
+
+.chat-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.chat-item p {
+    margin: 0;
+}
+
+.sent {
+    background-color: #8c5fde;
+    align-self: flex-end;
+    color: #4a148c;
+}
+
+.received {
+    background-color: #a6a4a8;
+    align-self: flex-start;
+    color: #311b92;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-top: 1px solid #ddd;
+}
+
+input#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+button#send-button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button#send-button:hover {
+    background-color: #3700b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+@media (max-width: 600px) {
+    .chat-container {
+        height: calc(100vh - 120px);
+        border-radius: 0;
+    }
+
+    .chat-box {
+        padding: 10px;
+    }
+
+    .chat-item {
+        max-width: 80%;
+    }
+
+    .input-container {
+        padding: 5px;
+    }
+
+    input#message-input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button#send-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

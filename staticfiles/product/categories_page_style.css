@@ -1,0 +1,104 @@
+/* General reset for margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #6a0dad; /* Purple color */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #6a0dad; /* Purple color */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+
+/* Category container styling */
+.pd_cat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual category styling */
+.category {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.category a {
+  color: #6a0dad; /* Purple color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.category a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  position: relative;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #fcfbfc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

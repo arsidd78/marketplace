@@ -1,0 +1,205 @@
+/* General reset for margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+html, body {
+  height: 100%;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styling */
+header {
+  background-color: #6a0dad; /* Purple color */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Navigation bar styling */
+
+
+.search-container {
+  flex-grow: 1;
+}
+
+.search-container form {
+  display: flex;
+}
+
+.search-container input[type="search"] {
+  padding: 5px;
+  border: none;
+  margin-left: 15px;
+  border-radius: 5px 0 0 5px;
+  
+}
+
+.search-container input[type="submit"] {
+  padding: 5px 10px;
+  border: none;
+  background-color: #9400d3; /* Lighter purplish color */
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+nav {
+  background-color: #6a0dad; /* Purple color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav .search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+nav input[type="search"] {
+  padding: 5px 10px;
+  border: 2px solid #ddd;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+nav button[type="submit"] {
+  padding: 5px 10px;
+  border: 2px solid #ddd;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #fff;
+  color: #6a0dad;
+  cursor: pointer;
+}
+
+nav button[type="submit"]:hover {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+/* Main content styling */
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Sidebar styling */
+.aside_links {
+  background-color: white;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aside_links section {
+  margin-bottom: 20px;
+}
+
+.aside_links h3 {
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.aside_links a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.aside_links a:hover {
+  color: #6a0dad;
+}
+
+/* Content area styling */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Recommended and recent products section styling */
+.user_interest, .article_product_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.user_interest article, .article_product_list .product_data {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user_interest article:hover, .article_product_list .product_data:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user_interest img, .article_product_list img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.user_interest label, .article_product_list label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.discounted_price {
+  color: #6a0dad;
+  font-weight: bold;
+}
+
+.price {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #fcfbfc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

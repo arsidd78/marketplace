@@ -8,25 +8,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'aaa12$$jj')
 DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = ['marketplace-1x8l.onrender.com', 'localhost', '127.0.0.1']
 
-# Logging
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': '/tmp/debug.log',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}
+
 
 # Application Definition
 INSTALLED_APPS = [

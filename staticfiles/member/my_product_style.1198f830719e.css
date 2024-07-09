@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #6a0dad; /* Purple */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #3a006e; /* Darker Purple */
+}
+
+.main-content {
+    display: flex;
+    margin: 20px;
+}
+
+.aside_links {
+    width: 20%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.aside_links section {
+    margin-bottom: 20px;
+}
+
+.aside_links h3 {
+    color: #4b0082;
+    margin-bottom: 10px;
+}
+
+.aside_links a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.aside_links a:hover {
+    color: #4b0082;
+}
+
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.product-card {
+    background: #fff;
+    padding: 10px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); 
+    box-sizing: border-box;
+}
+
+.product-image {
+    max-width: 100%;
+    width: 100px; 
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 1.1em; 
+    color: #4b0082;
+}
+
+.product-price,
+.product-discounted-price,
+.product-quantity {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-product, .delete-product {
+    background-color: #4b0082; /* Purple */
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Reduced padding */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9em; /* Smaller font size */
+}
+
+.delete-product {
+    background-color: #f44336; /* Red */
+}
+
+.edit-product:hover, .delete-product:hover {
+    opacity: 0.8;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    position: relative;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 25%;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer a {
+    color: #fcfbfc;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
