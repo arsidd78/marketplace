@@ -41,7 +41,8 @@ def chatPage(request, pk):
             except:
                 context = {'product': product, 'messages': messages}
                 return render(request, 'chat/chatPage.html', context)
-    return redirect('registration:login')
+    else:
+        return redirect('registration:login')
 @profile_required
 def SellorChatPage(request):
     if request.user.is_authenticated:
