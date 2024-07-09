@@ -44,7 +44,7 @@
 </div>
 <script>
     const roomName = "some_room_name";
-    const chatSocket = new WebSocket("ws://" + window.location.host + "/ws/chat/" + roomName + "/");
+    const chatSocket = new WebSocket("wss://" + window.location.host + "/ws/chat/" + roomName + "/");
 
     chatSocket.onopen = function (e) {
         console.log("The connection was set up successfully!");
