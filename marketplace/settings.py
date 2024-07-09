@@ -118,7 +118,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATIC_ROOT = 'marketplace\static'
 MEDIA_URL = '/media/'  # The URL prefix for media files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # The directory where media files are stored
