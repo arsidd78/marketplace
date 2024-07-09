@@ -14,8 +14,8 @@ SECRET_KEY = 'django-insecure-edtcd^w6h6pu9@0^9j^5-03j9e9it$h091a%cw!c-$)%!#+uf-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://marketplace-1x8l.onrender.com','localhost','127.0.0.1']
-
+ALLOWED_HOSTS = ['marketplace-1x8l.onrender.com','localhost','127.0.0.1']
+print(f'--------------------------------{ALLOWED_HOSTS}---------------------------')
 
 # Application definition
 
