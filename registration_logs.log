@@ -1,0 +1,308 @@
+2024-07-09 18:23:11,661 [mHTTP GET / 200 [19.59, 127.0.0.1:49534][0m
+2024-07-09 18:23:12,308 Not Found: /static/product/index_style.css
+2024-07-09 18:23:12,310 [33mHTTP GET /static/product/index_style.css 404 [0.17, 127.0.0.1:49534][0m
+2024-07-09 18:23:12,554 Not Found: /media/products/makeup1.jpeg
+2024-07-09 18:23:12,554 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:23:12,555 Not Found: /media/products/sport_1.jpeg
+2024-07-09 18:23:12,565 Not Found: /media/products/tennis.jpeg
+2024-07-09 18:23:12,567 [33mHTTP GET /media/products/makeup1.jpeg 404 [0.25, 127.0.0.1:49551][0m
+2024-07-09 18:23:12,569 [33mHTTP GET /media/logos/chat_logo.png 404 [0.25, 127.0.0.1:49550][0m
+2024-07-09 18:23:12,570 [33mHTTP GET /media/products/sport_1.jpeg 404 [0.24, 127.0.0.1:49552][0m
+2024-07-09 18:23:12,571 [33mHTTP GET /media/products/tennis.jpeg 404 [0.23, 127.0.0.1:49553][0m
+2024-07-09 18:23:12,580 Not Found: /media/products/mangoes1_aZItNpL.jpeg
+2024-07-09 18:23:12,581 [33mHTTP GET /media/products/mangoes1_aZItNpL.jpeg 404 [0.20, 127.0.0.1:49534][0m
+2024-07-09 18:23:12,582 Not Found: /media/products/chicken2_ZJm9k6T.webp
+2024-07-09 18:23:12,586 [33mHTTP GET /media/products/chicken2_ZJm9k6T.webp 404 [0.12, 127.0.0.1:49554][0m
+2024-07-09 18:23:12,821 Not Found: /favicon.ico
+2024-07-09 18:23:12,823 [33mHTTP GET /favicon.ico 404 [0.06, 127.0.0.1:49551][0m
+2024-07-09 18:28:07,425 Internal Server Error: /chat/chat/
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\custom_decorators.py", line 10, in wrapper
+    member = Member.objects.filter(user=request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7seas\OneDrive\Desktop\Marketplace\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000002742CC334A0>>.
+2024-07-09 18:28:25,483 [35;1mHTTP GET /chat/chat/ 500 [18.08, 127.0.0.1:49567][0m
+2024-07-09 18:28:36,627 [mHTTP GET /registration/login/ 200 [0.21, 127.0.0.1:49567][0m
+2024-07-09 18:28:36,728 Not Found: /static/registration/login_style.css
+2024-07-09 18:28:36,729 [33mHTTP GET /static/registration/login_style.css 404 [0.02, 127.0.0.1:49567][0m
+2024-07-09 18:28:36,768 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:28:36,770 [33mHTTP GET /media/logos/chat_logo.png 404 [0.02, 127.0.0.1:49567][0m
+2024-07-09 18:28:53,925 [32mHTTP POST /registration/authentication/?next= 302 [2.75, 127.0.0.1:49567][0m
+2024-07-09 18:28:54,170 [mHTTP GET / 200 [0.24, 127.0.0.1:49567][0m
+2024-07-09 18:28:54,290 Not Found: /static/product/index_style.css
+2024-07-09 18:28:54,292 [33mHTTP GET /static/product/index_style.css 404 [0.04, 127.0.0.1:49567][0m
+2024-07-09 18:28:54,739 Not Found: /media/products/beef_HYC0s2g.jpeg
+2024-07-09 18:28:54,740 Not Found: /media/logos/mark_logo.png
+2024-07-09 18:28:54,740 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:28:54,741 Not Found: /media/products/strawberry2_VltATon.png
+2024-07-09 18:28:54,742 Not Found: /media/products/mangoes1_2MUAknG.jpeg
+2024-07-09 18:28:54,743 [33mHTTP GET /media/products/beef_HYC0s2g.jpeg 404 [0.28, 127.0.0.1:49572][0m
+2024-07-09 18:28:54,743 Not Found: /media/products/iphone-15_2_eCA2aUy.jpeg
+2024-07-09 18:28:54,744 [33mHTTP GET /media/logos/mark_logo.png 404 [0.45, 127.0.0.1:49571][0m
+2024-07-09 18:28:54,745 [33mHTTP GET /media/logos/chat_logo.png 404 [0.45, 127.0.0.1:49570][0m
+2024-07-09 18:28:54,753 [33mHTTP GET /media/products/strawberry2_VltATon.png 404 [0.09, 127.0.0.1:49574][0m
+2024-07-09 18:28:54,755 [33mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 404 [0.11, 127.0.0.1:49573][0m
+2024-07-09 18:28:54,756 [33mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 404 [0.46, 127.0.0.1:49567][0m
+2024-07-09 18:28:55,271 Not Found: /media/products/makeup1.jpeg
+2024-07-09 18:28:55,272 Not Found: /media/products/tennis.jpeg
+2024-07-09 18:28:55,272 Not Found: /media/products/chicken2_ZJm9k6T.webp
+2024-07-09 18:28:55,273 Not Found: /media/products/mangoes1_aZItNpL.jpeg
+2024-07-09 18:28:55,290 Not Found: /media/products/baseball_2.jpeg
+2024-07-09 18:28:55,290 [33mHTTP GET /media/products/makeup1.jpeg 404 [0.23, 127.0.0.1:49574][0m
+2024-07-09 18:28:55,291 Not Found: /media/products/sport_1.jpeg
+2024-07-09 18:28:55,294 [33mHTTP GET /media/products/tennis.jpeg 404 [0.23, 127.0.0.1:49573][0m
+2024-07-09 18:28:55,294 [33mHTTP GET /media/products/chicken2_ZJm9k6T.webp 404 [0.53, 127.0.0.1:49571][0m
+2024-07-09 18:28:55,296 [33mHTTP GET /media/products/mangoes1_aZItNpL.jpeg 404 [0.54, 127.0.0.1:49570][0m
+2024-07-09 18:28:55,303 [33mHTTP GET /media/products/baseball_2.jpeg 404 [0.55, 127.0.0.1:49572][0m
+2024-07-09 18:28:55,305 [33mHTTP GET /media/products/sport_1.jpeg 404 [0.24, 127.0.0.1:49567][0m
+2024-07-09 18:28:56,984 [mHTTP GET /chat/chat/ 200 [0.23, 127.0.0.1:49567][0m
+2024-07-09 18:28:57,162 Not Found: /static/chat/sellorChat_style.css
+2024-07-09 18:28:57,163 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:28:57,165 [33mHTTP GET /static/chat/sellorChat_style.css 404 [0.03, 127.0.0.1:49573][0m
+2024-07-09 18:28:57,167 [33mHTTP GET /media/logos/chat_logo.png 404 [0.09, 127.0.0.1:49574][0m
+2024-07-09 18:29:01,472 [mHTTP GET /chat/receiver_chat/64 200 [0.80, 127.0.0.1:49567][0m
+2024-07-09 18:29:01,790 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:29:01,791 [33mHTTP GET /media/logos/chat_logo.png 404 [0.14, 127.0.0.1:49570][0m
+2024-07-09 18:29:01,792 Not Found: /static/chat/chat_style.css
+2024-07-09 18:29:01,794 [33mHTTP GET /static/chat/chat_style.css 404 [0.03, 127.0.0.1:49571][0m
+2024-07-09 18:29:01,860 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:49578]
+2024-07-09 18:29:01,957 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:49578]
+2024-07-09 18:29:10,885 [mHTTP POST /chat/receiver_chat/64 200 [0.70, 127.0.0.1:49567][0m
+2024-07-09 18:35:10,499 [mHTTP GET /chat/receiver_chat/64 200 [0.41, 127.0.0.1:62629][0m
+2024-07-09 18:35:10,958 Not Found: /static/chat/chat_style.css
+2024-07-09 18:35:10,960 [33mHTTP GET /static/chat/chat_style.css 404 [0.05, 127.0.0.1:62629][0m
+2024-07-09 18:35:10,984 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:35:10,986 [33mHTTP GET /media/logos/chat_logo.png 404 [0.02, 127.0.0.1:62630][0m
+2024-07-09 18:35:11,000 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62631]
+2024-07-09 18:35:11,051 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62631]
+2024-07-09 18:35:12,124 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62631]
+2024-07-09 18:35:12,410 [mHTTP GET /chat/receiver_chat/64 200 [0.22, 127.0.0.1:62632][0m
+2024-07-09 18:35:12,498 Not Found: /static/chat/chat_style.css
+2024-07-09 18:35:12,499 [33mHTTP GET /static/chat/chat_style.css 404 [0.03, 127.0.0.1:62632][0m
+2024-07-09 18:35:12,550 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62634]
+2024-07-09 18:35:12,571 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62634]
+2024-07-09 18:35:12,574 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:35:12,576 [33mHTTP GET /media/logos/chat_logo.png 404 [0.08, 127.0.0.1:62633][0m
+2024-07-09 18:35:12,639 Not Found: /favicon.ico
+2024-07-09 18:35:12,641 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:62633][0m
+2024-07-09 18:35:13,790 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62634]
+2024-07-09 18:35:14,048 [mHTTP GET /chat/receiver_chat/64 200 [0.22, 127.0.0.1:62635][0m
+2024-07-09 18:35:14,141 Not Found: /static/chat/chat_style.css
+2024-07-09 18:35:14,142 [33mHTTP GET /static/chat/chat_style.css 404 [0.03, 127.0.0.1:62635][0m
+2024-07-09 18:35:14,159 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62637]
+2024-07-09 18:35:14,168 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:35:14,170 [33mHTTP GET /media/logos/chat_logo.png 404 [0.03, 127.0.0.1:62636][0m
+2024-07-09 18:35:14,175 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62637]
+2024-07-09 18:35:14,210 Not Found: /favicon.ico
+2024-07-09 18:35:14,211 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:62636][0m
+2024-07-09 18:35:44,984 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\settings.py changed, reloading.
+2024-07-09 18:35:52,909 [mHTTP GET /chat/receiver_chat/64 200 [0.40, 127.0.0.1:62645][0m
+2024-07-09 18:35:53,122 Not Found: /static/chat/chat_style.css
+2024-07-09 18:35:53,123 [33mHTTP GET /static/chat/chat_style.css 404 [0.08, 127.0.0.1:62645][0m
+2024-07-09 18:35:53,303 WebSocket HANDSHAKING /ws/chat/some_room_name/ [127.0.0.1:62647]
+2024-07-09 18:35:53,459 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:35:53,461 [33mHTTP GET /media/logos/chat_logo.png 404 [0.34, 127.0.0.1:62646][0m
+2024-07-09 18:35:53,509 WebSocket CONNECT /ws/chat/some_room_name/ [127.0.0.1:62647]
+2024-07-09 18:35:55,625 WebSocket DISCONNECT /ws/chat/some_room_name/ [127.0.0.1:62647]
+2024-07-09 18:35:55,795 [mHTTP GET / 200 [0.12, 127.0.0.1:62645][0m
+2024-07-09 18:35:56,155 Not Found: /static/product/index_style.css
+2024-07-09 18:35:56,157 [33mHTTP GET /static/product/index_style.css 404 [0.12, 127.0.0.1:62646][0m
+2024-07-09 18:35:56,561 Not Found: /media/products/strawberry2_VltATon.png
+2024-07-09 18:35:56,561 Not Found: /media/logos/mark_logo.png
+2024-07-09 18:35:56,565 [33mHTTP GET /media/products/strawberry2_VltATon.png 404 [0.40, 127.0.0.1:62646][0m
+2024-07-09 18:35:56,566 [33mHTTP GET /media/logos/mark_logo.png 404 [0.41, 127.0.0.1:62645][0m
+2024-07-09 18:35:56,567 Not Found: /media/products/beef_HYC0s2g.jpeg
+2024-07-09 18:35:56,568 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:35:56,579 [33mHTTP GET /media/products/beef_HYC0s2g.jpeg 404 [0.22, 127.0.0.1:62650][0m
+2024-07-09 18:35:56,580 [33mHTTP GET /media/logos/chat_logo.png 404 [0.22, 127.0.0.1:62649][0m
+2024-07-09 18:35:56,583 Not Found: /media/products/mangoes1_2MUAknG.jpeg
+2024-07-09 18:35:56,583 Not Found: /media/products/iphone-15_2_eCA2aUy.jpeg
+2024-07-09 18:35:56,622 [33mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 404 [0.15, 127.0.0.1:62652][0m
+2024-07-09 18:35:56,623 [33mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 404 [0.22, 127.0.0.1:62651][0m
+2024-07-09 18:35:56,797 Not Found: /media/products/mangoes1_aZItNpL.jpeg
+2024-07-09 18:35:56,802 [33mHTTP GET /media/products/mangoes1_aZItNpL.jpeg 404 [0.23, 127.0.0.1:62645][0m
+2024-07-09 18:35:56,803 Not Found: /media/products/baseball_2.jpeg
+2024-07-09 18:35:56,809 [33mHTTP GET /media/products/baseball_2.jpeg 404 [0.23, 127.0.0.1:62646][0m
+2024-07-09 18:35:56,810 Not Found: /media/products/makeup1.jpeg
+2024-07-09 18:35:56,811 Not Found: /media/products/chicken2_ZJm9k6T.webp
+2024-07-09 18:35:56,812 Not Found: /media/products/tennis.jpeg
+2024-07-09 18:35:56,866 [33mHTTP GET /media/products/makeup1.jpeg 404 [0.24, 127.0.0.1:62650][0m
+2024-07-09 18:35:56,867 [33mHTTP GET /media/products/chicken2_ZJm9k6T.webp 404 [0.25, 127.0.0.1:62649][0m
+2024-07-09 18:35:56,868 [33mHTTP GET /media/products/tennis.jpeg 404 [0.16, 127.0.0.1:62651][0m
+2024-07-09 18:35:56,871 Not Found: /media/products/sport_1.jpeg
+2024-07-09 18:35:56,873 [33mHTTP GET /media/products/sport_1.jpeg 404 [0.16, 127.0.0.1:62652][0m
+2024-07-09 18:36:19,192 [mHTTP GET / 200 [0.17, 127.0.0.1:62687][0m
+2024-07-09 18:36:19,587 Not Found: /media/logos/chat_logo.png
+2024-07-09 18:36:19,589 [33mHTTP GET /media/logos/chat_logo.png 404 [0.23, 127.0.0.1:62688][0m
+2024-07-09 18:36:19,592 Not Found: /static/product/index_style.css
+2024-07-09 18:36:19,594 [33mHTTP GET /static/product/index_style.css 404 [0.24, 127.0.0.1:62687][0m
+2024-07-09 18:36:20,028 Not Found: /media/products/beef_HYC0s2g.jpeg
+2024-07-09 18:36:20,029 Not Found: /media/products/mangoes1_aZItNpL.jpeg
+2024-07-09 18:36:20,030 Not Found: /media/products/chess_board1_EWPnlMe.jpeg
+2024-07-09 18:36:20,030 Not Found: /media/products/stv1_OAPftt6.jpeg
+2024-07-09 18:36:20,048 [33mHTTP GET /media/products/beef_HYC0s2g.jpeg 404 [0.45, 127.0.0.1:62690][0m
+2024-07-09 18:36:20,049 [33mHTTP GET /media/products/mangoes1_aZItNpL.jpeg 404 [0.42, 127.0.0.1:62688][0m
+2024-07-09 18:36:20,050 [33mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 404 [0.41, 127.0.0.1:62692][0m
+2024-07-09 18:36:20,050 Not Found: /media/products/living_1.jpeg
+2024-07-09 18:36:20,050 Not Found: /media/products/sofa_1.jpg
+2024-07-09 18:36:20,050 [33mHTTP GET /media/products/stv1_OAPftt6.jpeg 404 [0.42, 127.0.0.1:62691][0m
+2024-07-09 18:36:20,054 [33mHTTP GET /media/products/living_1.jpeg 404 [0.42, 127.0.0.1:62687][0m
+2024-07-09 18:36:20,056 [33mHTTP GET /media/products/sofa_1.jpg 404 [0.28, 127.0.0.1:62693][0m
+2024-07-09 18:36:20,108 Not Found: /media/products/chicken2_ZJm9k6T.webp
+2024-07-09 18:36:20,110 [33mHTTP GET /media/products/chicken2_ZJm9k6T.webp 404 [0.04, 127.0.0.1:62687][0m
+2024-07-09 18:36:20,135 Not Found: /media/products/makeup1.jpeg
+2024-07-09 18:36:20,137 [33mHTTP GET /media/products/makeup1.jpeg 404 [0.04, 127.0.0.1:62693][0m
+2024-07-09 18:36:20,143 Not Found: /media/products/tennis.jpeg
+2024-07-09 18:36:20,145 Not Found: /media/products/sport_1.jpeg
+2024-07-09 18:36:20,147 [33mHTTP GET /media/products/tennis.jpeg 404 [0.05, 127.0.0.1:62692][0m
+2024-07-09 18:36:20,148 [33mHTTP GET /media/products/sport_1.jpeg 404 [0.05, 127.0.0.1:62688][0m
+2024-07-09 18:36:20,237 Not Found: /favicon.ico
+2024-07-09 18:36:20,238 [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:62688][0m
+2024-07-09 20:58:26,777 [mHTTP GET / 200 [4.85, 127.0.0.1:55167][0m
+2024-07-09 20:58:27,990 Not Found: /media/products/beef_HYC0s2g.jpeg
+2024-07-09 20:58:27,991 Not Found: /static/product/index_style.css
+2024-07-09 20:58:27,992 [33mHTTP GET /media/products/beef_HYC0s2g.jpeg 404 [0.32, 127.0.0.1:55169][0m
+2024-07-09 20:58:27,993 [33mHTTP GET /static/product/index_style.css 404 [0.32, 127.0.0.1:55167][0m
+2024-07-09 20:58:27,996 Not Found: /media/logos/chat_logo.png
+2024-07-09 20:58:27,997 [33mHTTP GET /media/logos/chat_logo.png 404 [0.33, 127.0.0.1:55166][0m
+2024-07-09 20:58:28,015 Not Found: /media/products/stv1_OAPftt6.jpeg
+2024-07-09 20:58:28,016 [33mHTTP GET /media/products/stv1_OAPftt6.jpeg 404 [0.01, 127.0.0.1:55166][0m
+2024-07-09 20:58:28,113 Not Found: /media/products/chess_board1_EWPnlMe.jpeg
+2024-07-09 20:58:28,114 [33mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 404 [0.02, 127.0.0.1:55167][0m
+2024-07-09 20:58:28,115 Not Found: /media/products/sofa_1.jpg
+2024-07-09 20:58:28,116 [33mHTTP GET /media/products/sofa_1.jpg 404 [0.02, 127.0.0.1:55169][0m
+2024-07-09 20:58:28,240 Not Found: /media/products/living_1.jpeg
+2024-07-09 20:58:28,244 [33mHTTP GET /media/products/living_1.jpeg 404 [0.03, 127.0.0.1:55169][0m
+2024-07-09 20:58:28,251 Not Found: /media/products/mangoes1_aZItNpL.jpeg
+2024-07-09 20:58:28,251 Not Found: /media/products/chicken2_ZJm9k6T.webp
+2024-07-09 20:58:28,253 [33mHTTP GET /media/products/mangoes1_aZItNpL.jpeg 404 [0.03, 127.0.0.1:55167][0m
+2024-07-09 20:58:28,253 [33mHTTP GET /media/products/chicken2_ZJm9k6T.webp 404 [0.03, 127.0.0.1:55166][0m
+2024-07-09 20:58:28,296 Not Found: /media/products/makeup1.jpeg
+2024-07-09 20:58:28,297 Not Found: /media/products/tennis.jpeg
+2024-07-09 20:58:28,298 [33mHTTP GET /media/products/makeup1.jpeg 404 [0.03, 127.0.0.1:55166][0m
+2024-07-09 20:58:28,298 Not Found: /media/products/sport_1.jpeg
+2024-07-09 20:58:28,299 [33mHTTP GET /media/products/tennis.jpeg 404 [0.03, 127.0.0.1:55169][0m
+2024-07-09 20:58:28,301 [33mHTTP GET /media/products/sport_1.jpeg 404 [0.03, 127.0.0.1:55167][0m
+2024-07-09 20:58:51,219 [mHTTP GET /detail/41/ 200 [6.75, 127.0.0.1:55167][0m
+2024-07-09 20:58:51,311 Not Found: /static/product/details_style.css
+2024-07-09 20:58:51,314 [33mHTTP GET /static/product/details_style.css 404 [0.05, 127.0.0.1:55167][0m
+2024-07-09 20:58:51,316 Not Found: /media/products/tennis.jpeg
+2024-07-09 20:58:51,319 [33mHTTP GET /media/products/tennis.jpeg 404 [0.04, 127.0.0.1:55166][0m
+2024-07-09 20:58:51,322 Not Found: /media/logos/chat_logo.png
+2024-07-09 20:58:51,325 [33mHTTP GET /media/logos/chat_logo.png 404 [0.04, 127.0.0.1:55169][0m
+2024-07-09 20:59:08,081 Not Found: /static/product/details_style.css
+2024-07-09 20:59:08,082 [33mHTTP GET /static/product/details_style.css 404 [0.01, 127.0.0.1:55169][0m
+2024-07-09 21:00:22,408 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\settings.py changed, reloading.
+2024-07-09 21:01:15,340 C:\Users\7seas\OneDrive\Desktop\Marketplace\marketplace\marketplace\settings.py changed, reloading.
+2024-07-09 21:01:18,137 [mHTTP GET /detail/41/ 200 [0.24, 127.0.0.1:55275][0m
+2024-07-09 21:01:18,617 [mHTTP GET /static/product/details_style.css 200 [0.41, 127.0.0.1:55275][0m
+2024-07-09 21:01:18,691 [mHTTP GET /media/products/tennis.jpeg 200 [0.48, 127.0.0.1:55281][0m
+2024-07-09 21:01:18,779 [mHTTP GET /media/logos/chat_logo.png 200 [0.57, 127.0.0.1:55276][0m
+2024-07-09 21:01:28,795 [mHTTP GET / 200 [0.06, 127.0.0.1:55276][0m
+2024-07-09 21:01:28,929 [mHTTP GET /static/product/index_style.css 200 [0.08, 127.0.0.1:55276][0m
+2024-07-09 21:01:29,033 [mHTTP GET /media/products/beef_HYC0s2g.jpeg 200 [0.18, 127.0.0.1:55281][0m
+2024-07-09 21:01:29,175 [mHTTP GET /media/products/mangoes1_aZItNpL.jpeg 200 [0.11, 127.0.0.1:55290][0m
+2024-07-09 21:01:29,209 [mHTTP GET /media/products/chicken2_ZJm9k6T.webp 200 [0.14, 127.0.0.1:55281][0m
+2024-07-09 21:01:29,315 [mHTTP GET /media/products/stv1_OAPftt6.jpeg 200 [0.28, 127.0.0.1:55276][0m
+2024-07-09 21:01:29,363 [mHTTP GET /media/products/makeup1.jpeg 200 [0.07, 127.0.0.1:55281][0m
+2024-07-09 21:01:29,369 [mHTTP GET /media/products/sport_1.jpeg 200 [0.15, 127.0.0.1:55290][0m
+2024-07-09 21:01:29,543 [mHTTP GET /media/products/sofa_1.jpg 200 [0.50, 127.0.0.1:55288][0m
+2024-07-09 21:01:29,734 [mHTTP GET /media/products/chess_board1_EWPnlMe.jpeg 200 [0.69, 127.0.0.1:55275][0m
+2024-07-09 21:01:29,803 [mHTTP GET /media/products/living_1.jpeg 200 [0.75, 127.0.0.1:55289][0m
+2024-07-09 21:01:32,118 [mHTTP GET /detail/48/ 200 [0.26, 127.0.0.1:55289][0m
+2024-07-09 21:01:34,595 [mHTTP GET /media/products/mangoes1_aZItNpL.jpeg 200 [0.01, 127.0.0.1:55292][0m
+2024-07-09 21:01:35,163 [mHTTP GET / 200 [0.05, 127.0.0.1:55289][0m
+2024-07-09 21:01:40,030 [mHTTP GET /detail/39/ 200 [0.18, 127.0.0.1:55289][0m
+2024-07-09 21:01:40,188 [mHTTP GET /media/products/makeup4.jpeg 200 [0.07, 127.0.0.1:55288][0m
+2024-07-09 21:01:40,217 [mHTTP GET /media/products/makeup3.jpeg 200 [0.11, 127.0.0.1:55275][0m
+2024-07-09 21:01:40,271 [mHTTP GET /media/products/makeup2.jpeg 200 [0.19, 127.0.0.1:55289][0m
+2024-07-09 21:01:40,274 [mHTTP GET /media/products/makeup5.jpeg 200 [0.15, 127.0.0.1:55290][0m
+2024-07-09 21:01:42,804 [mHTTP GET /media/products/makeup4.jpeg 200 [0.01, 127.0.0.1:55292][0m
+2024-07-09 21:01:47,797 [mHTTP GET / 200 [0.06, 127.0.0.1:55290][0m
+2024-07-09 21:01:53,070 [mHTTP GET /view_all/ 200 [0.54, 127.0.0.1:55290][0m
+2024-07-09 21:01:53,300 [mHTTP GET /media/products/computer_1.jpeg 200 [0.12, 127.0.0.1:55276][0m
+2024-07-09 21:01:53,353 [mHTTP GET /media/products/weights.jpeg 200 [0.18, 127.0.0.1:55281][0m
+2024-07-09 21:01:53,386 [mHTTP GET /media/products/mouse_12.jpeg 200 [0.08, 127.0.0.1:55276][0m
+2024-07-09 21:01:53,402 [mHTTP GET /media/products/pullover1.jpeg 200 [0.23, 127.0.0.1:55275][0m
+2024-07-09 21:01:53,466 [mHTTP GET /media/products/butterfly_1.jpeg 200 [0.29, 127.0.0.1:55288][0m
+2024-07-09 21:01:53,542 [mHTTP GET /media/products/outdoor_1.jpeg 200 [0.41, 127.0.0.1:55289][0m
+2024-07-09 21:01:53,748 [mHTTP GET /media/products/mouse.jpeg 200 [0.33, 127.0.0.1:55275][0m
+2024-07-09 21:01:53,761 [mHTTP GET /media/products/_424aaa2b-e1ee-49f8-9a95-56ba4923bc32.jpeg 200 [0.37, 127.0.0.1:55276][0m
+2024-07-09 21:01:53,771 [mHTTP GET /media/products/harry_potter_novel_complete.jpeg 200 [0.30, 127.0.0.1:55288][0m
+2024-07-09 21:01:53,774 [mHTTP GET /media/products/buffe_table_s6pSqbB.jpeg 200 [0.23, 127.0.0.1:55289][0m
+2024-07-09 21:01:53,842 [mHTTP GET /media/products/iphone-15_2_eCA2aUy.jpeg 200 [0.72, 127.0.0.1:55290][0m
+2024-07-09 21:01:53,928 [mHTTP GET /media/products/laptop1.jpeg 200 [0.11, 127.0.0.1:55275][0m
+2024-07-09 21:01:54,022 [mHTTP GET /media/products/toys_2.jpeg 200 [0.13, 127.0.0.1:55288][0m
+2024-07-09 21:01:54,082 [mHTTP GET /media/products/mangoes1_2MUAknG.jpeg 200 [0.12, 127.0.0.1:55276][0m
+2024-07-09 21:01:54,153 [mHTTP GET /media/products/baseball_2.jpeg 200 [0.12, 127.0.0.1:55288][0m
+2024-07-09 21:01:54,217 [mHTTP GET /media/products/toys_1.jpeg 200 [0.25, 127.0.0.1:55290][0m
+2024-07-09 21:01:54,312 [mHTTP GET /media/products/crockery.jpeg 200 [0.22, 127.0.0.1:55276][0m
+2024-07-09 21:01:54,335 [mHTTP GET /media/products/dvd_1.jpeg 200 [0.98, 127.0.0.1:55281][0m
+2024-07-09 21:01:54,425 [mHTTP GET /media/products/8_ball_pool.jpeg 200 [0.20, 127.0.0.1:55288][0m
+2024-07-09 21:01:54,431 [mHTTP GET /media/products/joggers.jpeg 200 [0.15, 127.0.0.1:55290][0m
+2024-07-09 21:01:54,460 [mHTTP GET /media/products/shoes.jpeg 200 [0.14, 127.0.0.1:55276][0m
+2024-07-09 21:01:54,474 [mHTTP GET /media/products/palistineflag_XD3bT3q.webp 200 [0.58, 127.0.0.1:55289][0m
+2024-07-09 21:01:54,717 [mHTTP GET /media/products/strawberry2_VltATon.png 200 [0.75, 127.0.0.1:55275][0m
+2024-07-09 21:01:58,466 [mHTTP GET /categories/ 200 [0.15, 127.0.0.1:55275][0m
+2024-07-09 21:01:58,585 [mHTTP GET /static/product/categories_page_style.css 200 [0.03, 127.0.0.1:55275][0m
+2024-07-09 21:02:01,850 [mHTTP GET / 200 [0.04, 127.0.0.1:55275][0m
+2024-07-09 21:02:04,329 [mHTTP GET /chat/chat/ 200 [0.11, 127.0.0.1:55275][0m
+2024-07-09 21:02:04,438 [mHTTP GET /static/chat/sellorChat_style.css 200 [0.06, 127.0.0.1:55275][0m
+2024-07-09 21:02:07,548 [mHTTP GET / 200 [0.08, 127.0.0.1:55275][0m

@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #4b0082; /* Purple */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #3a006e; /* Darker Purple */
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+}
+
+.feedback-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.feedback-section h1 {
+    color: #4b0082;
+    margin-bottom: 20px;
+}
+
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-section form .rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    margin-bottom: 20px;
+}
+
+.feedback-section form .rating input {
+    display: none;
+}
+
+.feedback-section form .rating label {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.feedback-section form .rating input:checked ~ label {
+    color: #ffdd00; /* Gold */
+}
+
+.feedback-section form .rating label:hover,
+.feedback-section form .rating label:hover ~ label {
+    color: #ffdd00; /* Gold */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4b0082;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #3a006e;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  footer p {body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #4b0082; /* Purple */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #3a006e; /* Darker Purple */
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+}
+
+.feedback-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.feedback-section h1 {
+    color: #4b0082;
+    margin-bottom: 20px;
+}
+
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-section .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.feedback-section .form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #4b0082;
+}
+
+.feedback-section .form-group .rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    margin-bottom: 20px;
+}
+
+.feedback-section .form-group .rating input {
+    display: none;
+}
+
+.feedback-section .form-group .rating label {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.feedback-section .form-group .rating input:checked ~ label {
+    color: #ffdd00; /* Gold */
+}
+
+.feedback-section .form-group .rating label:hover,
+.feedback-section .form-group .rating label:hover ~ label {
+    color: #ffdd00; /* Gold */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4b0082;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #3a006e;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4b0082;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+  }
+  
+  footer a {
+    color: #fcfbfc;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
