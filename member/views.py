@@ -305,7 +305,7 @@ def edit_profile(request):
                 return HttpResponse('Error in editing Profile')
         else:
             form = MemberForm(instance=member)
-            context = {'form':form,'request':request}
+            context = {'form':form,'request':request,'member': member}
             return render(request,'member/edit_profile.html',context)
     return redirect('registration:login')    
 
