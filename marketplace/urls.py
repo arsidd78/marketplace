@@ -10,7 +10,7 @@ urlpatterns = [
     path('', include('product.urls')),
     path('member/', include('member.urls')),
     path('chat/', include('chat.urls')),
-] + static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
+]
 
 # Serving static and media files in development
 if settings.DEBUG:

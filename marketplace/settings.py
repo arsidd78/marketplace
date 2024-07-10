@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Environment Variables
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'aaa12$$jj')
-DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
+DEBUG = True
 ALLOWED_HOSTS = ['marketplace-1x8l.onrender.com', 'localhost', '127.0.0.1']
 
 
