@@ -11,7 +11,7 @@
   <li>Profile Setup: Users can set up and update their profiles, including personal information and profile pictures.</li>
   <li>Exclusive Content for Members: Certain areas and features of the site are accessible only to authenticated users.</li>
   </ul>
-  E-commerce Functionalities
+  <h2>E-commerce Functionalities</h2>
   <ul>
    <li> Product Management: CRUD operations for products, allowing sellers to add, update, and delete product listings.</li>
     <li>Cart and Wishlist: Buyers can add products to their cart or wishlist for later purchase.</li>
