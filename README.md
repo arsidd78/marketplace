@@ -22,10 +22,10 @@
   </ul>
   <h2>User Interaction and Experience</h2>
   <ul>
-  Real-Time Chat: Implemented using WebSockets and Django Channels, allowing buyers and sellers to communicate in real-time.
-  Reviews: Buyers can leave reviews on products they’ve purchased, helping other users make informed decisions.
-  Search Functionality: Comprehensive search feature to help users find products quickly.
-  Recommendations: Personalized product recommendations based on user interactions and preferences.
+  <li>Real-Time Chat: Implemented using WebSockets and Django Channels, allowing buyers and sellers to communicate in real-time.</li>
+  <li>Reviews: Buyers can leave reviews on products they’ve purchased, helping other users make informed decisions.</li>
+  <li>Search Functionality: Comprehensive search feature to help users find products quickly.</li>
+  <li>Recommendations: Personalized product recommendations based on user interactions and preferences.</li>
 </ul>
   <h2>Profile Management</h2>
   <ul>
@@ -39,8 +39,8 @@
 <h2>Future Enhancements</h2>
 <li>API Development</li>
 
-<li>Using Django Rest Framework to create APIs for various functionalities, allowing external applications to interact with the marketplace.
-Notification System </li>
+<li>Using Django Rest Framework to create APIs for various functionalities, allowing external applications to interact with the marketplace.</li>
+<li>Notification System</li> 
 
 <li>Implementing a notification system for new orders and messages, using WebSockets for real-time updates.
 Payment Integration</li>
